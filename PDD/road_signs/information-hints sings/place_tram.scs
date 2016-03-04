@@ -1,0 +1,33 @@
+sc_node_not_relation -> place_tram;;
+place_tram => nrel_main_idtf: 
+	[место остановки трамвая.] (* <- lang_ru;; *);;
+place_tram => nrel_main_idtf: 
+	[place tram] (* <- lang_en;; *);;
+place_tram <= nrel_using_constants:
+	{
+	stop_the_vehicle;
+	tram
+	};;
+place_tram <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://place_tram.png";;
+                                *);; 
+                *);;
+place_tram <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак может устанавливаться в конце зоны <sc_element sys_idtf="stop_the_vehicle"> остановочного </sc_element> пункта <sc_element sys_idtf="tram"> трамвая </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

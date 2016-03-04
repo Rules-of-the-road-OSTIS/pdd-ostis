@@ -1,0 +1,30 @@
+sc_node_not_relation -> road_markings;;
+
+road_markings => nrel_main_idtf: [Приложение 3.Дорожная разметка] (* <- lang_ru;; *);;
+
+road_markings => nrel_main_idtf: [road markings] (* <- lang_en;; *);;
+
+road_markings <= nrel_using_constants:
+	{
+	road_user;
+	road
+	};;
+
+road_markings <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Маркировка на покрытии автомобильных <sc_element sys_idtf="road">дорог</sc_element>. Она служит для сообщения определённой информации <sc_element sys_idtf="road_user">участникам дорожного движения</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+road_markings <= nrel_section_decomposition:
+{
+	horizontal_road_marking;
+	vertical_road_marking
+};; 

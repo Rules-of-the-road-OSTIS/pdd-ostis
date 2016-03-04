@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_184;;
+
+item_184 => nrel_main_idtf: [пункт 184] (* <- lang_ru;; *);;
+
+item_184 => nrel_main_idtf: [item 184] (* <- lang_en;; *);;
+
+item_184 <= nrel_using_constants:
+	{
+	traffic_safety;
+	driver;
+	view_of_the_road;
+	vehicle;
+	road
+	};;
+
+item_184 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>Перевозка груза запрещается, если он:</p>
+<p>1)создает угрозу <sc_element sys_idtf="traffic_safety">безопасности дорожного движения</sc_element>;</p>
+<p>2)ограничивает <sc_element sys_idtf="driver">водителю</sc_element> <sc_element sys_idtf="view_of_the_road">обзорность дороги</sc_element>;</p>
+<p>3)затрудняет управление <sc_element sys_idtf="vehicle">транспортным средством</sc_element>, нарушает его устойчивость;</p>
+<p>4)закрывает внешние световые приборы и световозвращатели, регистрационные и опознавательные знаки транспортных средств, а также препятствует восприятию сигналов, подаваемых рукой при неисправных (отсутствующих) световых указателях поворотов;</p>
+<p>5)создает шум, пылит, загрязняет <sc_element sys_idtf="road">дорогу</sc_element> и окружающую среду.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

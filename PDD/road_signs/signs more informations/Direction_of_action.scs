@@ -1,0 +1,33 @@
+sc_node_not_relation -> Direction_of_action;;
+Direction_of_action => nrel_main_idtf:[Направление действия] (* <- lang_ru;; *);;
+Direction_of_action => nrel_main_idtf:[Direction of action] (* <- lang_en;; *);;
+Direction_of_action <= nrel_using_constants:
+	{
+	roadway;
+	intersection
+	};;
+Direction_of_action <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Direction_of_action1.png";
+                                                "file://Direction_of_action2.png";
+                                                "file://Direction_of_action3.png";;
+                                *);; 
+                *);;
+Direction_of_action 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Таблички</b> указывают направление действия знаков, установленных перед <sc_element sys_idtf="intersection">перекрестком</sc_element>, или направление движения к обозначенным объектам, находящимся непосредственно у <sc_element sys_idtf="roadway">дороги</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

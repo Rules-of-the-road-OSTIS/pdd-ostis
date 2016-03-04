@@ -1,0 +1,41 @@
+sc_node_not_relation -> approach_to_the_railway_crossing;;
+
+approach_to_the_railway_crossing => nrel_main_idtf: [подход к железнодорожному переезду] (* <- lang_ru;; *);;
+approach_to_the_railway_crossing => nrel_main_idtf: [approach to the railway crossing] (* <- lang_en;; *);;
+
+approach_to_the_railway_crossing <= nrel_using_constants:
+	{
+	railroad_crossing;
+    locality
+	};;
+
+approach_to_the_railway_crossing <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://approach_to_the_railway_crossing1.png";
+						"file://approach_to_the_railway_crossing2.png";
+						"file://approach_to_the_railway_crossing3.png";
+						"file://approach_to_the_railway_crossing4.png";
+						"file://approach_to_the_railway_crossing5.png";
+						"file://approach_to_the_railway_crossing6.png";;
+                                *);; 
+                *);;
+				
+approach_to_the_railway_crossing <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Дополнительное предупреждение о приближении к <sc_element sys_idtf="railroad_crossing">железнодорожному переезду</sc_element> вне <sc_element sys_idtf="locality">населенных пунктов</sc_element>.]
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+		

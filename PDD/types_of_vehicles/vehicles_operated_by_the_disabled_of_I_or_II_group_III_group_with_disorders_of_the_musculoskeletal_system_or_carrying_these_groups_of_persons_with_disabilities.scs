@@ -1,0 +1,8 @@
+sc_node_not_relation -> vehicles_operated_by_the_disabled_of_I_or_II_group_III_group_with_disorders_of_the_musculoskeletal_system_or_carrying_these_groups_of_persons_with_disabilities;;
+
+vehicles_operated_by_the_disabled_of_I_or_II_group_III_group_with_disorders_of_the_musculoskeletal_system_or_carrying_these_groups_of_persons_with_disabilities => nrel_main_idtf: 	[транспортные средства, управляемые инвалидами І либо ІІ группы, ІІІ группы с нарушениями опорно-двигательного аппарата или перевозящие инвалидов этих групп] (* <- lang_ru;; *);;
+
+vehicles_operated_by_the_disabled_of_I_or_II_group_III_group_with_disorders_of_the_musculoskeletal_system_or_carrying_these_groups_of_persons_with_disabilities => nrel_main_idtf: 	[vehicles operated by the disabled of I or II group III group with disorders of the musculoskeletal system or carrying these groups of persons with disabilities] (* <- lang_en;; *);;
+
+vehicles_operated_by_the_disabled_of_I_or_II_group_III_group_with_disorders_of_the_musculoskeletal_system_or_carrying_these_groups_of_persons_with_disabilities <= nrel_strict_inclusion: vehicle;;
+vehicles_operated_by_the_disabled_of_I_or_II_group_III_group_with_disorders_of_the_musculoskeletal_system_or_carrying_these_groups_of_persons_with_disabilities <= nrel_strict_inclusion: types_of_vehicles;;

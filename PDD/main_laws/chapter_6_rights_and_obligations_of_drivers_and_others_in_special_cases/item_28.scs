@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_28;;
+
+item_28 => nrel_main_idtf: [пункт 28] (* <- lang_ru;; *);;
+
+item_28 => nrel_main_idtf: [item 28] (* <- lang_en;; *);;
+item_28 <= nrel_using_constants:
+	{
+	vehicle_operational_use;
+	driver
+	};;
+
+item_28 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Приближаясь к стоящему <sc_element sys_idtf="vehicle_operational_use">транспортному средству оперативного назначения</sc_element> с включенным:</p>
+<p>1)маячком синего цвета, <sc_element sys_idtf="driver">водитель</sc_element> должен снизить скорость движения, чтобы иметь возможность немедленно остановиться в случае необходимости;</p>
+<p>2)маячком красного цвета, водитель должен остановиться, не доезжая до транспортного средства оперативного назначения. Продолжить движение можно после разрешения регулировщика или выключения маячка красного цвета.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

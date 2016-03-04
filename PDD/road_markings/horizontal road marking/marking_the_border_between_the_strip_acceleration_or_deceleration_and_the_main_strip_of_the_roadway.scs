@@ -1,0 +1,39 @@
+sc_node_not_relation -> marking_the_border_between_the_strip_acceleration_or_deceleration_and_the_main_strip_of_the_roadway;;
+
+marking_the_border_between_the_strip_acceleration_or_deceleration_and_the_main_strip_of_the_roadway => nrel_main_idtf: 
+	[обозначение границы между полосой разгона или торможения и основной полосой проезжей части дороги] (* <- lang_ru;; *);;
+
+marking_the_border_between_the_strip_acceleration_or_deceleration_and_the_main_strip_of_the_roadway => nrel_main_idtf: 
+	[marking the border between the strip acceleration or deceleration and the main strip of the roadway] (* <- lang_en;; *);;
+
+marking_the_border_between_the_strip_acceleration_or_deceleration_and_the_main_strip_of_the_roadway <= nrel_using_constants:
+	{
+	roadway;
+	intersection;
+	route_vehicles
+	};;
+
+marking_the_border_between_the_strip_acceleration_or_deceleration_and_the_main_strip_of_the_roadway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение границы между полосой разгона или торможения и основной полосой <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> (на <sc_element sys_idtf="intersection">перекрестках</sc_element>, пересечениях дорог в разных уровнях, в зоне остановочных пунктов <sc_element sys_idtf="route_vehicles">маршрутных транспортных средств</sc_element>, на прочих объектах).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+marking_the_border_between_the_strip_acceleration_or_deceleration_and_the_main_strip_of_the_roadway <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://marking_the_border_between_the_strip_acceleration_or_deceleration_and_the_main_strip_of_the_roadway.png";;
+                                *);; 
+                *);;

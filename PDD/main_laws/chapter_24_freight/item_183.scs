@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_183;;
+
+item_183 => nrel_main_idtf: [пункт 183] (* <- lang_ru;; *);;
+
+item_183 => nrel_main_idtf: [item 183] (* <- lang_en;; *);;
+item_183 <= nrel_using_constants:
+	{
+	driver;
+	traffic_safety;
+	danger_to_traffic;
+	freight
+	};;
+
+
+item_183 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Перед началом движения и в пути следования <sc_element sys_idtf="driver">водитель</sc_element> обязан при наличии объективной возможности контролировать размещение, крепление и состояние груза во избежание его смещения и падения. Если размещение, крепление, состояние груза создают угрозу <sc_element sys_idtf="traffic_safety">безопасности дорожного движения</sc_element>, водитель должен принять меры к устранению возникшей опасности либо прекратить дальнейшее движение.
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

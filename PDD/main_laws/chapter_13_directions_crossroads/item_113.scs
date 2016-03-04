@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_113;;
+item_113 => nrel_main_idtf: [пункт 113] (* <- lang_ru;; *);;
+
+item_113 => nrel_main_idtf: [item 113] (* <- lang_en;; *);;
+
+item_113 <= nrel_using_constants:
+{
+intersection;
+crosswalk;
+pedestrian;
+give_way_do_not_have_the_benefits;
+tram
+};;
+
+item_113 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>113. На регулируемых <sc_element sys_idtf="intersection">перекрестках</sc_element> могут применяться информационные секции с бело-лунным мигающим сигналом на черном фоне или информационные таблички белого цвета с черными символами. Информационные секции или таблички могут размещаться под правой дополнительной секцией транспортных светофоров либо перед <sc_element sys_idtf="crosswalk">пешеходным переходом</sc_element> вместе с дорожными знаками «<sc_element sys_idtf="crosswalk">Пешеходный переход</sc_element>». Информационная секция или табличка не изменяет значения сигналов светофоров, требований дорожных знаков, настоящих Правил и дополнительно предупреждает водителей о необходимости <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="pedestrian">пешеходам</sc_element>, велосипедистам и водителям <sc_element sys_idtf="tram">трамваев</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

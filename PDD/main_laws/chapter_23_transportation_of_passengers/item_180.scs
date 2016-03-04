@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_180;;
+
+item_180 => nrel_main_idtf: [пункт 180] (* <- lang_ru;; *);;
+
+item_180 => nrel_main_idtf: [item 180] (* <- lang_en;; *);;
+
+item_180 <= nrel_using_constants:
+	{
+	driver;
+	vehicle;
+	parking_of_a_vehicle;
+	route_vehicles;
+	passenger
+	};;
+
+item_180 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Водитель транспортного средства обязан осуществлять посадку (высадку) пассажиров только после полной остановки транспортного средства, а начинать движение — только с закрытыми дверями и не открывать их до полной остановки. При этом водитель маршрутного транспортного средства для посадки (высадки) пассажиров обязан останавливаться только на обозначенных остановочных пунктах.
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

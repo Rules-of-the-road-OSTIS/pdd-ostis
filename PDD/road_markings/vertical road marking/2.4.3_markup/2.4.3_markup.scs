@@ -1,0 +1,33 @@
+sc_node_not_relation -> 2.4.2_markup;;
+
+2.4.3_markup => nrel_main_idtf: [разметка 2.4.3] (* <- lang_ru;; *);;
+2.4.3_markup => nrel_main_idtf: [2.4.3 markup] (* <- lang_en;; *);;
+
+2.4.3_markup <= nrel_using_constants:
+	{
+	road
+	};;
+
+2.4.3_markup <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Обозначает сигнальные щитки, установленные на барьерных ограждениях <sc_element sys_idtf="road">дорог</sc_element>.]
+					   (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+2.4.3_markup <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://2.4.3_markup.png";;
+                                *);; 
+                *);;

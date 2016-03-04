@@ -1,0 +1,32 @@
+sc_node_not_relation -> item_16;;
+
+item_16 => nrel_main_idtf: [пункт 16] (* <- lang_ru;; *);;
+
+item_16 => nrel_main_idtf: [item 16] (* <- lang_en;; *);;
+item_16 <= nrel_using_constants:
+	{
+	pedestrian;
+	road;
+	advantage;
+	crosswalk;
+	roadway;
+	pedestrian_have_rights
+	};;
+
+item_16 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><sc_element sys_idtf="pedestrian">Пешеход</sc_element> имеет право:</p>
+<p>1)передвигаться по <sc_element sys_idtf="road">дорогам</sc_element> в соответствии с настоящими Правилами;</p>
+<p>2)на <sc_element sys_idtf="advantage">преимущественное</sc_element> пересечение <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> по нерегулируемому <sc_element sys_idtf="crosswalk">пешеходному переходу</sc_element>, а также по регулируемому пешеходному переходу при разрешающем сигнале регулировщика или светофора.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+item_16 <= nrel_strict_inclusion: chapter_4_rights_and_responsibilities_of_pedestrians;;

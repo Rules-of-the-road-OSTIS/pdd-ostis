@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_109;;
+item_109 => nrel_main_idtf: [пункт 109] (* <- lang_ru;; *);;
+
+item_109 => nrel_main_idtf: [item 109] (* <- lang_en;; *);;
+
+item_109 <= nrel_using_constants:
+{
+intersection;
+vehicle;
+road;
+main_road
+};;
+
+item_109 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>109. В случае, когда <sc_element sys_idtf="main_road">главная дорога</sc_element> на <sc_element sys_idtf="intersection">перекрестке</sc_element> меняет направление, водители <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, движущихся по <sc_element sys_idtf="main_road">главной дороге</sc_element>, должны руководствоваться между собой правилами проезда <sc_element sys_idtf="intersection">перекрестков</sc_element> равнозначных <sc_element sys_idtf="road">дорог</sc_element>. Этими же правилами руководствуются водители <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, движущихся по второстепенной дороге.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

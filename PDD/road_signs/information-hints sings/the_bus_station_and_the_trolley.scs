@@ -1,0 +1,28 @@
+sc_node_not_relation -> the_bus_station_and_the_trolley;;
+the_bus_station_and_the_trolley => nrel_main_idtf: 
+	[место остановки автобуса и (или) троллейбуса] (* <- lang_ru;; *);;
+the_bus_station_and_the_trolley => nrel_main_idtf: 
+	[the bus station and(or) the trolley] (* <- lang_en;; *);;
+the_bus_station_and_the_trolley <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_bus_station_and_the_trolley.png";;
+                                *);; 
+                *);;
+the_bus_station_and_the_trolley <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак может устанавливаться в конце посадочной площадки остановочного пункта автобуса и (или) троллейбуса.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

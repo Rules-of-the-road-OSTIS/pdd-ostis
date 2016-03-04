@@ -1,0 +1,38 @@
+sc_node_not_relation -> designation_of_stops_route_vehicles_and_taxi;;
+
+designation_of_stops_route_vehicles_and_taxi => nrel_main_idtf: 
+	[обозначение остановочных пунктов маршрутных транспортных средств и стоянок такси] (* <- lang_ru;; *);;
+
+designation_of_stops_route_vehicles_and_taxi => nrel_main_idtf: 
+	[designation of stops route vehicles and taxi] (* <- lang_en;; *);;
+
+designation_of_stops_route_vehicles_and_taxi <= nrel_using_constants:
+	{
+	route_vehicles;
+	parking_of_a_vehicle
+	};;
+
+designation_of_stops_route_vehicles_and_taxi <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение остановочных пунктов <sc_element sys_idtf="route_vehicles">маршрутных транспортных средств</sc_element> и <sc_element sys_idtf="parking_of_a_vehicle">стоянок</sc_element> такси.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_stops_route_vehicles_and_taxi <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_stops_route_vehicles_and_taxi.png";;
+                                *);; 
+                *);;

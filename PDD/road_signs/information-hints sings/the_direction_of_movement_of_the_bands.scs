@@ -1,0 +1,30 @@
+sc_node_not_relation -> the_direction_of_movement_of_the_bands;;
+the_direction_of_movement_of_the_bands => nrel_main_idtf: 
+	[направление движения по полосам] (* <- lang_ru;; *);;
+the_direction_of_movement_of_the_bands => nrel_main_idtf: 
+	[the direction of movement of the bands] (* <- lang_en;; *);;
+
+the_direction_of_movement_of_the_bands <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_direction_of_movement_of_the_bands1.png";
+						"file://the_direction_of_movement_of_the_bands2.png";;
+                                *);; 
+                *);;
+the_direction_of_movement_of_the_bands <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Указывает колличество полос встрейчного направления.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

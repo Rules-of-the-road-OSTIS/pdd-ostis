@@ -1,0 +1,37 @@
+sc_node_not_relation -> motion_without_stopping_is_prohibited;;
+motion_without_stopping_is_prohibited => nrel_main_idtf: 
+	[движение без остановки запрещено] (* <- lang_ru;; *);;
+motion_without_stopping_is_prohibited => nrel_main_idtf: 
+	[motion without stopping is prohibited] (* <- lang_en;; *);;
+motion_without_stopping_is_prohibited <= nrel_using_constants:
+	{
+	roadway;
+	road;
+	vehicle;
+	main_road;
+	railroad_crossing;
+	driver
+	};;
+motion_without_stopping_is_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://motion_without_stopping_is_prohibited.png";;
+                                *);; 
+                *);;
+motion_without_stopping_is_prohibited <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example::
+						[Запрещается движение без остановки перед знаком "Движение без остановки запрещено" или знаком "Стоп-линия" (горизонтальной дорожной разметкой "Обозначение места остановки <sc_element sys_idtf="vehicle">транспортных средств</sc_element> — «стоп-линия»"), а при их отсутствии — перед краем пересекаемой <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>. Необходимо уступить <sc_element sys_idtf="road">дорогу</sc_element> <sc_element sys_idtf="roadway">транспортным средствам</sc_element>, движущимся по пересекаемой дороге, а при наличии таблички "Направление <sc_element sys_idtf="main_road">главной дороги</sc_element>" — <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, движущимся по <sc_element sys_idtf="main_road">главной дороге</sc_element>, а также справа по равнозначной дороге. При подъезде к участку <sc_element sys_idtf="road">дороги</sc_element>, на котором установлен знак, а также к <sc_element sys_idtf="railroad_crossing">железнодорожному переезду</sc_element>, движение через который не запрещено, <sc_element sys_idtf="driver">водитель</sc_element> должен остановиться перед знаком "Движение без остановки запрещено" или знаком "Стоп-линия" (горизонтальной дорожной разметкой "Обозначение места остановки <sc_element sys_idtf="vehicle">транспортных средств</sc_element> — «стоп-линия»").]
+				(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

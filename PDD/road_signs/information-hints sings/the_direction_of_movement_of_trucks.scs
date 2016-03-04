@@ -1,0 +1,38 @@
+sc_node_not_relation -> the_direction_of_movement_of_trucks;;
+the_direction_of_movement_of_trucks => nrel_main_idtf: 
+	[направление движения грузовых автомобилей] (* <- lang_ru;; *);;
+the_direction_of_movement_of_trucks => nrel_main_idtf: 
+	[the direction of movement of trucks] (* <- lang_en;; *);;
+
+the_direction_of_movement_of_trucks <= nrel_using_constants:
+	{
+	wheeled_tractor;
+	self_propelled;
+	intersection;
+	traffic
+	};;
+the_direction_of_movement_of_trucks <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_direction_of_movement_of_trucks1.png";
+						"file://the_direction_of_movement_of_trucks2.png";
+						"file://the_direction_of_movement_of_trucks3.png";;
+                                *);; 
+                *);;
+the_direction_of_movement_of_trucks <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Рекомендуемое направление <sc_element sys_idtf="traffic"> движения </sc_element> грузовых автомобилей, <sc_element sys_idtf="wheeled_tractor"> колесных тракторов </sc_element> и <sc_element sys_idtf="self_propelled"> самоходных машин </sc_element>, если их движение на <sc_element sys_idtf="intersection"> перекрестке </sc_element> в одном или нескольких направлениях запрещено.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

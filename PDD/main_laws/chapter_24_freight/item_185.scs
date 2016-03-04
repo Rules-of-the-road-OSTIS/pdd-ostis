@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_185;;
+
+item_185 => nrel_main_idtf: [пункт 185] (* <- lang_ru;; *);;
+
+item_185 => nrel_main_idtf: [item 185] (* <- lang_en;; *);;
+
+
+item_185 <= nrel_using_constants:
+	{
+	oversized_cargo;
+	vehicle;
+	the_dark;
+	the_lack_of_visibility_of_the_road
+	};;
+
+item_185 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Груз, выступающий за габариты <sc_element sys_idtf="vehicle">транспортного средства</sc_element> спереди или сзади более чем на 1 метр или сбоку более чем на 0,4 метра от внешнего края габаритного огня, должен быть обозначен опознавательными знаками «<sc_element sys_idtf="oversized_cargo">Крупногабаритный груз</sc_element>», а в <sc_element sys_idtf="the_dark">темное время суток</sc_element> и (или) при <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости дороги</sc_element>, кроме того, спереди — фонарем, излучающим белый свет, сзади — фонарем, излучающим красный свет.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

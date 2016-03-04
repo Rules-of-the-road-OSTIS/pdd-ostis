@@ -1,0 +1,50 @@
+concepst_crossroads
+=> nrel_main_idtf: [перекресток] (* <- lang_ru;; *);;
+
+.._test_crossroad
+=> nrel_main_idtf: [перекресток А] (* <- lang_ru;; *);;
+
+rrel_trafficlight 
+<- sc_node_role_relation;
+=> nrel_main_idtf: [светофор*] (* <- lang_ru;; *);;
+
+rrel_traffic_regulation 
+<- sc_node_role_relation;
+=> nrel_main_idtf: [регулирование'] (* <- lang_ru;; *);;
+
+rrel_sign_priority
+<- sc_node_role_relation;
+=> nrel_main_idtf: [знак приоритета'] (* <- lang_ru;; *);;
+
+rrel_right
+<- sc_node_role_relation;
+=> nrel_main_idtf: [помеха справа'] (* <- lang_ru;; *);;
+
+rrel_left
+<- sc_node_role_relation;
+=> nrel_main_idtf: [помеха слева'] (* <- lang_ru;; *);;
+
+rrel_counter
+<- sc_node_role_relation;
+=> nrel_main_idtf: [встречное'] (* <- lang_ru;; *);;
+
+rrel_current
+<- sc_node_role_relation;
+=> nrel_main_idtf: [текущее'] (* <- lang_ru;; *);;
+
+rrel_acsess
+<- sc_node_not_role_relation;
+=> nrel_main_idtf: [приоритетное движение*] (* <- lang_ru;; *);;
+
+concepst_crossroads -> .._test_crossroad;;
+
+//.._test_crossroad -> rrel_traffic_regulation: .._trafficlight(* <- concept_trafficlight;; *);;
+//.._test_crossroad -> rrel_traffic_regulation: .._man(* <- concept_boy;; *);;
+.._test_crossroad -> rrel_sign_priority: .._test_sign;;
+.._test_sign _-> rrel_acsess: concept_left;;
+.._test_crossroad -> rrel_sign_priority: .._test2_sign;;
+.._test2_sign _-> rrel_acsess: concept_right;;
+.._test_crossroad -> rrel_current: .._car1;;
+.._test_crossroad -> rrel_left: .._car2;;
+
+.._test_sign -> rrel_acses: left;;

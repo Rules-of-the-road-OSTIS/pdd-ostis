@@ -1,0 +1,18 @@
+sc_node_not_relation -> permanent_signs;;
+       
+permanent_signs => nrel_main_idtf: [постоянные дорожные знаки] (* <- lang_ru;; *);;
+
+permanent_signs => nrel_main_idtf: [permanent_signs] (* <- lang_en;; *);;
+
+permanent_signs <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://permanent_signs.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+permanent_signs <= nrel_strict_inclusion: road_signs;;
+

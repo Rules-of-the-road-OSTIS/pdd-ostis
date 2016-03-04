@@ -1,0 +1,15 @@
+sc_node_not_relation -> pedestrian_traffic_lights;;
+pedestrian_traffic_lights => nrel_main_idtf: 
+	[пешеходные светофоры] (* <- lang_ru;; *);;
+pedestrian_traffic_lights => nrel_main_idtf: 
+	[with additional sections] (* <- lang_en;; *);;
+pedestrian_traffic_lights <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://pedestrian_traffic_lights.png";;
+                                *);; 
+                *);;

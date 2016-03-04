@@ -1,0 +1,35 @@
+sc_node_not_relation -> item_137;;
+
+item_137 => nrel_main_idtf: [пункт 137] (* <- lang_ru;; *);;
+
+item_137 => nrel_main_idtf: [item 137] (* <- lang_en;; *);;
+
+item_137 <= nrel_using_constants:
+	{
+	vehicle;
+	adjacent_territory;
+	pedestrian_zone;
+	driver;
+	road
+	};;
+
+item_137 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> В жилой и <sc_element sys_idtf="pedestrian_zone">пешеходной зонах</sc_element>, на <sc_element sys_idtf="adjacent_territory">прилегающей территории</sc_element> <sc_element sys_idtf="driver">водителям</sc_element> механических <sc_element sys_idtf="vehicle">транспортных средств</sc_element> запрещается:</p>
+					 <p>1) движение со скоростью более 20 км/ч;</p>
+					 <p>2) транзитное движение;</p>
+					 <p>3) обучение управлению механическим <sc_element sys_idtf="vehicle">транспортным средством</sc_element>;</p>
+					 <p>4) стоянка механического <sc_element sys_idtf="vehicle">транспортного средства</sc_element> с известной <sc_element sys_idtf="driver">водителю</sc_element> неисправностью противоугонной звуковой сигнализации, произвольно подающей непрерывные звуковые сигналы;</p>
+					 <p>5) стоянка грузовых автомобилей, автобусов, колесных тракторов и самоходных машин вне специально отведенных мест, обозначенных дорожным знаком «Место стоянки», если это не связано с выполнением ими работ.</p>
+					 ] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

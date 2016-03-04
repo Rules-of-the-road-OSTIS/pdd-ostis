@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_170;;
+item_170 => nrel_main_idtf: [пункт 170] (* <- lang_ru;; *);;
+
+item_170 => nrel_main_idtf: [item 170] (* <- lang_en;; *);;
+
+item_170 <= nrel_using_constants:
+{
+road_train;
+stop_the_vehicle;
+parking_of_a_vehicle;
+road;
+the_dark;
+the_lack_of_visibility_of_the_road
+};;
+
+item_170 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>170. Опознавательный знак «<sc_element sys_idtf="road_train">Автопоезд</sc_element>» должен быть включен при движении <sc_element sys_idtf="road_train">автопоезда</sc_element>, а в <sc_element sys_idtf="the_dark">темное время суток</sc_element> на неосвещенных участках <sc_element sys_idtf="road">дороги</sc_element> и (или) при ее <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости</sc_element>, кроме того, — и на время его <sc_element sys_idtf="stop_the_vehicle">остановки</sc_element> или <sc_element sys_idtf="parking_of_a_vehicle">стоянки.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

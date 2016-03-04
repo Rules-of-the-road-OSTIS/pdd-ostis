@@ -1,0 +1,37 @@
+sc_node_not_relation -> number_designation_of_the_road;;
+
+number_designation_of_the_road => nrel_main_idtf: 
+	[обозначение номера дороги] (* <- lang_ru;; *);;
+
+number_designation_of_the_road => nrel_main_idtf: 
+	[number designation of the road] (* <- lang_en;; *);;
+
+number_designation_of_the_road <= nrel_using_constants:
+	{
+	road
+	};;
+	
+number_designation_of_the_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Указывает номер <sc_element sys_idtf="road">дороги</sc_element> (маршрута).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+number_designation_of_the_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://number_designation_of_the_road.png";;
+                                *);; 
+                *);;

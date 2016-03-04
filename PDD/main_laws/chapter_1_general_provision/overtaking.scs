@@ -1,0 +1,37 @@
+sc_node_not_relation -> overtaking;;
+
+overtaking => nrel_main_idtf: 	[обгон] (* <- lang_ru;; *);;
+
+overtaking => nrel_main_idtf: 	[overtaking] (* <- lang_en;; *);;
+overtaking <= nrel_using_constants:
+	{
+     vehicle;
+     advance;
+     traffic_lane
+	};;
+
+
+overtaking <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Обгон</b> — <sc_element sys_idtf="advance">опережение</sc_element> одного или нескольких движущихся <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, связанное с выездом на встречную <sc_element sys_idtf="traffic_lane">полосу движения</sc_element> (сторону проезжей части дороги).] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+overtaking <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://overtaking.jpg";;
+                                *);; 
+                *);;
+overtaking <= nrel_strict_inclusion: chapter_1_general_provision;;

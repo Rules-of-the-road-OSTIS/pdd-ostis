@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_134;;
+
+item_134 => nrel_main_idtf: [пункт 134] (* <- lang_ru;; *);;
+
+item_134 => nrel_main_idtf: [item 134] (* <- lang_en;; *);;
+
+item_134 <= nrel_using_constants:
+	{
+	vehicle;
+	pedestrian;
+	road_user;
+	adjacent_territory;
+	pedestrian_zone
+	};;
+
+item_134 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> B <sc_element sys_idtf="pedestrian_zone">пешеходной зоне</sc_element> допускается движение только <sc_element sys_idtf="vehicle">транспортных средств</sc_element> дорожно-эксплуатационной и коммунальной служб, автомобилей с наклонной белой полосой на бортах, а также других <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, обслуживающих торговые и другие организации, расположенные в <sc_element sys_idtf="pedestrian_zone">пешеходной зоне</sc_element> (граждан, проживающих в данной зоне), <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, принадлежащих гражданам, проживающим в этой зоне, при отсутствии иных возможностей их подъезда.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

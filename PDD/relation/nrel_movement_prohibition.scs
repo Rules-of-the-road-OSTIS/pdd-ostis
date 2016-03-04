@@ -1,0 +1,7 @@
+sc_node_norole_relation -> nrel_movement_prohibition;;
+
+nrel_movement_prohibition => nrel_main_idtf:
+	[движение запрещено*] 
+	(* <- lang_ru;; *);
+	[movement prohibition*]
+	(* <- lang_en;;	*);;

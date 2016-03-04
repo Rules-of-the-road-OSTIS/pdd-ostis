@@ -1,0 +1,28 @@
+sc_node_not_relation -> the_technically_permissible_total_weight;;
+
+the_technically_permissible_total_weight  => nrel_main_idtf: 	[технически допустимая общая масса] (* <- lang_ru;; *);;
+
+the_technically_permissible_total_weight  => nrel_main_idtf: 	[the technically permissible total weight] (* <- lang_en;; *);;
+the_technically_permissible_total_weight <= nrel_using_constants:
+	{
+     vehicle;
+     car;
+     trailer;
+     road_train
+	};;
+
+
+the_technically_permissible_total_weight <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Технически допустимая общая масса</b> — максимальная масса <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, установленная организацией (заводом)-изготовителем (с грузом, водителем и пассажирами). Технически допустимой общей массой <sc_element sys_idtf="road_train">автопоезда</sc_element> является сумма технически допустимых общих масс <sc_element sys_idtf="car">автомобиля</sc_element> (колесного трактора) и <sc_element sys_idtf="trailer">прицепа</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+the_technically_permissible_total_weight <= nrel_strict_inclusion: chapter_1_general_provision;;

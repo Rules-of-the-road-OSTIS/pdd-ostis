@@ -1,0 +1,27 @@
+sc_node_not_relation -> footpath;;
+
+footpath => nrel_main_idtf: 	[пешеходная дорожка] (* <- lang_ru;; *);;
+
+footpath => nrel_main_idtf: 	[footpath] (* <- lang_en;; *);;
+footpath <= nrel_using_constants:
+	{
+     elements_of_the_road;
+     pedestrian;
+     sign_footpath
+	};;
+
+
+footpath <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Пешеходная дорожка</b> — выделенный конструктивно или с помощью линий <sc_element sys_idtf="horizontal_road_marking">горизонтальной дорожной разметки</sc_element> <sc_element sys_idtf="elements_of_the_road">элемент дороги</sc_element>, предназначенный для движения <sc_element sys_idtf="pedestrian">пешеходов</sc_element>, обозначенный дорожным знаком «<sc_element sys_idtf="sign_footpath">Пешеходная дорожка</sc_element>».] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+footpath <= nrel_strict_inclusion: chapter_1_general_provision;;

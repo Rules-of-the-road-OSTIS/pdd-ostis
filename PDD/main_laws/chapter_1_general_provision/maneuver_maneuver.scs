@@ -1,0 +1,27 @@
+sc_node_not_relation -> maneuver_maneuver;;
+
+maneuver_maneuver => nrel_main_idtf: 	[маневрирование (маневр)] (* <- lang_ru;; *);;
+
+maneuver_maneuver => nrel_main_idtf: 	[maneuver (maneuver)] (* <- lang_en;; *);;
+maneuver_maneuver <= nrel_using_constants:
+	{
+    vehicle;
+    traffic_lane;
+    roadway
+
+	};;
+
+maneuver_maneuver <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Маневрирование (маневр)</b> — начало движения, перестроение <sc_element sys_idtf="vehicle">транспортного средства</sc_element> в движении из одной <sc_element sys_idtf="traffic_lane">полосы движения</sc_element> в другую (далее — перестроение), а также его поворот направо или налево, разворот, съезд с <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>, движение задним ходом.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+maneuver_maneuver <= nrel_strict_inclusion: chapter_1_general_provision;;

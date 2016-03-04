@@ -1,0 +1,15 @@
+sc_node_not_relation -> for_controlling_movement_in_certain_directions;;
+for_controlling_movement_in_certain_directions => nrel_main_idtf: 
+	[для регулирования движения в определенных направлениях] (* <- lang_ru;; *);;
+for_controlling_movement_in_certain_directions => nrel_main_idtf: 
+	[for controlling movement in certain directions] (* <- lang_en;; *);;
+for_controlling_movement_in_certain_directions <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://for_controlling_movement_in_certain_directions.png";;
+                                *);; 
+                *);;

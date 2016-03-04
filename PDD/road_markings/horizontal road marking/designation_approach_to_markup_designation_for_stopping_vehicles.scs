@@ -1,0 +1,37 @@
+sc_node_not_relation -> designation_approach_to_markup_designation_for_stopping_vehicles;;
+
+designation_approach_to_markup_designation_for_stopping_vehicles => nrel_main_idtf: 
+	[обозначение приближения к разметке "обозначение места остановки транспортных средств"] (* <- lang_ru;; *);;
+
+designation_approach_to_markup_designation_for_stopping_vehicles => nrel_main_idtf: 
+	[designation approach to markup "designation for stopping vehicles"] (* <- lang_en;; *);;
+
+	designation_approach_to_markup_designation_for_stopping_vehicles <= nrel_using_constants:
+	{
+	stop_the_vehicle
+	};;
+
+designation_approach_to_markup_designation_for_stopping_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предупреждает о приближении к разметке "обозначение места <sc_element sys_idtf="stop_the_vehicle">остановки транспортных средств</sc_element>".]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_approach_to_markup_designation_for_stopping_vehicles <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_approach_to_markup_designation_for_stopping_vehicles.png";;
+                                *);; 
+                *);;

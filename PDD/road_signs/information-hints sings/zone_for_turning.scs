@@ -1,0 +1,28 @@
+sc_node_not_relation -> zone_for_turning;;
+zone_for_turning => nrel_main_idtf: 
+	[зона для разворота.] (* <- lang_ru;; *);;
+zone_for_turning => nrel_main_idtf: 
+	[zone for turning] (* <- lang_en;; *);;
+zone_for_turning <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://zone_for_turning.png";;
+                                *);; 
+                *);;
+zone_for_turning <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Начало зоны для разворота транспортных средств и ее длина.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

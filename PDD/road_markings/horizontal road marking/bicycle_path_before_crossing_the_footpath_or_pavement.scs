@@ -1,0 +1,38 @@
+sc_node_not_relation -> bicycle_path_before_crossing_the_footpath_or_pavement;;
+
+bicycle_path_before_crossing_the_footpath_or_pavement => nrel_main_idtf: 
+	[велосипедная дорожка перед пересечением с пешеходной дорожкой или тротуаром] (* <- lang_ru;; *);;
+
+	bicycle_path_before_crossing_the_footpath_or_pavement => nrel_main_idtf: 
+	[bicycle path before crossing the footpath or pavement] (* <- lang_en;; *);;
+	bicycle_path_before_crossing_the_footpath_or_pavement <= nrel_using_constants:
+	{
+	bike_lane;
+	footpath;
+	pavement
+	};;
+	
+bicycle_path_before_crossing_the_footpath_or_pavement <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<sc_element sys_idtf="bike_lane">Велосипедная дорожка</sc_element> перед пересечением с <sc_element sys_idtf="footpath">пешеходной дорожкой</sc_element> или <sc_element sys_idtf="pavement">тротуаром/sc_element>. Применяется на <sc_element sys_idtf="bike_lane">велосипедных дорожках</sc_element> перед пересечением их с <sc_element sys_idtf="footpath">пешеходными дорожками</sc_element> или <sc_element sys_idtf="pavement">тротуарами</sc_element>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+bicycle_path_before_crossing_the_footpath_or_pavement <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://bicycle_path_before_crossing_the_footpath_or_pavement.png";;
+                                *);; 
+                *);;

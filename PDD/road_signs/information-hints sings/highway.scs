@@ -1,0 +1,35 @@
+sc_node_not_relation -> highway;;
+highway => nrel_main_idtf: 
+	[автомагистраль] (* <- lang_ru;; *);;
+highway => nrel_main_idtf: 
+	[highway] (* <- lang_en;; *);;
+highway <= nrel_using_constants:
+	{
+	regulations;
+	road;
+	traffic
+	};;
+highway <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://highway.png";;
+                                *);; 
+                *);;
+highway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак информирует о начале <sc_element sys_idtf="road"> дороги </sc_element>, на которой действуют специальные требования Правил, устанавливающие порядок дорожного <sc_element sys_idtf="traffic"> движения </sc_element> на автомагистрали.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+		

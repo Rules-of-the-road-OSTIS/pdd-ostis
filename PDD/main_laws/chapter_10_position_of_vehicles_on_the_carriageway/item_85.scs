@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_85;;
+
+item_85 => nrel_main_idtf: [пункт 85] (* <- lang_ru;; *);;
+
+item_85 => nrel_main_idtf: [item 85] (* <- lang_en;; *);;
+
+item_85 <= nrel_using_constants:
+	{
+traffic_safety;
+stop_the_vehicle;
+driver;
+vehicle
+	};;
+
+item_85 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  <sc_element sys_idtf="driver"> Водитель</sc_element> обязан соблюдать такую дистанцию до движущегося впереди <sc_element sys_idtf="vehicle"> транспортного средства</sc_element>, которая позволила бы избежать столкновения в случае его экстренного торможения или <sc_element sys_idtf="stop_the_vehicle"> остановки</sc_element>, и необходимый боковой интервал, обеспечивающий <sc_element sys_idtf="traffic_safety"> безопасность дорожного движения</sc_element> с <sc_element sys_idtf="vehicle"> транспортными средствами</sc_element>, стоящими или движущимися по соседним полосам движения.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

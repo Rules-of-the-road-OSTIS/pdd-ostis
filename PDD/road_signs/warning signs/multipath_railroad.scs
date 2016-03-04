@@ -1,0 +1,30 @@
+sc_node_not_relation -> multipath_railroad;;
+        
+multipath_railroad => nrel_main_idtf: [многопутная железная дорога] (* <- lang_ru;; *);;
+multipath_railroad => nrel_main_idtf: [multipath railroad] (* <- lang_en;; *);;
+
+multipath_railroad <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://multipath_railroad.png";;
+                                *);; 
+                *);;
+				
+multipath_railroad <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Переезд через железную дорогу с двумя и более путями.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+
+		*);;

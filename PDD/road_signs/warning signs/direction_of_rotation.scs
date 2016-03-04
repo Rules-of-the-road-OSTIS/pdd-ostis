@@ -1,0 +1,41 @@
+sc_node_not_relation -> direction_of_rotation;;
+        
+direction_of_rotation => nrel_main_idtf: [направление поворота] (* <- lang_ru;; *);;
+direction_of_rotation => nrel_main_idtf: [direction of rotation] (* <- lang_en;; *);;
+
+direction_of_rotation <= nrel_using_constants:
+	{
+	road;
+	limited_view_of_the_road;
+	traffic
+	};;
+
+
+direction_of_rotation <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://direction_of_rotation1.png";
+						"file://direction_of_rotation2.png";
+						"file://direction_of_rotation3.png";
+						"file://direction_of_rotation4.png";
+						"file://direction_of_rotation5.png";;
+                                *);; 
+                *);;
+				
+direction_of_rotation <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Направление движения на повороте <sc_element sys_idtf="road">дороги</sc_element> малого радиуса с <sc_element sys_idtf="limited_view_of_the_road">ограниченной обзорностью</sc_element>; направление объезда препятствия для <sc_element sys_idtf="traffic">дорожного движения</sc_element> на ремонтируемом участке дороги; направление объезда ремонтируемого участка дороги.]
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

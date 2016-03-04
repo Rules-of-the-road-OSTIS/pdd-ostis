@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_144;;
+
+item_144 => nrel_main_idtf: [пункт 144] (* <- lang_ru;; *);;
+
+item_144 => nrel_main_idtf: [item 144] (* <- lang_en;; *);;
+
+item_144 <= nrel_using_constants:
+	{
+	vehicle;
+	roadway;
+	driver
+	};;
+
+item_144 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Включение <sc_element sys_idtf="driver">водителем</sc_element> аварийной световой сигнализации при преднамеренной остановке и стоянке в местах, где они запрещены, не освобождает его от ответственности за нарушение требований пункта 143 настоящих Правил.</p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

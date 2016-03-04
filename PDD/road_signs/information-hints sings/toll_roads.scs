@@ -1,0 +1,33 @@
+sc_node_not_relation -> toll_roads;;
+toll_roads => nrel_main_idtf: 
+	[платная автомобильная дорога] (* <- lang_ru;; *);;
+toll_roads => nrel_main_idtf: 
+	[toll roads] (* <- lang_en;; *);;
+toll_roads <= nrel_using_constants:
+	{
+	traffic;
+	vehicle
+	};;
+toll_roads <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://toll_roads.png";;
+                                *);; 
+                *);;
+toll_roads <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак информирует о начале участка дороги, на котором используется система электронного сбора платы в режиме свободного многополосного <sc_element sys_idtf="traffic"> движения </sc_element> за проезд <sc_element sys_idtf="vehicle"> транспортных средств </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

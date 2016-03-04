@@ -1,0 +1,47 @@
+sc_node_not_relation -> separation_of_traffic_in_opposite_directions;;
+
+separation_of_traffic_in_opposite_directions => nrel_main_idtf: 
+	[разделение транспортных потоков противоположных направлений] (* <- lang_ru;; *);;
+
+separation_of_traffic_in_opposite_directions => nrel_main_idtf: 
+	[separation of traffic in opposite directions] (* <- lang_en;; *);;
+
+separation_of_traffic_in_opposite_directions <= nrel_using_constants:
+	{
+	traffic_lane;
+	road;
+	roadway;
+	parking_of_a_vehicle;
+	pavement;
+	bike_lane
+	};;
+	
+separation_of_traffic_in_opposite_directions <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Разделение транспортных потоков противоположных направлений (может иметь желтый цвет).
+<p>Обозначение границ <sc_element sys_idtf="traffic_lane">полос движения</sc_element> на опасных участках <sc_element sys_idtf="road">дороги</sc_element>.</p>
+<p>Обозначение границ <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>, на которые въезд запрещен.</p>
+<p>Обозначение границ мест <sc_element sys_idtf="parking_of_a_vehicle">стоянки транспортных средств</sc_element> на площадках, специально отведенных для <sc_element sys_idtf="parking_of_a_vehicle">стоянки</sc_element>.</p>
+<p>Обозначение островков безопасности (в случаях, определенных в установленном порядке Министром внутренних дел).</p>
+<p>Разделение пешеходных и велосипедных потоков на <sc_element sys_idtf="pavement">тротуарах</sc_element> и в других местах, а также разделение велосипедных потоков на <sc_element sys_idtf="bike_lane">велосипедной дорожке</sc_element> с двусторонним движением велосипедов.</p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+separation_of_traffic_in_opposite_directions <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://separation_of_traffic_in_opposite_directions.png";;
+                                *);; 
+                *);;

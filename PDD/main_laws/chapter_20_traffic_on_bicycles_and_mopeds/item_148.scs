@@ -1,0 +1,35 @@
+sc_node_not_relation -> item_148;;
+item_148 => nrel_main_idtf: [пункт 148] (* <- lang_ru;; *);;
+
+item_148 => nrel_main_idtf: [item 148] (* <- lang_en;; *);;
+
+item_148 <= nrel_using_constants:
+{
+bike_lane;
+bicycle;
+shoulder;
+pavement;
+footpath;
+pedestrian;
+elements_of_the_road;
+roadway;
+obstacle_to_traffic
+};;
+
+item_148 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>148. Движение на <sc_element sys_idtf="bicycle">велосипеде</sc_element> должно осуществляться по <sc_element sys_idtf="bike_lane">велосипедной дорожке</sc_element>, а при ее отсутствии — по <sc_element sys_idtf="shoulder">обочине</sc_element>, <sc_element sys_idtf="pavement">тротуару</sc_element> или <sc_element sys_idtf="footpath">пешеходной дорожке</sc_element>, не создавая препятствия для безопасного движения <sc_element sys_idtf="pedestrian">пешеходов</sc_element>. При отсутствии указанных <sc_element sys_idtf="elements_of_the_road">элементов дороги</sc_element> или невозможности движения по ним допускается движение велосипедистов по <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> в один ряд не далее 1 метра от ее правого края. При этом:</p>
+<p>148.1. выезд далее 1 метра от правого края <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> допускается лишь для объезда <sc_element sys_idtf="obstacle_to_traffic">препятствия</sc_element> и в разрешенных случаях для поворота налево или разворота;</p>
+<p>148.2. колонны велосипедистов при движении по <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> должны быть разделены на группы не более чем по 10 велосипедистов. Расстояние между группами должно составлять не менее 100 метров;</p>
+<p>148.3. при наличии на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> линии горизонтальной дорожной разметки 1.2, обозначающей ее край, эта линия должна располагаться слева от велосипедиста.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

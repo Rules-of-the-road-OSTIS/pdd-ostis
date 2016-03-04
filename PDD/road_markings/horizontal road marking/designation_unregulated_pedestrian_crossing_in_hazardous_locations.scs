@@ -1,0 +1,37 @@
+sc_node_not_relation -> designation_unregulated_pedestrian_crossing_in_hazardous_locations;;
+
+designation_unregulated_pedestrian_crossing_in_hazardous_locations => nrel_main_idtf: 
+	[обозначение нерегулируемого пешеходного перехода в местах повышенной опасности] (* <- lang_ru;; *);;
+
+designation_unregulated_pedestrian_crossing_in_hazardous_locations => nrel_main_idtf: 
+	[designation unregulated pedestrian crossing in hazardous locations] (* <- lang_en;; *);;
+
+designation_unregulated_pedestrian_crossing_in_hazardous_locations <= nrel_using_constants:
+	{
+	crosswalk
+	};;
+	
+designation_unregulated_pedestrian_crossing_in_hazardous_locations <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение нерегулируемого <sc_element sys_idtf="crosswalk">пешеходного перехода</sc_element> в местах повышенной опасности.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_unregulated_pedestrian_crossing_in_hazardous_locations <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_unregulated_pedestrian_crossing_in_hazardous_locations.png";;
+                                *);; 
+                *);;

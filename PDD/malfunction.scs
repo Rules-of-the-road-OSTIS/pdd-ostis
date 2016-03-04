@@ -1,0 +1,30 @@
+sc_node_not_relation -> malfunction;;
+       
+malfunction => nrel_main_idtf: [Приложение 4.Перечень неисправностей] (* <- lang_ru;; *);;
+
+malfunction => nrel_main_idtf: [malfunction] (* <- lang_en;; *);;
+
+malfunction <= nrel_using_constants:
+	{
+	car;
+	bus;
+	road_train;
+	trailer;
+	motorcycle;
+	moped;
+	wheeled_tractor;
+	self_propelled
+	};;
+
+malfunction <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://malfunction.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+		
+

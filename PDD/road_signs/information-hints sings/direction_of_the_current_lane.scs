@@ -1,0 +1,35 @@
+sc_node_not_relation -> direction_of_the_current_lane;;
+direction_of_the_current_lane => nrel_main_idtf: 
+	[направления движения по полосам] (* <- lang_ru;; *);;
+direction_of_the_current_lane => nrel_main_idtf: 
+	[direction of the current lane] (* <- lang_en;; *);;
+direction_of_the_current_lane <= nrel_using_constants:
+	{
+	traffic_lane;
+	traffic
+	};;
+direction_of_the_current_lane <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://direction_of_the_current_lane.png";;
+                                *);; 
+                *);;
+direction_of_the_current_lane 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[ Количество <sc_element sys_idtf="traffic_lane"> полос движения </sc_element> на перекрестке и разрешенные направления <sc_element sys_idtf="traffic"> движения </sc_element> по каждой из них.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+   

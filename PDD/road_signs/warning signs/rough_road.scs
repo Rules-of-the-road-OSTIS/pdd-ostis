@@ -1,0 +1,35 @@
+sc_node_not_relation -> rough_road;;
+       
+rough_road => nrel_main_idtf: [неровная дорога] (* <- lang_ru;; *);;
+rough_road => nrel_main_idtf: [rough road] (* <- lang_en;; *);;
+
+rough_road <= nrel_using_constants:
+	{
+	roadway;
+	road
+	};;
+
+rough_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://rough_road.png";;
+                                *);; 
+                *);;
+				
+rough_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element> с неровностями на <sc_element sys_idtf="roadway">проезжей части</sc_element> (волны, наплывы, гребенка и т.п.).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

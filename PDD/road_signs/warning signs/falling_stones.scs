@@ -1,0 +1,34 @@
+sc_node_not_relation -> falling_stones;;
+        
+falling_stones => nrel_main_idtf: [падение камней] (* <- lang_ru;; *);;
+falling_stones => nrel_main_idtf: [falling stones] (* <- lang_en;; *);;
+
+falling_stones <= nrel_using_constants:
+	{
+	roadway
+	};;
+
+falling_stones <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://falling_stones.png";;
+                                *);; 
+                *);;
+				
+falling_stones <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element>, на котором возможны обвалы, оползни, падение камней.]
+                    (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+				*);;

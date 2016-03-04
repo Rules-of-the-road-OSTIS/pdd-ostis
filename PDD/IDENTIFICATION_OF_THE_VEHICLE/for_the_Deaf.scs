@@ -1,0 +1,18 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+        
+for_the_Deaf => nrel_main_idtf: [инвалид по слуху] (* <- lang_ru;; *);;
+
+for_the_Deaf => nrel_main_idtf: [for the Deaf] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://for_the_Deaf.png";;
+                                *);; 
+                *);;
+
+for_the_Deaf <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;

@@ -1,0 +1,28 @@
+sc_node_not_relation -> locality;;
+
+locality => nrel_main_idtf: 	[населенный пункт] (* <- lang_ru;; *);;
+
+locality => nrel_main_idtf: 	[locality] (* <- lang_en;; *);;
+locality <= nrel_using_constants:
+	{
+     the_beginning_of_the_village;
+     end_of_the_village;
+     the_beginning_of_the_border_of_the_village;
+     the_end_of_the_borders_of_the_village
+	};;
+
+
+locality <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Населенный пункт</b> — территория, въезды на которую и выезды с которой обозначены дорожными знаками «<sc_element sys_idtf="the_beginning_of_the_village">Начало населенного пункта</sc_element>» и «<sc_element sys_idtf="end_of_the_village">Конец населенного пункта</sc_element>» или дорожными знаками «<sc_element sys_idtf="the_beginning_of_the_border_of_the_village">Начало границы населенного пункта</sc_element>» и «<sc_element sys_idtf="the_end_of_the_borders_of_the_village">Конец границы населенного пункта</sc_element>».] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+locality <= nrel_strict_inclusion: chapter_1_general_provision;;

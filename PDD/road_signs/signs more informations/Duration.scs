@@ -1,0 +1,29 @@
+sc_node_not_relation -> Duration;;
+Duration => nrel_main_idtf:[Время действия] (* <- lang_ru;; *);;
+Duration => nrel_main_idtf:[Duration] (* <- lang_en;; *);;
+Duration <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Duration1.png";
+                                                "file://Duration2.png";
+                                                "file://Duration3.png";
+                                                "file://Duration4.png";;
+                                *);; 
+                *);;
+Duration 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> указывает время суток, в течение которого действует знак либо дни недели и время суток, в течение которых действует знак.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,20 @@
+sc_node_not_relation -> chapter_3_external_lights;;
+       
+chapter_3_external_lights => nrel_main_idtf: [Глава 3. Внешние световые приборы] (* <- lang_ru;; *);;
+
+chapter_3_external_lights => nrel_main_idtf: [chapter_3_external_lights] (* <- lang_en;; *);;
+chapter_3_external_lights <= nrel_inclusion: vehicle;;
+chapter_3_external_lights <= nrel_inclusion: road_train;;
+
+chapter_3_external_lights <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://chapter_3_external_lights.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;	
+		
+chapter_3_external_lights <= nrel_strict_inclusion: malfunction;;

@@ -1,0 +1,28 @@
+sc_node_not_relation -> sign_service_hospital;;
+sign_service_hospital => nrel_main_idtf: 
+	[знак сервиса "Больница"] (* <- lang_ru;; *);;
+sign_service_hospital => nrel_main_idtf: 
+	[sign service "Hospital"] (* <- lang_en;; *);;
+sign_service_hospital <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_hospital.png";;
+                                *);; 
+                *);;
+sign_service_hospital <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Больница" информирует о расположении больниц.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

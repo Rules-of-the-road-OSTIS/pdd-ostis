@@ -1,0 +1,31 @@
+sc_node_not_relation -> chapter_7_other_elements_of_the_design_of_the_vehicle;;
+       
+chapter_7_other_elements_of_the_design_of_the_vehicle => nrel_main_idtf: [Глава 7. Прочие элементы конструкции транспортного средства] (* <- lang_ru;; *);;
+
+chapter_7_other_elements_of_the_design_of_the_vehicle => nrel_main_idtf: [chapter_7_other_elements_of_the_design_of_the_vehicle] (* <- lang_en;; *);;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: vehicle;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: bus;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: car;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: driver;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: tachograph;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: motorcycle;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: trailer;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: wheeled_tractor;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: self_propelled;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: warning_triangle;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: passenger;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: moped;;
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_inclusion: vehicle_chassis;;
+
+chapter_7_other_elements_of_the_design_of_the_vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://chapter_7_other_elements_of_the_design_of_the_vehicle.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;	
+		
+chapter_7_other_elements_of_the_design_of_the_vehicle <= nrel_strict_inclusion: malfunction;;

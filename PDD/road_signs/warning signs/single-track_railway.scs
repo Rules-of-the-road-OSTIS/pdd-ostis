@@ -1,0 +1,29 @@
+sc_node_not_relation -> singletrack_railway;;
+      
+singletrack_railway => nrel_main_idtf: [однопутная железная дорога] (* <- lang_ru;; *);;
+singletrack_railway => nrel_main_idtf: [single-track railway] (* <- lang_en;; *);;
+
+singletrack_railway <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://singletrack_railway.png";;
+                                *);; 
+                *);;
+				
+singletrack_railway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Знак, указывающий приближение к месту переезда через железную дорогу с одним путем.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+*);;

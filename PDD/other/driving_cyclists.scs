@@ -1,0 +1,17 @@
+sc_node_not_relation -> driving_cyclists;;
+       
+driving_cyclists => nrel_main_idtf: [движение велосипедистов] (* <- lang_ru;; *);;
+
+driving_cyclists => nrel_main_idtf: [driving_cyclists] (* <- lang_en;; *);;
+
+driving_cyclists <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://driving_cyclists.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

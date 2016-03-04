@@ -1,0 +1,116 @@
+function proc_of_finding_net_profit(_subject) {
+  return _net_profit;
+  proc_of_finding_gross_profit(_subject, [assign, _gross_profit]);
+  proc_of_finding_tax_rate(_subject, [assign, _tax_rate]);
+  subtract([assign, _net_profit], _gross_profit, _tax_rate);
+  print(_net_profit);
+}
+
+function proc_of_finding_gross_profit(_subject) {
+  return _gross_profit;
+  proc_of_finding_incomings(_subject, [assign, _incomings]);
+  proc_of_finding_spendings(_subject, [assign, _spendings]);
+  subtract([assign, _gross_profit], _incomings, _spendings);
+}
+
+function proc_of_finding_incomings(_subject) {
+  return _incomings;
+  cont_assign([assign, _incomings], 0);
+  if(search(
+    _subject, 
+    [assign, _arc1], 
+    [assign, _incoming], 
+    [assign, _arc2], 
+    nrel_incoming,
+    [], [], 
+    [assign, _incomings_set], 
+    [], []
+  ))
+  proc_of_finding_sum(_incomings_set, [assign, _incomings]);
+}
+
+function proc_of_finding_spendings(_subject) {
+  return _spendings;
+  cont_assign([assign, _spendings], 0);
+  if(search(
+    _subject, 
+    [assign, _arc1], 
+    [assign, _spending], 
+    [assign, _arc2], 
+    nrel_spending,
+    [], [], 
+    [assign, _spendings_set], 
+    [], []
+  ))
+    proc_of_finding_sum(_spendings_set, [assign, _spendings]);
+}
+
+function proc_of_finding_tax_rate(_subject) {
+  return _tax_rate;
+  cont_assign([assign, _tax_rate], 0);
+  if(
+    search(
+      concept_tax, 
+      [assign, pos_const_perm, _arc], 
+      [assign, _tax], 
+      [], [], [assign, _taxes]
+    )
+  ) 
+    while(search(_taxes, [assign, _arc], [assign, _tax])) {
+      proc_of_finding_tax_rate_for_tax(_subject, _tax, [assign, _current_tax_rate]);
+      add(_tax_rate, _tax_rate, _current_tax_rate);
+      erase([erase, _arc]);
+    }
+}
+
+function proc_of_finding_sum(_set) {
+  return _sum;
+  cont_assign([assign, _sum], 0);
+  if(
+    search(
+      _set, 
+      [assign, _arc], 
+      [assign, _element], 
+      [], [], [assign, _copy]
+    )
+  ) 
+    while(search(_copy, [assign, _arc], [assign, _element])) {
+      add(_sum, _sum, _element);
+      erase([erase, _arc]);
+    }
+  erase([erase, _copy]);
+}
+
+function proc_of_finding_tax_rate_for_tax(_subject, _tax) {
+  return _tax_rate;
+  search(
+    _tax,
+    [assign, _arc1],
+    [assign, _pattern],
+    [assign, _arc2],
+    rrel_pattern
+  );
+  search(
+    _tax,
+    [assign, _arc1],
+    [assign, _subject_in_pattern],
+    [assign, _arc2],
+    rrel_subject
+  );
+  /*scs
+    parameters_set -> ... (*
+      -> rrel_1: rrel_scp_var: _subject_in_pattern;; 
+      -> rrel_2: rrel_scp_var: _subject;;
+    *);;
+  scs*/
+  sys_search(_pattern, [], parameters_set, [assign, _results]);
+  if(_results)
+    search(
+      _tax,
+      [assign, _arc1],
+      [assign, _tax_rate],
+      [assign, _arc2],
+      rrel_rate
+    );
+  else cont_assign([assign, _tax_rate], 0);
+}

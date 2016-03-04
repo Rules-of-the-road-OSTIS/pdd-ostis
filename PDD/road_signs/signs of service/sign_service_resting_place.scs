@@ -1,0 +1,32 @@
+sc_node_not_relation -> sign_service_resting_place;;
+sign_service_resting_place => nrel_main_idtf: 
+	[знак сервиса "Место отдыха"] (* <- lang_ru;; *);;
+sign_service_resting_place => nrel_main_idtf: 
+	[sign service "Resting-place"] (* <- lang_en;; *);;
+sign_service_resting_place <= nrel_using_constants:
+	{
+	stop_the_vehicle
+	};;
+sign_service_resting_place <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_resting_place.png";;
+                                *);; 
+                *);;
+sign_service_resting_place <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Место отдыха" информирует о расположении площадки для отдыха, что особенно важно на автомагистралях, где запрещена <sc_element sys_idtf="stop_the_vehicle"> остановка </sc_element> в иных местах.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

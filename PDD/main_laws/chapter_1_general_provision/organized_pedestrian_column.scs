@@ -1,0 +1,25 @@
+sc_node_not_relation -> organized_pedestrian_column;;
+
+organized_pedestrian_column => nrel_main_idtf: 	[организованная пешеходная колонна] (* <- lang_ru;; *);;
+
+organized_pedestrian_column => nrel_main_idtf: 	[organized pedestrian column] (* <- lang_en;; *);;
+organized_pedestrian_column <= nrel_using_constants:
+	{
+     pedestrian
+	};;
+
+
+organized_pedestrian_column <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Организованная пешеходная колонна</b> — группа <sc_element sys_idtf="pedestrian">пешеходов</sc_element>, обозначенная в соответствии с настоящими Правилами, имеющая руководителя и передвигающаяся по определенному маршруту.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+organized_pedestrian_column <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> item_171;;
+item_171 => nrel_main_idtf: [пункт 171] (* <- lang_ru;; *);;
+
+item_171 => nrel_main_idtf: [item 171] (* <- lang_en;; *);;
+
+item_171 <= nrel_using_constants:
+{
+vehicle;
+self_propelled;
+road;
+heavy_and_or_large_vehicles;
+motor_vehicle;
+children;
+passenger
+};;
+
+item_171 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>171. Маячок оранжевого цвета должен быть включен на:</p>
+<p>171.1. <sc_element sys_idtf="vehicle">транспортном средстве</sc_element>, <sc_element sys_idtf="self_propelled">самоходной машине</sc_element> при выполнении ремонтных и других работ на <sc_element sys_idtf="road">дороге</sc_element>;</p>
+<p>171.2. <sc_element sys_idtf="vehicle">транспортном средстве</sc_element>, перевозящем опасные грузы, <sc_element sys_idtf="heavy_and_or_large_vehicles">тяжеловесном и (или) крупногабаритном транспортном средстве</sc_element>;</p>
+<p>171.3. <sc_element sys_idtf="motor_vehicle">механическом транспортном средстве</sc_element>, осуществляющем сопровождение при перевозке тяжеловесных и (или) крупногабаритных грузов;</p>
+<p>171.4. <sc_element sys_idtf="motor_vehicle">механическом транспортном средстве</sc_element>, специально предназначенном для транспортировки поврежденных и неисправных <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, при их погрузке, транспортировке и выгрузке;</p>
+<p>171.5. <sc_element sys_idtf="motor_vehicle">механическом транспортном средстве</sc_element>, специально предназначенном в соответствии с требованиями технических нормативных правовых актов для подвоза групп <sc_element sys_idtf="children">детей</sc_element> в учреждения образования, при посадке и высадке <sc_element sys_idtf="passenger">пассажиров</sc_element>;</p>
+<p>171.6. <sc_element sys_idtf="self_propelled">самоходной машине</sc_element> при ее движении по <sc_element sys_idtf="road">дороге</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

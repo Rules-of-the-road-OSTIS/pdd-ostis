@@ -1,0 +1,27 @@
+sc_node_not_relation -> traffic_safety;;
+
+traffic_safety => nrel_main_idtf: [безопасность дорожного движения] (* <- lang_ru;; *);;
+
+traffic_safety => nrel_main_idtf: [traffic safety] (* <- lang_en;; *);;
+traffic_safety <= nrel_using_constants:
+	{
+     traffic;
+     danger_to_traffic;
+     traffic_accident
+
+	};;
+
+traffic_safety <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Безопасность дорожного движения</b> — состояние <sc_element sys_idtf="traffic">дорожного движения</sc_element>, обеспечивающее минимальную вероятность возникновения <sc_element sys_idtf="danger_to_traffic">опасности для движения</sc_element> и <sc_element sys_idtf="traffic_accident">дорожно-транспортного происшествия</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+traffic_safety <= nrel_strict_inclusion: chapter_1_general_provision;;

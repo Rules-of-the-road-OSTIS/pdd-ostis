@@ -1,0 +1,32 @@
+sc_node_not_relation -> no_parking;;
+      
+no_parking => nrel_main_idtf: [стоянка запрещена] (* <- lang_ru;; *);;
+
+no_parking => nrel_main_idtf: [no parking] (* <- lang_en;; *);;
+no_parking <= nrel_using_constants:
+{
+vehicle
+};;
+no_parking <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://no_parking.png";;
+                                *);; 
+                *);;
+no_parking <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается стоянка всех <sc_element sys_idtf="vehicle">транспортных средств</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

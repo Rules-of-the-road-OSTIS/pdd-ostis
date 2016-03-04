@@ -1,0 +1,35 @@
+sc_node_not_relation -> length_limit;;
+    
+length_limit => nrel_main_idtf: [ограничение длины] (* <- lang_ru;; *);;
+
+length_limit => nrel_main_idtf: [length limit] (* <- lang_en;; *);;
+length_limit <= nrel_using_constants:
+{
+vehicle;
+road_train
+};;
+length_limit <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://length_limit.png";
+                                                "file://length_limit2.png";;
+                                *);; 
+                *);;
+length_limit <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение <sc_element sys_idtf="vehicle">транспортных средств</sc_element> (<sc_element sys_idtf="road_train">автопоездов</sc_element>), габаритная длина которых (с грузом или без груза) больше указанной на знаке.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

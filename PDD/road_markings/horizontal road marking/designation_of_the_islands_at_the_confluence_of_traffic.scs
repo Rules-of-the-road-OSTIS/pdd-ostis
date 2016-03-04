@@ -1,0 +1,32 @@
+sc_node_not_relation -> designation_of_the_islands_at_the_confluence_of_traffic;;
+
+designation_of_the_islands_at_the_confluence_of_traffic => nrel_main_idtf: 
+	[обозначение островков в местах слияния транспортных потоков] (* <- lang_ru;; *);;
+
+designation_of_the_islands_at_the_confluence_of_traffic => nrel_main_idtf: 
+	[designation of the islands at the confluence of traffic] (* <- lang_en;; *);;
+
+designation_of_the_islands_at_the_confluence_of_traffic <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение островков в местах слияния транспортных потоков.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_the_islands_at_the_confluence_of_traffic <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_the_islands_at_the_confluence_of_traffic.png";;
+                                *);; 
+                *);;

@@ -1,0 +1,32 @@
+sc_node_not_relation -> kilometer_mark;;
+kilometer_mark => nrel_main_idtf: 
+	[километровый знак] (* <- lang_ru;; *);;
+kilometer_mark => nrel_main_idtf: 
+	[kilometer mark] (* <- lang_en;; *);;
+kilometer_mark <= nrel_using_constants:
+	{
+	road
+	};;
+kilometer_mark <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://kilometer_mark.png";;
+                                *);; 
+                *);;
+kilometer_mark <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Расстояние от начала <sc_element sys_idtf="road"> дороги </sc_element>(км).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

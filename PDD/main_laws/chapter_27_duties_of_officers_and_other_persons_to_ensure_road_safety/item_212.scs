@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_212;;
+
+item_212 => nrel_main_idtf: [пункт 212] (* <- lang_ru;; *);;
+
+item_212 => nrel_main_idtf: [item_212] (* <- lang_en;; *);;
+
+item_212 <= nrel_using_constants:
+	{
+	traffic_safety;
+	traffic_accident
+	};;
+
+item_212 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>Дорожно-эксплуатационные и коммунальные службы должны принимать незамедлительные меры по ликвидации последствий, возникших на дороге в результате чрезвычайных и иных ситуаций, снижающих <sc_element sys_idtf="traffic_safety">безопасность дорожного движения</sc_element>, а также по эвакуации транспортных средств, поврежденных в результате <sc_element sys_idtf="traffic_accident">дорожно-транспортных происшествий</sc_element>. Органы и подразделения по чрезвычайным ситуациям участвуют в ликвидации чрезвычайных ситуаций, возникших на дороге в результате дорожно-транспортных происшествий.</p>
+]  
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

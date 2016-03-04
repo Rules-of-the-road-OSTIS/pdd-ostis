@@ -1,0 +1,33 @@
+sc_node_not_relation -> direction_indicator;;        
+direction_indicator => nrel_main_idtf: 
+	[указатель направления] (* <- lang_ru;; *);;
+direction_indicator => nrel_main_idtf: 
+	[direction indicator] (* <- lang_en;; *);;
+direction_indicator <= nrel_using_constants:
+	{
+	traffic;
+	locality
+	};;
+direction_indicator <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://direction_indicator.png";;
+                                *);; 
+                *);;
+direction_indicator <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+                        [Направление <sc_element sys_idtf="traffic">движения</sc_element> к <sc_element sys_idtf="locality">населенным пунктам</sc_element> или другим объектам.]						
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

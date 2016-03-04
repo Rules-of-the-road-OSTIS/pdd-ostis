@@ -1,0 +1,38 @@
+sc_node_not_relation -> overtaking_trucks_prohibited;;
+       
+overtaking_trucks_prohibited => nrel_main_idtf: [обгон грузовым автомобилям запрещён] (* <- lang_ru;; *);;
+
+overtaking_trucks_prohibited => nrel_main_idtf: [overtaking trucks prohibited] (* <- lang_en;; *);;
+overtaking_trucks_prohibited <= nrel_using_constants:
+{
+overtaking;
+vehicle;
+bicycle;
+wheeled_tractor;
+self_propelled;
+horse_drawn_vehicle
+};;
+overtaking_trucks_prohibited<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://overtaking_trucks_prohibited.png";;
+                                *);; 
+                *);;
+overtaking_trucks_prohibited 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Грузовым автомобилям с технически допустимой общей массой более 3,5 тонны запрещается <sc_element sys_idtf="overtaking">обгон</sc_element> <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, кроме одиночных, движущихся со скоростью менее 30 км/ч. <sc_element sys_idtf="wheeled_tractor">Колесным тракторам</sc_element> и <sc_element sys_idtf="self_propelled">самоходным машинам</sc_element> запрещается <sc_element sys_idtf="overtaking">обгон</sc_element> <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, кроме одиночных <sc_element sys_idtf="bicycle">велосипедов</sc_element>, <sc_element sys_idtf="horse_drawn_vehicle">гужевых транспортных средств</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,32 @@
+sc_node_not_relation -> road_number;;
+road_number => nrel_main_idtf: 
+	[номер дороги] (* <- lang_ru;; *);;
+road_number => nrel_main_idtf: 
+	[road number] (* <- lang_en;; *);;
+road_number <= nrel_using_constants:
+	{
+	road
+	};;
+road_number <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://road_number.png";;
+                                *);; 
+                *);;
+road_number <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Номер <sc_element sys_idtf="road"> дороги </sc_element>, на которой установлен данный знак..]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,45 @@
+sc_node_not_relation -> intersection;;
+
+intersection => nrel_main_idtf: 	[перекресток] (* <- lang_ru;; *);;
+
+intersection => nrel_main_idtf: 	[intersection] (* <- lang_en;; *);;
+intersection <= nrel_using_constants:
+	{
+     road;
+     roadway;
+     bike_lane;
+     footpath;
+     track_riders
+	};;
+
+
+intersection <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Перекресток</b> — место пересечения, примыкания или разветвления <sc_element sys_idtf="road">дорог</sc_element> на одном уровне. Граница перекрестка определяется воображаемыми линиями, соединяющими соответственно противоположные, наиболее удаленные от центра перекрестка начала закруглений <sc_element sys_idtf="roadway">проезжих частей дорог</sc_element>. Не являются перекрестками пересечения с <sc_element sys_idtf="bike_lane">велосипедными</sc_element>, <sc_element sys_idtf="footpath">пешеходными дорожками</sc_element> и <sc_element sys_idtf="track_riders">дорожками для всадников</sc_element>. <p>А вот место примыкания выезда с <sc_element sys_idtf="adjacent_territory">прилегающей территории</sc_element> или пересечение с ними перекрестком не является.</p>
+<p>Перекрестки делятся на регулируемые и нерегулируемые. Если очередность движения через перекресток определяется <sc_element sys_idtf="adjuster">регулировщиком</sc_element> или регулируется <sc_element sys_idtf="traffic_light">светофорами</sc_element>, такой перекресток называется регулируемым.
+Также перекрестки бывают <sc_element sys_idtf="designated_intersection">обозначенными</sc_element> и необозначенными.</p>
+<p>Как определить границы перекрестка? Если смотреть от центра перекрестка на дороги, выходящие на него, и соединить наиболее удаленные от центра начала закруглений проезжих частей этих дорог, то как раз и получим ограниченную ими территорию перекрестка.</p>
+<p>Вот примеры определения площади наиболее распространенных конфигураций перекрестков:</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+intersection <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://intersection1.jpg";			
+						"file://intersection2.jpg";
+						"file://intersection3.jpg";;
+                                *);; 
+                *);;
+intersection <= nrel_strict_inclusion: chapter_1_general_provision;;

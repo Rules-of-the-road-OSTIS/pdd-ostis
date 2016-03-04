@@ -1,0 +1,39 @@
+sc_node_not_relation -> recommended_speed;;
+
+recommended_speed => nrel_main_idtf: 
+	[рекомендуемая скорость] (* <- lang_ru;; *);;
+
+recommended_speed => nrel_main_idtf: 
+	[recommended speed] (* <- lang_en;; *);;
+
+recommended_speed <= nrel_using_constants:
+	{
+	road
+	};;
+
+recommended_speed <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://recommended_speed.png";;
+                                *);; 
+                *);;
+
+recommended_speed <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Скорость, с которой рекомендуется движение на данном участке <sc_element sys_idtf="road"> дороги </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+		

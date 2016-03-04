@@ -1,0 +1,28 @@
+sc_node_not_relation -> forced_to_stop_the_vehicle;;
+
+forced_to_stop_the_vehicle => nrel_main_idtf: 	[вынужденная остановка транспортного средства] (* <- lang_ru;; *);;
+
+forced_to_stop_the_vehicle => nrel_main_idtf: 	[forced to stop the vehicle] (* <- lang_en;; *);;
+
+forced_to_stop_the_vehicle <= nrel_using_constants:
+	{
+	vehicle;
+	road_user;
+	driver;
+	passenger
+	};;
+
+forced_to_stop_the_vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Вынужденная остановка транспортного средства</b> — прекращение движения <sc_element sys_idtf="vehicle">транспортного средства</sc_element> из-за его технической неисправности или опасности, создаваемой <sc_element sys_idtf="road_user">участниками дорожного движения</sc_element>, перевозимым грузом, состоянием <sc_element sys_idtf="driver">водителя</sc_element> (<sc_element sys_idtf="passenger">пассажира</sc_element>), появлением объекта, препятствующего дорожному движению.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+forced_to_stop_the_vehicle <= nrel_strict_inclusion: chapter_1_general_provision;;

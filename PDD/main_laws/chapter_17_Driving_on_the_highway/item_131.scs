@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_131;;
+
+item_131 => nrel_main_idtf: [пункт 131] (* <- lang_ru;; *);;
+
+item_131 => nrel_main_idtf: [item 131] (* <- lang_en;; *);;
+
+item_131 <= nrel_using_constants:
+	{
+	pedestrian;
+	vehicle;
+	dividing_line
+	};;
+
+item_131 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> Автомагистраль обозначается дорожным знаком «Автомагистраль». На автомагистралях запрещается:</p>
+					 <p>1) движение <sc_element sys_idtf="pedestrian">пешеходов</sc_element>, гужевых <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, всадников, погонщиков скота, движение на велосипедах, мопедах, колесных тракторах, самоходных машинах и <sc_element sys_idtf="vehicle">транспортных средствах</sc_element>, которые по техническим причинам не могут развивать скорость движения более 40 км/ч;</p>
+					 <p>2) остановка <sc_element sys_idtf="vehicle">транспортных средств</sc_element> вне площадок для стоянки, обозначенных дорожными знаками «Место стоянки», «Место отдыха»;</p>
+					 <p>3) разворот и въезд в разрывы <sc_element sys_idtf="dividing_line">разделительной полосы</sc_element>, за исключением мест, обозначенных дорожными знаками «Место для разворота», «Зона для разворота»;</p>
+					 <p>4) движение задним ходом;</p>
+					 <p>5) буксировка механического <sc_element sys_idtf="vehicle">транспортного средства</sc_element> (при его эвакуации необходимо покинуть автомагистраль на ближайшем съезде с нее);</p>
+					 <p>6) обучение управлению механическим <sc_element sys_idtf="vehicle">транспортным средством</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

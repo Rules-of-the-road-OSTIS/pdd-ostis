@@ -1,0 +1,12 @@
+concepst_crossroads _-> .._test_crossroad;;
+.._test_crossroad
+=> nrel_main_idtf: [перекресток B] (* <- lang_ru;; *);;
+.._test_crossroad _-> rrel_traffic_regulation: .._trafficlight(* <- concept_trafficlight;; *);;
+.._trafficlight _=> rrel_acsess: concepst_direct;;
+.._test_crossroad _-> rrel_traffic_regulation: .._man(* <- concept_boy;; *);;
+.._man _=> rrel_acsess: concepst_left;;
+.._man _=> rrel_acsess: concepst_back;;
+.._test_crossroad _-> rrel_sign_priority: .._test_sign;;
+.._test_crossroad _-> rrel_sign_priority: .._test2_sign;;
+.._test_crossroad _-> rrel_current: .._car1;;
+.._test_crossroad _-> rrel_left: .._car2;;

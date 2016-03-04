@@ -1,0 +1,7 @@
+sc_node_not_relation -> security;;
+       
+security => nrel_main_idtf: [Безопасность] (* <- lang_ru;; *);;
+
+security => nrel_main_idtf: [security] (* <- lang_en;; *);;
+		
+

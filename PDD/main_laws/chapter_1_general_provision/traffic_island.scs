@@ -1,0 +1,40 @@
+sc_node_not_relation -> traffic_island;;
+
+traffic_island => nrel_main_idtf: 	[островок безопасности] (* <- lang_ru;; *);;
+
+traffic_island => nrel_main_idtf: 	[traffic island] (* <- lang_en;; *);;
+traffic_island <= nrel_using_constants:
+	{
+     technical_means_of_traffic;
+     crosswalk;
+     roadway;
+     pedestrian;
+     dividing_line;
+     horizontal_road_marking
+	};;
+
+
+traffic_island <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+                 (*
+					-> rrel_example:
+					 [<b>Островок безопасности</b> — <sc_element sys_idtf="technical_means_of_traffic">техническое средство организации дорожного движения</sc_element> на наземных <sc_element sys_idtf="crosswalk">пешеходных переходах</sc_element> (если не определено иное, далее — пешеходный переход), конструктивно выделенное над <sc_element sys_idtf="roadway">проезжей частью дороги</sc_element> и предназначенное как защитный элемент для остановки <sc_element sys_idtf="pedestrian">пешеходов</sc_element> при переходе проезжей части дороги. К островку безопасности относится участок <sc_element sys_idtf="dividing_line">разделительной полосы</sc_element>, через которую проходит пешеходный переход. В случаях, определенных Министром внутренних дел, допускается обозначение островков безопасности при помощи линий <sc_element sys_idtf="horizontal_road_marking">горизонтальной дорожной разметки</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+traffic_island <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://traffic_island.jpg";;
+                                *);; 
+                *);;
+traffic_island <= nrel_strict_inclusion: chapter_1_general_provision;;

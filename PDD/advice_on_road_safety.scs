@@ -1,0 +1,19 @@
+sc_node_not_relation -> advice_on_road_safety;;
+       
+advice_on_road_safety => nrel_main_idtf: [Рекомендации по обеспечению безопасности дорожного движения
+] (* <- lang_ru;; *);;
+
+advice_on_road_safety => nrel_main_idtf: [advice_on_road_safety] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://advice_on_road_safety.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+		
+

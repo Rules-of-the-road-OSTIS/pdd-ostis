@@ -1,0 +1,17 @@
+sc_node_not_relation -> list_of_required_documents;;
+
+list_of_required_documents => nrel_main_idtf: [Перечень необходимых документов] (* <- lang_ru;; *);;
+
+list_of_required_documents => nrel_main_idtf: [list_of_required_documents] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://list_of_required_documents.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+list_of_required_documents <= nrel_strict_inclusion: inspection;;

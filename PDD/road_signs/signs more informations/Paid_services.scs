@@ -1,0 +1,26 @@
+sc_node_not_relation -> Paid_services;;
+Paid_services => nrel_main_idtf: [Платные услуги] (* <- lang_ru;; *);;
+Paid_services => nrel_main_idtf: [Paid services] (* <- lang_en;; *);;
+Paid_services <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Paid_services.png";;
+                                *);; 
+                *);;
+Paid_services 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Платные услуги.</b>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

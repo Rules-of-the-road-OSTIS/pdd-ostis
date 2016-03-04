@@ -1,0 +1,17 @@
+sc_node_not_relation -> article_18.16;;
+
+article_18.16 => nrel_main_idtf: [статья 18.16] (* <- lang_ru;; *);;
+
+article_18.16 => nrel_main_idtf: [article_18.16] (* <- lang_en;; *);;
+
+article_18.16 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://article_18.16.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

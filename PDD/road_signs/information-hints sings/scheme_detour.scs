@@ -1,0 +1,32 @@
+sc_node_not_relation -> scheme_detour;;
+scheme_detour => nrel_main_idtf: 
+	[схема объезда] (* <- lang_ru;; *);;
+scheme_detour => nrel_main_idtf: 
+	[scheme detour] (* <- lang_en;; *);;
+scheme_detour <= nrel_using_constants:
+	{
+	traffic
+	};;
+scheme_detour <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://scheme_detour.png";;
+                                *);; 
+                *);;
+scheme_detour <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Маршрут объезда участка дороги, временно закрытого для <sc_element sys_idtf="traffic"> движения </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

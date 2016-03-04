@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_102;;
+item_102 => nrel_main_idtf: [пункт 102] (* <- lang_ru;; *);;
+
+item_102 => nrel_main_idtf: [item 102] (* <- lang_en;; *);;
+
+item_102 <= nrel_using_constants:
+{
+adjuster;
+intersection
+};;
+
+item_102 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>102. <sc_element sys_idtf="intersection"> Перекресток </sc_element> , на котором очередность движения определяется сигналами <sc_element sys_idtf="adjuster"> регулировщика </sc_element> или светофора, является регулируемым.</p>
+<p>При желтом мигающем сигнале светофора, неработающих светофорах и отсутствии <sc_element sys_idtf="adjuster"> регулировщика </sc_element> <sc_element sys_idtf="intersection"> перекресток </sc_element> является нерегулируемым и водители обязаны руководствоваться правилами проезда нерегулируемых <sc_element sys_idtf="intersection"> перекрестков </sc_element> и дорожными знаками приоритета. Светофоры считаются неработающими, если отсутствуют сигналы одновременно во всех светофорах данного направления либо сигналы противоречат друг другу.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

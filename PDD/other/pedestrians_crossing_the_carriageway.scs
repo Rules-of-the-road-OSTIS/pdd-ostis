@@ -1,0 +1,17 @@
+sc_node_not_relation -> pedestrians_crossing_the_carriageway;;
+       
+pedestrians_crossing_the_carriageway => nrel_main_idtf: [пересечение пешеходами проезжей части дороги] (* <- lang_ru;; *);;
+
+pedestrians_crossing_the_carriageway => nrel_main_idtf: [pedestrians_crossing_the_carriageway] (* <- lang_en;; *);;
+
+pedestrians_crossing_the_carriageway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://pedestrians_crossing_the_carriageway.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

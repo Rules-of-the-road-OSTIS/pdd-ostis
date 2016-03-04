@@ -1,0 +1,30 @@
+sc_node_not_relation -> item_173;;
+item_173 => nrel_main_idtf: [пункт 173] (* <- lang_ru;; *);;
+
+item_173 => nrel_main_idtf: [item 173] (* <- lang_en;; *);;
+
+item_173 <= nrel_using_constants:
+{
+overtaking;
+driver;
+horse_drawn_vehicle;
+road;
+the_dark;
+the_lack_of_visibility_of_the_road;
+limited_view_of_the_road
+};;
+
+item_173 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>173. Для предупреждения об <sc_element sys_idtf="overtaking">обгоне</sc_element> вместо звукового сигнала (или совместно с ним) может подаваться световой сигнал, который представляет собой в светлое время суток периодическое кратковременное включение и выключение света фар, а в <sc_element sys_idtf="the_dark">темное время суток</sc_element> — периодическое переключение фар с ближнего света на дальний.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

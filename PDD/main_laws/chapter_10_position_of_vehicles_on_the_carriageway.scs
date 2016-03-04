@@ -1,0 +1,66 @@
+sc_node_not_relation -> chapter_10_position_of_vehicles_on_the_carriageway;;
+        
+chapter_10_position_of_vehicles_on_the_carriageway => nrel_main_idtf: [Глава 10. Расположение транспортных средств на проезжей части дороги] (* <- lang_ru;; *);;
+
+chapter_10_position_of_vehicles_on_the_carriageway => nrel_main_idtf: [Chapter 10. Position of vehicles on the carriageway] (* <- lang_en;; *);;
+
+chapter_10_position_of_vehicles_on_the_carriageway <= nrel_section_decomposition:
+	{
+        	item_75
+		(*
+		=> nrel_section_base_order: 
+			item_76;;
+		*);
+		item_76
+		(*
+		=> nrel_section_base_order: 
+			item_77;;
+		*);
+		item_77
+		(*
+		=> nrel_section_base_order: 
+			item_78;;
+		*);
+		item_78
+		(*
+		=> nrel_section_base_order: 
+			item_79;;
+		*);
+		item_79
+		(*
+		=> nrel_section_base_order: 
+			item_80;;
+		*);
+		item_80
+		(*
+		=> nrel_section_base_order: 
+			item_81;;
+		*);
+		item_81
+		(*
+		=> nrel_section_base_order: 
+			item_82;;
+		*);
+		item_82
+		(*
+		=> nrel_section_base_order: 
+			item_83;;
+		*);
+		item_83
+		(*
+		=> nrel_section_base_order: 
+			item_84;;
+		*);
+		item_84
+		(*
+		=> nrel_section_base_order: 
+			item_85;;
+		*);
+		item_85
+		(*
+		=> nrel_section_base_order: 
+			item_86;;
+		*);
+		item_86
+
+	};;

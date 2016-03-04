@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_118;;
+item_118 => nrel_main_idtf: [пункт 118] (* <- lang_ru;; *);;
+
+item_118 => nrel_main_idtf: [item 118] (* <- lang_en;; *);;
+
+item_118 <= nrel_using_constants:
+{
+crosswalk;
+forced_to_stop_the_vehicle
+};;
+
+item_118 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>118. Водителю запрещается въезжать на <sc_element sys_idtf="crosswalk">пешеходный переход</sc_element>, если образовался затор, который вынудит его <sc_element sys_idtf="forced_to_stop_the_vehicle">остановиться</sc_element> на <sc_element sys_idtf="crosswalk">пешеходном переходе</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

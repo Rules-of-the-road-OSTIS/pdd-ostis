@@ -1,0 +1,6 @@
+sc_node_not_relation -> patterns;;
+
+patterns => nrel_main_idtf: [Запросы] (* <- lang_ru;; *);;
+
+patterns => nrel_main_idtf: [patterns] (* <- lang_en;; *);;
+

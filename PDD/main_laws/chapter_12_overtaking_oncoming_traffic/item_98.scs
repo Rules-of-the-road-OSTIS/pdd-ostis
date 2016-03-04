@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_98;;
+item_98 => nrel_main_idtf: [пункт 98] (* <- lang_ru;; *);;
+
+item_98 => nrel_main_idtf: [item 98] (* <- lang_en;; *);;
+
+item_98 <= nrel_using_constants:
+{
+vehicle;
+obstacle_to_traffic;
+give_way_do_not_have_the_benefits
+};;
+
+item_98 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>98. Если встречный разъезд <sc_element sys_idtf="vehicle"> транспортных средств </sc_element> затруднен, то водитель, на стороне которого имеется <sc_element sys_idtf="obstacle_to_traffic"> препятствие дл¤ дорожного движения </sc_element>, обязан <sc_element sys_idtf="give_way_do_not_have_the_benefits"> уступить дорогу </sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

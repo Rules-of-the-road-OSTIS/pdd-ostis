@@ -1,0 +1,38 @@
+sc_node_not_relation -> designation_of_lanes_within_an_intersection;;
+
+designation_of_lanes_within_an_intersection => nrel_main_idtf: 
+	[обозначение полос движения в пределах перекрестка] (* <- lang_ru;; *);;
+
+designation_of_lanes_within_an_intersection => nrel_main_idtf: 
+	[designation of lanes within an intersection] (* <- lang_en;; *);;
+
+designation_of_lanes_within_an_intersection <= nrel_using_constants:
+	{
+	traffic_lane;
+	intersection
+	};;
+
+designation_of_lanes_within_an_intersection <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение <sc_element sys_idtf="traffic_lane">полос движения</sc_element> в пределах <sc_element sys_idtf="intersection">перекрестка</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_lanes_within_an_intersection <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_lanes_within_an_intersection.png";;
+                                *);; 
+                *);;

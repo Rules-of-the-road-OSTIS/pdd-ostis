@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_22;;
+
+item_22 => nrel_main_idtf: [пункт 22] (* <- lang_ru;; *);;
+
+item_22 => nrel_main_idtf: [item 22] (* <- lang_en;; *);;
+item_22 <= nrel_using_constants:
+	{
+	children;
+	pavement;
+	bike_lane;
+	footpath;
+	vehicle
+	};;
+
+item_22 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [Группы <sc_element sys_idtf="children">детей</sc_element> разрешается водить только по <sc_element sys_idtf="pavement">тротуарам</sc_element>, <sc_element sys_idtf="footpath">пешеходным</sc_element> и <sc_element sys_idtf="bike_lane">велосипедным дорожкам</sc_element>, а при их отсутствии — по обочинам навстречу движению <sc_element sys_idtf="vehicle">транспортных средств</sc_element> и только в светлое время суток. При этом их передвижение осуществляется колонной не более чем по двое детей в ряд в сопровождении совершеннолетних из расчета не менее одного сопровождающего на двадцать детей.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+item_22 <= nrel_strict_inclusion: chapter_4_rights_and_responsibilities_of_pedestrians;;

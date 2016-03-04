@@ -1,0 +1,41 @@
+sc_node_not_relation -> chapter_4_rights_and_responsibilities_of_pedestrians;;
+        
+chapter_4_rights_and_responsibilities_of_pedestrians => nrel_main_idtf: [Глава 4. Права и обязанности пешеходов] (* <- lang_ru;; *);;
+
+chapter_4_rights_and_responsibilities_of_pedestrians => nrel_main_idtf: [Chapter 4. Rights and responsibilities of pedestrians] (* <- lang_en;; *);;
+
+chapter_4_rights_and_responsibilities_of_pedestrians <= nrel_section_decomposition:
+	{
+        	item_16
+		(*
+		=> nrel_section_base_order: 
+			item_17;;
+		*);
+		item_17
+		(*
+		=> nrel_section_base_order: 
+			item_18;;
+		*);
+		item_18
+		(*
+		=> nrel_section_base_order: 
+			item_19;;
+		*);
+		item_19
+		(*
+		=> nrel_section_base_order: 
+			item_20;;
+		*);
+		item_20
+		(*
+		=> nrel_section_base_order: 
+			item_21;;
+		*);
+		item_21
+		(*
+		=> nrel_section_base_order: 
+			item_22;;
+		*);
+		item_22
+
+	};;

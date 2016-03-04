@@ -1,0 +1,17 @@
+sc_node_not_relation -> dates_of_the_TRP;;
+
+dates_of_the_TRP => nrel_main_idtf: [Сроки проведения  ГТО] (* <- lang_ru;; *);;
+
+dates_of_the_TRP => nrel_main_idtf: [dates_of_the_TRP] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://dates_of_the_TRP.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+dates_of_the_TRP <= nrel_strict_inclusion: inspection;;

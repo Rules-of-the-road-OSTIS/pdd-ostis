@@ -1,0 +1,38 @@
+sc_node_not_relation -> the_image_on_the_carriageway_of_a_road_sign_children;;
+
+the_image_on_the_carriageway_of_a_road_sign_children => nrel_main_idtf: 
+	[изображение на проезжей части дороги дорожного знака "Дети"] (* <- lang_ru;; *);;
+
+the_image_on_the_carriageway_of_a_road_sign_children => nrel_main_idtf: 
+	[the image on the carriageway of a road sign "Children"] (* <- lang_en;; *);;
+
+the_image_on_the_carriageway_of_a_road_sign_children <= nrel_using_constants:
+	{
+	roadway;
+	children
+	};;
+	
+the_image_on_the_carriageway_of_a_road_sign_children <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Изображение на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> дорожного знака "<sc_element sys_idtf="children">Дети</sc_element>".]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+the_image_on_the_carriageway_of_a_road_sign_children <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_image_on_the_carriageway_of_a_road_sign_children.png";;
+                                *);; 
+                *);;

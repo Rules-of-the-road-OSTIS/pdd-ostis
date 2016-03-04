@@ -1,0 +1,33 @@
+sc_node_not_relation -> lane;;
+lane => nrel_main_idtf: 
+	[дорога с односторонним движением] (* <- lang_ru;; *);;
+lane => nrel_main_idtf: 
+	[lane] (* <- lang_en;; *);;
+lane <= nrel_using_constants:
+	{
+	road;
+	traffic
+	};;
+lane <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://lane.png";;
+                                *);; 
+                *);;
+lane <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<sc_element sys_idtf="road">Дорога </sc_element> или конструктивно отделенная проезжая часть <sc_element sys_idtf="road"> дороги </sc_element>, по которой <sc_element sys_idtf="traffic"> движение </sc_element> транспортных средств по всей ширине осуществляется в одном направлении.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,6 @@
+sc_node_not_relation -> classification_and_causes_of_accidents;;
+       
+classification_and_causes_of_accidents => nrel_main_idtf: [классификация и причины ДТП] (* <- lang_ru;; *);;
+
+classification_and_causes_of_accidents => nrel_main_idtf: [classification_and_causes_of_accidents] (* <- lang_en;; *);;
+

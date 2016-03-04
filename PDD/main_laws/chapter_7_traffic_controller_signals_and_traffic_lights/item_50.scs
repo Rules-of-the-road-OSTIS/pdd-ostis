@@ -1,0 +1,32 @@
+sc_node_not_relation -> item_50;;
+
+item_50 => nrel_main_idtf: [пункт 50] (* <- lang_ru;; *);;
+
+item_50 => nrel_main_idtf: [item 50] (* <- lang_en;; *);;
+item_50 <= nrel_using_constants:
+	{
+	driver;
+	pedestrian;
+	roadway;
+	traffic_island
+	};;
+
+item_50 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>При поднятии регулировщиком руки вверх или включении желтого сигнала светофора:</p>
+<p>1)<sc_element sys_idtf="driver">водителям</sc_element>, которые не могут остановиться, не прибегая к экстренному торможению, в местах, определенных пунктами 48 и 49 настоящих Правил, разрешается дальнейшее движение;</p>
+<p>2)<sc_element sys_idtf="pedestrian">пешеходам</sc_element>, находящимся на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>, разрешается продолжить движение в том же направлении до <sc_element sys_idtf="traffic_island">островка безопасности</sc_element> (при его наличии) или завершить переход проезжей части дороги (при отсутствии островка безопасности);</p>
+<p>3)пешеходам запрещается:</p>
+<p>3.1)выходить на проезжую часть дороги;</p>
+<p>3.2)покидать островок безопасности.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

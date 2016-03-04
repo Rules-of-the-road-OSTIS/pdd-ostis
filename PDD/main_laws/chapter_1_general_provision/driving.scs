@@ -1,0 +1,27 @@
+sc_node_not_relation -> driving;;
+
+driving => nrel_main_idtf: 	[управление транспортным средством] (* <- lang_ru;; *);;
+
+driving => nrel_main_idtf: 	[driving] (* <- lang_en;; *);;
+driving <= nrel_using_constants:
+	{
+     vehicle
+	};;
+
+
+driving <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><b>Управление транспортным средством</b> — воздействие на органы управления <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, приведшее к изменению его положения относительно первоначального.</p>
+<p>Лицо, обучаемое управлению механическим транспортным средством (сдающее квалификационный практический экзамен на право управления механическим транспортным средством), не является ни водителем, ни пассажиром, и выделяется в самостоятельную группу участников дорожного движения.</p>
+<p>Документом, подтверждающим право управления механическим транспортным средством, является <sc_element sys_idtf="vehicle">водительское удостоверение</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+driving <= nrel_strict_inclusion: chapter_1_general_provision;;

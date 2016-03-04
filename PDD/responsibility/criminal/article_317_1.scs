@@ -1,0 +1,18 @@
+sc_node_not_relation -> article_317_1;;
+
+article_317_1 => nrel_main_idtf: [статья 317.1] (* <- lang_ru;; *);;
+
+article_317_1 => nrel_main_idtf: [article_317_1] (* <- lang_en;; *);;
+
+article_317_1 <= nrel_inclusion: driving_in_drunk_state;;
+
+article_317_1 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://article_317_1.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;

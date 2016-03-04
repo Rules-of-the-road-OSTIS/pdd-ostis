@@ -1,0 +1,30 @@
+sc_node_not_relation -> chapter_11_speed_of_vehicles;;
+        
+chapter_11_speed_of_vehicles => nrel_main_idtf: [Глава 11. Скорость движения транспортных средств] (* <- lang_ru;; *);;
+
+chapter_11_speed_of_vehicles => nrel_main_idtf: [Chapter 11. Speed of vehicles] (* <- lang_en;; *);;
+chapter_11_speed_of_vehicles <= nrel_section_decomposition:
+	{
+        	item_87
+		(*
+		=> nrel_section_base_order: 
+			item_88;;
+		*);
+		item_88
+		(*
+		=> nrel_section_base_order: 
+			item_89;;
+		*);
+		item_89
+		(*
+		=> nrel_section_base_order: 
+			item_90;;
+		*);
+		item_90
+		(*
+		=> nrel_section_base_order: 
+			item_91;;
+		*);
+		item_91
+
+	};;

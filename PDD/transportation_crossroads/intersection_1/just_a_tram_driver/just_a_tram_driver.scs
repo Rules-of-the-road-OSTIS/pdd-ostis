@@ -1,0 +1,21 @@
+sc_node_not_relation -> just_a_tram_driver;;
+
+just_a_tram_driver => nrel_main_idtf: [Только водителю трамвая] (* <- lang_ru;; *);;
+
+just_a_tram_driver => nrel_main_idtf: [just_a_tram_driver] (* <- lang_en;; *);;
+just_a_tram_driver <= nrel_inclusion: sign_main_road;;
+just_a_tram_driver <= nrel_inclusion: give_way;;
+just_a_tram_driver <= nrel_inclusion: traffic_light;;
+
+just_a_tram_driver <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://just_a_tram_driver.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+
+just_a_tram_driver <= nrel_strict_inclusion: intersection_1;;

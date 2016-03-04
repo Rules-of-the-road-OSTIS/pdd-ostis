@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_155;;
+item_155 => nrel_main_idtf: [пункт 155] (* <- lang_ru;; *);;
+
+item_155 => nrel_main_idtf: [item 155] (* <- lang_en;; *);;
+
+item_155 <= nrel_using_constants:
+{
+driver;
+moped;
+pavement;
+bike_lane;
+footpath;
+track_riders
+};;
+
+item_155 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>155. <sc_element sys_idtf="driver">Водителю</sc_element> <sc_element sys_idtf="moped">мопеда</sc_element> запрещается ездить по <sc_element sys_idtf="pavement">тротуарам</sc_element>, <sc_element sys_idtf="bike_lane">велосипедным</sc_element> и <sc_element sys_idtf="footpath">пешеходным</sc_element> дорожкам, <sc_element sys_idtf="track_riders">дорожкам для всадников</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

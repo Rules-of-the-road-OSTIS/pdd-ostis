@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_71;;
+
+item_71 => nrel_main_idtf: [пункт 71] (* <- lang_ru;; *);;
+
+item_71 => nrel_main_idtf: [item 71] (* <- lang_en;; *);;
+
+item_71 <= nrel_using_constants:
+	{
+	driver;
+	vehicle;
+	road
+	};;
+
+item_71 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> При наличии в месте въезда на дорогу полосы разгона <sc_element sys_idtf="driver"> водитель</sc_element> должен двигаться по ней и перестраиваться на соседнюю полосу движения, уступая дорогу <sc_element sys_idtf="vehicle"> транспортным средствам</sc_element>, движущимся по этой <sc_element sys_idtf="road"> дороге</sc_element>.<\p>
+					 
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

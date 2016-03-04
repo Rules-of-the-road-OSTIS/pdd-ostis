@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_120;;
+item_120 => nrel_main_idtf: [пункт 120] (* <- lang_ru;; *);;
+
+item_120 => nrel_main_idtf: [item 120] (* <- lang_en;; *);;
+
+item_120 <= nrel_using_constants:
+{
+route_vehicles;
+traffic;
+roadway;
+give_way_do_not_have_the_benefits;
+pedestrian;
+stop_the_vehicle
+};;
+
+item_120 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>120. Водитель должен <sc_element sys_idtf="stop_the_vehicle">остановиться</sc_element>, <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступив дорогу</sc_element> <sc_element sys_idtf="pedestrian">пешеходам</sc_element>, идущим к стоящему на остановочном пункте <sc_element sys_idtf="route_vehicles">маршрутному транспортному средству</sc_element> либо от него (со стороны дверей), если посадка (высадка) пассажиров производится с <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> или с посадочной площадки, расположенной на ней. Начинать <sc_element sys_idtf="traffic">движение</sc_element> разрешается только после закрытия дверей <sc_element sys_idtf="route_vehicles">маршрутного транспортного средства</sc_element> и выключения на нем аварийной световой сигнализации (светового указателя правого поворота).</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,67 @@
+sc_node_not_relation -> warning_signs;;
+     
+warning_signs => nrel_main_idtf: [Предупреждающий знак] (* <- lang_ru;; *);;
+
+warning_signs => nrel_main_idtf: [Warning signs] (* <- lang_en;; *);;
+
+warning_signs <= nrel_using_constants:
+	{
+	driver;
+	road
+	};;
+
+warning_signs <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Информируют <sc_element sys_idtf="driver">водителей</sc_element> о приближении к опасному участку <sc_element sys_idtf="road">дороги</sc_element>, движение по которому требует принятия мер, соответствующих дорожной обстановке.]
+
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+warning_signs <= nrel_section_decomposition:
+{
+	approach_to_the_railway_crossing;
+	crosswalk_ahead;
+	crosswind;
+	dangerous_roadside;
+	dangerous_turn;
+	dangerous_turns;
+	direction_of_rotation;
+	emergency_and_dangerous_plot;
+	emission_of_rubble;
+	end_of_the_road_with_improved_surface;
+	falling_stones;
+	humps;
+	icecrusted_ground;
+	intersection_with_the_bike_path;
+	intersection_with_the_roundabout;
+	intersection_with_the_tram_line;
+	leaving_the_quay;
+	level_crossing_with_barrier;
+	level_crossing_without_barrier;
+	lowflying_aircraft;
+	multipath_railroad;
+	other_hazards;
+	road_congestion;
+	road_narrows;
+	roadworks;
+	rough_road;
+	rough_road_1;
+	rough_road_2;
+	seasonal_migration_of_amphibians;
+	sign_children;
+	singletrack_railway;
+	slippery_road;
+	steep_climb;
+	steep_descent;
+	swing_bridge_or_ferry;
+	traffic_signalization;
+	transhumance;
+	wild_animals
+};; 

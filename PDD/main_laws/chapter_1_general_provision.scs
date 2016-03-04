@@ -1,0 +1,21 @@
+sc_node_not_relation -> chapter_1_general_provision;;
+        
+chapter_1_general_provision => nrel_main_idtf: [Глава 1. Общие положения] (* <- lang_ru;; *);;
+
+chapter_1_general_provision => nrel_main_idtf: [chapter_1_general_provision] (* <- lang_en;; *);;
+
+chapter_1_general_provision <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Первая глава Правил представляет собой краткий толковый словарь терминов и определений, встречающихся в последующих главах ПДД.</b>]
+
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

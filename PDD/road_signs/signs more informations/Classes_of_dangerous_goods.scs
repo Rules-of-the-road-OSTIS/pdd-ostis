@@ -1,0 +1,26 @@
+sc_node_not_relation -> Classes_of_dangerous_goods;;
+Classes_of_dangerous_goods => nrel_main_idtf:[Класс опасного груза] (* <- lang_ru;; *);;
+Classes_of_dangerous_goods => nrel_main_idtf:[Classes of dangerous goods] (* <- lang_en;; *);;
+Classes_of_dangerous_goods <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Classes_of_dangerous_goods.png";;
+                                *);; 
+                *);;
+Classes_of_dangerous_goods 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> указывает номер класса опасного груза, с которым движение транспортных средств запрещено.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

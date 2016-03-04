@@ -1,0 +1,26 @@
+sc_node_not_relation -> bicycle;;
+
+bicycle => nrel_main_idtf: [велосипед, веломобиль] (* <- lang_ru;; *);;
+
+bicycle => nrel_main_idtf: [bicycle, recumbent] (* <- lang_en;; *);;
+bicycle <= nrel_using_constants:
+	{
+    vehicle
+	};;
+
+bicycle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [</p><b>Велосипед, веломобиль</b> — <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, за исключением инвалидных колясок, приводимое в движение мускульной силой человека (людей), находящегося на (в) нем.</p>
+<p>Следует помнить, что велосипеды с подвесным двигателем согласно Правилам не относятся к термину «велосипед».</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+bicycle <= nrel_strict_inclusion: chapter_1_general_provision;;
+bicycle <= nrel_strict_inclusion: types_of_vehicles;;

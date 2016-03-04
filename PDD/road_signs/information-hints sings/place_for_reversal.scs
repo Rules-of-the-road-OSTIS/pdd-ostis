@@ -1,0 +1,30 @@
+sc_node_not_relation -> place_for_reversal;;
+place_for_reversal => nrel_main_idtf: 
+	[место для разворота.] (* <- lang_ru;; *);;
+place_for_reversal => nrel_main_idtf: 
+	[place for reversal] (* <- lang_en;; *);;
+place_for_reversal <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://place_for_reversal.png";;
+                                *);; 
+                *);;
+place_for_reversal <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+							[Разрешает разворот в указанном месте.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+		
+		

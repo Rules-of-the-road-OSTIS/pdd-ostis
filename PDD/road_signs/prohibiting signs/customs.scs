@@ -1,0 +1,29 @@
+sc_node_not_relation -> customs;;
+ 
+customs => nrel_main_idtf: [таможня] (* <- lang_ru;; *);;
+
+customs => nrel_main_idtf: [customs] (* <- lang_en;; *);;
+
+customs <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://customs.png";;
+                                *);; 
+                *);;
+customs 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается проезд без остановки у таможни (контрольного пункта). Разрешение на дальнейшее движение дает работник таможни (контрольного пункта).] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

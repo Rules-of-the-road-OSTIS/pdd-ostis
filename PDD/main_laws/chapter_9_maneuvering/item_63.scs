@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_63;;
+
+item_63 => nrel_main_idtf: [пункт 63] (* <- lang_ru;; *);;
+
+item_63 => nrel_main_idtf: [item 63] (* <- lang_en;; *);;
+
+item_63 <= nrel_using_constants:
+	{
+road_users;
+roadway;
+driver
+	};;
+
+item_63 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> Перед разворотом, поворотом налево или направо <sc_element sys_idtf="driver">водитель</sc_element> обязан, не создавая препятствия и опасности для движения других <sc_element sys_idtf="road_users"участников дорожного движения</sc_element> , занять соответствующее крайнее положение на <sc_elements sys_idtf="roadway" >проезжей части дороги</sc_element>, предназначенной для движения в данном направлении, кроме случаев, когда поворот при въезде на перекресток и выезде с него совершается в тех местах, где организовано круговое движение, а также в местах, где направление движения по roadway проезжей части дороги (перекрестку) определено дорожными знаками и (или) горизонтальной дорожной разметкой.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

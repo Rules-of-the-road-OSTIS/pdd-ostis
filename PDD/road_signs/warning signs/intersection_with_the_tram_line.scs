@@ -1,0 +1,29 @@
+sc_node_not_relation -> intersection_with_the_tram_line;;
+        
+intersection_with_the_tram_line => nrel_main_idtf: [пересечение с трамвайной линией] (* <- lang_ru;; *);;
+intersection_with_the_tram_line => nrel_main_idtf: [intersection with the tram line] (* <- lang_en;; *);;
+
+intersection_with_the_tram_line <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://intersection_with_the_tram_line.png";;
+                                *);; 
+                *);;
+				
+intersection_with_the_tram_line <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предупреждает о приближении к пересечению с трамвайной линией.]
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

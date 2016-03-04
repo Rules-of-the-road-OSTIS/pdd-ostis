@@ -1,0 +1,17 @@
+sc_node_not_relation -> an_area_in_which_you_can_move_out;;
+       
+an_area_in_which_you_can_move_out => nrel_main_idtf: [территория на которую можно съехать] (* <- lang_ru;; *);;
+
+an_area_in_which_you_can_move_out => nrel_main_idtf: [an_area_in_which_you_can_move_out] (* <- lang_en;; *);;
+
+an_area_in_which_you_can_move_out <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://an_area_in_which_you_can_move_out.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

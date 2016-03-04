@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_209;;
+
+item_209 => nrel_main_idtf: [пункт 209] (* <- lang_ru;; *);;
+
+item_209 => nrel_main_idtf: [item_209] (* <- lang_en;; *);;
+
+item_209 <= nrel_using_constants:
+	{
+	traffic;
+	railroad_crossing;
+	technical_means_of_traffic;
+	road
+	};;
+
+item_209 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>Должностные и иные лица, ответственные за эксплуатацию <sc_element sys_idtf="road">дорог</sc_element>, дорожных сооружений, <sc_element sys_idtf="railroad_crossing">железнодорожных переездов</sc_element> и <sc_element sys_idtf="technical_means_of_traffic">технических средств организации дорожного движения</sc_element>, обязаны:</p>
+<p>209.1. содержать дороги, дорожные сооружения, железнодорожные переезды и технические средства организации дорожного движения в соответствии с требованиями технических нормативных правовых актов в состоянии, безопасном для <sc_element sys_idtf="traffic">дорожного движения</sc_element>;</p>
+<p>209.2. своевременно принимать меры к ограничению или запрещению движения транспортных средств по дорогам или их отдельным участкам с предварительным информированием ГАИ.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

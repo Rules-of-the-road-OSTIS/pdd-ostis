@@ -1,0 +1,18 @@
+sc_node_not_relation -> administrative;;
+       
+administrative => nrel_main_idtf: [административная] (* <- lang_ru;; *);;
+
+administrative => nrel_main_idtf: [administrative] (* <- lang_en;; *);;
+
+administrative <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://administrative.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+		
+administrative <= nrel_strict_inclusion: responsibility;;

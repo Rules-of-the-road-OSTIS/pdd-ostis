@@ -1,0 +1,27 @@
+sc_node_not_relation -> Days_of_the_week;;
+Days_of_the_week => nrel_main_idtf:[Дни недели] (* <- lang_ru;; *);;
+Days_of_the_week => nrel_main_idtf:[Days of the week] (* <- lang_en;; *);;
+Days_of_the_week <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Days_of_the_week.png";;
+                                *);; 
+                *);;
+Days_of_the_week 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  указывает дни недели, в течение которых действует знак.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+		Days_of_the_week <= nrel_strict_inclusion: signs_more_informations;;

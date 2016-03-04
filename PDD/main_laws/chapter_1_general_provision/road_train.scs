@@ -1,0 +1,39 @@
+sc_node_not_relation -> road_train;;
+
+road_train => nrel_main_idtf: 	[автопоезд] (* <- lang_ru;; *);;
+road_train => nrel_main_idtf: 	[road train] (* <- lang_en;; *);;
+road_train <= nrel_using_constants:
+	{
+     vehicle;
+     car;
+     wheeled_tractorss;
+     trailer
+	};;
+
+
+road_train <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Автопоезд</b> — состав <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, состоящий из <sc_element sys_idtf="car">автомобиля</sc_element> (<sc_element sys_idtf="wheeled_tractor">колесного трактора</sc_element>) и буксируемого им <sc_element sys_idtf="trailer">прицепа</sc_element>, прицепа-роспуска, полуприцепа (если не указано иное, далее — прицеп).
+<p>Состав транспортных средств, состоящий из буксирующего и буксируемого механических транспортных средств, не является автопоездом.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+road_train <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://road_train.jpg";;
+                                *);; 
+                *);;
+road_train <= nrel_strict_inclusion: chapter_1_general_provision;;
+road_train <= nrel_strict_inclusion: types_of_vehicles;;

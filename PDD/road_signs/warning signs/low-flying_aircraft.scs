@@ -1,0 +1,34 @@
+sc_node_not_relation -> lowflying_aircraft;;
+        
+lowflying_aircraft => nrel_main_idtf: [низколетящие самолеты] (* <- lang_ru;; *);;
+lowflying_aircraft => nrel_main_idtf: [low-flying aircraft] (* <- lang_en;; *);;
+
+lowflying_aircraft <= nrel_using_constants:
+	{
+	road
+	};;
+
+lowflying_aircraft <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://lowflying_aircraft.png";;
+                                *);; 
+                *);;
+				
+lowflying_aircraft <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element> вблизи аэродромов либо над которым пролетают самолеты или вертолеты на небольшой высоте.]
+                         (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

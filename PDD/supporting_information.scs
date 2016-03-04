@@ -1,0 +1,7 @@
+sc_node_not_relation -> supporting_information;;
+       
+supporting_information => nrel_main_idtf: [Вспомогательная информация] (* <- lang_ru;; *);;
+
+supporting_information => nrel_main_idtf: [supporting information] (* <- lang_en;; *);;
+
+

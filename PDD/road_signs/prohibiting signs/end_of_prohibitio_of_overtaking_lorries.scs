@@ -1,0 +1,29 @@
+sc_node_not_relation -> end_of_prohibition_of_overtaking_lorries;;
+
+end_of_prohibition_of_overtaking_lorries => nrel_main_idtf: [конец зоны запрещения обгона грузовым автомобилям] (* <- lang_ru;; *);;
+
+end_of_prohibition_of_overtaking_lorries => nrel_main_idtf: [end of prohibition of overtaking lorries] (* <- lang_en;; *);;
+
+end_of_prohibition_of_overtaking_lorries <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://end_of_prohibition_of_overtaking_lorries.png";;
+                                *);; 
+                *);;
+end_of_prohibition_of_overtaking_lorries 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Отменяет действие знака "обгон грузовым автомобилям запрещён".] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

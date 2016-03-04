@@ -1,0 +1,8 @@
+sc_node_not_relation -> vehicle_operational_use_not_performance;;
+
+vehicle_operational_use_not_performance => nrel_main_idtf: 	[транспортное средство оперативного назначения не при исполнении] (* <- lang_ru;; *);;
+
+vehicle_operational_use_not_performance => nrel_main_idtf: 	[vehicle operational use not performance] (* <- lang_en;; *);;
+
+vehicle_operational_use_not_performance <= nrel_strict_inclusion: vehicle_operational_use;;
+vehicle_operational_use_not_performance <= nrel_strict_inclusion: types_of_vehicles;;

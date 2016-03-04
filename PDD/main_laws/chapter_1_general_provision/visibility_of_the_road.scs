@@ -1,0 +1,29 @@
+sc_node_not_relation -> visibility_of_the_road;;
+
+visibility_of_the_road => nrel_main_idtf: 	[видимость дороги] (* <- lang_ru;; *);;
+
+visibility_of_the_road => nrel_main_idtf: 	[visibility of the road] (* <- lang_en;; *);;
+visibility_of_the_road <= nrel_using_constants:
+	{
+     driver;
+     elements_of_the_road;
+     technical_means_of_traffic;
+     vehicle;
+     view_of_the_road
+
+	};;
+
+visibility_of_the_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Видимость дороги</b> — максимальное расстояние в направлении движения, на котором с места <sc_element sys_idtf="driver">водителя</sc_element> можно распознать <sc_element sys_idtf="elements_of_the_road">элементы дороги</sc_element> и <sc_element sys_idtf="technical_means_of_traffic">технические средства организации дорожного движения</sc_element> перед <sc_element sys_idtf="vehicle">транспортным средством</sc_element> и правильно ориентироваться при управлении им.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+visibility_of_the_road <= nrel_strict_inclusion: chapter_1_general_provision;;

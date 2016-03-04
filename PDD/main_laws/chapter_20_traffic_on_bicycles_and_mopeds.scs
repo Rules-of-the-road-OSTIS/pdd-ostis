@@ -1,0 +1,50 @@
+sc_node_not_relation -> chapter_20_traffic_on_bicycles_and_mopeds;;
+        
+chapter_20_traffic_on_bicycles_and_mopeds => nrel_main_idtf: [Глава 20. Движение на велосипедах и мопедах] (* <- lang_ru;; *);;
+
+chapter_20_traffic_on_bicycles_and_mopeds => nrel_main_idtf: [Chapter 20. Traffic on bicycles and mopeds] (* <- lang_en;; *);;
+chapter_20_traffic_on_bicycles_and_mopeds <= nrel_section_decomposition:
+	{
+        	item_148
+		(*
+		=> nrel_section_base_order: 
+			item_149;;
+		*);
+		item_149
+		(*
+		=> nrel_section_base_order: 
+			item_150;;
+		*);
+		item_150
+		(*
+		=> nrel_section_base_order: 
+			item_151;;
+		*);
+		item_151
+		(*
+		=> nrel_section_base_order: 
+			item_152;;
+		*);
+		item_152
+		(*
+		=> nrel_section_base_order: 
+			item_153;;
+		*);
+		item_153
+		(*
+		=> nrel_section_base_order: 
+			item_154;;
+		*);
+		item_154
+		(*
+		=> nrel_section_base_order: 
+			item_155;;
+		*);
+		item_155
+		(*
+		=> nrel_section_base_order: 
+			item_156;;
+		*);
+		item_156
+
+	};;

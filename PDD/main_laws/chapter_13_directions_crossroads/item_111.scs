@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_111;;
+item_111 => nrel_main_idtf: [пункт 111] (* <- lang_ru;; *);;
+
+item_111 => nrel_main_idtf: [item 111] (* <- lang_en;; *);;
+
+item_111 <= nrel_using_constants:
+{
+intersection;
+vehicle;
+give_way_do_not_have_the_benefits;
+road;
+tram
+};;
+
+item_111 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>111. При повороте налево или развороте водитель <sc_element sys_idtf="vehicle">транспортного средства</sc_element> обязан <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> встречным <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, движущимся по равнозначной <sc_element sys_idtf="road">дороге</sc_element> прямо или направо, и попутному <sc_element sys_idtf="tram">трамваю</sc_element>. Этим же правилом должны руководствоваться между собой водители <sc_element sys_idtf="tram">трамваев</sc_element>. При одновременном праве на движение водители <sc_element sys_idtf="tram">трамваев</sc_element> имеют преимущество перед другими <sc_element sys_idtf="vehicle">транспортными средствами</sc_element> (кроме <sc_element sys_idtf="tram">трамваев</sc_element>) независимо от направления их движения.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

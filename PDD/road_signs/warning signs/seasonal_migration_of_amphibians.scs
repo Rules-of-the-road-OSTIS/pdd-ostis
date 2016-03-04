@@ -1,0 +1,35 @@
+sc_node_not_relation -> seasonal_migration_of_amphibians;;
+       
+seasonal_migration_of_amphibians => nrel_main_idtf: [сезонные миграции земноводных] (* <- lang_ru;; *);;
+seasonal_migration_of_amphibians => nrel_main_idtf: [seasonal migration of amphibians] (* <- lang_en;; *);;
+
+seasonal_migration_of_amphibians <= nrel_using_constants:
+	{
+	roadway;
+	road
+	};;
+
+seasonal_migration_of_amphibians <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://seasonal_migration_of_amphibians.png";;
+                                *);; 
+                *);;
+				
+seasonal_migration_of_amphibians <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+					-> rrel_example:
+				[Участок <sc_element sys_idtf="road">дороги</sc_element>, на котором возможны массовые появления земноводных на <sc_element sys_idtf="roadway">проезжей части</sc_element>.]
+				(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+				*);;

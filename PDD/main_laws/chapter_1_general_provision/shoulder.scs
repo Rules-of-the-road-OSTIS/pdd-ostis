@@ -1,0 +1,38 @@
+sc_node_not_relation -> shoulder;;
+
+shoulder => nrel_main_idtf: 	[обочина] (* <- lang_ru;; *);;
+
+shoulder => nrel_main_idtf: 	[shoulder] (* <- lang_en;; *);;
+shoulder <= nrel_using_constants:
+	{
+     marking_the_edge_of_the_carriageway;
+     roadway;
+     vehicle
+	};;
+
+
+shoulder <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Обочина</b> — выделенный конструктивно или <sc_element sys_idtf="marking_the_edge_of_the_carriageway">сплошной линией</sc_element> горизонтальной дорожной разметки элемент дороги, примыкающий непосредственно к внешнему краю <sc_element sys_idtf="roadway">проезжей части</sc_element>, расположенный с ней на одном уровне и не предназначенный для движения <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, кроме случаев, предусмотренных настоящими Правилами. Роль технической полосы, предназначенной для вывода за пределы проезжей части дороги неисправных транспортных средств, движения пешеходов и велосипедистов при отсутствии на дороге элементов, предназначенных для их движения, движения гужевых и прочих транспортных средств в случаях, оговоренных в Правилах, отводится <sc_element sys_idtf="shoulder">обочине</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+shoulder <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://shoulder.jpg";;
+                                *);; 
+                *);;
+shoulder <= nrel_strict_inclusion: chapter_1_general_provision;;

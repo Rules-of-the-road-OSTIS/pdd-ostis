@@ -1,0 +1,21 @@
+sc_node_not_relation -> contradiction_permanent_and_temporary_signs;;
+
+contradiction_permanent_and_temporary_signs => nrel_main_idtf: [противоречие постоянного и временного знаков] (* <- lang_ru;; *);;
+
+contradiction_permanent_and_temporary_signs => nrel_main_idtf: [contradiction_permanent_and_temporary_signs] (* <- lang_en;; *);;
+contradiction_permanent_and_temporary_signs <= nrel_inclusion: road_user;;
+contradiction_permanent_and_temporary_signs <= nrel_inclusion: road;;
+contradiction_permanent_and_temporary_signs <= nrel_inclusion: temporary_signs;;
+contradiction_permanent_and_temporary_signs <= nrel_inclusion: permanent_signs;;
+
+contradiction_permanent_and_temporary_signs <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://contradiction_permanent_and_temporary_signs.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+contradiction_permanent_and_temporary_signs <= nrel_strict_inclusion: contradiction;;

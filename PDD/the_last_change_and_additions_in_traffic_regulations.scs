@@ -1,0 +1,17 @@
+sc_node_not_relation -> the_last_change_and_additions_in_traffic_regulations;;
+        
+the_last_change_and_additions_in_traffic_regulations => nrel_main_idtf: [Последние изменения и дополнения в правилах дорожного движения] (* <- lang_ru;; *);;
+
+the_last_change_and_additions_in_traffic_regulations => nrel_main_idtf: [the_last_change_and_additions_in_traffic_regulations] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://the_last_change_and_additions_in_traffic_regulations.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

@@ -1,0 +1,35 @@
+sc_node_not_relation -> movement_of_cars;;
+
+movement_of_cars => nrel_main_idtf: [движение легковых автомобилей] (* <- lang_ru;; *);;
+movement_of_cars => nrel_main_idtf: [movement of cars] (* <- lang_en;; *);;
+
+movement_of_cars <= nrel_using_constants:
+	{
+	car;
+	motorcycle
+	};;
+
+movement_of_cars <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://movement_of_cars.png";;
+                                *);; 
+                *);;
+
+movement_of_cars <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>движение легковых автомобилей</b> - Разрешается движение только легковых <sc_element sys_idtf="car">автомобилей</sc_element> и <sc_element sys_idtf="motorcycle">мотоциклов</sc_element>.]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

@@ -1,0 +1,37 @@
+sc_node_not_relation -> designation_unregulated_pedestrian_crossing;;
+
+designation_unregulated_pedestrian_crossing => nrel_main_idtf: 
+	[обозначение нерегулируемого пешеходного перехода] (* <- lang_ru;; *);;
+
+designation_unregulated_pedestrian_crossing => nrel_main_idtf: 
+	[designation unregulated pedestrian crossing] (* <- lang_en;; *);;
+
+designation_unregulated_pedestrian_crossing <= nrel_using_constants:
+	{
+	crosswalk
+	};;
+
+designation_unregulated_pedestrian_crossing <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение нерегулируемого <sc_element sys_idtf="crosswalk">пешеходного перехода</sc_element> — «зебра».]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_unregulated_pedestrian_crossing <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_unregulated_pedestrian_crossing.png";;
+                                *);; 
+                *);;

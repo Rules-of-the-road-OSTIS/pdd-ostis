@@ -1,0 +1,34 @@
+sc_node_not_relation -> item_87;;
+
+item_87 => nrel_main_idtf: [пункт 87] (* <- lang_ru;; *);;
+
+item_87 => nrel_main_idtf: [item 87] (* <- lang_en;; *);;
+
+item_87 <= nrel_using_constants:
+	{
+road;
+organized_pedestrian_column;
+overtaking;
+driver;
+locality;
+vehicle
+
+	};;
+
+item_87 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> При выборе скорости движения <sc_element sys_idtf="driver"> водитель</sc_element>  должен учитывать ограничения скорости, установленные пунктами 88, 89 настоящих Правил и техническими средствами организации дорожного движения, а также интенсивность движения, <sc_element sys_idtf="view_of_the_road"> обзорность дороги</sc_element> , особенности и состояние <sc_element sys_idtf="vehicle"> транспортного средства</sc_element>  и перевозимого им груза, дорожные, погодные (метеорологические) условия и другие факторы, снижающие прозрачность атмосферы и влияющие на <sc_element sys_idtf="visibility_of_the_road"> видимость дороги</sc_element>  в направлении движения. При этом:<\p>
+					 <p>1) в <sc_element sys_idtf="the_dark"> темное время суток</sc_element>  и (или) при <sc_element sys_idtf="the_lack_of_visibility_of_the_road"> недостаточной видимости дороги</sc_element>  скорость движения должна позволять "sc_element sys_idtf=" driver"> водителю</sc_element>  остановить <sc_element sys_idtf="vehicle"> транспортное средство</sc_element>  в пределах видимости <sc_element sys_idtf="road"> дороги</sc_element>  в направлении движения; </p>
+					 <p>2)при возникновении <sc_element sys_idtf="obstacle_to_traffic"> oпрепятствия</sc_element>  или <sc_element sys_idtf="danger_to_traffic"> опасности для движения</sc_element> , которые <sc_element sys_idtf="driver"> водитель</sc_element>  в состоянии обнаружить, он обязан немедленно принять меры к снижению скорости движения, вплоть до <sc_element sys_idtf="stop_the_vehicle"> остановки транспортного средства</sc_element> . </p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

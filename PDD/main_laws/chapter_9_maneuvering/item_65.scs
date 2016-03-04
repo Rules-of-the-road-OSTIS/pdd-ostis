@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_65;;
+
+item_65 => nrel_main_idtf: [пункт 65] (* <- lang_ru;; *);;
+
+item_65 => nrel_main_idtf: [item 65] (* <- lang_en;; *);;
+
+item_65 <= nrel_using_constants:
+	{
+road_users;
+roadway;
+driver;
+tram;
+obstacle_to_traffic;
+vehicle
+	};;
+
+item_65 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> Поворот налево или направо должен осуществляться таким образом, чтобы при выезде с пересечения <sc_element sys_idtf="roadway">проезжей частей</sc_element>  дорог <sc_element sys_idtf="vehicle"> транспортное средство</sc_element>  не оказалось на встречной полосе движения:<\p>
+					 <p>1)при повороте налево <sc_element sys_idtf="vehicle"> транспортное средство</sc_element> должно двигаться как можно ближе к центру перекрестка, если дорожными знаками (горизонтальной дорожной разметкой) не предписан иной порядок движения, при этом поворачивающее налево встречное <sc_element sys_idtf="vehicle">транспортное средство</sc_element>   должно находиться справа; </p>
+					 <p>2)при повороте направо <sc_element sys_idtf="vehicle"> транспортное средство</sc_element> должно двигаться ближе к правому краю <sc_element sys_idtf="roadway"> проезжей части дороги</sc_element> , если дорожными знаками (горизонтальной дорожной разметкой) не предписан иной порядок движения. </p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

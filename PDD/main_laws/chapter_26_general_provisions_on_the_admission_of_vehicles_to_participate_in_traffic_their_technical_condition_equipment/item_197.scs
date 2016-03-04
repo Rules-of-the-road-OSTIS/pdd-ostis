@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_197;;
+
+item_197 => nrel_main_idtf: [пункт 197] (* <- lang_ru;; *);;
+
+item_197 => nrel_main_idtf: [item_197] (* <- lang_en;; *);;
+
+item_197 <= nrel_using_constants:
+	{
+	motor_vehicle;
+	tram;
+	trolleybus;
+	trailer
+	};;
+
+item_197 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>На <sc_element sys_idtf="motor_vehicle">механических транспортных средствах</sc_element> (кроме <sc_element sys_idtf="tram">трамваев</sc_element> и <sc_element sys_idtf="trolleybus">троллейбусов</sc_element>) и <sc_element sys_idtf="trailer">прицепах</sc_element> в предусмотренных местах должны быть установлены регистрационные знаки, соответствующие техническим нормативным правовым актам. При этом:</p>
+<p>197.1. запрещается установка регистрационных знаков, отличающихся от установленных образцов;</p>
+<p>197.2. на трамвай и троллейбус наносятся регистрационные номера, присваиваемые Министерством жилищно-коммунального хозяйства.</p>
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

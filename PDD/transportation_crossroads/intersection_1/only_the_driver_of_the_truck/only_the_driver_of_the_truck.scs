@@ -1,0 +1,18 @@
+sc_node_not_relation -> only_the_driver_of_the_truck;;
+
+only_the_driver_of_the_truck => nrel_main_idtf: [Только водителю грузового автомобиля] (* <- lang_ru;; *);;
+
+only_the_driver_of_the_truck => nrel_main_idtf: [only_the_driver_of_the_truck] (* <- lang_en;; *);;
+
+only_the_driver_of_the_truck <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://only_the_driver_of_the_truck.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+
+only_the_driver_of_the_truck <= nrel_strict_inclusion: intersection_1;;

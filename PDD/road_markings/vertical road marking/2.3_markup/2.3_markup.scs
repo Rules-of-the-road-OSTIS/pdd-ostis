@@ -1,0 +1,35 @@
+sc_node_not_relation -> 2.3_markup;;
+
+2.3_markup => nrel_main_idtf: [разметка 2.3] (* <- lang_ru;; *);;
+2.3_markup => nrel_main_idtf: [2.3 markup] (* <- lang_en;; *);;
+
+2.3_markup <= nrel_using_constants:
+	{
+	dividing_line;
+	traffic_island
+	};;
+
+2.3_markup <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Обозначает круглые тумбы, установленные на <sc_element sys_idtf="dividing_line">разделительных полосах</sc_element> или <sc_element sys_idtf="traffic_island">островках безопасности</sc_element>.]
+					(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+		
+2.3_markup <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://2.3_markup.png";;
+                                *);; 
+                *);;

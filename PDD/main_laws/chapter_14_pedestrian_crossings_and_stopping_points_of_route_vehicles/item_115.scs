@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_115;;
+item_115 => nrel_main_idtf: [пункт 115] (* <- lang_ru;; *);;
+
+item_115 => nrel_main_idtf: [item 115] (* <- lang_en;; *);;
+
+item_115 <= nrel_using_constants:
+{
+crosswalk;
+pedestrian;
+adjuster;
+roadway;
+give_way_do_not_have_the_benefits
+};;
+
+item_115 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>115. <sc_element sys_idtf="crosswalk">Пешеходный переход</sc_element>, на котором движение <sc_element sys_idtf="pedestrian">пешеходов</sc_element> через <sc_element sys_idtf="roadway">проезжую часть дороги</sc_element> регулируется <sc_element sys_idtf="adjuster">регулировщиком</sc_element> или светофором, называется регулируемым.</p>
+					  <p>На регулируемом <sc_element sys_idtf="crosswalk">пешеходном переходе</sc_element> при подаче разрешающего сигнала <sc_element sys_idtf="adjuster">регулировщиком</sc_element> или включении разрешающего сигнала светофора водитель должен <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="pedestrian">пешеходам</sc_element>, не закончившим переход <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

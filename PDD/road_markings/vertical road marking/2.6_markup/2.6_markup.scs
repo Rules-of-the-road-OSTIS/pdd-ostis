@@ -1,0 +1,34 @@
+sc_node_not_relation -> 2.6_markup;;
+
+2.6_markup => nrel_main_idtf: [разметка 2.6] (* <- lang_ru;; *);;
+2.6_markup => nrel_main_idtf: [2.6 markup] (* <- lang_en;; *);;
+
+2.6_markup <= nrel_using_constants:
+	{
+	traffic_island
+	};;
+
+2.6_markup <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Обозначает бордюры на опасных участках дороги и возвышающихся <sc_element sys_idtf="traffic_island">островках безопасности</sc_element>.]
+					 (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+2.6_markup <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+										 "file://2.6(1)_markup.png";
+                                         "file://2.6_markup.png";;
+                                *);; 
+                *);;

@@ -1,0 +1,33 @@
+sc_node_not_relation -> traffic_pattern;;
+traffic_pattern => nrel_main_idtf: 
+	[схема движения] (* <- lang_ru;; *);;
+traffic_pattern => nrel_main_idtf: 
+	[traffic pattern] (* <- lang_en;; *);;
+traffic_pattern <= nrel_using_constants:
+	{
+	intersection;
+	traffic
+	};;
+traffic_pattern <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://traffic_pattern.png";;
+                                *);; 
+                *);;
+traffic_pattern <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Маршрут <sc_element sys_idtf="traffic"> движения </sc_element> на <sc_element sys_idtf="intersection"> перекрестке </sc_element> в случае запрещения отдельных маневров, указание разрешенных направлений движения на перекрестке со сложной планировкой.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

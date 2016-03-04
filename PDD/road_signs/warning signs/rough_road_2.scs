@@ -1,0 +1,34 @@
+sc_node_not_relation -> rough_road_2;;
+        
+rough_road_2 => nrel_main_idtf: [неровная дорога] (* <- lang_ru;; *);;
+rough_road_2 => nrel_main_idtf: [rough road] (* <- lang_en;; *);;
+
+rough_road_2 <= nrel_using_constants:
+	{
+	road
+	};;
+
+rough_road_2 <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://rough_road2.png";;
+                                *);; 
+                *);;
+				
+rough_road_2 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element>, имеющий повреждения покрытия в виде отдельных выбоин, просадок.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

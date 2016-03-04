@@ -1,0 +1,33 @@
+sc_node_not_relation -> sign_floor_area;;
+sign_floor_area => nrel_main_idtf: 
+	[знак жилая зона] (* <- lang_ru;; *);;
+sign_floor_area => nrel_main_idtf: 
+	[sign floor area] (* <- lang_en;; *);;
+sign_floor_area <= nrel_using_constants:
+	{
+	floor_area;
+	traffic
+	};;
+sign_floor_area <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://sign_floor_area.png";;
+                                *);; 
+                *);;
+sign_floor_area <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак информирует о начале территории, на которой действуют специальные требования Правил, устанавливающие порядок <sc_element sys_idtf="traffic"> дорожного движения </sc_element> в <sc_element sys_idtf="floor_area"> жилых зонах </sc_element>.).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

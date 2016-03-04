@@ -1,0 +1,15 @@
+sc_node_not_relation -> to_regulate_the_movement_of_cyclists;;
+to_regulate_the_movement_of_cyclists => nrel_main_idtf: 
+	[для регулирования движения велосипедистов] (* <- lang_ru;; *);;
+to_regulate_the_movement_of_cyclists => nrel_main_idtf: 
+	[to regulate the movement of cyclists] (* <- lang_en;; *);;
+to_regulate_the_movement_of_cyclists <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://to_regulate_the_movement_of_cyclists.png";;
+                                *);; 
+                *);;

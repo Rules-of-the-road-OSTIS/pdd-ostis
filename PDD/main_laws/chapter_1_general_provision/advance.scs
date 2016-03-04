@@ -1,0 +1,35 @@
+sc_node_not_relation -> advance;;
+
+advance => nrel_main_idtf: 	[опережение] (* <- lang_ru;; *);;
+
+advance => nrel_main_idtf: 	[advance] (* <- lang_en;; *);;
+advance <= nrel_using_constants:
+	{
+    vehicle
+	};;
+
+
+advance <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Опережение</b> — движение <sc_element sys_idtf="vehicle">транспортного средства</sc_element> со скоростью, превышающей скорость попутно движущегося транспортного средства (транспортных средств).] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+advance <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://advance.jpg";;
+                                *);; 
+                *);;
+advance <= nrel_strict_inclusion: chapter_1_general_provision;;

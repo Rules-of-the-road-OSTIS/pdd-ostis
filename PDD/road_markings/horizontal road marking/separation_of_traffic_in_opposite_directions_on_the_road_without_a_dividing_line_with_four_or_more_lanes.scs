@@ -1,0 +1,38 @@
+sc_node_not_relation -> separation_of_traffic_in_opposite_directions_on_the_road_without_a_dividing_line_with_four_or_more_lanes;;
+
+separation_of_traffic_in_opposite_directions_on_the_road_without_a_dividing_line_with_four_or_more_lanes => nrel_main_idtf: 
+	[разделение транспортных потоков противоположных направлений на дорогах без разделительной полосы имеющих четыре и более полосы движения] (* <- lang_ru;; *);;
+
+separation_of_traffic_in_opposite_directions_on_the_road_without_a_dividing_line_with_four_or_more_lanes => nrel_main_idtf: 
+	[separation of traffic in opposite directions on the road without a dividing line with four or more lanes] (* <- lang_en;; *);;
+
+separation_of_traffic_in_opposite_directions_on_the_road_without_a_dividing_line_with_four_or_more_lanes <= nrel_using_constants:
+	{
+	road;
+	traffic_lane
+	};;
+	
+separation_of_traffic_in_opposite_directions_on_the_road_without_a_dividing_line_with_four_or_more_lanes <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Разделение транспортных потоков противоположных направлений на <sc_element sys_idtf="road">дорогах</sc_element> без разделительной полосы, имеющих четыре и более <sc_element sys_idtf="traffic_lane">полосы движения</sc_element> (может иметь желтый цвет).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+separation_of_traffic_in_opposite_directions_on_the_road_without_a_dividing_line_with_four_or_more_lanes <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://separation_of_traffic_in_opposite_directions_on_the_road_without_a_dividing_line_with_four_or_more_lanes.png";;
+                                *);; 
+                *);;

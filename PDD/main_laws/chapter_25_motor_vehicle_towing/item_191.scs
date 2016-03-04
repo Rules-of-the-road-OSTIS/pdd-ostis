@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_191;;
+
+item_191 => nrel_main_idtf: [пункт 191] (* <- lang_ru;; *);;
+
+item_191 => nrel_main_idtf: [item_191] (* <- lang_en;; *);;
+
+item_191 <= nrel_using_constants:
+	{
+	vehicle;
+	towing;
+	item_206
+	};;
+
+item_191 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[При буксировке с помощью гибкой сцепки расстояние между буксирующим и буксируемым транспортными средствами должно быть в пределах 4–6 метров, а при буксировке с помощью жесткой сцепки — не более 4 метров. Для обозначения гибких связующих звеньев применяются предупредительные устройства в соответствии с пунктом <sc_element sys_idtf="item_206">206</sc_element> настоящих Правил.
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

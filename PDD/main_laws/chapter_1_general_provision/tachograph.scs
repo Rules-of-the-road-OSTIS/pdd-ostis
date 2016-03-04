@@ -1,0 +1,36 @@
+sc_node_not_relation -> tachograph;;
+
+tachograph => nrel_main_idtf: 	[тахограф] (* <- lang_ru;; *);;
+
+tachograph => nrel_main_idtf: 	[tachograph] (* <- lang_en;; *);;
+tachograph <= nrel_using_constants:
+	{
+     vehicle;
+     driver
+	};;
+
+
+tachograph <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Тахограф</b> — оборудование, предназначенное для установки на <sc_element sys_idtf="vehicle">транспортных средствах</sc_element> в целях показания или регистрации в автоматическом или полуавтоматическом режиме данных о движении этих транспортных средств или об определенных периодах работы их <sc_element sys_idtf="driver">водителей</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+tachograph <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://tachograph.jpg";;
+                                *);; 
+                *);;
+tachograph <= nrel_strict_inclusion: chapter_1_general_provision;;

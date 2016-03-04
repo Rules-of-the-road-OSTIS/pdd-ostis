@@ -1,0 +1,30 @@
+sc_node_not_relation -> item_203;;
+
+item_203 => nrel_main_idtf: [пункт 203] (* <- lang_ru;; *);;
+
+item_203 => nrel_main_idtf: [item_203] (* <- lang_en;; *);;
+
+item_203 <= nrel_using_constants:
+	{
+	Invalid;
+	driver;
+	disabled;
+	doctor;
+	car
+	};;
+
+item_203 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[По желанию <sc_element sys_idtf="driver">водителя</sc_element> могут быть установлены опознавательные знаки:
+203.1. «<sc_element sys_idtf="disabled">Инвалид</sc_element>» — в виде квадрата желтого цвета со стороной 150 мм и с изображением символа дорожного знака «<sc_element sys_idtf="Invalid">Инвалиды</sc_element>» черного цвета — спереди и сзади механических транспортных средств, управляемых инвалидами І, ІІ группы, а также инвалидами ІІІ группы с нарушениями опорно-двигательного аппарата или перевозящих таких инвалидов;
+203.2. «<sc_element sys_idtf="doctor">Врач</sc_element>» — в виде квадрата синего цвета со стороной 140 мм с вписанным в него белым кругом диаметром 125 мм, на который нанесен зеленый крест (высота квадрата — 90 мм, ширина штриха — 25 мм), — спереди и сзади <sc_element sys_idtf="car">автомобилей</sc_element>, управляемых водителями-врачами.
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

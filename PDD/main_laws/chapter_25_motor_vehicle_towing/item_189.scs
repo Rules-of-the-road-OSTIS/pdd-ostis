@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_189;;
+
+item_189 => nrel_main_idtf: [пункт 189] (* <- lang_ru;; *);;
+
+item_189 => nrel_main_idtf: [item_189] (* <- lang_en;; *);;
+
+item_189 <= nrel_using_constants:
+	{
+	driver;
+	vehicle;
+	towing
+	};;
+
+item_189 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Буксировка при помощи сцепки должна осуществляться только при наличии <sc_element sys_idtf="driver">водителя</sc_element> за рулем буксируемого транспортного средства, кроме случая, когда конструкция жесткой сцепки обеспечивает движение буксируемого транспортного средства по траектории буксирующего.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

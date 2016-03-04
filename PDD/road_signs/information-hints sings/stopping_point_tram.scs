@@ -1,0 +1,32 @@
+sc_node_not_relation -> stopping_point_tram;;
+stopping_point_tram => nrel_main_idtf: 
+	[остановочный пункт трамвая] (* <- lang_ru;; *);;
+stopping_point_tram => nrel_main_idtf: 
+	[stopping point tram] (* <- lang_en;; *);;
+stopping_point_tram <= nrel_using_constants:
+	{
+	stop_the_vehicle
+	};;
+stopping_point_tram <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://stopping_point_tram.png";;
+                                *);; 
+                *);;
+stopping_point_tram <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак обозначает начало зоны <sc_element sys_idtf="stop_the_vehicle"> остановочного пункта </sc_element> трамвая.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

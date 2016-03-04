@@ -1,0 +1,43 @@
+sc_node_not_relation -> item_18;;
+
+item_18 => nrel_main_idtf: [пункт 18] (* <- lang_ru;; *);;
+
+item_18 => nrel_main_idtf: [item 18] (* <- lang_en;; *);;
+item_18 <= nrel_using_constants:
+	{
+	pedestrian;
+	roadway;
+	pavement;
+	footpath;
+	shoulder;
+	vehicle;
+	traffic_island;
+	separation_zone;
+	dividing_line;
+	traffic_lane;
+	view_of_the_road;
+	pedestrian_denied
+	};;
+
+item_18 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><sc_element sys_idtf="pedestrian">Пешеходу</sc_element> запрещается:</p>
+<p>1)двигаться по краю <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> при наличии <sc_element sys_idtf="pavement">тротуара</sc_element>, <sc_element sys_idtf="footpath">пешеходной</sc_element> или <sc_element sys_idtf="bike_lane">велосипедной дорожки</sc_element>, <sc_element sys_idtf="shoulder">обочины</sc_element>, по которым возможно движение пешеходов, за исключением случаев, указанных в пунктах 21 и 135 настоящих Правил;</p>
+<p>2)задерживаться и останавливаться на проезжей части дороги, в том числе на линии горизонтальной дорожной разметки, разделяющей встречные и попутные потоки <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, за исключением остановки на <sc_element sys_idtf="traffic_island">островках безопасности</sc_element>;</p>
+<p>3)переходить (пересекать) проезжую часть вне подземного, надземного, наземного <sc_element sys_idtf="crosswalk">пешеходных переходов</sc_element> на участке дороги:</p>
+<p>3.1)с <sc_element sys_idtf="separation_zone">разделительной зоной</sc_element>, <sc_element sys_idtf="dividing_line">разделительной полосой</sc_element>;</p>
+<p>3.2)с общим числом <sc_element sys_idtf="traffic_lane">полос движения</sc_element> шесть и более;</p>
+<p>3.3)где установлены дорожные ограждения;</p>
+<p>4)выходить на проезжую часть дороги из-за стоящего транспортного средства или иного объекта, ограничивающего <sc_element sys_idtf="view_of_the_road">обзорность дороги</sc_element> не убедившись в отсутствии приближающихся транспортных средств.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+item_18 <= nrel_strict_inclusion: chapter_4_rights_and_responsibilities_of_pedestrians;;

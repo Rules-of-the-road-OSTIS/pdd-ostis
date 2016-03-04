@@ -1,0 +1,35 @@
+sc_node_not_relation -> the_end_of_the_cycle_path;;
+
+the_end_of_the_cycle_path => nrel_main_idtf: [конец велосипедной дорожки] (* <- lang_ru;; *);;
+the_end_of_the_cycle_path => nrel_main_idtf: [the end of the cycle path] (* <- lang_en;; *);;
+
+the_end_of_the_cycle_path <= nrel_using_constants:
+	{
+	pedestrian
+	};;
+
+
+the_end_of_the_cycle_path <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_end_of_the_cycle_path.png";;
+                                *);; 
+                *);;
+
+the_end_of_the_cycle_path <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>конец велосипедной дорожки</b> - Конец зоны действия знака "велосипедная дорожка" На знак может быть дополнительно нанесен силуэт <sc_element sys_idtf="pedestrian">пешехода</sc_element>.]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

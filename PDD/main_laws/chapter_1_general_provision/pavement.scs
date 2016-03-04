@@ -1,0 +1,28 @@
+sc_node_not_relation -> pavement;;
+
+pavement => nrel_main_idtf: 	[тротуар] (* <- lang_ru;; *);;
+
+pavement => nrel_main_idtf: 	[pavement] (* <- lang_en;; *);;
+pavement <= nrel_using_constants:
+	{
+     elements_of_the_road;
+     pedestrian;
+     roadway
+	};;
+
+
+pavement <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Тротуар</b> — <sc_element sys_idtf="elements_of_the_road">элемент дороги</sc_element>, примыкающий к <sc_element sys_idtf="roadway">проезжей части</sc_element> или отделенный от нее газоном, предназначенный для движения <sc_element sys_idtf="pedestrian">пешеходов</sc_element> и велосипедистов в соответствии с настоящими Правилами.Роль технической полосы, предназначенной для вывода за пределы проезжей части дороги неисправных транспортных средств, движения пешеходов и велосипедистов при отсутствии на дороге элементов, предназначенных для их движения, движения гужевых и прочих транспортных средств в случаях, оговоренных в Правилах, отводится <sc_element sys_idtf="shoulder">обочине</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+pavement <= nrel_strict_inclusion: chapter_1_general_provision;;

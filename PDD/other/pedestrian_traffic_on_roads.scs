@@ -1,0 +1,17 @@
+sc_node_not_relation -> pedestrian_traffic_on_roads;;
+       
+pedestrian_traffic_on_roads => nrel_main_idtf: [движение пешеходов по дорогам] (* <- lang_ru;; *);;
+
+pedestrian_traffic_on_roads => nrel_main_idtf: [pedestrian_traffic_on_roads] (* <- lang_en;; *);;
+
+pedestrian_traffic_on_roads <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://pedestrian_traffic_on_roads.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

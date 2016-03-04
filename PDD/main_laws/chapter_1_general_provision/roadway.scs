@@ -1,0 +1,27 @@
+sc_node_not_relation -> roadway;;
+
+roadway => nrel_main_idtf: 	[проезжая часть дороги] (* <- lang_ru;; *);;
+
+roadway => nrel_main_idtf: 	[roadway] (* <- lang_en;; *);;
+roadway <= nrel_using_constants:
+	{
+     elements_of_the_road;
+     pedestrian;
+     vehicle
+	};;
+
+
+roadway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Проезжая часть дороги</b> — <sc_element sys_idtf="elements_of_the_road">элемент дороги</sc_element>, предназначенный для движения <sc_element sys_idtf="vehicle">транспортных средств</sc_element> и в случаях, предусмотренных настоящими Правилами, — для движения <sc_element sys_idtf="pedestrian">пешеходов</sc_element>.Иными словами, то, что принято называть дорогой, в Правилах именуется «проезжая часть дороги».] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+roadway <= nrel_strict_inclusion: chapter_1_general_provision;;

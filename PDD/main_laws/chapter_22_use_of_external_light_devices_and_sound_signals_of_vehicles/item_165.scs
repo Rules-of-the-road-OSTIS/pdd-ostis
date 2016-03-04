@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_165;;
+item_165 => nrel_main_idtf: [пункт 165] (* <- lang_ru;; *);;
+
+item_165 => nrel_main_idtf: [item 165] (* <- lang_en;; *);;
+
+item_165 <= nrel_using_constants:
+{
+driver;
+the_dark;
+the_lack_of_visibility_of_the_road;
+vehicle
+};;
+
+item_165 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>165. Противотуманные фары на <sc_element sys_idtf="vehicle">транспортном средстве</sc_element> могут использоваться <sc_element sys_idtf="driver">водителем</sc_element>:</p>
+<p>165.1. в <sc_element sys_idtf="the_dark">темное время суток</sc_element> и (или) при <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости дороги</sc_element> совместно с ближним или дальним светом фар;</p>
+<p>165.2. вместо ближнего света фар в условиях, предусмотренных пунктами 166 и 167 настоящих Правил.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

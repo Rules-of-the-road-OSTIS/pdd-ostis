@@ -1,0 +1,32 @@
+sc_node_not_relation -> Limit_of_duration;;
+Limit_of_duration => nrel_main_idtf:[Ограничение продолжительности стоянки] (* <- lang_ru;; *);;
+Limit_of_duration => nrel_main_idtf:[Limit of duration] (* <- lang_en;; *);;
+Limit_of_duration <= nrel_using_constants:
+	{
+	vehicle;
+parking_of_a_vehicle	
+	};;
+Limit_of_duration <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Limit_of_duration.png";;
+                                *);; 
+                *);;
+Limit_of_duration 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  указывает максимальную продолжительность пребывания <sc_element sys_idtf="vehicle">транспортного средства</sc_element> 
+						на <sc_element sys_idtf="parking_of_a_vehicle">стоянке</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

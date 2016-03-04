@@ -1,0 +1,20 @@
+sc_node_not_relation -> traffic_control_organizations_in_the_territories_and_in_areas_of_narrowing_the_carriageway;;
+traffic_control_organizations_in_the_territories_and_in_areas_of_narrowing_the_carriageway => nrel_main_idtf: 
+	[для регулирования движения на территориях организаций и в местах сужения проезжей части дороги] (* <- lang_ru;; *);;
+traffic_control_organizations_in_the_territories_and_in_areas_of_narrowing_the_carriageway => nrel_main_idtf: 
+	[traffic control organizations in the territories and in areas of narrowing the carriageway] (* <- lang_en;; *);;
+the_end_of_the_main_road <= nrel_using_constants:
+	{
+	roadway;
+	road
+	};;
+traffic_control_organizations_in_the_territories_and_in_areas_of_narrowing_the_carriageway <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://traffic_control_organizations_in_the_territories_and_in_areas_of_narrowing_the_carriageway.png";;
+                                *);; 
+                *);;

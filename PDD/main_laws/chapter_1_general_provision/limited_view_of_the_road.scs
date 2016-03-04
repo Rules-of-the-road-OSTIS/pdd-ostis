@@ -1,0 +1,27 @@
+sc_node_not_relation -> limited_view_of_the_road;;
+
+limited_view_of_the_road => nrel_main_idtf: 	[ограниченная обзорность дороги] (* <- lang_ru;; *);;
+
+limited_view_of_the_road => nrel_main_idtf: 	[limited view of the road] (* <- lang_en;; *);;
+limited_view_of_the_road <= nrel_using_constants:
+	{
+     road;
+     view_of_the_road;
+     vehicle
+
+	};;
+
+limited_view_of_the_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Ограниченная обзорность дороги</b> — <sc_element sys_idtf="view_of_the_road">обзорность дороги</sc_element>, ограниченная геометрическими параметрами <sc_element sys_idtf="road">дороги</sc_element>, придорожными инженерными сооружениями, насаждениями и прочими объектами, а также <sc_element sys_idtf="vehicle">дороги</sc_element>транспортными средствами</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+limited_view_of_the_road <= nrel_strict_inclusion: chapter_1_general_provision;;

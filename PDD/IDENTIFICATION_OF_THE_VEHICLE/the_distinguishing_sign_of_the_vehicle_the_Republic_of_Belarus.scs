@@ -1,0 +1,19 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+        
+the_distinguishing_sign_of_the_vehicle_the_Republic_of_Belarus  => nrel_main_idtf: [отличительный знак транспортного средства Республики Беларусь] (* <- lang_ru;; *);;
+
+the_distinguishing_sign_of_the_vehicle_the_Republic_of_Belarus  => nrel_main_idtf: [the distinguishing sign of the vehicle the Republic of Belarus] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_distinguishing_sign_of_the_vehicle_the_Republic_of_Belarus.png";;
+                                *);; 
+                *);;
+
+the_distinguishing_sign_of_the_vehicle_the_Republic_of_Belarus <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;
+

@@ -1,0 +1,33 @@
+sc_node_not_relation -> per_axle_limits;;
+       
+per_axle_limits => nrel_main_idtf: [ограничение нагрузки на ось] (* <- lang_ru;; *);;
+
+per_axle_limits => nrel_main_idtf: [per axle limits] (* <- lang_en;; *);;
+per_axle_limits <= nrel_using_constants:
+{
+vehicle
+};;
+per_axle_limits <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://per_axle_limits.png";
+                                                "file://per_axle_limits2.png";;
+                                *);; 
+                *);;
+per_axle_limits <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, у которых общая фактическая масса, приходящаяся на любую ось, превышает указанную на знаке.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

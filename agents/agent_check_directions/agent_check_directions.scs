@@ -1,0 +1,262 @@
+agent_check_directions_under_the_sign_prohibiting_further_movement
+ // Множество идентификаторов
+ => nrel_main_idtf:
+       [агентная scp-программа проверки проезда под знаки, запрещающие дальнейшее движение] (* <- lang_ru;;*);
+       [scp-program of check directions under the sign prohibiting further movement] (* <- lang_en;; *);
+       <- agent_scp_program;;
+ // Указываем, что операция поиска агента является scp-программой
+ scp_program -> agent_check_directions_under_the_sign_prohibiting_further_movement
+       (*
+ // Множество параметров агентной операции
+       -> rrel_params: .agent_check_directions_under_the_sign_prohibiting_further_movement_params
+               (*
+               -> rrel_1: rrel_in: _event;;
+               -> rrel_2: rrel_in: _input_arc;;
+               *);;
+ // Множество операторов агентной операции
+       -> rrel_operators: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_set
+               (*
+ // Первый исполняемый оператор операции
+               -> rrel_init: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator1A
+                       (*
+                       <- searchElStr3;;
+                       -> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+                       -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+                       -> rrel_3: rrel_assign: rrel_scp_var: _question;;
+
+                     => nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator1B;;
+                     *);;
+                                                                                  
+// Агент будет просыпаться, когда обнаружит наш вопрос.
+            -> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator1B
+                   (*
+                   <- searchElStr3;;
+                   -> rrel_1: rrel_fixed: rrel_scp_const: question_check_directions_under_the_sign_prohibiting_further_movement;;
+                   -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+                   -> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+
+                   => nrel_then: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator1C;;
+                   => nrel_else: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_return;;
+                   *);;
+
+// Найдём параметры операции – их подал на вход сам пользователь
+            -> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator1C
+                   (*
+                  	 <- searchElStr5;;
+                  	 -> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+                   	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_question1;;
+                   	-> rrel_3: rrel_assign: rrel_scp_var: _param1;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: rrel_sign;;
+
+                   => nrel_then: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator4C;;
+                   => nrel_else: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_return;;
+                   *);;
+		
+		-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator4C
+                   (*
+                   <- printEl;;
+                   -> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
+
+                    => nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator3C;;
+                    *);;
+
+		 -> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator3C
+                   (*
+                  <- searchElStr5;;
+                  	 -> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+                   	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_question2;;
+                   	-> rrel_3: rrel_assign: rrel_scp_var: _param2;;
+				-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+				-> rrel_5: rrel_fixed: rrel_scp_const: rrel_vehicle;;
+
+                   => nrel_then: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator1D;;
+                   => nrel_else: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_return;;
+                   *);;
+
+// Сгенерировать узел, в который мы поместим конструкцию ответа
+       -> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator1D
+                   (*
+                   <- genEl;;
+                   -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+                    => nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_search1A;;
+                    *);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_search1A
+                    (*
+                 <- searchElStr5;;
+               -> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
+               -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var:  _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;
+            	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+               -> rrel_5: rrel_fixed: rrel_scp_const: nrel_movement_prohibition;;
+
+            	=> nrel_then: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer1A;;
+                => nrel_else: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer1B;;
+            *);;
+
+	
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer1A
+		(*
+		<- genElStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+          -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var:  _arc_answer;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+          -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+          -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer2A;;
+		*);;
+ 
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer2A
+		(*
+		<- genElStr5;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
+          -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var:  _arc_access;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;
+          -> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_nrel_access;;
+          -> rrel_5: rrel_fixed: rrel_scp_const: nrel_movement_prohibition;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer3A;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer3A
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+          -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _param1;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer4A;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer4A
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+          -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer5A;;
+		*);;
+	
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer5A
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_var:  _arc_access;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer6A;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer6A
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _arc_nrel_access;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer7A;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer7A
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_movement_prohibition;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer8A;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer8A
+		(*
+		<- eraseEl;;
+		-> rrel_1: rrel_fixed: rrel_scp_var:  _arc_answer;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_return;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer1B
+		(*
+		<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+               -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var:  _arc1;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+            	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+               -> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer2B;;
+		*);;
+ 
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer2B
+		(*
+		<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param1;;
+               -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var:  _arc_access_allowed;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;
+            	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc_nrel_access_allowed;;
+               -> rrel_5: rrel_fixed: rrel_scp_const: nrel_movement_allowed;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer3B;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer3B
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+            	-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _param1;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer4B;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer4B
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+          -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc1;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _param2;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer5B;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer5B
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+          -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_var:  _arc_access_allowed;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer6B;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer6B
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+          -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_var: _arc_nrel_access_allowed;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer7B;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_answer7B
+		(*
+		<- genElStr3;;
+		-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+          -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		-> rrel_3: rrel_fixed: rrel_scp_const: nrel_movement_allowed;;
+
+		=> nrel_goto: .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_return;;
+		*);;
+
+	-> .agent_check_directions_under_the_sign_prohibiting_further_movement_operator_return
+                 (*
+                  <- return;;
+                  *);;
+
+*);;
+*);;

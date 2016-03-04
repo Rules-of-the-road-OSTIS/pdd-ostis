@@ -1,0 +1,12 @@
+iss_traffic_laws
+
+=> nrel_main_idtf: [Интеллектуальная справочная система по правилам дорожного движения] (* <- lang_ru;; *);
+
+=> nrel_main_idtf: [iss traffic laws] (* <- lang_en;; *);
+
+<= nrel_section_decomposition:
+	{
+        	traffic_laws
+	};
+
+<- ui_start_sc_element;;

@@ -1,0 +1,29 @@
+sc_node_not_relation -> steep_climb;;
+        
+steep_climb => nrel_main_idtf: [крутой подъем] (* <- lang_ru;; *);;
+steep_climb => nrel_main_idtf: [steep climb] (* <- lang_en;; *);;
+
+steep_climb <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://steep_climb.png";;
+                                *);; 
+                *);;
+				
+steep_climb <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Подъем, на котором действуют специальные требования Правил, устанавливающие порядок дорожного движения на крутых подъемах.]
+                    (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

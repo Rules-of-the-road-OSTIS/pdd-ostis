@@ -1,0 +1,20 @@
+sc_node_not_relation -> lawn;;
+
+lawn => nrel_main_idtf: 	[газон] (* <- lang_ru;; *);;
+
+lawn => nrel_main_idtf: 	[lawn] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Газон</b> — участок земли с естественным или искусственно созданным растительным, преимущественно травяным, покровом.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+lawn <= nrel_strict_inclusion: chapter_1_general_provision;;

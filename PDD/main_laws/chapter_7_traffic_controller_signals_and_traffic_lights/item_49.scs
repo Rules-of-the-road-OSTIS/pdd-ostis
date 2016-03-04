@@ -1,0 +1,30 @@
+sc_node_not_relation -> item_49;;
+
+item_49 => nrel_main_idtf: [пункт 49] (* <- lang_ru;; *);;
+
+item_49 => nrel_main_idtf: [item 49] (* <- lang_en;; *);;
+item_49 <= nrel_using_constants:
+	{
+	intersection;
+	driver;
+	crosswalk;
+	railroad_crossing
+	};;
+
+item_49 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Вне <sc_element sys_idtf="intersection">перекрестка</sc_element> при запрещающем сигнале регулировщика или светофора (кроме реверсивного) <sc_element sys_idtf="driver">водители</sc_element> должны остановиться перед дорожным знаком «Стоп-линия» (линией горизонтальной дорожной разметки 1.12), а при его отсутствии:</p>
+<p>1)на регулируемом <sc_element sys_idtf="crosswalk">пешеходном переходе</sc_element> — перед светофором, а при его отсутствии — перед пешеходным переходом;</p>
+<p>2)перед <sc_element sys_idtf="railroad_crossing">железнодорожным переездом</sc_element> — в соответствии с пунктом 129 настоящих Правил;</p>
+<p>3)в других местах — перед регулировщиком или светофором, не создавая препятствия и опасности для дорожного движения.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

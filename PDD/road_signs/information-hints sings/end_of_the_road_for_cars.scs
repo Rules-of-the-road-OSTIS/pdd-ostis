@@ -1,0 +1,32 @@
+sc_node_not_relation -> end_of_the_road_for_cars;;     
+end_of_the_road_for_cars => nrel_main_idtf: 
+	[конец дороги для автомобилей] (* <- lang_ru;; *);;
+end_of_the_road_for_cars => nrel_main_idtf: 
+	[end of the one-way road] (* <- lang_en;; *);;
+end_of_the_road_for_cars <= nrel_using_constants:
+	{
+	road
+	};;
+end_of_the_road_for_cars <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://end_of_the_road_for_cars.png";;
+                                *);; 
+                *);;
+end_of_the_road_for_cars <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Данный знак указывает на то, что все ограничения, введенные знаком«<sc_element sys_idtf="road">Дорога</sc_element> для автомобилей» , больше «не работают».]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

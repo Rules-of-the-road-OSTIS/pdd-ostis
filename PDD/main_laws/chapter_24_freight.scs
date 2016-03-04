@@ -1,0 +1,35 @@
+sc_node_not_relation -> chapter_24_freight;;
+        
+chapter_24_freight => nrel_main_idtf: [Глава 24. Перевозка грузов] (* <- lang_ru;; *);;
+
+chapter_24_freight => nrel_main_idtf: [Chapter 24. Freight] (* <- lang_en;; *);;
+chapter_24_freight <= nrel_section_decomposition:
+	{
+        	item_182
+		(*
+		=> nrel_section_base_order: 
+			item_183;;
+		*);
+		item_183
+		(*
+		=> nrel_section_base_order: 
+			item_184;;
+		*);
+		item_184
+		(*
+		=> nrel_section_base_order: 
+			item_185;;
+		*);
+		item_185
+		(*
+		=> nrel_section_base_order: 
+			item_186;;
+		*);
+		item_186
+		(*
+		=> nrel_section_base_order: 
+			item_187;;
+		*);
+		item_187
+
+	};;

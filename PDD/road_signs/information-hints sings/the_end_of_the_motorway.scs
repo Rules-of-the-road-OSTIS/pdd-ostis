@@ -1,0 +1,33 @@
+sc_node_not_relation -> the_end_of_the_motorway;;
+the_end_of_the_motorway => nrel_main_idtf: 
+	[конец автомагистрали.] (* <- lang_ru;; *);;
+the_end_of_the_motorway => nrel_main_idtf: 
+	[the end of the motorway] (* <- lang_en;; *);;
+the_end_of_the_motorway <= nrel_using_constants:
+	{
+	road;
+	traffic
+	};;
+the_end_of_the_motorway <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_end_of_the_motorway.png";;
+                                *);; 
+                *);;
+the_end_of_the_motorway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак информирует о конце <sc_element sys_idtf="road"> дороги </sc_element>, на которой действуют специальные требования Правил, устанавливающие порядок дорожного <sc_element sys_idtf="traffic"> движения </sc_element> на автомагистрали.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

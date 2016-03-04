@@ -1,0 +1,31 @@
+sc_node_not_relation -> sign_main_road;;      
+sign_main_road => nrel_main_idtf: [знак главная дорога] (* <- lang_ru;; *);;
+sign_main_road => nrel_main_idtf: [sign main road] (* <- lang_en;; *);
+
+<= nrel_using_constants:
+	{
+	roadway
+	};
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_main_road.png";;
+                                *);; 
+                *);;
+sign_main_road 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предоставляется право преимущественного проезда перекрестка (пересечения <sc_element sys_idtf="roadway">проезжих частей дорог</sc_element>).]
+(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_52;;
+
+item_52 => nrel_main_idtf: [пункт 52] (* <- lang_ru;; *);;
+
+item_52 => nrel_main_idtf: [item 52] (* <- lang_en;; *);;
+
+item_52 <= nrel_using_constants:
+	{
+	vehicle
+	};;
+
+item_52 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Аварийную световую сигнализацию рекомендуется включать в случае движения <sc_element sys_idtf="vehicle">транспортного средства</sc_element> задним ходом.</p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

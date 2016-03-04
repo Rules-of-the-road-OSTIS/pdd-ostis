@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_97;;
+item_97 => nrel_main_idtf: [пункт 97] (* <- lang_ru;; *);;
+
+item_97 => nrel_main_idtf: [item 97] (* <- lang_en;; *);;
+
+item_97 <= nrel_using_constants:
+{
+vehicle;
+slow_moving_vehicles;
+overtaking;
+locality;
+road;
+heavy_and_or_large_vehicles
+};;
+
+item_97 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>97. Вне <sc_element sys_idtf="locality"> населенных пунктов </sc_element> водитель <sc_element sys_idtf="slow_moving_vehicles"> тихоходного </sc_element>, <sc_element sys_idtf="heavy_and_or_large_vehicles"> тяжеловесного и (или) крупногабаритного транспортного средства </sc_element>, а также <sc_element sys_idtf="vehicle"> транспортного средства </sc_element>, конструкция которого, перевозимый груз или техническое состояние затрудняют его <sc_element sys_idtf="overtaking"> обгон </sc_element>, должен занять положение на <sc_element sys_idtf="road"> дороге </sc_element> как можно правее, а при необходимости и остановиться, чтобы пропустить скопившиеся за ним <sc_element sys_idtf="vehicle"> транспортные средства </sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

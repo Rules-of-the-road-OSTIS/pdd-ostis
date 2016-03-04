@@ -1,0 +1,37 @@
+sc_node_not_relation -> item_53;;
+
+item_53 => nrel_main_idtf: [пункт 53] (* <- lang_ru;; *);;
+
+item_53 => nrel_main_idtf: [item 53] (* <- lang_en;; *);;
+
+item_53 <= nrel_using_constants:
+	{
+	vehicle;
+	road;
+	roadway;
+	the_dark;
+	traffic_accident;
+	parking_of_a_vehicle;
+	stop_the_vehicle;
+	floor_area;
+	forced_to_stop_the_vehicle
+	};;
+
+item_53 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>После включения аварийной световой сигнализации, а также при ее отсутствии или неисправности должен быть незамедлительно выставлен знак аварийной остановки (в <sc_element sys_idtf="the_dark"> темное время суток</sc_element> в дополнение к знаку аварийной остановки может быть выставлен фонарь с мигающим красным светом):</p>
+					 <p>1) при <sc_element sys_idtf="traffic_accident"> дорожно-транспортном происшествии;</p>
+					 <p>2) при <sc_element sys_idtf="forced_to_stop_the_vehicle"> вынужденной остановке транспортного средства</sc_element> на <sc_element sys_idtf="roadway"> проезжей части дороги и в местах, где остановка запрещена, за исключением прекращения движения транспортного средства в связи со скоплением остановившихся на <sc_element sys_idtf="roadway"> проезжей части дороги</sc_element> других <sc_element sys_idtf="vehicle"> транспортных средств</sc_element> (далее — затор);</p>
+					 <p>3) в случае <sc_element sys_idtf="stop_the_vehicle"> остановки </sc_element> , <sc_element sys_idtf="parking_the_vehicle"> стоянки транспортного средства</sc_element> в  <sc_element sys_idtf="the_dark"> темное время суток</sc_element> на неосвещенных участках <sc_element sys_idtf="road"> дороги</sc_element> (кроме <sc_element sys_idtf="floor_area"> жилых зон</sc_element>) и (или) при недостаточной видимости дороги при неисправных габаритных и стояночных огнях.</p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

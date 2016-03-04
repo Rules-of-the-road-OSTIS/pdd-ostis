@@ -1,0 +1,29 @@
+sc_node_not_relation -> steep_descent;;
+        
+steep_descent => nrel_main_idtf: [крутой спуск] (* <- lang_ru;; *);;
+steep_descent => nrel_main_idtf: [steep descent] (* <- lang_en;; *);;
+
+steep_descent <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://steep_descent.png";;
+                                *);; 
+                *);;
+				
+steep_descent <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Спуск, на котором действуют специальные требования Правил дорожного движения, устанавливающие порядок дорожного движения на крутых спусках.]
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

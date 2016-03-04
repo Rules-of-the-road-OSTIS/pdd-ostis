@@ -1,0 +1,37 @@
+sc_node_not_relation -> marked_pedestrian_crossings_equipped_with_traffic_lights;;
+
+marked_pedestrian_crossings_equipped_with_traffic_lights => nrel_main_idtf: 
+	[обозначение пешеходного перехода оборудованного дорожными светофорами] (* <- lang_ru;; *);;
+
+marked_pedestrian_crossings_equipped_with_traffic_lights => nrel_main_idtf: 
+	[marked pedestrian crossings equipped with traffic lights] (* <- lang_en;; *);;
+
+marked_pedestrian_crossings_equipped_with_traffic_lights <= nrel_using_constants:
+	{
+	crosswalk
+	};;
+
+marked_pedestrian_crossings_equipped_with_traffic_lights <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение <sc_element sys_idtf="crosswalk">пешеходного перехода</sc_element>, оборудованного дорожными светофорами.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+marked_pedestrian_crossings_equipped_with_traffic_lights <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://marked_pedestrian_crossings_equipped_with_traffic_lights.png";;
+                                *);; 
+                *);;

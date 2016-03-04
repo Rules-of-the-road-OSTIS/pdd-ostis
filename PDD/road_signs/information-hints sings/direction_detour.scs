@@ -1,0 +1,35 @@
+sc_node_not_relation -> direction_detour;;
+direction_detour => nrel_main_idtf: 
+	[направление объезда] (* <- lang_ru;; *);;
+direction_detour => nrel_main_idtf: 
+	[direction detour] (* <- lang_en;; *);;
+direction_detour <= nrel_using_constants:
+	{
+	traffic
+	};;
+direction_detour <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://direction_detour1.png";
+						"file://direction_detour2.png";
+						"file://direction_detour3.png";;
+                                *);; 
+                *);;
+direction_detour <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Направление объезда участка дороги, временно закрытого для <sc_element sys_idtf="traffic"> движения </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+	

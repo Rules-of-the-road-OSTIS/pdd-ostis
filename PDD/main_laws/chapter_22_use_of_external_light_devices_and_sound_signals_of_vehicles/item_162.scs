@@ -1,0 +1,32 @@
+sc_node_not_relation -> item_162;;
+item_162 => nrel_main_idtf: [пункт 162] (* <- lang_ru;; *);;
+
+item_162 => nrel_main_idtf: [item 162] (* <- lang_en;; *);;
+
+item_162 <= nrel_using_constants:
+{
+the_dark;
+vehicle;
+the_lack_of_visibility_of_the_road;
+bicycle;
+motor_vehicle;
+trailer
+};;
+
+item_162 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>162. При движении в <sc_element sys_idtf="the_dark">темное время суток</sc_element> и (или) <sc_element sys_idtf="the_lack_of_visibility_of_the_road">при недостаточной видимости дороги</sc_element> независимо от ее освещенности <sc_element sys_idtf="vehicle">на транспортном средстве</sc_element> должны быть включены следующие световые приборы:</p>
+<p>162.1. фары дальнего или ближнего света — на <sc_element sys_idtf="motor_vehicle">механическом транспортном средстве</sc_element>;</p>
+<p>162.2. фары и (или) фонари — на <sc_element sys_idtf="bicycle">велосипеде</sc_element>;</p>
+<p>162.3. габаритные огни — на <sc_element sys_idtf="trailer">прицепе</sc_element>, а также на буксируемом <sc_element sys_idtf="motor_vehicle">механическом транспортном средстве</sc_element> при отсутствии или неисправности на нем аварийной световой сигнализации.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

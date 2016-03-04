@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_23;;
+
+item_23 => nrel_main_idtf: [пункт 23] (* <- lang_ru;; *);;
+
+item_23 => nrel_main_idtf: [item 23] (* <- lang_en;; *);;
+item_23 <= nrel_using_constants:
+	{
+	passenger;
+	vehicle;
+	pavement;
+	shoulder;
+	motor_vehicle;
+	motorcycle;
+	moped
+	};;
+item_23 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><sc_element sys_idtf="passenger">Пассажир</sc_element> обязан:</p>
+<p>1)осуществлять посадку (высадку) только после полной остановки <sc_element sys_idtf="vehicle">транспортного средства</sc_element> с посадочной площадки, а в случае ее отсутствия — с <sc_element sys_idtf="pavement">тротуара</sc_element> или <sc_element sys_idtf="shoulder">обочины</sc_element>;</p>
+<p>2)быть пристегнутым при движении в <sc_element sys_idtf="motor_vehicle">механическом транспортном средстве</sc_element>, оборудованном ремнями безопасности, кроме случаев, указанных в абзацах третьем и четвертом части второй подпункта 9.5 пункта 9 настоящих Правил, а при поездке на <sc_element sys_idtf="motorcycle">мотоцикле</sc_element>, <sc_element sys_idtf="moped">мопеде</sc_element> — быть в застегнутом мотошлеме;</p>
+<p>3)соблюдать меры безопасности, предусмотренные конструкцией транспортного средства и правилами перевозки пассажиров на соответствующем виде транспортного средства.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,32 @@
+sc_node_not_relation -> designation_approximation_to_a_continuous_line_of_longitudinal_markings;;
+
+designation_approximation_to_a_continuous_line_of_longitudinal_markings => nrel_main_idtf: 
+	[обозначение приближения к сплошной линии продольной разметки] (* <- lang_ru;; *);;
+
+designation_approximation_to_a_continuous_line_of_longitudinal_markings => nrel_main_idtf: 
+	[designation approximation to a continuous line of longitudinal markings] (* <- lang_en;; *);;
+
+designation_approximation_to_a_continuous_line_of_longitudinal_markings <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение приближения к сплошной линии продольной разметки (может иметь желтый цвет).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_approximation_to_a_continuous_line_of_longitudinal_markings <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_approximation_to_a_continuous_line_of_longitudinal_markings.png";;
+                                *);; 
+                *);;

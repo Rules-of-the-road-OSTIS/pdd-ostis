@@ -1,0 +1,36 @@
+sc_node_not_relation -> parking_of_a_vehicle;;
+
+parking_of_a_vehicle => nrel_main_idtf: 	[стоянка транспортного средства] (* <- lang_ru;; *);;
+
+parking_of_a_vehicle => nrel_main_idtf: 	[parking of a vehicle] (* <- lang_en;; *);;
+
+parking_of_a_vehicle <= nrel_using_constants:
+	{
+	vehicle;
+	passenger
+	};;
+
+parking_of_a_vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Стоянка транспортного средства</b> — преднамеренное прекращение движения <sc_element sys_idtf="vehicle">транспортного средства</sc_element> более чем на 5 минут по причинам, не связанным с посадкой (высадкой) <sc_element sys_idtf="passenger">пассажиров</sc_element> либо загрузкой (разгрузкой) транспортного средства.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+parking_of_a_vehicle <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://parking_of_a_vehicle.png";;
+                                *);; 
+                *);;
+parking_of_a_vehicle <= nrel_strict_inclusion: chapter_1_general_provision;;

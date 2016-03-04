@@ -1,0 +1,38 @@
+sc_node_not_relation -> vehicle_chassis;;
+
+vehicle_chassis => nrel_main_idtf: 	[шасси транспортного средства] (* <- lang_ru;; *);;
+
+vehicle_chassis => nrel_main_idtf: 	[vehicle chassis] (* <- lang_en;; *);;
+
+vehicle_chassis <= nrel_using_constants:
+	{
+	trailer;
+	vehicle;
+	passenger;
+	traffic
+	};;
+
+vehicle_chassis <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Шасси транспортного средства</b> — составная часть грузового автомобиля, <sc_element sys_idtf="trailer">прицепа</sc_element> к нему, грузопассажирского автомобиля, тягача, предназначенная для последующего изготовления <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, не имеющая составляющих частей для перевозки <sc_element sys_idtf="passenger">пассажиров</sc_element> и (или) грузов и установленного оборудования. Участие в <sc_element sys_idtf="traffic">дорожном движении</sc_element> шасси транспортных средств должно осуществляться в соответствии с требованиями настоящих Правил, предъявляемыми к транспортным средствам, если этими Правилами не установлено иное в отношении шасси транспортных средств.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+vehicle_chassis <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://vehicle_chassis.jpg";;
+                                *);; 
+                *);;
+vehicle_chassis <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,17 @@
+sc_node_not_relation -> intersection_of_roads_at_different_levels;;
+       
+intersection_of_roads_at_different_levels => nrel_main_idtf: [пересечение дорог на разных уровнях] (* <- lang_ru;; *);;
+
+intersection_of_roads_at_different_levels => nrel_main_idtf: [intersection_of_roads_at_different levels] (* <- lang_en;; *);;
+
+intersection_of_roads_at_different_levels <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://intersection_of_roads_at_different_levels.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

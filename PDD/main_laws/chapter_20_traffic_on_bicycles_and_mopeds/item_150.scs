@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_150;;
+item_150 => nrel_main_idtf: [пункт 150] (* <- lang_ru;; *);;
+
+item_150 => nrel_main_idtf: [item 150] (* <- lang_en;; *);;
+
+item_150 <= nrel_using_constants:
+{
+intersection;
+bike_lane;
+bicycle;
+road;
+vehicle
+};;
+
+item_150 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>150. Вне <sc_element sys_idtf="intersection">перекрестков</sc_element> на нерегулируемом пересечении <sc_element sys_idtf="bike_lane">велосипедной дорожки</sc_element> с <sc_element sys_idtf="road">дорогой</sc_element> <sc_element sys_idtf="bicycle">велосипедист</sc_element> обязан уступить <sc_element sys_idtf="road">дорогу</sc_element> <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, движущимся по этой <sc_element sys_idtf="road">дороге</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,39 @@
+sc_node_not_relation -> road_narrows;;
+       
+road_narrows => nrel_main_idtf: [сужение дороги] (* <- lang_ru;; *);;
+road_narrows => nrel_main_idtf: [road narrows] (* <- lang_en;; *);;
+
+road_narrows <= nrel_using_constants:
+	{
+	road
+	};;
+
+road_narrows <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://road_narrows1.png";
+						"file://road_narrows2.png";
+						"file://road_narrows3.png";
+						"file://road_narrows4.png";
+						"file://road_narrows5.png";
+ 						"file://road_narrows6.png";;
+                                *);; 
+                *);;
+				
+road_narrows <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Сужение <sc_element sys_idtf="road">дороги</sc_element>: с обеих сторон, справа, слева.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

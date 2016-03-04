@@ -1,0 +1,31 @@
+sc_node_not_relation -> item_160;;
+item_160 => nrel_main_idtf: [пункт 160] (* <- lang_ru;; *);;
+
+item_160 => nrel_main_idtf: [item 160] (* <- lang_en;; *);;
+
+item_160 <= nrel_using_constants:
+{
+roadway;
+horse_drawn_vehicle;
+traffic_lane;
+shoulder;
+pedestrian;
+obstacle_to_traffic
+};;
+
+item_160 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>160. Движение <sc_element sys_idtf="roadway">по проезжей части дороги</sc_element> на <sc_element sys_idtf="horse_drawn_vehicle">гужевых транспортных средствах</sc_element> и всадников разрешается только в один ряд на расстоянии не далее 1 метра от ее правого края. При этом:</p>
+<p>160.1. запрещается поворачивать налево или разворачиваться на дороге, имеющей трамвайный путь, и на дороге, имеющей более одной <sc_element sys_idtf="traffic_lane">полосы для движения</sc_element> в данном направлении;</p>
+<p>160.2. допускается движение <sc_element sys_idtf="horse_drawn_vehicle">гужевых транспортных средств</sc_element> и всадников по <sc_element sys_idtf="shoulder">обочине</sc_element>, если это не создает <sc_element sys_idtf="obstacle_to_traffic">препятствия</sc_element> для безопасного движения <sc_element sys_idtf="pedestrian">пешеходов</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

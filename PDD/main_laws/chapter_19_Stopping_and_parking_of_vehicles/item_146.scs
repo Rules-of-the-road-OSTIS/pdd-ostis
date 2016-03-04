@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_146;;
+
+item_146 => nrel_main_idtf: [пункт 146] (* <- lang_ru;; *);;
+
+item_146 => nrel_main_idtf: [item 146] (* <- lang_en;; *);;
+
+item_146 <= nrel_using_constants:
+	{
+	
+	vehicle
+	};;
+
+item_146 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Запрещается открывать (закрывать) двери <sc_element sys_idtf="vehicle">транспортного средства</sc_element> или держать их открытыми, если это создаст препятствие для движения других участников дорожного движения.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

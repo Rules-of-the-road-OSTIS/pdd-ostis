@@ -1,0 +1,27 @@
+sc_node_not_relation -> bus;;
+
+bus => nrel_main_idtf: [автобус] (* <- lang_ru;; *);;
+
+bus => nrel_main_idtf: [bus] (* <- lang_en;; *);;
+bus <= nrel_using_constants:
+	{
+     car;
+     driver
+	};;
+
+
+bus <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Автобус</b> —  <sc_element sys_idtf="car">автомобиль</sc_element> с числом мест для сидения более девяти, включая место <sc_element sys_idtf="driver">водителя</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+bus <= nrel_strict_inclusion: chapter_1_general_provision;;
+bus <= nrel_strict_inclusion: types_of_vehicles;;

@@ -1,0 +1,31 @@
+sc_node_not_relation -> item_78;;
+
+item_78 => nrel_main_idtf: [пункт 78] (* <- lang_ru;; *);;
+
+item_78 => nrel_main_idtf: [item 78] (* <- lang_en;; *);;
+
+item_78 <= nrel_using_constants:
+	{
+	roadway;
+	driver;
+	horse_drawn_vehicle;
+	vehicle
+	};;
+
+item_78 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>   Если дорожными знаками запрещено движение велосипедистов, всадников и <sc_element sys_idtf="horse_drawn_vehicle гужевых транспортных средств</sc_element>, <sc_element sys_idtf="driver водители</sc_element> <sc_element sys_idtf="vehicle транспортных средств</sc_element> должны вести их по возможности ближе к правому краю <sc_element sys_idtf="roadway проезжей части дороги</sc_element> (линии горизонтальной дорожной разметки 1.2, обозначающей край <sc_element sys_idtf="roadway проезжей части дороги</sc_element>).
+Если такое запрещение отсутствует, то <sc_element sys_idtf="driver водители</sc_element> должны вести <sc_element sys_idtf="vehicle транспортное средство</sc_element> по возможности ближе к левому краю в пределах правой крайней полосы движения.<\p>
+				
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

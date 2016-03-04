@@ -1,0 +1,31 @@
+sc_node_not_relation -> The_distance_to_the_object;;
+The_distance_to_the_object => nrel_main_idtf:[Расстояние до обьекта] (* <- lang_ru;; *);;
+The_distance_to_the_object => nrel_main_idtf:[The distance to the object] (* <- lang_en;; *);;
+The_distance_to_the_object => nrel_create:[Участок дороги] ;;
+The_distance_to_the_object => nrel_create:[Ограничение] ;;
+The_distance_to_the_object <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://The_distance_to_the_object1.png";
+                                                "file://The_distance_to_the_object2.png";
+                                                "file://The_distance_to_the_object3.png";
+                                                "file://The_distance_to_the_object4.png";;
+                                *);; 
+                *);;
+The_distance_to_the_object 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Таблички</b>   указывают: расстояние от знака до начала опасного участка дороги или до места, с которого начинает действовать ограничение дорожного движения.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

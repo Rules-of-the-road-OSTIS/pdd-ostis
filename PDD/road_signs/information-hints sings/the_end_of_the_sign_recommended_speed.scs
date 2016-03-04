@@ -1,0 +1,29 @@
+sc_node_not_relation -> the_end_of_the_sign_recommended_speed;;
+the_end_of_the_sign_recommended_speed => nrel_main_idtf: 
+	[конец действия знака „Рекомендуемая скорость“] (* <- lang_ru;; *);;
+the_end_of_the_sign_recommended_speed => nrel_main_idtf: 
+	[the end of the sign "recommended speed"] (* <- lang_en;; *);;
+
+the_end_of_the_sign_recommended_speed <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_end_of_the_sign_recommended_speed.png";;
+                                *);; 
+                *);;
+the_end_of_the_sign_recommended_speed <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак,отменяющий действие знака " Рекомендуемая скрость".]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,29 @@
+sc_node_not_relation -> sign_service_wc;;
+sign_service_wc => nrel_main_idtf: 
+	[знак сервиса "Туалет"] (* <- lang_ru;; *);;
+sign_service_wc => nrel_main_idtf: 
+	[sign service "WC"] (* <- lang_en;; *);;
+
+sign_service_wc <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_wc.png";;
+                                *);; 
+                *);;
+sign_service_wc <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Туалет" информирует о расположении туалета.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

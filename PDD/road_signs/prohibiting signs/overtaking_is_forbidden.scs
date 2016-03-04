@@ -1,0 +1,34 @@
+sc_node_not_relation -> overtaking_is_forbidden;;
+        
+overtaking_is_forbidden => nrel_main_idtf: [обгон запрещён] (* <- lang_ru;; *);;
+
+overtaking_is_forbidden => nrel_main_idtf: [overtaking is forbidden] (* <- lang_en;; *);;
+overtaking_is_forbidden <= nrel_using_constants:
+{
+overtaking;
+vehicle
+};;
+overtaking_is_forbidden <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://overtaking_is_forbidden.png";;
+                                *);; 
+                *);;
+overtaking_is_forbidden <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается <sc_element sys_idtf="overtaking">обгон</sc_element> <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, скорость движения которых больше указанной на знаке. Запрещается <sc_element sys_idtf="overtaking">обгон</sc_element> <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, кроме одиночных, движущихся со скоростью менее 30 км/ч.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

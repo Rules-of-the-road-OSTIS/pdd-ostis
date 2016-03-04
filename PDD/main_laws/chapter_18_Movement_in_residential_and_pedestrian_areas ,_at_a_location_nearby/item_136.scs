@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_136;;
+
+item_136 => nrel_main_idtf: [пункт 136] (* <- lang_ru;; *);;
+
+item_136 => nrel_main_idtf: [item 136] (* <- lang_en;; *);;
+
+item_136 <= nrel_using_constants:
+	{
+	vehicle;
+	adjacent_territory;
+	pedestrian_zone;
+	driver;
+	road
+	};;
+
+item_136 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> При выезде из жилой и <sc_element sys_idtf="pedestrian_zone">пешеходной зон</sc_element>, <sc_element sys_idtf="adjacent_territory">прилегающей территории</sc_element> <sc_element sys_idtf="driver">водители</sc_element> должны уступить дорогу <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, движущимся по <sc_element sys_idtf="road">дороге</sc_element>, а также пешеходам, велосипедистам и всадникам, путь движения которых они пересекают.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

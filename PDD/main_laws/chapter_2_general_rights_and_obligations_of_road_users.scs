@@ -1,0 +1,16 @@
+sc_node_not_relation -> chapter_2_general_rights_and_obligations_of_road_users;;
+        
+chapter_2_general_rights_and_obligations_of_road_users => nrel_main_idtf: [Глава 2. Общие права и обязанности участников дорожного движения] (* <- lang_ru;; *);;
+
+chapter_2_general_rights_and_obligations_of_road_users => nrel_main_idtf: [Chapter 2. General rights and obligations of road users] (* <- lang_en;; *);;
+
+chapter_2_general_rights_and_obligations_of_road_users <= nrel_section_decomposition:
+	{
+        	item_6
+		(*
+		=> nrel_section_base_order: 
+			item_7;;
+		*);
+		item_7
+
+	};;

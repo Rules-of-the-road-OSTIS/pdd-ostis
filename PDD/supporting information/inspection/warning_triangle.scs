@@ -1,0 +1,17 @@
+sc_node_not_relation -> warning_triangle;;
+
+warning_triangle => nrel_main_idtf: [Знак аварийной остановки] (* <- lang_ru;; *);;
+
+warning_triangle => nrel_main_idtf: [warning_triangle] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://warning_triangle.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+warning_triangle <= nrel_strict_inclusion: inspection;;

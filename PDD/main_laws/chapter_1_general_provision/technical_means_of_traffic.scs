@@ -1,0 +1,26 @@
+sc_node_not_relation -> technical_means_of_traffic;;
+
+technical_means_of_traffic => nrel_main_idtf: 	[технические средства организации дорожного движения] (* <- lang_ru;; *);;
+
+technical_means_of_traffic => nrel_main_idtf: 	[technical means of traffic] (* <- lang_en;; *);;
+technical_means_of_traffic <= nrel_using_constants:
+	{
+     traffic;
+     road
+	};;
+
+
+technical_means_of_traffic <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Технические средства организации дорожного движения</b> — устройства, конструкции и изображения, применяемые на <sc_element sys_idtf="road">дорогах</sc_element> для регулирования <sc_element sys_idtf="traffic">дорожного движения</sc_element>, обеспечения его безопасности и повышения пропускной способности дорог.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+technical_means_of_traffic <= nrel_strict_inclusion: chapter_1_general_provision;;

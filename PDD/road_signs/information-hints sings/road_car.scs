@@ -1,0 +1,36 @@
+sc_node_not_relation -> road_car;;
+road_car => nrel_main_idtf: 
+	[дорога для автомобилей] (* <- lang_ru;; *);;
+road_car => nrel_main_idtf: 
+	[road car] (* <- lang_en;; *);;
+road_car <= nrel_using_constants:
+	{
+	car;
+	traffic;
+	road;
+	bus;
+	motorcycle
+	};;
+road_car <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://road_car.png";;
+                                *);; 
+                *);;
+road_car <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<sc_element sys_idtf="road">Дорога </sc_element>, предназначенная для <sc_element sys_idtf="traffic"> движения </sc_element> только <sc_element sys_idtf="car"> автомобилей </sc_element>, <sc_element sys_idtf="bus"> автобусов </sc_element> и <sc_element sys_idtf="motorcycle"> мотоциклов </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

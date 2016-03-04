@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_54;;
+
+item_54 => nrel_main_idtf: [пункт 54] (* <- lang_ru;; *);;
+
+item_54 => nrel_main_idtf: [item 54] (* <- lang_en;; *);;
+
+item_54 <= nrel_using_constants:
+	{
+	vehicle;
+	danger_to_traffic;
+	driver;
+	locality
+	};;
+
+item_54 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Знак аварийной остановки и фонарь с мигающим красным светом устанавливаются на расстоянии, обеспечивающем в конкретной дорожно-транспортной обстановке своевременное предупреждение других <sc_element sys_idtf="driver">водителей</sc_element>  об <sc_element sys_idtf="danger_to_traffic"> опасности</sc_element>, но не менее 15 метров от <sc_element sys_idtf="vehicle"> транспортного средства</sc_element> в <sc_element sys_idtf="locality"> населенных пунктах</sc_element> и не менее 40 метров — вне <sc_element sys_idtf="locality"> населенных пунктов</sc_element>. </p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

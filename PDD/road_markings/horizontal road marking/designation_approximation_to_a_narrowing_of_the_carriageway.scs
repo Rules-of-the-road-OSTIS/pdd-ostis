@@ -1,0 +1,38 @@
+sc_node_not_relation -> designation_approximation_to_a_narrowing_of_the_carriageway;;
+
+designation_approximation_to_a_narrowing_of_the_carriageway => nrel_main_idtf: 
+	[обозначение приближения к сужению проезжей части дороги] (* <- lang_ru;; *);;
+
+designation_approximation_to_a_narrowing_of_the_carriageway => nrel_main_idtf: 
+	[designation approximation to a narrowing of the carriageway] (* <- lang_en;; *);;
+
+designation_approximation_to_a_narrowing_of_the_carriageway <= nrel_using_constants:
+	{
+	roadway;
+	traffic_lane
+	};;
+
+designation_approximation_to_a_narrowing_of_the_carriageway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предупреждает о приближении к сужению <sc_element sys_idtf="roadway">проезжей части</sc_element> (участку, где уменьшается количество <sc_element sys_idtf="traffic_lane">полос движения</sc_element> в данном направлении) или к линиям разметки 1.1 или 1.11, разделяющим транспортные потоки противоположных направлений.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_approximation_to_a_narrowing_of_the_carriageway <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_approximation_to_a_narrowing_of_the_carriageway.png";;
+                                *);; 
+                *);;

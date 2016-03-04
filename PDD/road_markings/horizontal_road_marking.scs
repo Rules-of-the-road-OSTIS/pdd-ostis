@@ -1,0 +1,69 @@
+sc_node_not_relation -> horizontal_road_marking;;
+
+horizontal_road_marking => nrel_main_idtf: 
+	[Горизонтальная дорожная разметка] (* <- lang_ru;; *);;
+horizontal_road_marking => nrel_main_idtf: 
+	[Horizontal road marking] (* <- lang_en;; *);;
+horizontal_road_marking <= nrel_using_constants:
+	{
+	roadway
+	};;
+horizontal_road_marking <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Горизонтальная дорожная разметка (линии, стрелы, надписи и другие обозначения на <sc_element sys_idtf="roadway">проезжей части</sc_element>) устанавливает определенные режимы и порядок движения.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+horizontal_road_marking <= nrel_section_decomposition:
+{
+	bicycle_path_before_crossing_the_footpath_or_pavement;
+	designation_approaching_the_hump;
+	designation_approach_to_markup_designation_for_stopping_vehicles;
+	designation_approach_to_markup_designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road;
+	designation_approach_to_school;
+	designation_approximation_to_a_continuous_line_of_longitudinal_markings;
+	designation_approximation_to_a_narrowing_of_the_carriageway;
+	designation_for_stopping_vehicles;
+	designation_of_bike_lanes;
+	designation_of_footpaths;
+	designation_of_islands_separating_traffic_flows_in_one_direction;
+	designation_of_islands_separating_traffic_flows_in_opposite_directions;
+	designation_of_lanes_within_an_intersection;
+	designation_of_places_where_prohibited_parking_of_vehicles;
+	designation_of_places_where_prohibits_stopping_and_parking_of_vehicles;
+	designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road;
+	designation_of_stops_route_vehicles_and_taxi;
+	designation_of_the_hump;
+	designation_of_the_islands_at_the_confluence_of_traffic;
+	designation_of_the_zone_boundaries_tram_stopping_point;
+	designation_strips_allocated_to_block_movement_of_vehicles;
+	designation_tracks;
+	designation_unregulated_pedestrian_crossing;
+	designation_unregulated_pedestrian_crossing_in_hazardous_locations;
+	indicate_the_direction_lanes_for_cyclists;
+	indicate_the_direction_on_lanes;
+	marked_pedestrian_crossings_equipped_with_traffic_lights;
+	marking_the_border_between_the_strip_acceleration_or_deceleration_and_the_main_strip_of_the_roadway;
+	marking_the_boundaries_of_lanes_on_which_the_inverse_operation;
+	marking_the_edge_of_the_carriageway;
+	number_designation_of_the_road;
+	separation_of_traffic_for_free_or_opposite_directions;
+	separation_of_traffic_in_opposite_directions;
+	separation_of_traffic_in_opposite_directions_on_roads_having_two_or_three_lanes;
+	separation_of_traffic_in_opposite_directions_on_the_road_without_a_dividing_line_with_four_or_more_lanes;
+	the_image_on_the_carriageway_of_a_road_sign_children;
+	the_image_on_the_carriageway_of_a_road_sign_Emergency_and_dangerous_plot;
+	the_image_on_the_carriageway_of_a_road_sign_in_front_of_the_crosswalk;
+	the_image_on_the_carriageway_of_a_road_sign_Maximum_speed_limit;
+	the_image_on_the_carriageway_of_a_road_sign_People_with_Disabilities
+};; 
+				 
+				 
+				 

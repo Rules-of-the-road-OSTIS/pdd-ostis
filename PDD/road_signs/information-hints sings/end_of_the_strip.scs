@@ -1,0 +1,33 @@
+sc_node_not_relation -> end_of_the_strip;;
+end_of_the_strip => nrel_main_idtf: 
+	[конец полосы] (* <- lang_ru;; *);;
+end_of_the_strip => nrel_main_idtf: 
+	[end of the strip] (* <- lang_en;; *);;
+end_of_the_strip <= nrel_using_constants:
+	{
+	traffic_line;
+	traffic
+	};;
+end_of_the_strip <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://end_of_the_strip.png";;
+                                *);; 
+                *);;
+end_of_the_strip <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Конец дополнительной полосы <sc_element sys_idtf="traffic"> движения </sc_element> на подъеме или <sc_element sys_idtf="traffic_line"> полосы разгона</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

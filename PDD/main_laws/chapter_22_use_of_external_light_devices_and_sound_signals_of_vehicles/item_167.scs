@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_167;;
+item_167 => nrel_main_idtf: [пункт 167] (* <- lang_ru;; *);;
+
+item_167 => nrel_main_idtf: [item 167] (* <- lang_en;; *);;
+
+item_167 <= nrel_using_constants:
+{
+visibility_of_the_road;
+vehicle;
+road
+};;
+
+item_167 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>167. При ухудшении <sc_element sys_idtf="visibility_of_the_road">видимости<sc_element> <sc_element sys_idtf="vehicle">транспортного средства</sc_element> на <sc_element sys_idtf="road">дороге</sc_element> для его обозначения во время движения в светлое время суток могут быть включены ближний свет фар или дневные ходовые огни (при их наличии)..</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

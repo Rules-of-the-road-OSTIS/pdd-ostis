@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_140;;
+
+item_140 => nrel_main_idtf: [пункт 140] (* <- lang_ru;; *);;
+
+item_140 => nrel_main_idtf: [item 140] (* <- lang_en;; *);;
+
+item_140 <= nrel_using_constants:
+	{
+	vehicle
+	};;
+
+item_140 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Остановка на время более 5 минут и стоянка <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, в том числе в местах, специально отведенных для отдыха, должна осуществляться с неработающим двигателем <sc_element sys_idtf="vehicle">транспортного средства</sc_element>.</p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

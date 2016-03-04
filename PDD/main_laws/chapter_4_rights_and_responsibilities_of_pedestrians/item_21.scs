@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_21;;
+
+item_21 => nrel_main_idtf: [пункт 21] (* <- lang_ru;; *);;
+
+item_21 => nrel_main_idtf: [item 21] (* <- lang_en;; *);;
+item_21 <= nrel_using_constants:
+	{
+	organized_pedestrian_column;
+	roadway;
+	vehicle;
+	the_dark;
+	the_lack_of_visibility_of_the_road
+	};;
+item_21 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [Движение <sc_element sys_idtf="organized_pedestrian_column">организованной пешеходной колонны</sc_element> по <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> разрешается только по направлению движения <sc_element sys_idtf="vehicle">транспортных средств</sc_element> по правой стороне не более чем по четыре человека в ряд. В светлое время суток впереди и сзади с левой стороны этой колонны должны быть сопровождающие с флажками красного цвета, а в <sc_element sys_idtf="the_dark">темное время суток</sc_element> и (или) при <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости дороги</sc_element> впереди — сопровождающие с фонарем, излучающим белый свет, и сзади — излучающим красный свет.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+item_21 <= nrel_strict_inclusion: chapter_4_rights_and_responsibilities_of_pedestrians;;

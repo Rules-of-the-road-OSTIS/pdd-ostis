@@ -1,0 +1,33 @@
+sc_node_not_relation -> the_direction_of_movement_of_vehicles_carrying_dangerous_goods;;
+
+the_direction_of_movement_of_vehicles_carrying_dangerous_goods => nrel_main_idtf: [направление движения транспортных средств с опасными грузами] (* <- lang_ru;; *);;
+the_direction_of_movement_of_vehicles_carrying_dangerous_goods => nrel_main_idtf: [the direction of movement of vehicles carrying dangerous goods] (* <- lang_en;; *);;
+
+the_direction_of_movement_of_vehicles_carrying_dangerous_goods <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_direction_of_movement_of_vehicles_carrying_dangerous_goods_left.png";;
+                                        -> rrel_example: 
+                                                "file://the_direction_of_movement_of_vehicles_carrying_dangerous_goods_right.png";;
+                                        -> rrel_example: 
+                                                "file://the_direction_of_movement_of_vehicles_carrying_dangerous_goods_straight.png";;
+                                *);; 
+                *);;
+
+the_direction_of_movement_of_vehicles_carrying_dangerous_goods <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>направление движения транспортных средств с опасными грузами</b> - Движение транспортных средств с опознавательными знаками «Опасный груз» разрешается только в направлении, указанном на знаке.]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

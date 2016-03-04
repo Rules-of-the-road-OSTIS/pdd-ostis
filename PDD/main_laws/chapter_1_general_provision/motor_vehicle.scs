@@ -1,0 +1,26 @@
+sc_node_not_relation -> motor_vehicle;;
+
+motor_vehicle => nrel_main_idtf: 	[механическое транспортное средство] (* <- lang_ru;; *);;
+
+motor_vehicle => nrel_main_idtf: 	[motor vehicle] (* <- lang_en;; *);;
+motor_vehicle <= nrel_using_constants:
+	{
+    vehicle
+	};;
+
+
+motor_vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><b>Механическое транспортное средство</b> — <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, приводимое в движение двигателем.</p>
+<p>Ключевая фраза определения — «приводимое в движение», т.е. двигатель, установленный на транспортном средстве, приводит его в движение. Чаще всего на механических транспортных средствах установлены двигатели внутреннего сгорания или электродвигатели, также получают все большее распространение гибридные силовые установки.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+motor_vehicle <= nrel_strict_inclusion: chapter_1_general_provision;;

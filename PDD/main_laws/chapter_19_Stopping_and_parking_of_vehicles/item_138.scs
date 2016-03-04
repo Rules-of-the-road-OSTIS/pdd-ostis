@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_138;;
+
+item_138 => nrel_main_idtf: [пункт 138] (* <- lang_ru;; *);;
+
+item_138 => nrel_main_idtf: [item 138] (* <- lang_en;; *);;
+
+item_138 <= nrel_using_constants:
+	{
+	traffic_lane;
+	road;
+	vehicle;
+	roadway;
+	pavement;
+	shoulder
+	};;
+
+item_138 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>ќстановка и сто¤нка <sc_element sys_idtf="vehicle">транспортных средств</sc_element> разрешаютс¤:</p>
+					 <p>1) в специально отведенном месте, обозначенном дорожным знаком Ђћесто сто¤нкиї (Ђћесто сто¤нки таксиї, Ђћесто отдыхаї);</p>
+					 <p>2) на правой по ходу движени¤ <sc_element sys_idtf="shoulder">обочине</sc_element>, а при отсутствии <sc_element sys_idtf="shoulder">обочины</sc_element> или невозможности остановитьс¤ на ней Ч у кра¤ <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> параллельно ему, за исключением тех мест, где с помощью дорожных знаков или дорожной разметки допускаетс¤ иное расположение <sc_element sys_idtf="vehicle">транспортных средств</sc_element> (вне населенных пунктов разрешаетс¤ только остановка <sc_element sys_idtf="vehicle">транспортных средств</sc_element>);</p>
+					 <p>3) на левой <sc_element sys_idtf="shoulder">обочине</sc_element> <sc_element sys_idtf="road">дороги</sc_element> с односторонним движением, а при ее отсутствии или невозможности остановитьс¤ на ней Ч у левого кра¤ <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> параллельно ему, за исключением тех мест, где с помощью дорожных знаков или дорожной разметки допускаетс¤ иное расположение <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, при наличии там <sc_element sys_idtf="pavement">тротуара</sc_element>, непосредственно прилегающего к <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>, а в населенных пунктах Ч также на <sc_element sys_idtf="road">дороге</sc_element> с одной <sc_element sys_idtf="traffic_lane">полосой движени¤</sc_element> дл¤ каждого направлени¤ без трамвайных путей посередине (вне населенных пунктов разрешаетс¤ только остановка <sc_element sys_idtf="vehicle">транспортных средств</sc_element>).</p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

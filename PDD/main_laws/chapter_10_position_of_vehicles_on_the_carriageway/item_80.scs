@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_80;;
+
+item_80 => nrel_main_idtf: [пункт 80] (* <- lang_ru;; *);;
+
+item_80 => nrel_main_idtf: [item 80] (* <- lang_en;; *);;
+
+item_80 <= nrel_using_constants:
+	{
+obstacle_to_traffic;
+overtaking;
+advance
+	};;
+
+item_80 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  <sc_element sys_idtf="vehicle"> Транспортные средства</sc_element>, скорость движения которых не должна превышать 40 км/ч или которые по техническим причинам не могут развивать более высокую скорость движения по сравнению с указанной, должны двигаться по крайней правой полосе движения, кроме случаев <sc_element sys_idtf="overtaking"> обгона</sc_element>,<sc_element sys_idtf="advance"> опережения</sc_element>, объезда <sc_element sys_idtf="obstacle_to_traffic"> препятствия</sc_element> либо перестроения перед поворотом или разворотом.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

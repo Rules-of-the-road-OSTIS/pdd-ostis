@@ -1,0 +1,30 @@
+sc_node_not_relation -> sign_service_phone;;
+
+sign_service_phone => nrel_main_idtf: 
+	[знак сервиса "Телефон"] (* <- lang_ru;; *);;
+sign_service_phone => nrel_main_idtf: 
+	[sign service "Phone"] (* <- lang_en;; *);;
+
+sign_service_phone <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_phone.png";;
+                                *);; 
+                *);;
+sign_service_phone <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Телефон" информирует о предоставляемой возможности позвонить по телефону.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

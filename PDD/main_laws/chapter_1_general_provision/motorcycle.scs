@@ -1,0 +1,27 @@
+sc_node_not_relation -> motorcycle;;
+
+motorcycle => nrel_main_idtf: 	[мотоцикл] (* <- lang_ru;; *);;
+
+motorcycle => nrel_main_idtf: 	[motorcycle] (* <- lang_en;; *);;
+motorcycle <= nrel_using_constants:
+	{
+     motor_vehicle;
+     trailer
+	};;
+
+
+motorcycle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Масса транспортного средства в снаряженном состоянии</b> — это масса порожнего (незагруженного) транспортного средства без пассажиров с заправленными эксплуатационными емкостями.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+motorcycle <= nrel_strict_inclusion: chapter_1_general_provision;;
+motorcycle <= nrel_strict_inclusion: types_of_vehicles;;

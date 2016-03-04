@@ -1,0 +1,18 @@
+sc_node_not_relation -> criminal;;
+       
+criminal => nrel_main_idtf: [уголовная] (* <- lang_ru;; *);;
+
+criminal => nrel_main_idtf: [criminal] (* <- lang_en;; *);;
+
+criminal <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://criminal.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+		
+criminal <= nrel_strict_inclusion: responsibility;;

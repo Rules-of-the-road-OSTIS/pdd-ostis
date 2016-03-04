@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_95;;
+item_95 => nrel_main_idtf: [пункт 95] (* <- lang_ru;; *);;
+
+item_95 => nrel_main_idtf: [item 95] (* <- lang_en;; *);;
+
+item_95 <= nrel_using_constants:
+{
+vehicle;
+roadway;
+overtaking
+};;
+
+item_95 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>95. Водитель обгоняемого <sc_element sys_idtf="vehicle"> транспортного средства </sc_element> обязан с учетом дорожно-транспортной обстановки двигаться ближе к правому краю <sc_element sys_idtf="roadway"> проезжей части дороги </sc_element> и не преп¤тствовать <sc_element sys_idtf="overtaking"> обгону </sc_element> увеличением скорости движения или иными действиями.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

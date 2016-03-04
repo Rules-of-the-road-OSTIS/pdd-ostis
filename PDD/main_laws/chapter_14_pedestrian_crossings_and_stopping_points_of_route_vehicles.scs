@@ -1,0 +1,50 @@
+sc_node_not_relation -> chapter_14_pedestrian_crossings_and_stopping_points_of_route_vehicles;;
+        
+chapter_14_pedestrian_crossings_and_stopping_points_of_route_vehicles => nrel_main_idtf: [Глава 14. Пешеходные переходы и остановочные пункты маршрутных транспортных средств] (* <- lang_ru;; *);;
+
+chapter_14_pedestrian_crossings_and_stopping_points_of_route_vehicles => nrel_main_idtf: [Chapter 14. Pedestrian crossings and stopping points of route vehicles] (* <- lang_en;; *);;
+chapter_14_pedestrian_crossings_and_stopping_points_of_route_vehicles <= nrel_section_decomposition:
+	{
+        	item_114
+		(*
+		=> nrel_section_base_order: 
+			item_115;;
+		*);
+		item_115
+		(*
+		=> nrel_section_base_order: 
+			item_116;;
+		*);
+		item_116
+		(*
+		=> nrel_section_base_order: 
+			item_117;;
+		*);
+		item_117
+		(*
+		=> nrel_section_base_order: 
+			item_118;;
+		*);
+		item_118
+		(*
+		=> nrel_section_base_order: 
+			item_119;;
+		*);
+		item_119
+		(*
+		=> nrel_section_base_order: 
+			item_120;;
+		*);
+		item_120
+		(*
+		=> nrel_section_base_order: 
+			item_121;;
+		*);
+		item_121
+		(*
+		=> nrel_section_base_order: 
+			item_122;;
+		*);
+		item_122
+
+	};;

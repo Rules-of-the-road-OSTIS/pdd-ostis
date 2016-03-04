@@ -1,0 +1,30 @@
+sc_node_not_relation -> chapter_18_Movement_in_residential_and_pedestrian_areas_at_a_location_nearby;;
+        
+chapter_18_Movement_in_residential_and_pedestrian_areas_at_a_location_nearby => nrel_main_idtf: [Глава 18. Движение в жилой и пешеходной зонах, на прилегающей территории] (* <- lang_ru;; *);;
+
+chapter_18_Movement_in_residential_and_pedestrian_areas_at_a_location_nearby => nrel_main_idtf: [Chapter 18. Movement in residential and pedestrian areas ,at a location nearby] (* <- lang_en;; *);;
+chapter_18_Movement_in_residential_and_pedestrian_areas_at_a_location_nearby <= nrel_section_decomposition:
+	{
+        	item_133
+		(*
+		=> nrel_section_base_order: 
+			item_134;;
+		*);
+		item_134
+		(*
+		=> nrel_section_base_order: 
+			item_135;;
+		*);
+		item_135
+		(*
+		=> nrel_section_base_order: 
+			item_136;;
+		*);
+		item_136
+		(*
+		=> nrel_section_base_order: 
+			item_137;;
+		*);
+		item_137
+
+	};;

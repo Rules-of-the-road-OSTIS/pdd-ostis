@@ -1,0 +1,21 @@
+sc_node_not_relation -> chapter_2_steering;;
+       
+chapter_2_steering => nrel_main_idtf: [Глава 2. Рулевое управление] (* <- lang_ru;; *);;
+
+chapter_2_steering => nrel_main_idtf: [chapter_2_steering] (* <- lang_en;; *);;
+chapter_2_steering <= nrel_inclusion: car;;
+chapter_2_steering <= nrel_inclusion: bus;;
+chapter_2_steering <= nrel_inclusion: motorcycle;;
+
+chapter_2_steering <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://chapter_2_steering.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;	
+		
+chapter_2_steering <= nrel_strict_inclusion: malfunction;;

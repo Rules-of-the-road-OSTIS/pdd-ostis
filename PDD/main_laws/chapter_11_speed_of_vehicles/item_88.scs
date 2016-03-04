@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_88;;
+
+item_88 => nrel_main_idtf: [пункт 88] (* <- lang_ru;; *);;
+
+item_88 => nrel_main_idtf: [item 88] (* <- lang_en;; *);;
+
+item_88 <= nrel_using_constants:
+	{
+pedestrian_zone;
+locality;
+vehicle;
+motor_vehicle
+	};;
+
+item_88 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> В <sc_element sys_idtf="locality"> населенных пунктах</sc_element> разрешается движение <sc_element sys_idtf="vehicle"> транспортных средств</sc_element> со скоростью не более 60 км/ч, а буксирующим <sc_element sys_idtf="motor_vehicle"> механические транспортные средства</sc_element> — не более 50 км/ч, в жилых и <sc_element sys_idtf="pedestrian_zone"> пешеходных зонах</sc_element>, на прилегающих территориях — не более 20 км/ч.<\p>
+					 ]
+					 (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

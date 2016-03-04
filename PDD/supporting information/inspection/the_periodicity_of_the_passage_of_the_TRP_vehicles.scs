@@ -1,0 +1,17 @@
+sc_node_not_relation -> the_periodicity_of_the_passage_of_the_TRP_vehicles;;
+
+the_periodicity_of_the_passage_of_the_TRP_vehicles => nrel_main_idtf: [Периодичность прохождения ГТО транспортных средств] (* <- lang_ru;; *);;
+
+the_periodicity_of_the_passage_of_the_TRP_vehicles => nrel_main_idtf: [the_periodicity_of_the_passage_of_the_TRP_vehicles] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://the_periodicity_of_the_passage_of_the_TRP_vehicles.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+the_periodicity_of_the_passage_of_the_TRP_vehicles <= nrel_strict_inclusion: inspection;;

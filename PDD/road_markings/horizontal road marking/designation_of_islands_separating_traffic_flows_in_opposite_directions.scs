@@ -1,0 +1,32 @@
+sc_node_not_relation -> designation_of_islands_separating_traffic_flows_in_opposite_directions;;
+
+designation_of_islands_separating_traffic_flows_in_opposite_directions => nrel_main_idtf: 
+	[обозначение островков разделяющих транспортные потоки противоположных направлений] (* <- lang_ru;; *);;
+
+designation_of_islands_separating_traffic_flows_in_opposite_directions => nrel_main_idtf: 
+	[designation of islands separating traffic flows in opposite directions] (* <- lang_en;; *);;
+
+designation_of_islands_separating_traffic_flows_in_opposite_directions <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение островков, разделяющих транспортные потоки противоположных направлений.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_islands_separating_traffic_flows_in_opposite_directions <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_islands_separating_traffic_flows_in_opposite_directions.png";;
+                                *);; 
+                *);;

@@ -1,0 +1,31 @@
+sc_node_not_relation -> item_72;;
+
+item_72 => nrel_main_idtf: [пункт 72] (* <- lang_ru;; *);;
+
+item_72 => nrel_main_idtf: [item 72] (* <- lang_en;; *);;
+
+item_72 <= nrel_using_constants:
+	{
+	vehicle
+	};;
+
+item_72 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  Разворот запрещается:<\p>
+					 <p>1) на пешеходных переходах и ближе 15 метров от них с обеих сторон, кроме случая разрешенного разворота на перекрестке; </p>
+					 <p>2) в местах, где видимость дороги хотя бы в одном направлении движения менее 100 метров; </p>
+					 <p>3)на остановочных пунктах маршрутных <sc_element sys_idtf="vehicle">транспортных средств</sc_element> ; </p>
+					 <p>4) на мостах, путепроводах, эстакадах и под ними;</p>
+					 <p>5) на железнодорожных переездах.</p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

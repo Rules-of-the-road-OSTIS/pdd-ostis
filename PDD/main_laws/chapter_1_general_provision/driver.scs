@@ -1,0 +1,39 @@
+sc_node_not_relation -> driver;;
+
+driver => nrel_main_idtf: 	[водитель] (* <- lang_ru;; *);;
+
+driver => nrel_main_idtf: 	[driver] (* <- lang_en;; *);;
+
+driver <= nrel_using_constants:
+	{
+	driver;
+	self_propelled;
+	motor_vehicle;
+	vehicle
+	};;
+
+driver <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><b>Водитель</b> — физическое лицо, управляющее <sc_element sys_idtf="vehicle">транспортным средством</sc_element> , <sc_element sys_idtf="self_propelled">самоходной машиной</sc_element>, за исключением лица, обучаемого управлению <sc_element sys_idtf="motor_vehicle">механическим транспортным средством</sc_element>, самоходной машиной (сдающего квалификационный практический экзамен на право управления механическим транспортным средством, самоходной машиной). </p>
+<p>К <sc_element sys_idtf="driver">водителю</sc_element> приравниваются лицо, обучающее управлению механическим транспортным средством, самоходной машиной (принимающее квалификационный практический экзамен на право управления механическим транспортным средством, самоходной машиной) и при этом находящееся в нем (ней), а также всадник, погонщик скота.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+driver <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://driver.jpg";;
+                                *);; 
+                *);;
+driver <= nrel_strict_inclusion: chapter_1_general_provision;;

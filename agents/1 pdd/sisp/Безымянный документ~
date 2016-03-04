@@ -1,0 +1,75 @@
+function proc_of_check_cross_acsess(_subject) {
+  return _acsess;
+  return _acsess2;
+  if(search(
+    _subject, 
+    [assign, _arc1], 
+    [assign, _who], 
+    [assign, _arc2], 
+    rrel_traffic_regulation,
+    [], [], 
+    [assign, _regulation_set], 
+    [], []
+  ))
+proc_of_finding_regulation_acsess(_regulation_set, [assign, _acsess]);
+else 
+{
+if(search(
+    _subject, 
+    [assign, _arc1], 
+    [assign, _who], 
+    [assign, _arc2], 
+    rrel_sign_priority,
+    [], [], 
+    [assign, _sign_set], 
+    [], []
+  ))
+proc_of_finding_not_regulation_acsess(_sign_set, [assign, _acsess], [assign, _acsess2]);
+else
+proc_of_finding_not_chek_acsess([assign, _acsess]);
+
+}
+}
+
+
+function proc_of_finding_regulation_acsess(_regulation_set) {
+  return _acsess;
+  if (search(
+    regulation_set, 
+    [assign,rrel_pos_const_perm, _arc], 
+    [assign, _who]
+  ))
+{
+ if (search(
+    concept_regul_boy,
+    [assign,pos_const_perm, _arc], 
+   _who
+  ))
+proc_get_acsess_regul_boy(_who, [assign, _acsess]);
+else
+proc_get_acsess_trafficlight(_who, [assign, _acsess]);
+erase([erase, _arc]);
+}
+
+}
+
+function proc_of_finding_not_regulation_acsess (_sign_set) {
+return _acsess;
+return _acsess2;
+while(search(_sign_set, [assign, _arc], [assign, _sign]))
+{
+set_priority_sign(_sign);
+search(_sign, [assign, _arc1], [assign, _prority], [assign, _arc1],rrel_main_road)
+var_assign([assign, _acsess], [1]);
+var_assign([assign, _acsess2], [2]);
+erase([erase, _arc]);
+}
+}
+
+
+
+
+function proc_get_acsess_trafficlight(_trafficlight) {
+return _acsess;
+var_assign([assign, _acsess], [151515]);
+}

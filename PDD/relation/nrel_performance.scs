@@ -1,0 +1,7 @@
+sc_node_norole_relation -> nrel_performance;;
+
+nrel_performance => nrel_main_idtf:
+	[при исполнении*] 
+	(* <- lang_ru;; *);
+	[in the performance*]
+	(* <- lang_en;;	*);;

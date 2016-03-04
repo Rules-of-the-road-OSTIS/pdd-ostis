@@ -1,0 +1,6 @@
+sc_node_not_relation -> pedestrian_have_rights;;
+       
+pedestrian_have_rights => nrel_main_idtf: [пешеход имеет право] (* <- lang_ru;; *);;
+
+pedestrian_have_rights => nrel_main_idtf: [pedestrian_have_rights] (* <- lang_en;; *);;
+

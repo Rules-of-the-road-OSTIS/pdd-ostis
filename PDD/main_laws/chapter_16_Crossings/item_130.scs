@@ -1,0 +1,30 @@
+sc_node_not_relation -> item_130;;
+
+item_130 => nrel_main_idtf: [пункт 130] (* <- lang_ru;; *);;
+
+item_130 => nrel_main_idtf: [item 130] (* <- lang_en;; *);;
+
+item_130 <= nrel_using_constants:
+	{
+	vehicle;
+	driver;
+	railroad_crossing;
+	railmay_vehicle
+	};;
+
+item_130 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>При вынужденной остановке <sc_element sys_idtf="vehicle">транспортного средства</sc_element> на <sc_element sys_idtf="railroad_crossing">железнодорожном переезде</sc_element> <sc_element sys_idtf="driver">водитель</sc_element> обязан включить аварийную световую сигнализацию, немедленно высадить пассажиров и принять меры для освобождения <sc_element sys_idtf="railroad_crossing">железнодорожного переезда</sc_element>.</p> 
+                      <p>Одновременно <sc_element sys_idtf="driver">водитель</sc_element> должен при имеющейся возможности послать двух человек вдоль железнодорожных путей в обе стороны от переезда на 1 километр (если одного, то в сторону худшей видимости железнодорожного пути), объяснив им порядок подачи сигнала остановки машинисту приближающегося <sc_element sys_idtf="railmay_vehicle">железнодорожного транспортного средства</sc_element>, а сам — оставаться возле <sc_element sys_idtf="vehicle">транспортного средства</sc_element> и подавать сигналы общей тревоги (серии из одного длинного и трех коротких звуковых сигналов).</p>
+					  <p>При появлении <sc_element sys_idtf="railmay_vehicle">железнодорожного транспортного средства</sc_element> <sc_element sys_idtf="driver">водитель</sc_element>(пассажир) обязан бежать ему навстречу, подавая сигнал остановки и соблюдая меры предосторожности. Сигналом остановки служит круговое движение руки (днем — с лоскутом яркой материи или каким-либо хорошо видимым предметом, ночью — с фонарем или факелом).</p>]
+					 (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

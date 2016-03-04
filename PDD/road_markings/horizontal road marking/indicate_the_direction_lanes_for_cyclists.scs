@@ -1,0 +1,37 @@
+sc_node_not_relation -> indicate_the_direction_lanes_for_cyclists;;
+
+indicate_the_direction_lanes_for_cyclists => nrel_main_idtf: 
+	[обозначение направления движения велосипедистов по полосам движения] (* <- lang_ru;; *);;
+
+indicate_the_direction_lanes_for_cyclists => nrel_main_idtf: 
+	[indicate the direction lanes for cyclists] (* <- lang_en;; *);;
+
+indicate_the_direction_lanes_for_cyclists <= nrel_using_constants:
+	{
+	traffic_lane
+	};;
+
+indicate_the_direction_lanes_for_cyclists <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Применяется для обозначения направления движения велосипедистов по <sc_element sys_idtf="traffic_lane">полосам движения</sc_element>, выделенным разметкой или различным цветом покрытия.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+indicate_the_direction_lanes_for_cyclists <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://indicate_the_direction_lanes_for_cyclists.png";;
+                                *);; 
+                *);;

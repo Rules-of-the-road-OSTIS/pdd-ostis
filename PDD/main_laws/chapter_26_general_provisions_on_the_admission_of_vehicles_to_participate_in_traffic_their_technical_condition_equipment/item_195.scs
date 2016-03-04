@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_195;;
+
+item_195 => nrel_main_idtf: [пункт 195] (* <- lang_ru;; *);;
+
+item_195 => nrel_main_idtf: [item_195] (* <- lang_en;; *);;
+item_195 <= nrel_using_constants:
+	{
+	trolleybus;
+	tram;
+	vehicle
+	};;
+
+item_195 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>195. Запрещается участие в дорожном движении <sc_element sys_idtf="trolleybus">троллейбусов</sc_element> и <sc_element sys_idtf="tram">трамваев</sc_element> при наличии одной и более неисправности, указанной в технических нормативных правовых актах, регламентирующих техническое состояние этих транспортных средств.</p>
+
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

@@ -1,0 +1,29 @@
+sc_node_not_relation -> right_turn_is_prohibited;;
+       
+right_turn_is_prohibited => nrel_main_idtf: [поворот направо запрещён] (* <- lang_ru;; *);;
+
+right_turn_is_prohibited => nrel_main_idtf: [right turn is prohibited] (* <- lang_en;; *);;
+
+right_turn_is_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://right_turn_is_prohibited.png";;
+                                *);; 
+                *);;
+right_turn_is_prohibited <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Поворот направо запрещён.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

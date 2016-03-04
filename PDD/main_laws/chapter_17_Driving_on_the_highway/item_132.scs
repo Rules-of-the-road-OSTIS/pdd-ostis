@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_132;;
+
+item_132 => nrel_main_idtf: [пункт 132] (* <- lang_ru;; *);;
+
+item_132 => nrel_main_idtf: [item 132] (* <- lang_en;; *);;
+
+item_132 <= nrel_using_constants:
+	{
+	road
+	};;
+
+item_132 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Требования настоящих Правил, установленные для движения по автомагистрали, распространяются также на <sc_element sys_idtf="road">дороги</sc_element>, обозначенные дорожным знаком «Дорога для автомобилей».</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

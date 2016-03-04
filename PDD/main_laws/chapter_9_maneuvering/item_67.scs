@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_67;;
+
+item_67 => nrel_main_idtf: [пункт 67] (* <- lang_ru;; *);;
+
+item_67 => nrel_main_idtf: [item 67] (* <- lang_en;; *);;
+
+item_67 <= nrel_using_constants:
+	{
+tram;
+driver;
+vehicle
+	};;
+
+item_67 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> Перед поворотом налево или разворотом вне перекрестка <sc_element sys_idtf="driver"> водитель</sc_element> <sc_element sys_idtf="vehicle"> транспортного средства</sc_element> обязан уступить дорогу встречным <sc_element sys_idtf="vehicle"> транспортным средствам</sc_element> и попутному <sc_element sys_idtf="tram"> трамваю</sc_element>.<\p>
+					 
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

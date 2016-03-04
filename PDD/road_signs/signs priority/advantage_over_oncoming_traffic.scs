@@ -1,0 +1,35 @@
+sc_node_not_relation -> advantage_over_oncoming_traffic;;
+advantage_over_oncoming_traffic => nrel_main_idtf: 
+	[преимущество перед встречным движением] (* <- lang_ru;; *);;
+advantage_over_oncoming_traffic => nrel_main_idtf: 
+	[advantage over oncoming traffic] (* <- lang_en;; *);;
+advantage_over_oncoming_traffic <= nrel_using_constants:
+	{
+	road;
+	driver;
+	advantage;
+	vehicle
+	};;
+advantage_over_oncoming_traffic <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://advantage_over_oncoming_traffic.png";;
+                                *);; 
+                *);;
+advantage_over_oncoming_traffic <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element>, при движении по которому <sc_element sys_idtf="driver">водитель</sc_element> пользуется <sc_element sys_idtf="advantage">преимуществом</sc_element> по отношению к встречным <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>.]
+				(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

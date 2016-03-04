@@ -1,0 +1,35 @@
+sc_node_not_relation -> circular_motion;;
+
+circular_motion => nrel_main_idtf: [круговое движение] (* <- lang_ru;; *);;
+circular_motion => nrel_main_idtf: [circular motion] (* <- lang_en;; *);;
+
+circular_motion<= nrel_using_constants:
+	{
+	intersection
+	};;
+
+circular_motion <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://circular_motion.png";;
+                                *);; 
+                *);;
+
+circular_motion <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Круговое движение</b> - Разрешается объезд центрального островка на <sc_element sys_idtf="intersection">перекрестке</sc_element> (площади)
+ с круговым движением только в направлении, указанном стрелками]
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

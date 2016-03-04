@@ -1,0 +1,18 @@
+sc_node_not_relation -> inspection;;
+
+inspection => nrel_main_idtf: [техосмотр] (* <- lang_ru;; *);;
+
+inspection => nrel_main_idtf: [inspection] (* <- lang_en;; *);;
+inspection <= nrel_inclusion: vehicle;;
+
+inspection <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://inspection.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+inspection <= nrel_strict_inclusion: supporting_information;;

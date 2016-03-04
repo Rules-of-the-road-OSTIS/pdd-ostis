@@ -1,0 +1,36 @@
+sc_node_not_relation -> level_crossing_without_barrier;;
+      
+level_crossing_without_barrier => nrel_main_idtf: [железнодороный переезд без шлакбаума] (* <- lang_ru;; *);;
+level_crossing_without_barrier => nrel_main_idtf: [level crossing without barrier] (* <- lang_en;; *);;
+
+level_crossing_without_barrier <= nrel_using_constants:
+	{
+	road;
+	bike_lane;
+	footpath
+	};;
+
+level_crossing_without_barrier <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://level_crossing_without_barrier.png";;
+                                *);; 
+                *);;
+				
+level_crossing_without_barrier <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Знак,указывающий приближение к месту одноуровневого пересечения железнодорожных путей и автомобильной <sc_element sys_idtf="road">дороги</sc_element>,либо <sc_element sys_idtf="bike_lane">велосипедной</sc_element> или <sc_element sys_idtf="footpath">пешеходной дорожки</sc_element> не оборудованному шлакбаумом.]
+                         (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,57 @@
+sc_node_not_relation -> prohibiting_signs;;
+      
+prohibiting_signs => nrel_main_idtf: [Запрещающие знаки] (* <- lang_ru;; *);;
+
+prohibiting_signs => nrel_main_idtf: [Prohibiting signs] (* <- lang_en;; *);;
+
+prohibiting_signs <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещающие и ограничивающие знаки вводят или отменяют определенные ограничения движения. Знаки имеют круглую форму, большинство из них белые с красной каймой.]
+
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+prohibiting_signs <= nrel_section_decomposition:
+{
+	beeping_prohibited;
+	bicycle_traffic_is_prohibited;
+	customs;
+	danger;
+	denied_entry;
+	end_of_all_restrictions;
+	end_of_prohibition_of_overtaking;
+	end_of_prohibitio_of_overtaking_lorries;
+	end_of_speed_limit;
+	height_restriction;
+	left_turn_is_prohibited;
+	length_limit;
+	limitation_of_the_minimum_distance;
+	limit_mass;
+	maximum_speed_limit;
+	movement_of_animal_drawn_vehicles_prohibited;
+	movement_of_trucks_prohibited;
+	no_motor_vehicles_are_prohibited;
+	no_parking;
+	no_parking_on_odd_days_of_the_month;
+	no_parking_on_the_even_days_of_the_month;
+	overtaking_is_forbidden;
+	overtaking_trucks_prohibited;
+	pedestrians_prohibited;
+	per_axle_limits;
+	right_turn_is_prohibited;
+	sign_movement_is_prohibited;
+	standing_is_prohibited;
+	the_motorcycle_is_prohibited;
+	the_movement_of_vehicles_carrying_dangerous_goods_prohibited;
+	towing_a_trailer_is_forbidden;
+	tractor_driving_is_prohibited;
+	turn_denied;
+	width_constraint
+};; 

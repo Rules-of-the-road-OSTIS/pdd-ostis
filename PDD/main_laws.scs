@@ -1,0 +1,141 @@
+sc_node_not_relation -> main_laws;;
+
+main_laws => nrel_main_idtf: [Основные правила] (* <- lang_ru;; *);;
+
+main_laws => nrel_main_idtf: [main laws] (* <- lang_en;; *);;
+
+main_laws <= nrel_section_decomposition:
+	{
+        	chapter_1_general_provision
+		(*
+		=> nrel_section_base_order: 
+			chapter_2_general_rights_and_obligations_of_road_users;;
+		*);
+		chapter_2_general_rights_and_obligations_of_road_users
+		(*
+		=> nrel_section_base_order: 
+			chapter_3_the_rights_and_duties_of_drivers;;
+		*);
+		chapter_3_the_rights_and_duties_of_drivers
+		(*
+		=> nrel_section_base_order: 
+			chapter_4_rights_and_responsibilities_of_pedestrians;;
+		*);
+		chapter_4_rights_and_responsibilities_of_pedestrians
+		(*
+		=> nrel_section_base_order: 
+			chapter_5_duties_of_passengers;;
+		*);
+		chapter_5_duties_of_passengers
+		(*
+		=> nrel_section_base_order: 
+			chapter_6_rights_and_obligations_of_drivers_and_others_in_special_cases;;
+		*);
+		chapter_6_rights_and_obligations_of_drivers_and_others_in_special_cases
+		(*
+		=> nrel_section_base_order: 
+			chapter_7_traffic_controller_signals_and_traffic_lights;;
+		*);
+		chapter_7_traffic_controller_signals_and_traffic_lights
+		(*
+		=> nrel_section_base_order: 
+			chapter_8_use_of_hazard_warning_lights_warning_triangle_lantern_with_flashing_red_light;;
+		*);
+		chapter_8_use_of_hazard_warning_lights_warning_triangle_lantern_with_flashing_red_light
+		(*
+		=> nrel_section_base_order: 
+			chapter_9_maneuvering;;
+		*);
+		chapter_9_maneuvering
+		(*
+		=> nrel_section_base_order: 
+			chapter_10_position_of_vehicles_on_the_carriageway;;
+		*);
+		chapter_10_position_of_vehicles_on_the_carriageway
+		(*
+		=> nrel_section_base_order: 
+			chapter_11_speed_of_vehicles;;
+		*);
+		chapter_11_speed_of_vehicles
+		(*
+		=> nrel_section_base_order: 
+			chapter_12_overtaking_oncoming_traffic;;
+		*);
+		chapter_12_overtaking_oncoming_traffic
+		(*
+		=> nrel_section_base_order: 
+			chapter_13_directions_crossroads;;
+		*);
+		chapter_13_directions_crossroads
+		(*
+		=> nrel_section_base_order: 
+			chapter_14_pedestrian_crossings_and_stopping_points_of_route_vehicles;;
+		*);
+		chapter_14_pedestrian_crossings_and_stopping_points_of_route_vehicles	
+		(*
+		=> nrel_section_base_order: 
+			chapter_15_The_advantage_of_route_vehicles;;
+		*);
+		chapter_15_The_advantage_of_route_vehicles
+		(*
+		=> nrel_section_base_order: 
+			chapter_16_Crossings;;
+		*);
+		chapter_16_Crossings
+		(*
+		=> nrel_section_base_order: 
+			chapter_17_Driving_on_the_highway;;
+		*);
+		chapter_17_Driving_on_the_highway
+		(*
+		=> nrel_section_base_order: 
+			chapter_18_Movement_in_residential_and_pedestrian_areas_at_a_location_nearby;;
+		*);
+		chapter_18_Movement_in_residential_and_pedestrian_areas_at_a_location_nearby
+
+		(*
+		=> nrel_section_base_order: 
+			chapter_19_Stopping_and_parking_of_vehicles;;
+		*);
+		chapter_19_Stopping_and_parking_of_vehicles
+		(*
+		=> nrel_section_base_order: 
+			chapter_20_traffic_on_bicycles_and_mopeds;;
+		*);
+		chapter_20_traffic_on_bicycles_and_mopeds
+		(*
+		=> nrel_section_base_order: 
+			chapter_21_movement_of_animal_drawn_vehicles_riders_and_cattle_driving;;
+		*);
+		chapter_21_movement_of_animal_drawn_vehicles_riders_and_cattle_driving
+		(*
+		=> nrel_section_base_order: 
+			chapter_22_use_of_external_light_devices_and_sound_signals_of_vehicles;;
+		*);
+		chapter_22_use_of_external_light_devices_and_sound_signals_of_vehicles
+		(*
+		=> nrel_section_base_order: 
+			chapter_23_transportation_of_passengers;;
+		*);
+		chapter_23_transportation_of_passengers
+		(*
+		=> nrel_section_base_order: 
+			chapter_24_freight;;
+		*);
+		chapter_24_freight
+		(*
+		=> nrel_section_base_order: 
+			chapter_25_motor_vehicle_towing;;
+		*);
+		chapter_25_motor_vehicle_towing
+		(*
+		=> nrel_section_base_order: 
+					chapter_26_general_provisions_on_the_admission_of_vehicles_to_participate_in_traffic_their_technical_condition_equipment;;
+		*);
+		chapter_26_general_provisions_on_the_admission_of_vehicles_to_participate_in_traffic_their_technical_condition_equipment
+		(*
+		=> nrel_section_base_order: 
+			chapter_27_duties_of_officers_and_other_persons_to_ensure_road_safety;;
+		*);
+		chapter_27_duties_of_officers_and_other_persons_to_ensure_road_safety
+	};;

@@ -1,0 +1,19 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+       
+heavy_vehicles => nrel_main_idtf: [транспортное средство большой грузоподъемности] (* <- lang_ru;; *);;
+
+heavy_vehicles => nrel_main_idtf: [heavy vehicles] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://heavy_vehicles.png";;
+                                *);; 
+                *);;
+
+heavy_vehicles <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;
+

@@ -1,0 +1,30 @@
+sc_node_not_relation -> item_68;;
+
+item_68 => nrel_main_idtf: [пункт 68] (* <- lang_ru;; *);;
+
+item_68 => nrel_main_idtf: [item 68] (* <- lang_en;; *);;
+
+item_68 <= nrel_using_constants:
+	{
+roadway;
+driver;
+vehicle
+
+	};;
+
+item_68 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> Если для разворота вне перекрестка ширина <sc_element sys_idtf="roadway"> проезжей части дороги</sc_element> недостаточна для его выполнения из крайнего левого положения, разворот допускается производить от правого края <sc_element sys_idtf="roadway"> проезжей части дороги</sc_element> или с правой по ходу движения обочины. При этом <sc_element sys_idtf="driver"> водитель</sc_element> должен уступить дорогу попутным и встречным <sc_element sys_idtf="vehicle"> транспортным средствам</sc_element>.<\p>
+					 
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

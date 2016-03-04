@@ -1,0 +1,35 @@
+sc_node_not_relation -> traffic_accident;;
+
+traffic_accident => nrel_main_idtf: 	[дорожно-транспортное происшествие] (* <- lang_ru;; *);;
+
+traffic_accident => nrel_main_idtf: 	[traffic accident] (* <- lang_en;; *);;
+traffic_accident <= nrel_using_constants:
+	{
+     motor_vehicle
+	};;
+
+
+traffic_accident <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Дорожно-транспортное происшествие</b> — происшествие, совершенное с участием хотя бы одного находившегося в движении <sc_element sys_idtf="motor_vehicle">механического транспортного средства</sc_element>, в результате которого причинен вред жизни или здоровью физического лица, его имуществу либо имуществу юридического лица.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+traffic_accident <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://traffic_accident.jpg";;
+                                *);; 
+                *);;
+traffic_accident <= nrel_strict_inclusion: chapter_1_general_provision;;

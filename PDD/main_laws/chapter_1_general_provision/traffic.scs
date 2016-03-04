@@ -1,0 +1,30 @@
+sc_node_not_relation -> traffic;;
+
+traffic => nrel_main_idtf: 	[дорожное движение] (* <- lang_ru;; *);;
+
+traffic => nrel_main_idtf: 	[traffic] (* <- lang_en;; *);;
+traffic <= nrel_using_constants:
+	{
+     pedestrian;
+     road;
+     parking_of_a_vehicle;
+     stop_the_vehicle;
+     vehicle
+	};;
+
+
+traffic <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Дорожное движение</b> — движение <sc_element sys_idtf="pedestrian">пешеходов</sc_element> и (или) <sc_element sys_idtf="vehicle">транспортных средств</sc_element> по <sc_element sys_idtf="road">дороге</sc_element>, в том числе <sc_element sys_idtf="parking_of_a_vehicle">стоянка</sc_element> и <sc_element sys_idtf="stop_the_vehicle">остановка</sc_element> в пределах дороги, и связанные с ним общественные отношения.
+Для регулирования дорожного движения и обеспечения его безопасности предназначены дорожные знаки и разметка, светофоры и шлагбаумы, а также прочие конструкции и изображения, которые называются <sc_element sys_idtf="technical_means_of_traffic">техническими средствами организации дорожного движения</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+traffic <= nrel_strict_inclusion: chapter_1_general_provision;;

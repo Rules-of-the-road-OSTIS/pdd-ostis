@@ -1,0 +1,30 @@
+sc_node_not_relation -> end_of_speed_limit;;
+
+end_of_speed_limit => nrel_main_idtf: [конец зоны ограничения скорости] (* <- lang_ru;; *);;
+
+end_of_speed_limit => nrel_main_idtf: [end of speed limit] (* <- lang_en;; *);;
+
+end_of_speed_limit <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://end_of_speed_limit.png";
+                                                "file://end_of_speed_limit2.png";;
+                                *);; 
+                *);;
+end_of_speed_limit 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Отменяет действие знаков "ограничение максимальной скорости".] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

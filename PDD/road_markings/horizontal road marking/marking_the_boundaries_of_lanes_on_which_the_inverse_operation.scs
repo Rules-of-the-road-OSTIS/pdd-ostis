@@ -1,0 +1,37 @@
+sc_node_not_relation -> marking_the_boundaries_of_lanes_on_which_the_inverse_operation;;
+
+marking_the_boundaries_of_lanes_on_which_the_inverse_operation => nrel_main_idtf: 
+	[обозначение границ полос движения, на которых осуществляется реверсивное регулирование] (* <- lang_ru;; *);;
+
+marking_the_boundaries_of_lanes_on_which_the_inverse_operation => nrel_main_idtf: 
+	[marking the boundaries of lanes on which the inverse operation] (* <- lang_en;; *);;
+
+marking_the_boundaries_of_lanes_on_which_the_inverse_operation <= nrel_using_constants:
+	{
+	traffic_lane
+	};;
+	
+marking_the_boundaries_of_lanes_on_which_the_inverse_operation <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение границ <sc_element sys_idtf="traffic_lane">полос движения</sc_element>, на которых осуществляется реверсивное регулирование.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+marking_the_boundaries_of_lanes_on_which_the_inverse_operation <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://marking_the_boundaries_of_lanes_on_which_the_inverse_operation.png";;
+                                *);; 
+                *);;

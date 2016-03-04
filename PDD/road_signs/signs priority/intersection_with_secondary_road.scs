@@ -1,0 +1,33 @@
+sc_node_not_relation -> intersection_with_secondary_road;;
+intersection_with_secondary_road => nrel_main_idtf: 
+	[пересечение со второстепенной дорогой] (* <- lang_ru;; *);;
+intersection_with_secondary_road => nrel_main_idtf: 
+	[intersection with secondary road] (* <- lang_en;; *);;
+intersection_with_secondary_road <= nrel_using_constants:
+	{
+	intersection;
+	main_road
+	};;
+intersection_with_secondary_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://intersection_with_secondary_road.png";;
+                                *);; 
+                *);;
+intersection_with_secondary_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Приближение к <sc_element sys_idtf="intersection">перекрестку</sc_element> со второстепенной дорогой. Утолщенной линией показана <sc_element sys_idtf="main_road">главная дорога</sc_element>, тонкой - второстепенная.]
+				(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

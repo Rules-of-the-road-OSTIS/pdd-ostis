@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_196;;
+
+item_196 => nrel_main_idtf: [пункт 196] (* <- lang_ru;; *);;
+
+item_196 => nrel_main_idtf: [item_196] (* <- lang_en;; *);;
+item_196 <= nrel_using_constants:
+	{
+	driver;
+	item_194;
+	traffic_safety
+	};;
+
+item_196 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>196. При возникновении неисправностей, за исключением указанных в подпунктах 194.8–194.11 <sc_element sys_idtf="item_194">пункта 194</sc_element> настоящих Правил, <sc_element sys_idtf="driver">водитель</sc_element> должен принять меры к их устранению, а если это невозможно, он может следовать к месту стоянки или ремонта, соблюдая необходимые меры предосторожности по обеспечению <sc_element sys_idtf="traffic_safety">безопасности дорожного движения</sc_element>.</p>
+
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

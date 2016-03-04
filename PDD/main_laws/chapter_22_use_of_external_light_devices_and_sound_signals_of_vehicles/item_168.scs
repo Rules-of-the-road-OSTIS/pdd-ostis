@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_168;;
+
+item_168 => nrel_main_idtf: [пункт 168] (* <- lang_ru;; *);;
+
+item_168 => nrel_main_idtf: [item 168] (* <- lang_en;; *);;
+
+item_168 <= nrel_using_constants:
+{
+vehicle;
+locality;
+driver
+};;
+
+item_168 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>168. Фарой-прожектором и фарой-искателем разрешается пользоваться только вне <sc_element sys_idtf="locality">населенных пунктов</sc_element> при отсутствии встречных <sc_element sys_idtf="vehicle">транспортных средств</sc_element>. В <sc_element sys_idtf="locality">населенных пунктах</sc_element> пользоваться такими фарами могут только <sc_element sys_idtf="driver">водители</sc_element> <sc_element sys_idtf="vehicle">транспортных средств</sc_element> оперативного назначения при выполнении служебного задания.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,20 @@
+sc_node_not_relation -> you_will_pass_the_first;;
+
+you_will_pass_the_first => nrel_main_idtf: [Вы проедете первым] (* <- lang_ru;; *);;
+
+you_will_pass_the_first => nrel_main_idtf: [you_will_pass_the_first] (* <- lang_en;; *);;
+you_will_pass_the_first <= nrel_inclusion: sign_main_road;;
+you_will_pass_the_first <= nrel_inclusion: give_way;;
+
+you_will_pass_the_first <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://you_will_pass_the_first.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+
+you_will_pass_the_first <= nrel_strict_inclusion: intersection_1;;

@@ -1,0 +1,8 @@
+sc_node_not_relation -> service_station;;
+
+service_station => nrel_main_idtf: [станция технического обслуживания] (* <- lang_ru;; *);;
+
+service_station => nrel_main_idtf: [service_station] (* <- lang_en;; *);;
+service_station <= nrel_inclusion: vehicle;;
+
+service_station <= nrel_strict_inclusion: inspection;;

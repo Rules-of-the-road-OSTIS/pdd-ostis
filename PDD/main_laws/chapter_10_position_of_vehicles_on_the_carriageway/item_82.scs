@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_82;;
+
+item_82 => nrel_main_idtf: [пункт 82] (* <- lang_ru;; *);;
+
+item_82 => nrel_main_idtf: [item 82] (* <- lang_en;; *);;
+
+item_82 <= nrel_using_constants:
+	{
+road;
+roadway;
+vehicle;
+maneuver_maneuver
+	};;
+
+item_82 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> На <sc_element sys_idtf="road"> дороге</sc_element>, <sc_element sys_idtf="roadway"> проезжая часть</sc_element> которой разделена на полосы движения линиями горизонтальной дорожной разметки, движение <sc_element sys_idtf="vehicle"> транспортных средств</sc_element> должно осуществляться строго по этим полосам. Наезжать на прерывистые линии горизонтальной дорожной разметки разрешается только при <sc_element sys_idtf="maneuver_maneuver"> маневрировании</sc_element>.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_157;;
+item_157 => nrel_main_idtf: [пункт 157] (* <- lang_ru;; *);;
+
+item_157 => nrel_main_idtf: [item 157] (* <- lang_en;; *);;
+
+item_157 <= nrel_using_constants:
+{
+driver;
+horse_drawn_vehicle
+};;
+
+item_157 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>157. <sc_element sys_idtf="driver">Водители</sc_element> <sc_element sys_idtf="horse_drawn_vehicle">гужевых транспортных средств</sc_element>, всадники и погонщики скота должны быть не моложе четырнадцати лет.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

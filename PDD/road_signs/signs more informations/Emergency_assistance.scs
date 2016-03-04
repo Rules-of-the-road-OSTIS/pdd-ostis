@@ -1,0 +1,30 @@
+sc_node_not_relation -> Emergency_assistance;;
+Emergency_assistance => nrel_main_idtf:[Экстренная помощь] (* <- lang_ru;; *);;
+Emergency_assistance => nrel_main_idtf:[Emergency assistance] (* <- lang_en;; *);;
+adjacent_territory <= nrel_using_constants:
+	{
+	roadway
+	};;
+Emergency_assistance <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Emergency_assistance.png";;
+                                *);; 
+                *);;
+Emergency_assistance 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> информирует о наличии экстренной связи на <sc_element sys_idtf="roadway">дороге</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

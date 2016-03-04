@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_127;;
+
+item_127 => nrel_main_idtf: [пункт 127] (* <- lang_ru;; *);;
+
+item_127 => nrel_main_idtf: [item 127] (* <- lang_en;; *);;
+
+item_127 <= nrel_using_constants:
+	{
+	driver;
+	railroad_crossing;
+	railway_vehicle
+	};;
+
+item_127 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>При подъезде к <sc_element sys_idtf="railroad_crossing">железнодорожному переезду</sc_element> <sc_element sys_idtf="driver">водитель</sc_element> обязан убедиться в отсутствии приближающегося <sc_element sys_idtf="railway_vehicle">железнодорожного транспортного средства</sc_element> и руководствоваться указаниями дежурного по <sc_element sys_idtf="railroad_crossing">железнодорожному переезду</sc_element>, требованиями светофоров, дорожных знаков, дорожной разметки, положением шлагбаума и звуковым сигналом.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

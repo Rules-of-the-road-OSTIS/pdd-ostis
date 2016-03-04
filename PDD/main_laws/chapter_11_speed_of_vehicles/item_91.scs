@@ -1,0 +1,35 @@
+sc_node_not_relation -> item_91;;
+
+item_91 => nrel_main_idtf: [пункт 91] (* <- lang_ru;; *);;
+
+item_91 => nrel_main_idtf: [item 91] (* <- lang_en;; *);;
+
+item_91 <= nrel_using_constants:
+	{
+traffic_accident;
+obstacle_to_traffic;
+driver;
+vehicle
+
+	};;
+
+item_91 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  <sc_element sys_idtf="driver"> Водителю</sc_element> запрещается:<\p>
+<p>1) превышать максимальную скорость движения, определенную технической характеристикой <sc_element sys_idtf="vehicle"> транспортного средства</sc_element>; </p>	
+<p>2)превышать скорость движения, установленную дорожным знаком «Ограничение максимальной скорости», пунктами 88 и 89 настоящих Правил; </p>	
+<p>3)превышать скорость движения, указанную на опознавательном знаке «Ограничение скорости», установленном на <sc_element sys_idtf="vehicle"> транспортном средстве</sc_element> в соответствии с подпунктом 201.5 пункта 201 настоящих Правил; </p>	
+<p>4) создавать <sc_element sys_idtf="obstacle_to_traffic"> препятствие для дорожного движения</sc_element>, двигаясь без вынужденной необходимости с малой скоростью, а также двигаться с меньшей скоростью, чем установлено дорожным знаком «Ограничение минимальной скорости»; </p>	
+<p>5)резко тормозить, если это не требуется для предотвращения <sc_element sys_idtf="traffic_accident"> дорожно-транспортного происшествия</sc_element>. </p>					 
+					 ]
+					 (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

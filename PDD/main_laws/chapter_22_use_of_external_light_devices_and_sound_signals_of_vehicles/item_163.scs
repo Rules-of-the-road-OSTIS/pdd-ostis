@@ -1,0 +1,37 @@
+sc_node_not_relation -> item_163;;
+item_163 => nrel_main_idtf: [пункт 163] (* <- lang_ru;; *);;
+
+item_163 => nrel_main_idtf: [item 163] (* <- lang_en;; *);;
+
+item_163 <= nrel_using_constants:
+{
+road;
+locality;
+vehicle;
+driver;
+
+horse_drawn_vehicle;
+road;
+the_dark;
+the_lack_of_visibility_of_the_road;
+limited_view_of_the_road
+};;
+
+item_163 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>163. Дальний свет фар должен быть переключен на ближний:</p>
+<p>163.1. в <sc_element sys_idtf="locality">населенном пункте</sc_element>, если <sc_element sys_idtf="road">дорога</sc_element> освещена;</p>
+<p>163.2. при встречном разъезде на расстоянии не менее 300 метров до <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, а также на большем расстоянии, если <sc_element sys_idtf="driver">водитель</sc_element> встречного <sc_element sys_idtf="vehicle">транспортного средства</sc_element> периодическим переключением света фар покажет необходимость этого;</p>
+<p>163.3. если дальний свет фар будет освещать движущееся в попутном направлении <sc_element sys_idtf="vehicle">транспортное средство</sc_element> или его <sc_element sys_idtf="driver">водитель</sc_element> включением аварийной световой сигнализации покажет необходимость такого переключения;</p>
+<p>163.4. в любых других случаях для исключения возможности ослепления <sc_element sys_idtf="driver">водителей</sc_element> как встречных, так и попутных <sc_element sys_idtf="vehicle">транспортных средств</sc_element>. При ослеплении <sc_element sys_idtf="driver">водитель</sc_element> должен немедленно включить аварийную световую сигнализацию и, не перестраиваясь, снизить скорость движения и остановиться.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

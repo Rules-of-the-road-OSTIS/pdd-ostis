@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_172;;
+item_172 => nrel_main_idtf: [пункт 172] (* <- lang_ru;; *);;
+
+item_172 => nrel_main_idtf: [item 172] (* <- lang_en;; *);;
+
+item_172 <= nrel_using_constants:
+{
+driver;
+overtaking;
+locality;
+traffic_accident
+};;
+
+item_172 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>172. Звуковые сигналы могут применяться только для:</p>
+<p>172.1. предупреждения других <sc_element sys_idtf="driver">водителей</sc_element> о намерении произвести <sc_element sys_idtf="overtaking">обгон</sc_element> вне <sc_element sys_idtf="locality">населенных пунктов</sc_element>;</p>
+<p>172.2. предотвращения <sc_element sys_idtf="traffic_accident">дорожно-транспортного происшествия</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

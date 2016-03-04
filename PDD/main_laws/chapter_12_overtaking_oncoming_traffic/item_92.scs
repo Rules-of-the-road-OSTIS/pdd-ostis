@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_92;;
+item_92 => nrel_main_idtf: [пункт 92] (* <- lang_ru;; *);;
+
+item_92 => nrel_main_idtf: [item 92] (* <- lang_en;; *);;
+
+item_92 <= nrel_using_constants:
+{
+overtaking;
+traffic_lane;
+traffic_safety
+};;
+
+item_92 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>92. До начала <sc_element sys_idtf="overtaking"> обгона </sc_element> водитель должен убедиться в том, что <sc_element sys_idtf="traffic_lane"> полоса движения </sc_element>, на которую он намерен выехать, свободна и своими действиями он не создаст угрозу <sc_element sys_idtf="traffic_safety"> безопасности дорожного движения </sc_element>, не заставит участников дорожного движения изменить направление и (или) снизить скорость движения.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

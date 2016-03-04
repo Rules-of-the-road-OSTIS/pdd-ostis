@@ -1,0 +1,34 @@
+sc_node_not_relation -> the_beginning_of_the_village;;
+the_beginning_of_the_village => nrel_main_idtf: 
+	[начало населенного пункта] (* <- lang_ru;; *);;
+the_beginning_of_the_village => nrel_main_idtf: 
+	[the beginning of the village] (* <- lang_en;; *);;
+the_beginning_of_the_village <= nrel_using_constants:
+	{
+	locality;
+	traffic
+	};;
+the_beginning_of_the_village <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_beginning_of_the_village1.png";
+						"file://the_beginning_of_the_village2.png";;
+                                *);; 
+                *);;
+the_beginning_of_the_village <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Начало <sc_element sys_idtf="locality"> населенного пункта </sc_element>, в котором действуют специальные требования Правил, устанавливающие порядок дорожного <sc_element sys_idtf="traffic"> движения </sc_element> в <sc_element sys_idtf="locality"> населенных пунктах </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

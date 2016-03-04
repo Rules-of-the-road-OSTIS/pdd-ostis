@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_29;;
+
+item_29 => nrel_main_idtf: [пункт 29] (* <- lang_ru;; *);;
+
+item_29 => nrel_main_idtf: [item 29] (* <- lang_en;; *);;
+item_29 <= nrel_using_constants:
+	{
+	road_user;
+	driver;
+	vehicle_operational_use
+	};;
+item_29 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [Для привлечения внимания <sc_element sys_idtf="road_user">участников дорожного движения</sc_element> <sc_element sys_idtf="driver">водителями</sc_element> <sc_element sys_idtf="vehicle_operational_use">транспортных средств оперативного назначения</sc_element> может подаваться специальный звуковой сигнал.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,33 @@
+sc_node_not_relation -> end_of_the_strip1;;
+end_of_the_strip1 => nrel_main_idtf: 
+	[конец полосы] (* <- lang_ru;; *);;
+end_of_the_strip1 => nrel_main_idtf: 
+	[end of the strip] (* <- lang_en;; *);;
+end_of_the_strip1 <= nrel_using_constants:
+	{
+	traffic_line;
+	traffic
+	};;
+end_of_the_strip1 <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://end_of_the_strip1.png";;
+                                *);; 
+                *);;
+end_of_the_strip1 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [Конец <sc_element sys_idtf="traffic_line"> полосы </sc_element>, предназначенной для <sc_element sys_idtf="traffic"> движения </sc_element> в данном направлении.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,30 @@
+sc_node_not_relation -> Besides_the_invalids;;
+Besides_the_invalids => nrel_main_idtf:[Кроме инвалидов] (* <- lang_ru;; *);;
+Besides_the_invalids => nrel_main_idtf:[Besides the invalids] (* <- lang_en;; *);;
+Besides_the_invalids <= nrel_using_constants:
+	{
+	vehicle
+	};;
+Besides_the_invalids <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Besides_the_invalids.png";;
+                                *);; 
+                *);;
+Besides_the_invalids 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Прилегающая территория</b> — Табличка указывает, что действие знака не распространяется на <sc_element sys_idtf="vehicle">транспортных средств</sc_element> с опознавательным знаком «Инвалид».] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

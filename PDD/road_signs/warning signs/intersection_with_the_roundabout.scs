@@ -1,0 +1,35 @@
+sc_node_not_relation -> intersection_with_the_roundabout;;
+        
+intersection_with_the_roundabout => nrel_main_idtf: [пересечение с круговым движением] (* <- lang_ru;; *);;
+intersection_with_the_roundabout => nrel_main_idtf: [intersection with the roundabout] (* <- lang_en;; *);;
+
+intersection_with_the_roundabout <= nrel_using_constants:
+	{
+	intersection;
+	driver
+	};;
+
+intersection_with_the_roundabout <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://intersection_with_the_roundabout.png";;
+                                *);; 
+                *);;
+				
+intersection_with_the_roundabout <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предупреждает о приближении к <sc_element sys_idtf="intersection">перекрестку</sc_element> с кольцом посередине, вокруг которого <sc_element sys_idtf="driver">водители</sc_element> движутся против часовой стрелки.]
+                         (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

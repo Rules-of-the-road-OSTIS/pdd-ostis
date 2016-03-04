@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GWF version="2.0">
+    <staticSector>
+        <node type="node/const/general_node" idtf="wheeled_tractor" shapeColor="0" id="166275800" parent="0" left="0" top="0" right="97.9375" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="663" y="87" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="self_propelled" shapeColor="0" id="165879096" parent="0" left="0" top="0" right="85.8438" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="663" y="134" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="road_train" shapeColor="0" id="166587840" parent="0" left="0" top="0" right="67.4062" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="382" y="109" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="trucks_with_technically_permissible_total_weight_of_more_than_3_5_tons" shapeColor="0" id="166589208" parent="0" left="0" top="0" right="422.953" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="425" y="191" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/relation" idtf="nrel_movement_prohibition" shapeColor="0" id="163570808" parent="0" left="0" top="0" right="162.031" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="462" y="-84" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <node type="node/const/general_node" idtf="movement_of_trucks_prohibited" shapeColor="0" id="166517392" parent="0" left="0" top="0" right="186.422" bottom="23" textColor="164" text_angle="0" text_font="Times New Roman [Arial]" font_size="10" x="494.5" y="156.5" haveBus="false" idtf_pos="0">
+            <content type="0" mime_type="" content_visibility="false" file_name=""/>
+        </node>
+        <pair type="pair/const/orient" idtf="" shapeColor="0" id="164722120" parent="0" id_b="166517392" id_e="166275800" b_x="494.5" b_y="156.5" e_x="663" e_y="87" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/orient" idtf="" shapeColor="0" id="164007176" parent="0" id_b="166517392" id_e="165879096" b_x="494.5" b_y="156.5" e_x="663" e_y="134" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/orient" idtf="" shapeColor="0" id="160706784" parent="0" id_b="166517392" id_e="166587840" b_x="494.5" b_y="156.5" e_x="382" e_y="109" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <pair type="pair/const/orient" idtf="" shapeColor="0" id="161365488" parent="0" id_b="166517392" id_e="166589208" b_x="494.5" b_y="156.5" e_x="425" e_y="191" dotBBalance="0" dotEBalance="0">
+            <points/>
+        </pair>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="160880824" parent="0" id_b="163570808" id_e="161365488" b_x="462" b_y="-84" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.374995">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="166671320" parent="0" id_b="163570808" id_e="160706784" b_x="462" b_y="-84" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.603609">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="167986720" parent="0" id_b="163570808" id_e="164007176" b_x="462" b_y="-84" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.689255">
+            <points/>
+        </arc>
+        <arc type="arc/const/pos" idtf="" shapeColor="0" id="162539184" parent="0" id_b="163570808" id_e="164722120" b_x="462" b_y="-84" e_x="0" e_y="0" dotBBalance="0" dotEBalance="0.478453">
+            <points/>
+        </arc>
+    </staticSector>
+</GWF>

@@ -1,0 +1,6 @@
+sc_node_not_relation -> pedestrian_must;;
+       
+pedestrian_must => nrel_main_idtf: [пешеход обязан] (* <- lang_ru;; *);;
+
+pedestrian_must => nrel_main_idtf: [pedestrian_must] (* <- lang_en;; *);;
+

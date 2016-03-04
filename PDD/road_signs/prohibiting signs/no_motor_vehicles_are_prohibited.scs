@@ -1,0 +1,33 @@
+sc_node_not_relation -> no_motor_vehicles_are_prohibited;;
+        
+no_motor_vehicles_are_prohibited => nrel_main_idtf: [движение механических транспортных средств запрещено] (* <- lang_ru;; *);;
+
+no_motor_vehicles_are_prohibited => nrel_main_idtf: [no motor vehicles are prohibited] (* <- lang_en;; *);;
+no_motor_vehicles_are_prohibited <= nrel_using_constants:
+{
+motor_vehicle
+};;
+no_motor_vehicles_are_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://no_motor_vehicles_are_prohibited.png";;
+                                *);; 
+                *);;
+no_motor_vehicles_are_prohibited <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение <sc_element sys_idtf="motor_vehicle">механических транспортных средств</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

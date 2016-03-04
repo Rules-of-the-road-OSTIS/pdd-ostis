@@ -1,0 +1,37 @@
+sc_node_not_relation -> wheeled_tractor;;
+
+wheeled_tractor => nrel_main_idtf: 	[колесный трактор] (* <- lang_ru;; *);;
+
+wheeled_tractor => nrel_main_idtf: 	[wheeled tractor] (* <- lang_en;; *);;
+wheeled_tractor <= nrel_using_constants:
+	{
+      motor_vehicle;
+      trailer
+	};;
+
+
+wheeled_tractor <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Колесный трактор</b> — <sc_element sys_idtf="motor_vehicle">механическое транспортное средство</sc_element> для выполнения разнообразных технологических операций с помощью навесных, полунавесных и прицепных машин или орудий, а также для привода стационарных машин или движения в составе с <sc_element sys_idtf="trailer">прицепом</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+wheeled_tractor <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://wheeled_tractor.jpg";;
+                                *);; 
+                *);;
+wheeled_tractor <= nrel_strict_inclusion: chapter_1_general_provision;;
+wheeled_tractor <= nrel_strict_inclusion: types_of_vehicles;;

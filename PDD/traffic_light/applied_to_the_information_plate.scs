@@ -1,0 +1,15 @@
+sc_node_not_relation -> applied_to_the_information_plate;;
+applied_to_the_information_plate => nrel_main_idtf: 
+	[применяемые с информационной табличкой] (* <- lang_ru;; *);;
+applied_to_the_information_plate => nrel_main_idtf: 
+	[applied to the information plate] (* <- lang_en;; *);;
+applied_to_the_information_plate <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://applied_to_the_information_plate.png";;
+                                *);; 
+                *);;

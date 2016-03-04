@@ -1,0 +1,31 @@
+sc_node_not_relation -> Wet_grounds;;
+Wet_grounds => nrel_main_idtf:[Влажное покрытие] (* <- lang_ru;; *);;
+Wet_grounds => nrel_main_idtf:[Wet grounds] (* <- lang_en;; *);;
+Wet_grounds <= nrel_using_constants:
+	{
+		roadway	
+	};;
+Wet_grounds <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Wet_grounds.png";;
+                                *);; 
+                *);;
+Wet_grounds 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> указывает, что действие знака распространяется только на период времени,
+						когда покрытие <sc_element sys_idtf="roadway	">проезжей части дороги</sc_element> является влажным.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

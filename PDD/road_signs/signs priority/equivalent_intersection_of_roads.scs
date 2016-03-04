@@ -1,0 +1,33 @@
+sc_node_not_relation -> equivalent_intersection_of_roads;;
+equivalent_intersection_of_roads => nrel_main_idtf: 
+	[пересечение равнозначных дорог] (* <- lang_ru;; *);;
+equivalent_intersection_of_roads => nrel_main_idtf: 
+	[equivalent intersection of roads] (* <- lang_en;; *);;
+equivalent_intersection_of_roads <= nrel_using_constants:
+	{
+	road;
+	intersection
+	};;
+equivalent_intersection_of_roads <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://equivalent_intersection_of_roads.png";;
+                                *);; 
+                *);;
+equivalent_intersection_of_roads <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Приближение к <sc_element sys_idtf="intersection">перекрестку</sc_element> равных по значению <sc_element sys_idtf="road">дорог</sc_element>.]
+				(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

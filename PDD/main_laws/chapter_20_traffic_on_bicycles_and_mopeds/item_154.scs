@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_154;;
+item_154 => nrel_main_idtf: [пункт 154] (* <- lang_ru;; *);;
+
+item_154 => nrel_main_idtf: [item 154] (* <- lang_en;; *);;
+
+item_154 <= nrel_using_constants:
+{
+road;
+bike_lane;
+bicycle;
+pedestrian_zone;
+pavement;
+footpath;
+pedestrian;
+moped
+};;
+
+item_154 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>154. Запрещается без сопровождения совершеннолетнего лица управлять на <sc_element sys_idtf="road">дороге</sc_element> лицам моложе:</p>
+154.1. четырнадцати лет — <sc_element sys_idtf="bicycle">велосипедом</sc_element> (кроме <sc_element sys_idtf="pedestrian_zone">пешеходных и жилых зон</sc_element>, <sc_element sys_idtf="pavement">тротуаров</sc_element>, <sc_element sys_idtf="bike_lane">велосипедных</sc_element> и <sc_element sys_idtf="footpath">пешеходных</sc_element> дорожек);</p>
+154.2. шестнадцати лет — <sc_element sys_idtf="moped">мопедом</sc_element> (кроме <sc_element sys_idtf="pedestrian_zone">пешеходных и жилых зон</sc_element>).</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

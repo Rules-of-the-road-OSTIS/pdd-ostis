@@ -1,0 +1,35 @@
+sc_node_not_relation -> 2.1.1_2.1.3_markup;;
+
+2.1.1_2.1.3_markup => nrel_main_idtf: [разметка 2.1.1-2.1.3] (* <- lang_ru;; *);;
+2.1.1_2.1.3_markup => nrel_main_idtf: [2.1.1-2.1.3 markup] (* <- lang_en;; *);;
+
+2.1.1_2.1.3_markup <= nrel_using_constants:
+	{
+	viaduct;
+	overpass;
+	vehicle
+	};;
+
+2.1.1_2.1.3_markup <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Вертикальная дорожная разметка 2.1.1–2.1.3</b> обозначает вертикальные элементы дорожных сооружений (опор мостов,<sc_element sys_idtf="viaduct">путепроводов</sc_element> ,<sc_element sys_idtf="overpass">эстакад</sc_element> , торцовых частей парапетов), если эти элементы представляют опасность для движения <sc_element sys_idtf="vehicle">транспортных средств</sc_element>. Щитки с разметкой 2.1.1–2.1.3 могут устанавливаться на опоры дорожных знаков "Объезд препятствия справа", "Объезд препятствия слева", "Объезд препятствия справа или слева".]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+2.1.1_2.1.3_markup <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://2.1.1_2.1.3_markup.png";;
+                                *);; 
+                *);;

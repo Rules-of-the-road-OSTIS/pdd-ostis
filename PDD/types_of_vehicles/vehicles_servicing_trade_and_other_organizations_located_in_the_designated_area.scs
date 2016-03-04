@@ -1,0 +1,8 @@
+sc_node_not_relation -> vehicles_servicing_trade_and_other_organizations_located_in_the_designated_area;;
+
+vehicles_servicing_trade_and_other_organizations_located_in_the_designated_area => nrel_main_idtf: 	[транспортные средства, обслуживающие торговые и другие организации, расположенные в обозначенной зоне] (* <- lang_ru;; *);;
+
+vehicles_servicing_trade_and_other_organizations_located_in_the_designated_area => nrel_main_idtf: 	[vehicles servicing trade and other organizations located in the designated area] (* <- lang_en;; *);;
+
+vehicles_servicing_trade_and_other_organizations_located_in_the_designated_area <= nrel_strict_inclusion: car;;
+vehicles_servicing_trade_and_other_organizations_located_in_the_designated_area <= nrel_strict_inclusion: types_of_vehicles;;

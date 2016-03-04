@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_108;;
+item_108 => nrel_main_idtf: [пункт 108] (* <- lang_ru;; *);;
+
+item_108 => nrel_main_idtf: [item 108] (* <- lang_en;; *);;
+
+item_108 <= nrel_using_constants:
+{
+intersection;
+vehicle;
+give_way_do_not_have_the_benefits;
+road;
+main_road
+};;
+
+item_108 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>108. На <sc_element sys_idtf="intersection">перекрестке</sc_element> неравнозначных <sc_element sys_idtf="road">дорог</sc_element> водитель <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, движущегося по второстепенной <sc_element sys_idtf="road">дороге</sc_element>, должен <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, приближающимся к нему по <sc_element sys_idtf="main_road">главной дороге</sc_element>, независимо от направления их дальнейшего движения.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

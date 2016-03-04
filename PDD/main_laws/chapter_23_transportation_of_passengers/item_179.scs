@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_179;;
+
+item_179 => nrel_main_idtf: [пункт 179] (* <- lang_ru;; *);;
+
+item_179 => nrel_main_idtf: [item 179] (* <- lang_en;; *);;
+
+item_179 <= nrel_using_constants:
+	{
+	transportation_of_children;
+	bus
+	};;
+
+item_179 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[При перевозке групп детей в автобусе каждый ребенок должен быть обеспечен отдельным посадочным местом, а в салоне должно находиться не менее одного совершеннолетнего сопровождающего на двадцать детей. На автобусе спереди и сзади устанавливается опознавательный знак «<sc_element sys_idtf="transportation_of_children">Перевозка детей</sc_element>».
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

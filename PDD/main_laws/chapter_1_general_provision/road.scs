@@ -1,0 +1,26 @@
+sc_node_not_relation -> road;;
+
+road => nrel_main_idtf: 	[дорога] (* <- lang_ru;; *);;
+
+road => nrel_main_idtf: 	[road] (* <- lang_en;; *);;
+road <= nrel_using_constants:
+	{
+     vehicle;
+     pedestrian
+	};;
+
+
+road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Дорога</b> — омплекс инженерных сооружений либо полоса земли, предназначенные и используемые для движения в установленном порядке <sc_element sys_idtf="vehicle">транспортных средств</sc_element> и <sc_element sys_idtf="pedestrian">пешеходов</sc_element>.Дорога, как комплекс инженерных сооружений, состоит из определенных <sc_element sys_idtf="elements_of_the_road">элементов</sc_element>, но не стоит забывать, что Правила действуют и на полевых, и на лесных дорогах, где многие положения Правил на первый взгляд неприменимы.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+road <= nrel_strict_inclusion: chapter_1_general_provision;;

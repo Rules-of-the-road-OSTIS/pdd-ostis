@@ -1,0 +1,38 @@
+sc_node_not_relation -> car;;
+
+car => nrel_main_idtf:	[автомобиль] (* <- lang_ru;; *);;
+
+car => nrel_main_idtf: 	[car] (* <- lang_en;; *);;
+
+car <= nrel_using_constants:
+	{
+	wheeled_tractor;
+	motor_vehicle;
+	self_propelled
+	};;
+
+car <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Автомобиль</b> —  <sc_element sys_idtf="motor_vehicle">механическое транспортное средство</sc_element>,  имеющее не менее четырех колес, расположенных не менее чем на двух осях, за исключением <sc_element sys_idtf="wheeled_tractor">колесных тракторов</sc_element> и <sc_element sys_idtf="self_propelled">самоходных машин</sc_element>. К автомобилям приравниваются квадрициклы (мотоколяски) — четырехколесные механические транспортные средства, имеющие приводы управления автомобильного типа и массу в снаряженном состоянии не более 550 килограммов.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+car <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://car.jpg";;
+                                *);; 
+                *);;
+car <= nrel_strict_inclusion: chapter_1_general_provision;;
+car <= nrel_strict_inclusion: types_of_vehicles;;

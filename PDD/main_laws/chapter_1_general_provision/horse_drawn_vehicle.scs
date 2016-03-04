@@ -1,0 +1,36 @@
+sc_node_not_relation -> horse_drawn_vehicle;;
+
+horse_drawn_vehicle => nrel_main_idtf: 	[гужевое транспортное средство] (* <- lang_ru;; *);;
+
+horse_drawn_vehicle => nrel_main_idtf: 	[horse-drawn vehicle] (* <- lang_en;; *);;
+horse_drawn_vehicle <= nrel_using_constants:
+	{
+    vehicle
+	};;
+
+
+horse_drawn_vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Гужевое транспортное средство</b> — <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, приводимое в движение мускульной силой животного (животных).] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+horse_drawn_vehicle <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://horse_drawn_vehicle.jpg";;
+                                *);; 
+                *);;
+horse_drawn_vehicle <= nrel_strict_inclusion: chapter_1_general_provision;;
+horse_drawn_vehicle <= nrel_strict_inclusion: types_of_vehicles;;

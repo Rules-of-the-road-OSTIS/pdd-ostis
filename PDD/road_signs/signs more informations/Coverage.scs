@@ -1,0 +1,35 @@
+sc_node_not_relation -> Coverage;;
+Coverage => nrel_main_idtf:[Зона действия] (* <- lang_ru;; *);;
+Coverage => nrel_main_idtf:[Coverage] (* <- lang_en;; *);;
+Coverage <= nrel_using_constants:
+	{
+	road
+	};;
+Coverage <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Coverage1.png";
+                                                "file://Coverage2.png";
+                                                "file://Coverage3.png";
+                                                "file://Coverage4.png";
+                                                "file://Coverage5.png";
+                                                "file://Coverage6.png";;
+                                *);; 
+                *);;
+Coverage 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Таблички</b> указывают: протяженность опасного участка <sc_element sys_idtf="road">дороги</sc_element>, обозначенного предупреждающими знаками, или зону действия запрещающих, предписывающих либо информационно-указательных знаков.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

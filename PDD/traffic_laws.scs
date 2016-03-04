@@ -1,0 +1,97 @@
+traffic_laws
+
+=> nrel_main_idtf: [Правила дорожного движения] (* <- lang_ru;; *);
+
+=> nrel_main_idtf: [traffic laws] (* <- lang_en;; *);
+
+<= nrel_using_constants:
+	{
+	road_user;
+	driver;
+	vehicle;
+	pedestrian;
+	traffic_safety
+	};
+
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://traffic_laws.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);
+
+<= nrel_section_decomposition:
+	{
+		documentation_ISS_by_traffic_laws
+		(*
+		=> nrel_section_base_order: 
+			main_laws;;
+		*);
+        	main_laws
+		(*
+		=> nrel_section_base_order: 
+			traffic_light;;
+		*);
+		traffic_light
+		(*
+		=> nrel_section_base_order: 
+			road_signs;;
+		*);
+		road_signs
+		(*
+		=> nrel_section_base_order: 
+			road_markings;;
+		*);
+		road_markings
+		(*
+		=> nrel_section_base_order: 
+			malfunction	;;
+		*);
+		malfunction
+		(*
+		=> nrel_section_base_order: 
+			IDENTIFICATION_OF_THE_VEHICLE	;;
+		*);
+		IDENTIFICATION_OF_THE_VEHICLE
+		(*
+		=> nrel_section_base_order: 
+			advice_on_road_safety	;;
+		*);
+		advice_on_road_safety
+		(*
+		=> nrel_section_base_order: 
+			responsibility	;;
+		*);
+		responsibility
+		(*
+		=> nrel_section_base_order: 
+			security	;;
+		*);
+		security
+		(*
+		=> nrel_section_base_order: 
+			supporting_information	;;
+		*);
+		supporting_information
+		(*
+		=> nrel_section_base_order: 
+			the_last_change_and_additions_in_traffic_regulations	;;
+		*);
+		the_last_change_and_additions_in_traffic_regulations
+		(*
+		=> nrel_section_base_order: 
+			patterns	;;
+		*);
+		patterns
+		(*
+		=> nrel_section_base_order: 
+			types_of_vehicles	;;
+		*);
+		types_of_vehicles
+	};;
+

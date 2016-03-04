@@ -1,0 +1,28 @@
+scp_program -> proc_of_check_move (*
+    -> rrel_params: ... (*
+        -> rrel_1: rrel_in: _subject;;
+        -> rrel_2: rrel_out: _acsess;;
+	-> rrel_3: rrel_out: _acsess2;;
+    *);;
+    -> rrel_operators: ... (*
+        ->rrel_init: ..operator24559 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_check_cross_acsess;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _subject;;
+		-> rrel_2: rrel_assign: rrel_scp_var: _acsess;;
+		-> rrel_3: rrel_assign: rrel_scp_var: _acsess2;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument26095;;
+            => nrel_goto: ..operator44733;;
+        *);;
+        ->..operator44733 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument26095;;
+            => nrel_goto: ..operator923;;
+        *);;
+        ->..operator923 (*
+            <- return;;
+        *);;
+    *);;
+*);;

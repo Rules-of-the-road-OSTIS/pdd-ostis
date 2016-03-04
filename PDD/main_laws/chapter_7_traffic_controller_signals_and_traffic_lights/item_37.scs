@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_37;;
+
+item_37 => nrel_main_idtf: [пункт 37] (* <- lang_ru;; *);;
+
+item_37 => nrel_main_idtf: [item 37] (* <- lang_en;; *);;
+item_37 <= nrel_using_constants:
+	{
+	road_user
+	};;
+
+item_37 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [Регулировщик может подавать понятные <sc_element sys_idtf="road_user">участникам дорожного движения</sc_element> сигналы, не указанные в пункте 36 настоящих Правил.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

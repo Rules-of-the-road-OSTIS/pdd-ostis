@@ -1,0 +1,26 @@
+sc_node_not_relation -> the_actual_mass_of_the_vehicle;;
+
+the_actual_mass_of_the_vehicle  => nrel_main_idtf: 	[фактическая масса транспортного средства] (* <- lang_ru;; *);;
+
+the_actual_mass_of_the_vehicle  => nrel_main_idtf: 	[the_actual_mass_of_the_vehicle] (* <- lang_en;; *);;
+the_actual_mass_of_the_vehicle <= nrel_using_constants:
+	{
+     vehicle;
+     the_technically_permissible_total_weight
+	};;
+
+
+the_actual_mass_of_the_vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Фактическая масса транспортного средства</b> — это непосредственно масса <sc_element sys_idtf="vehicle">транспортного средства</sc_element> в данный момент (по факту). Фактическая масса транспортного средства (состава транспортных средств) не должна превышать <sc_element sys_idtf="the_technically_permissible_total_weight">технически допустимую общую массу</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+the_actual_mass_of_the_vehicle <= nrel_strict_inclusion: chapter_1_general_provision;;

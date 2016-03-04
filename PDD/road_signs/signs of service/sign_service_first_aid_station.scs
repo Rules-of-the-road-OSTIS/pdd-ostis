@@ -1,0 +1,28 @@
+sc_node_not_relation -> sign_service_first_aid_station;;
+sign_service_first_aid_station => nrel_main_idtf: 
+	[знак сервиса "Пункт первой медицинской помощи"] (* <- lang_ru;; *);;
+sign_service_first_aid_station => nrel_main_idtf: 
+	[sign service "First aid station"] (* <- lang_en;; *);;
+sign_service_first_aid_station <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_first_aid_station.png";;
+                                *);; 
+                *);;
+sign_service_first_aid_station <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Пункт первой медицинской помощи" информирует о расположении медицинского учреждения.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

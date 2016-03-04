@@ -1,0 +1,8 @@
+sc_node_not_relation -> vehicle_nationals_living_and_working_in_the_area_of_the_sign;;
+
+vehicle_nationals_living_and_working_in_the_area_of_the_sign => nrel_main_idtf: 	[транспортное средство граждан проживающих или работающих в зоне действия знака] (* <- lang_ru;; *);;
+
+vehicle_nationals_living_and_working_in_the_area_of_the_sign => nrel_main_idtf: 	[vehicle nationals living and working in the area of the sign] (* <- lang_en;; *);;
+
+vehicle_nationals_living_and_working_in_the_area_of_the_sign <= nrel_strict_inclusion: vehicle;;
+vehicle_nationals_living_and_working_in_the_area_of_the_sign <= nrel_strict_inclusion: types_of_vehicles;;

@@ -1,0 +1,15 @@
+sc_node_not_relation -> with_additional_sections;;
+with_additional_sections => nrel_main_idtf: 
+	[с дополнительными секциями] (* <- lang_ru;; *);;
+with_additional_sections => nrel_main_idtf: 
+	[with additional sections] (* <- lang_en;; *);;
+with_additional_sections <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://with_additional_sections.png";;
+                                *);; 
+                *);;

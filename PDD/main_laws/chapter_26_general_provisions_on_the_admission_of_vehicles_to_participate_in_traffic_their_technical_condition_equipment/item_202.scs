@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_202;;
+
+item_202 => nrel_main_idtf: [пункт 202] (* <- lang_ru;; *);;
+
+item_202 => nrel_main_idtf: [item_202] (* <- lang_en;; *);;
+
+item_202 <= nrel_using_constants:
+	{
+	warning_triangle;
+	signs_slow_moving_vehicles;
+	long_vehicles;
+	heavy_vehicles
+	};;
+
+item_202 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Опознавательные знаки «<sc_element sys_idtf="signs_slow_moving_vehicles">Тихоходное транспортное средство</sc_element>», «<sc_element sys_idtf="heavy_vehicles">Транспортное средство большой грузоподъемности</sc_element>», «<sc_element sys_idtf="long_vehicles">Транспортное средство большой длины</sc_element>» должны быть изготовлены и установлены на транспортных средствах, а «<sc_element sys_idtf="warning_triangle">Знак аварийной остановки</sc_element>» — изготовлен в соответствии с требованиями технических нормативных правовых актов.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

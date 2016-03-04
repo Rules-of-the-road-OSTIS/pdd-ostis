@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_105;;
+item_105 => nrel_main_idtf: [пункт 105] (* <- lang_ru;; *);;
+
+item_105 => nrel_main_idtf: [item 105] (* <- lang_en;; *);;
+
+item_105 <= nrel_using_constants:
+{
+ adjuster;
+vehicle;
+tram
+};;
+
+item_105 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>105. Если сигналы <sc_element sys_idtf="adjuster">регулировщика</sc_element> или светофора разрешают движение одновременно <sc_element sys_idtf="tram">трамваю</sc_element> и другим   <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, то <sc_element sys_idtf="tram">трамвай</sc_element> имеет преимущество независимо от направления его движения. При движении по сигналу стрелки, включенной в дополнительной секции одновременно с красным или желтым сигналом светофора, водитель <sc_element sys_idtf="tram">трамвая</sc_element> должен уступить дорогу <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, движущимся с других направлений.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

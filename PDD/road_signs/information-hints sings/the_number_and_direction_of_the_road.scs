@@ -1,0 +1,32 @@
+sc_node_not_relation -> the_number_and_direction_of_the_road;;
+the_number_and_direction_of_the_road => nrel_main_idtf: 
+	[номер и направление дороги] (* <- lang_ru;; *);;
+the_number_and_direction_of_the_road => nrel_main_idtf: 
+	[the number and direction of the road] (* <- lang_en;; *);;
+the_number_and_direction_of_the_road <= nrel_using_constants:
+	{
+	road
+	};;
+the_number_and_direction_of_the_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_number_and_direction_of_the_road.png";;
+                                *);; 
+                *);;
+the_number_and_direction_of_the_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Номер и направление <sc_element sys_idtf="road"> дороги </sc_element>, на которой установлен данный знак.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

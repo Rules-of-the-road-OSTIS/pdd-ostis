@@ -1,0 +1,32 @@
+sc_node_not_relation -> Weight_limit;;
+Weight_limit => nrel_main_idtf:[Ограничение максимальной массы] (* <- lang_ru;; *);;
+Weight_limit => nrel_main_idtf:[Weight limit] (* <- lang_en;; *);;
+Weight_limit <= nrel_using_constants:
+	{
+	vehicle;
+	the_actual_mass_of_the_vehicle		
+	};;
+Weight_limit <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Weight_limit.png";;
+                                *);; 
+                *);;
+Weight_limit 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  указывает, что действие знака распространяется только на <sc_element sys_idtf="vehicle">транспортные средства</sc_element>
+						 с <sc_element sys_idtf="the_actual_mass_of_the_vehicle	">фактической массой</sc_element> более обозначенной на табличке.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

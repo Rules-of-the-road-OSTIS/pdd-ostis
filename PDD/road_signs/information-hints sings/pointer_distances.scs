@@ -1,0 +1,33 @@
+sc_node_not_relation -> pointer_distances;;
+pointer_distances => nrel_main_idtf: 
+	[указатель расстояний] (* <- lang_ru;; *);;
+pointer_distances => nrel_main_idtf: 
+	[pointer distances] (* <- lang_en;; *);;
+pointer_distances <= nrel_using_constants:
+	{
+	locality
+	};;
+pointer_distances <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://pointer_distances.png";;
+                                *);; 
+                *);;
+pointer_distances <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Расстояние до <sc_element sys_idtf="locality"> населенных пунктов </sc_element> или других объектов (км).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

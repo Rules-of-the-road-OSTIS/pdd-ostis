@@ -1,0 +1,26 @@
+sc_node_not_relation -> Working_days;;
+Working_days => nrel_main_idtf:[Рабочие дни] (* <- lang_ru;; *);;
+Working_days => nrel_main_idtf:[Working days] (* <- lang_en;; *);;
+Working_days <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Working_days.png";;
+                                *);; 
+                *);;
+Working_days 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> указывает дни недели, в течение которых действует знак.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

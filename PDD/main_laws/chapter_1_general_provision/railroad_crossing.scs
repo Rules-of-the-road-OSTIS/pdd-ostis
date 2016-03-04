@@ -1,0 +1,37 @@
+sc_node_not_relation -> railroad_crossing;;
+
+railroad_crossing => nrel_main_idtf: 	[железнодорожный переезд] (* <- lang_ru;; *);;
+
+railroad_crossing => nrel_main_idtf: 	[railroad crossing] (* <- lang_en;; *);;
+railroad_crossing <= nrel_using_constants:
+	{
+     road
+	};;
+
+
+railroad_crossing <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Железнодорожный переезд</b> — пересечение <sc_element sys_idtf="road">дороги</sc_element> с железнодорожными путями на одном уровне.
+Настилы железнодорожных переездов, как правило, делают съемными для возможности проведения регламентных работ на железнодорожном пути. Их покрытие по сцепным свойствам может значительно отличаться от покрытия проезжей части дороги.
+Пересечения автомобильных дорог могут быть на одном уровне (<sc_element sys_idtf="intersection">перекрестки</sc_element>), и могут быть оборудованы на разных уровнях (<sc_element sys_idtf="viaduct">путепроводы</sc_element> и <sc_element sys_idtf="overpass">эстакады</sc_element>).] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+railroad_crossing <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://railroad_crossing.jpg";;
+                                *);; 
+                *);;
+railroad_crossing <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> roadworks;;
+       
+roadworks => nrel_main_idtf: [дорожные работы] (* <- lang_ru;; *);;
+roadworks => nrel_main_idtf: [roadworks] (* <- lang_en;; *);;
+
+roadworks <= nrel_using_constants:
+	{
+	roadway;
+	parking_of_a_vehicle
+	};;
+
+roadworks <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://roadworks.png";;
+                                *);; 
+                *);;
+				
+roadworks <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element>, на котором в установленном порядке выполняются ремонтные и другие работы.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+
+		*);;

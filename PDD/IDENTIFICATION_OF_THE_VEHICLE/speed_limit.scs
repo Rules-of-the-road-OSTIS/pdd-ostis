@@ -1,0 +1,19 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+        
+speed_limit => nrel_main_idtf: [ограничение скорости] (* <- lang_ru;; *);;
+
+speed_limit => nrel_main_idtf: [speed limit] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://speed_limit.png";;
+                                *);; 
+                *);;
+
+speed_limit <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;
+

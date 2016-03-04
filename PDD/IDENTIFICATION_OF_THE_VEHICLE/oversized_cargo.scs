@@ -1,0 +1,19 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+        
+oversized_cargo  => nrel_main_idtf: [крупногабаритный груз] (* <- lang_ru;; *);;
+
+oversized_cargo  => nrel_main_idtf: [oversized cargo] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://oversized_cargo.png";;
+                                *);; 
+                *);;
+
+oversized_cargo <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;
+

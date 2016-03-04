@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_61;;
+
+item_61 => nrel_main_idtf: [пункт 61] (* <- lang_ru;; *);;
+
+item_61 => nrel_main_idtf: [item 61] (* <- lang_en;; *);;
+
+item_61 <= nrel_using_constants:
+	{
+vehicle;
+road;
+stop_the_vehicle
+	};;
+
+item_61 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  Перестраиваться на соседнюю полосу движения на <sc_element sys_idtf="road"> дороге</sc_element> с двумя и более полосами движения в одном направлении, обозначенными горизонтальной дорожной разметкой, когда эти полосы равномерно заняты движущимися <sc_element sys_idtf="vehicle"> транспортными средствами</sc_element>, разрешается только для поворота налево или направо, разворота, <sc_element sys_idtf="stop_the_vehicle"> остановки</sc_element> или объезда препятствия.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

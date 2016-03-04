@@ -1,0 +1,7 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+       
+IDENTIFICATION_OF_THE_VEHICLE => nrel_main_idtf: [Приложение 5.Опознавательные знаки транспортных средств] (* <- lang_ru;; *);;
+
+IDENTIFICATION_OF_THE_VEHICLE => nrel_main_idtf: [IDENTIFICATION OF THE VEHICLE] (* <- lang_en;; *);;
+
+

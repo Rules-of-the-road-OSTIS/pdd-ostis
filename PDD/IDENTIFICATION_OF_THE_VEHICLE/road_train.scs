@@ -1,0 +1,19 @@
+sc_node_not_relation -> road_train;;
+       
+road_train => nrel_main_idtf: [автопоезд] (* <- lang_ru;; *);;
+
+road_train => nrel_main_idtf: [road train] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://road_train.png";;
+                                *);; 
+                *);;
+
+road_train <= nrel_strict_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;
+

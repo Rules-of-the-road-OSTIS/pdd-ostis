@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_158;;
+item_158 => nrel_main_idtf: [пункт 158] (* <- lang_ru;; *);;
+
+item_158 => nrel_main_idtf: [item 158] (* <- lang_en;; *);;
+
+item_158 <= nrel_using_constants:
+{
+driver;
+horse_drawn_vehicle;
+road;
+improved_coverage;
+locality;
+the_dark;
+the_lack_of_visibility_of_the_road
+};;
+
+item_158 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>158. <sc_element sys_idtf="driver">Водителям</sc_element> <sc_element sys_idtf="horse_drawn_vehicle">гужевых транспортных средств</sc_element>, всадникам и погонщикам скота запрещается:</p>
+<p>158.1. водить животных по <sc_element sys_idtf="road">дорогам</sc_element> общего пользования с <sc_element sys_idtf="improved_coverage">усовершенствованным покрытием</sc_element> вне <sc_element sys_idtf="locality">населенных пунктов</sc_element>;</p>
+<p>158.2. оставлять животных без присмотра на <sc_element sys_idtf="road">дороге</sc_element>, перегонять их через железнодорожные пути и <sc_element sys_idtf="road">дороги</sc_element> вне специально оборудованных мест, согласованных в установленном порядке, а также в <sc_element sys_idtf="the_dark">темное время суток</sc_element> и (или) при <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости дороги</sc_element>;<p>
+<p>158.3. производить выпас животных в пределах полосы земли, на которой размещаются <sc_element sys_idtf="road">дорога</sc_element> и все ее сооружения.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

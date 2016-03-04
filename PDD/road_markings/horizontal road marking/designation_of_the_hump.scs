@@ -1,0 +1,32 @@
+sc_node_not_relation -> designation_of_the_hump;;
+
+designation_of_the_hump => nrel_main_idtf: 
+	[обозначение искусственной неровности] (* <- lang_ru;; *);;
+
+designation_of_the_hump => nrel_main_idtf: 
+	[designation of the hump] (* <- lang_en;; *);;
+
+designation_of_the_hump <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение искусственной неровности.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_the_hump <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_the_hump.png";;
+                                *);; 
+                *);;

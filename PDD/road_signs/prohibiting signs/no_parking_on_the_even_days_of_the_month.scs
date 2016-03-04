@@ -1,0 +1,34 @@
+sc_node_not_relation -> no_parking_on_the_even_days_of_the_month;;
+     
+no_parking_on_the_even_days_of_the_month => nrel_main_idtf: [стоянка запрещена по чётным числам месяца] (* <- lang_ru;; *);;
+
+no_parking_on_the_even_days_of_the_month => nrel_main_idtf: [no parking on the even days of the month] (* <- lang_en;; *);;
+no_parking_on_the_even_days_of_the_month <= nrel_using_constants:
+{
+road;
+vehicle
+};;
+no_parking_on_the_even_days_of_the_month <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://no_parking_on_the_even_days_of_the_month.png";;
+                                *);; 
+                *);;
+no_parking_on_the_even_days_of_the_month <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Стоянка по чётным числам месяца запрещена. При одновременном применении знаков 3.29 и 3.30 на противоположных сторонах <sc_element sys_idtf="road">дороги</sc_element> <sc_element sys_idtf="vehicle">транспортные средства</sc_element> должны быть переставлены с одной ее стороны на другую в период с 19 до 24 часов.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

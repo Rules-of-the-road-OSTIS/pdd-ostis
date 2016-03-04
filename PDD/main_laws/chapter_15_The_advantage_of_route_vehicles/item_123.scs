@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_123;;
+
+item_123 => nrel_main_idtf: [пункт 123] (* <- lang_ru;; *);;
+
+item_123 => nrel_main_idtf: [item 123] (* <- lang_en;; *);;
+
+item_123 <= nrel_using_constants:
+	{
+	vehicle;
+	roadway;
+	intersection
+	};;
+
+
+item_123 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> ¬не <sc_element sys_idtf="intersection">перекрестков</sc_element> в местах, где трамвайные пути пересекают <sc_element sys_idtf="roadway">проезжую часть дороги</sc_element>, трамвай имеет преимущество перед другими <sc_element sys_idtf="vehicle">транспортными средствами</sc_element>, кроме случаев выезда из депо и мест, где очередность движени¤ определ¤етс¤ дорожными знаками приоритета или сигналами светофоров.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

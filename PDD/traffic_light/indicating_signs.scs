@@ -1,0 +1,15 @@
+sc_node_not_relation -> indicating_signs;;
+indicating_signs => nrel_main_idtf: 
+	[обозначающие таблички] (* <- lang_ru;; *);;
+indicating_signs => nrel_main_idtf: 
+	[indicating signs] (* <- lang_en;; *);;
+indicating_signs <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://indicating_signs.png";;
+                                *);; 
+                *);;

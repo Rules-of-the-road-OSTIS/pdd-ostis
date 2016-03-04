@@ -1,0 +1,18 @@
+sc_node_not_relation -> civil;;
+       
+civil => nrel_main_idtf: [гражданская] (* <- lang_ru;; *);;
+
+civil => nrel_main_idtf: [civil] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://civil.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+		
+civil <= nrel_strict_inclusion: responsibility;;

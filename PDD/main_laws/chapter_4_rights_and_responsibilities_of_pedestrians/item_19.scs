@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_19;;
+
+item_19 => nrel_main_idtf: [пункт 19] (* <- lang_ru;; *);;
+
+item_19 => nrel_main_idtf: [item 19] (* <- lang_en;; *);;
+item_19 <= nrel_using_constants:
+	{
+	pedestrian;
+	the_dark;
+	the_lack_of_visibility_of_the_road;
+	shoulder;
+	roadway;
+	bicycle;
+	moped;
+	motorcycle;
+	trailer;
+	vehicle
+	};;
+item_19 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [В <sc_element sys_idtf="the_dark">темное время суток</sc_element> и (или) при <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости дороги</sc_element> в случае движения по <sc_element sys_idtf="shoulder">обочине</sc_element> или по краю <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> <sc_element sys_idtf="pedestrian">пешеход</sc_element>, ведущий <sc_element sys_idtf="bicycle">велосипед</sc_element>, <sc_element sys_idtf="moped">мопед</sc_element>, <sc_element sys_idtf="motorcycle">мотоцикл</sc_element> без бокового <sc_element sys_idtf="trailer">прицепа</sc_element>, обозначенный габаритными огнями, сигнальными фонарями или световозвращателями (световозвращающими лентами), должен двигаться по ходу движения <sc_element sys_idtf="vehicle">транспортных средств</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+item_19 <= nrel_strict_inclusion: chapter_4_rights_and_responsibilities_of_pedestrians;;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> sign_pedestrian_zone;;
+   
+sign_pedestrian_zone => nrel_main_idtf: [знак пешеходная зона] (* <- lang_ru;; *);;
+
+sign_pedestrian_zone => nrel_main_idtf: [sign pedestrian zone] (* <- lang_en;; *);;
+
+sign_pedestrian_zone <= nrel_using_constants:
+	{
+	pedestrian_zone
+	};
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://sign_pedestrian_zone.png";;
+                                *);; 
+                *);;
+sign_pedestrian_zone <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак информирует о начале территории, на которой действуют специальные требования Правил, устанавливающие порядок дорожного движения в <sc_element sys_idtf="pedestrian_zone">пешеходных зонах</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,27 @@
+sc_node_not_relation -> pedestrian_zone;;
+
+pedestrian_zone => nrel_main_idtf: 	[пешеходная зона] (* <- lang_ru;; *);;
+
+pedestrian_zone => nrel_main_idtf: 	[pedestrian zone] (* <- lang_en;; *);;
+pedestrian_zone <= nrel_using_constants:
+	{
+     the_end_of_the_pedestrian_zone;
+     pedestrian;
+     sign_pedesterian_zone
+	};;
+
+
+pedestrian_zone <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Пешеходная зона</b> — территория, предназначенная для движения <sc_element sys_idtf="pedestrian">пешеходов</sc_element> и велосипедистов, въезды на которую и выезды с которой обозначены дорожными знаками «<sc_element sys_idtf="sign_pedesterian_zone">Пешеходная зона</sc_element>» и «<sc_element sys_idtf="the_end_of_the_pedestrian_zone">Конец пешеходной зоны</sc_element>».] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+pedestrian_zone <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,26 @@
+sc_node_not_relation -> floor_area;;
+
+floor_area => nrel_main_idtf: 	[жилая зона] (* <- lang_ru;; *);;
+
+floor_area => nrel_main_idtf: 	[floor area] (* <- lang_en;; *);;
+floor_area <= nrel_using_constants:
+	{
+	 sign_floor_area;
+     end_of_the_living_area
+	};;
+
+
+floor_area <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Жилая зона</b> — территория, въезды на которую и выезды с которой обозначены дорожными знаками «<sc_element sys_idtf="sign_floor_area">Жилая зона</sc_element>» и «<sc_element sys_idtf="end_of_the_living_area">Конец жилой зоны</sc_element>», а также дворовая территория, прилегающая к жилой застройке. Жилой зоной может быть как территория жилых кварталов, так и участки дорог (улиц), проходящих через жилую застройку.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+floor_area <= nrel_strict_inclusion: chapter_1_general_provision;;

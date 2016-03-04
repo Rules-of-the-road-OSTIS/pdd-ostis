@@ -1,0 +1,61 @@
+sc_node_not_relation -> road_signs;;
+       
+road_signs
+
+=> nrel_main_idtf: [Приложение 2.Дорожные знаки] (* <- lang_ru;; *);
+
+=> nrel_main_idtf: [road signs] (* <- lang_en;; *);
+
+<= nrel_using_constants:
+	{
+	road;
+	road_user;
+	traffic
+	};
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://road_signs.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);
+
+<= nrel_section_decomposition:
+	{
+        	information_hints_sings
+		(*
+		=> nrel_section_base_order: 
+			mandatory_signs;;
+		*);
+		mandatory_signs
+		(*
+		=> nrel_section_base_order: 
+			prohibiting_signs;;
+		*);
+		prohibiting_signs
+		(*
+		=> nrel_section_base_order: 
+			signs_more_informations;;
+		*);
+		signs_more_informations
+		(*
+		=> nrel_section_base_order: 
+			signs_of_service	;;
+		*);
+		signs_of_service
+		(*
+		=> nrel_section_base_order: 
+			signs_priority	;;
+		*);
+		signs_priority
+		(*
+		=> nrel_section_base_order: 
+			warning_signs	;;
+		*);
+		warning_signs
+	};;
+

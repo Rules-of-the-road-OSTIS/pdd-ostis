@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_81;;
+
+item_81 => nrel_main_idtf: [пункт 81] (* <- lang_ru;; *);;
+
+item_81 => nrel_main_idtf: [item 81] (* <- lang_en;; *);;
+
+item_81 <= nrel_using_constants:
+	{
+roadway;
+tram;
+obstacle_to_traffic;
+advance
+	};;
+
+item_81 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> Движение по трамвайным путям попутного направления, расположенным слева на одном уровне с <sc_element sys_idtf="roadway"> проезжей частью дороги</sc_element>, разрешается только для <sc_element sys_idtf="advance"> опережения</sc_element> (вне обозначенных и регулируемых перекрестков), объезда <sc_element sys_idtf="obstacle_to_traffic"> препятствия</sc_element> при условии, что все полосы движения в данном направлении заняты, а также для поворота налево или разворота в соответствии с пунктом 64 настоящих Правил. При этом запрещается выезжать на трамвайные пути встречного направления и осуществлять движение по ним, а также движение по трамвайным путям попутного направления при наличии конструктивно выделенной над <sc_element sys_idtf="roadway"> проезжей частью дороги</sc_element> посадочной площадки, с которой осуществляется посадка (высадка) пассажиров в <sc_element sys_idtf="tram"> трамвай</sc_element>.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

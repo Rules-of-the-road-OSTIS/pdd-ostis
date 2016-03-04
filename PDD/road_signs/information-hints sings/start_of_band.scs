@@ -1,0 +1,32 @@
+sc_node_not_relation -> start_of_band;;
+start_of_band => nrel_main_idtf: 
+	[начало полосы] (* <- lang_ru;; *);;
+start_of_band => nrel_main_idtf: 
+	[start of band] (* <- lang_en;; *);;
+start_of_band <= nrel_using_constants:
+	{
+	traffic
+	};;
+start_of_band <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://start_of_band.png";;
+                                *);; 
+                *);;
+start_of_band <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Начало участка средней полосы трехполосной дороги, предназначенного для <sc_element sys_idtf="traffic"> движения </sc_element> в данном направлении, или начало полосы торможения для поворота налево либо разворота.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

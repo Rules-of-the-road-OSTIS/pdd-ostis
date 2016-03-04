@@ -1,0 +1,31 @@
+sc_node_not_relation -> item_75;;
+
+item_75 => nrel_main_idtf: [пункт 75] (* <- lang_ru;; *);;
+
+item_75 => nrel_main_idtf: [item 75] (* <- lang_en;; *);;
+
+item_75 <= nrel_using_constants:
+	{
+	roadway;
+	tram;
+	single_track_vehicle;
+	vehicle
+	};;
+
+item_75 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  Количество полос движения для <sc_element sys_idtf="vehicle"> транспортных средств</sc_element> (за исключением <sc_element sys_idtf="tram"> трамваев</sc_element> и <sc_element sys_idtf="single_track_vehicle"> одноколейных транспортных средств</sc_element>) определяется дорожными знаками «Направления движения по полосам», «Направление движения по полосе», «Направление движения по полосам» и (или) горизонтальной дорожной разметкой, а если их нет, то самими vehicle водителями с учетом ширины roadway проезжей части дороги, габаритов vehicle транспортных средств и необходимых боковых интервалов между ними.
+При отсутствии дорожных знаков и горизонтальной дорожной разметки половина ширины <sc_element sys_idtf="roadway"> проезжей части дороги</sc_element>, расположенная слева, считается ее встречной стороной. На дороге с односторонним движением половина ширины <sc_element sys_idtf="roadway"> проезжей части дороги</sc_element>, расположенная слева, считается левой стороной проезжей части.<\p>
+				
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

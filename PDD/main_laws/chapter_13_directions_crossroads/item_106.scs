@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_106;;
+item_106 => nrel_main_idtf: [пункт 106] (* <- lang_ru;; *);;
+
+item_106 => nrel_main_idtf: [item 106] (* <- lang_en;; *);;
+
+item_106 <= nrel_using_constants:
+{
+intersection;
+vehicle;
+give_way_do_not_have_the_benefits
+};;
+
+item_106 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>106. Водитель, въехавший на <sc_element sys_idtf="intersection">перекресток</sc_element> при разрешающем сигнале светофора, должен выехать в намеченном направлении независимо от сигнала светофора на выходе с <sc_element sys_idtf="intersection">перекрестка</sc_element>, при этом он обязан <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> встречным <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, движущимся прямо или направо. Если на <sc_element sys_idtf="intersection">перекрестке</sc_element> перед светофорами, расположенными на пути следовани¤ водителя, имеется дорожный знак "Стоп-линия" (линия горизонтальной дорожной разметки 1.12), водитель обязан руководствоваться сигналами каждого светофора.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

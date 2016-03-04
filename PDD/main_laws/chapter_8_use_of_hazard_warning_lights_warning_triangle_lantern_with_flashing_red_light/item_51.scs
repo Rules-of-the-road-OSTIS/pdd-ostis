@@ -1,0 +1,46 @@
+sc_node_not_relation -> item_51;;
+
+item_51 => nrel_main_idtf: [пункт 51] (* <- lang_ru;; *);;
+
+item_51 => nrel_main_idtf: [item 51] (* <- lang_en;; *);;
+
+item_51 <= nrel_using_constants:
+	{
+	roadway;
+	motor_vehicle;
+	bus;
+	forced_to_stop_the_vehicle;
+	floor_area;
+	parking_of_a_vehicle;
+	the_dark;
+	the_lack_of_visibility_of_the_road;
+	danger_to_traffic;
+	road_user;
+	vehicle;
+	tram;
+	traffic_accident
+	};;
+
+item_51 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Аварийная световая сигнализация должна быть включена в случаях:</p>
+<p>1)<sc_element sys_idtf="traffic_accident"> дорожно-транспортного происшествия</sc_element>;</p>
+<p>2)<sc_element sys_idtf="forced_to_stop_the_vehicle"> вынужденной остановки транспортного средства</sc_element> на <sc_element sys_idtf="roadway"> проезжей части дороги</sc_element> и в местах, где остановка запрещена;;</p>
+<p>3)ослепления водителя светом фар;</p>
+<p>4)буксировки <sc_element sys_idtf="motor_vehicle"> механического транспортного средства</sc_element> (если не определено иное, далее — буксировка) — на буксируемом <sc_element sys_idtf="motor_vehicle"> механическом транспортном средстве</sc_element>;</p>
+<p>5)остановки, <sc_element sys_idtf="parking_of_a_vehicle"> стоянки</sc_element>  <sc_element sys_idtf="vehicle"> транспортного средства</sc_element> в <sc_element sys_idtf="the_dark"> темное время суток</sc_element> на неосвещенных участках road дороги (кроме <sc_element sys_idtf="floor_area"> жилых зон</sc_element>) и (или) при <sc_element sys_idtf="the_lack_of_visibility_of_the_road"> недостаточной видимости</sc_element> дороги при неисправных габаритных и стояночных огнях;</p>
+<p>6)движения на транспортном средстве с технической неисправностью, указанной в приложении 4 к настоящим Правилам, если движение не запрещено настоящими Правилами;</p>
+<p>7)предупреждения <sc_element sys_idtf="road_user"> участников дорожного движения</sc_element> об <sc_element sys_idtf="danger_to_traffic"> опасности для движения</sc_element>;</p>
+<p>8)посадки (высадки) групп детей в перевозящие их <sc_element sys_idtf="bus"> автобусы</sc_element> — на автобусах;</p> 
+<p>9)приближения <sc_element sys_idtf="tram"> трамвая</sc_element> к зоне остановочного пункта трамвая, обозначенной дорожными знаками «Остановочный пункт трамвая», «Место остановки трамвая» и (или) горизонтальной дорожной разметкой 1.17.2, и во время нахождения его в этой зоне — на трамваях. На трамваях, не оборудованных аварийной световой сигнализацией, должен быть включен световой указатель правого поворота.</p>]  
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

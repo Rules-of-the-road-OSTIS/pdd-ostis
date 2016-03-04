@@ -1,0 +1,29 @@
+sc_node_not_relation -> swing_bridge_or_ferry;;
+        
+swing_bridge_or_ferry => nrel_main_idtf: [разводной мост или паромная переправа] (* <- lang_ru;; *);;
+swing_bridge_or_ferry => nrel_main_idtf: [swing bridge or ferry] (* <- lang_en;; *);;
+
+swing_bridge_or_ferry <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://swing_bridge_or_ferry.png";;
+                                *);; 
+                *);;
+				
+swing_bridge_or_ferry <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предупреждает о приближении к разводному мосту или паромной переправе.]
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,15 @@
+sc_node_not_relation -> information_boards;;
+information_boards => nrel_main_idtf: 
+	[информационные таблички] (* <- lang_ru;; *);;
+information_boards => nrel_main_idtf: 
+	[information boards] (* <- lang_en;; *);;
+information_boards <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://information_boards.png";;
+                                *);; 
+                *);;

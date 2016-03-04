@@ -1,0 +1,30 @@
+sc_node_not_relation -> stopping_point_of_the_bus_and_the_trolley;;
+        
+stopping_point_of_the_bus_and_the_trolley => nrel_main_idtf: 
+	[остановочный пункт автобуса и (или) троллейбуса] (* <- lang_ru;; *);;
+stopping_point_of_the_bus_and_the_trolley => nrel_main_idtf: 
+	[stopping pointof the bus and(or) the trolley] (* <- lang_en;; *);;
+
+stopping_point_of_the_bus_and_the_trolley <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://stopping_point_of_the_bus_and_the_trolley.png";;
+                                *);; 
+                *);;
+stopping_point_of_the_bus_and_the_trolley <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак обозначает начало посадочной площадки остановочного пункта автобуса и (или) троллейбуса. Вне населенных пунктов знак может быть установлен на павильоне со стороны прибытия маршрутных транспортных средств.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,28 @@
+sc_node_not_relation -> 2.5_markup;;
+
+2.5_markup => nrel_main_idtf: [разметка 2.5] (* <- lang_ru;; *);;
+2.5_markup => nrel_main_idtf: [2.5 markup] (* <- lang_en;; *);;
+
+2.5_markup <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Обозначает боковые поверхности начальных и конечных участков дорожных ограждений.]
+					  (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+2.5_markup <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://2.5_markup.png";;
+                                *);; 
+                *);;

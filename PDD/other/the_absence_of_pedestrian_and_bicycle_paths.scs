@@ -1,0 +1,17 @@
+sc_node_not_relation -> the_absence_of_pedestrian_and_bicycle_paths;;
+       
+the_absence_of_pedestrian_and_bicycle_paths => nrel_main_idtf: [отсутствии пешеходной и велосипедной дорожек] (* <- lang_ru;; *);;
+
+the_absence_of_pedestrian_and_bicycle_paths => nrel_main_idtf: [the_absence_of_pedestrian_and_bicycle_paths] (* <- lang_en;; *);;
+
+the_absence_of_pedestrian_and_bicycle_paths <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://the_absence_of_pedestrian_and_bicycle_paths.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

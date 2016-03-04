@@ -1,0 +1,33 @@
+sc_node_not_relation -> limitation_of_the_minimum_distance;;
+  
+limitation_of_the_minimum_distance => nrel_main_idtf: [ограничение минимальной дистанции] (* <- lang_ru;; *);;
+
+limitation_of_the_minimum_distance => nrel_main_idtf: [limitation of the minimum distance] (* <- lang_en;; *);;
+limitation_of_the_minimum_distance <=nrel_using_constants:
+{
+vehicle
+};;
+limitation_of_the_minimum_distance <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://limitation_of_the_minimum_distance.png";;
+                                *);; 
+                *);;
+limitation_of_the_minimum_distance <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение <sc_element sys_idtf="vehicle">транспортных средств</sc_element> с дистанцией между ними меньше указанной на знаке.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

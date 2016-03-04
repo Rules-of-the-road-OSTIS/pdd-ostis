@@ -1,0 +1,17 @@
+sc_node_not_relation -> tramways;;
+       
+tramways => nrel_main_idtf: [трамвайные пути] (* <- lang_ru;; *);;
+
+tramways => nrel_main_idtf: [tramways] (* <- lang_en;; *);;
+
+tramways <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://tramways.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

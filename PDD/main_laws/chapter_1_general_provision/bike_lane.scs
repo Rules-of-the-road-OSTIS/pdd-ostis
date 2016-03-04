@@ -1,0 +1,29 @@
+sc_node_not_relation -> bike_lane;;
+
+bike_lane => nrel_main_idtf: 	[велосипедная дорожка] (* <- lang_ru;; *);;
+
+bike_lane => nrel_main_idtf: 	[bike lane] (* <- lang_en;; *);;
+bike_lane <= nrel_using_constants:
+	{
+     road;
+     horizontal_road_marking;
+     elements_of_the_road;
+     driver;
+     bicycle
+	};;
+
+
+bike_lane <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Велосипедная дорожка</b> — обособленная <sc_element sys_idtf="road">дорога</sc_element> либо выделенный конструктивно или с помощью линий <sc_element sys_idtf="horizontal_road_marking">горизонтальной дорожной разметки</sc_element> <sc_element sys_idtf="elements_of_the_road">элемент дороги</sc_element>, предназначенные для движения <sc_element sys_idtf="driver">водителей</sc_element> <sc_element sys_idtf="bicycle">велосипедов</sc_element> (далее — велосипедисты), обозначенный дорожным знаком «Велосипедная дорожка».] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+bike_lane <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,30 @@
+sc_node_not_relation -> Traffic_line;;
+Traffic_line => nrel_main_idtf:[Полоса движения] (* <- lang_ru;; *);;
+Traffic_line => nrel_main_idtf:[Traffic line] (* <- lang_en;; *);;
+Traffic_line <= nrel_using_constants:
+	{
+	traffic_lane	
+	};;
+Traffic_line <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Traffic_line.png";;
+                                *);; 
+                *);;
+Traffic_line  	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  указывает <sc_element sys_idtf="traffic_lane">полосу движения</sc_element>, на которую распространяется действие светофора или знака.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

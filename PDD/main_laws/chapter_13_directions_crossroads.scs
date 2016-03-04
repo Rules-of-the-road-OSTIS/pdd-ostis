@@ -1,0 +1,75 @@
+sc_node_not_relation -> chapter_13_directions_crossroads;;
+        
+chapter_13_directions_crossroads  => nrel_main_idtf: [Глава 13. Проезд перекрестков] (* <- lang_ru;; *);;
+
+chapter_13_directions_crossroads  => nrel_main_idtf: [Chapter 13. Directions crossroads] (* <- lang_en;; *);;
+chapter_13_directions_crossroads <= nrel_section_decomposition:
+	{
+        	item_100
+		(*
+		=> nrel_section_base_order: 
+			item_101;;
+		*);
+		item_101
+		(*
+		=> nrel_section_base_order: 
+			item_102;;
+		*);
+		item_102
+		(*
+		=> nrel_section_base_order: 
+			item_103;;
+		*);
+		item_103
+		(*
+		=> nrel_section_base_order: 
+			item_104;;
+		*);
+		item_104
+		(*
+		=> nrel_section_base_order: 
+			item_105;;
+		*);
+		item_105
+		(*
+		=> nrel_section_base_order: 
+			item_106;;
+		*);
+		item_106
+		(*
+		=> nrel_section_base_order: 
+			item_107;;
+		*);
+		item_107
+		(*
+		=> nrel_section_base_order: 
+			item_108;;
+		*);
+		item_108
+		(*
+		=> nrel_section_base_order: 
+			item_109;;
+		*);
+		item_109
+		(*
+		=> nrel_section_base_order: 
+			item_110;;
+		*);
+		item_110
+		(*
+		=> nrel_section_base_order: 
+			item_111;;
+		*);
+		item_111
+		(*
+		=> nrel_section_base_order: 
+			item_112;;
+		*);
+		item_112
+		(*
+		=> nrel_section_base_order: 
+			item_113;;
+		*);
+		item_113
+
+	};;

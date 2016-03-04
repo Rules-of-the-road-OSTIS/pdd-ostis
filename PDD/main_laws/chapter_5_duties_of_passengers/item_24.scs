@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_24;;
+
+item_24 => nrel_main_idtf: [пункт 24] (* <- lang_ru;; *);;
+
+item_24 => nrel_main_idtf: [item 24] (* <- lang_en;; *);;
+item_24 <= nrel_using_constants:
+	{
+	passenger;
+	driver;
+	vehicle
+	};;
+item_24 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><sc_element sys_idtf="passenger">Пассажиру</sc_element> запрещается:</p>
+<p>1)отвлекать <sc_element sys_idtf="driver">водителя</sc_element> от управления транспортным средством во время его движения и (или) мешать водителю в управлении <sc_element sys_idtf="vehicle">транспортным средством</sc_element>;</p>
+<p>2)препятствовать закрытию дверей транспортного средства, а во время его движения высовываться в оконные проемы, открывать двери транспортного средства;</p>
+<p>3)при движении на грузовом автомобиле с бортовой платформой стоять, сидеть на его бортах или на грузе, находящемся выше бортов.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

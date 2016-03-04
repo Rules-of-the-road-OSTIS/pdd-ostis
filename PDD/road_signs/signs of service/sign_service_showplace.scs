@@ -1,0 +1,29 @@
+sc_node_not_relation -> sign_service_showplace;;
+sign_service_showplace => nrel_main_idtf: 
+	[знак сервиса "Достопримечательность"] (* <- lang_ru;; *);;
+sign_service_showplace => nrel_main_idtf: 
+	[sign service "Showplace"] (* <- lang_en;; *);;
+
+sign_service_showplace <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_showplace.png";;
+                                *);; 
+                *);;
+sign_service_showplace <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Достопримечательность" информирует о расположении достопримечательности.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

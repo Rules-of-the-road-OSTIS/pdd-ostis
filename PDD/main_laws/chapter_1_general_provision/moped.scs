@@ -1,0 +1,37 @@
+sc_node_not_relation -> moped;;
+
+moped => nrel_main_idtf: 	[мопед] (* <- lang_ru;; *);;
+
+moped => nrel_main_idtf: 	[moped] (* <- lang_en;; *);;
+moped <= nrel_using_constants:
+	{
+     motor_vehicle;
+     bicycle
+	};;
+
+
+moped <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Мопед</b> — <sc_element sys_idtf="motor_vehicle">механическое транспортное средство</sc_element>, приводимое в движение двигателем с рабочим объемом до 50 куб. сантиметров и имеющее максимальную конструктивную скорость движения, определенную его технической характеристикой, не более 50 км/ч. К мопедам приравниваются <sc_element sys_idtf="bicycle">велосипеды</sc_element> с подвесным двигателем, мокики и другие механические транспортные средства с аналогичными характеристиками.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+moped <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://moped.jpg";;
+                                *);; 
+                *);;
+moped <= nrel_strict_inclusion: chapter_1_general_provision;;
+moped <= nrel_strict_inclusion: types_of_vehicles;;

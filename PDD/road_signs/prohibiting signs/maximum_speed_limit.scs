@@ -1,0 +1,31 @@
+sc_node_not_relation -> maximum_speed_limit;;
+
+maximum_speed_limit => nrel_main_idtf: [ограничение максимальной скорости] (* <- lang_ru;; *);;
+
+maximum_speed_limit => nrel_main_idtf: [maximum speed limit] (* <- lang_en;; *);;
+
+maximum_speed_limit <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://maximum_speed_limit.png";
+                                                "file://maximum_speed_limit2.png";;
+                                *);; 
+                *);;
+maximum_speed_limit <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение со скоростью (км/ч), превышающей указанную на знаке.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

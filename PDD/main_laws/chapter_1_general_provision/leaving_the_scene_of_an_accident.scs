@@ -1,0 +1,25 @@
+sc_node_not_relation -> leaving_the_scene_of_an_accident;;
+
+leaving_the_scene_of_an_accident => nrel_main_idtf: 	[оставление места дорожно-транспортного происшествия] (* <- lang_ru;; *);;
+
+leaving_the_scene_of_an_accident => nrel_main_idtf: 	[leaving the scene of an accident] (* <- lang_en;; *);;
+leaving_the_scene_of_an_accident <= nrel_using_constants:
+	{
+    vehicle
+	};;
+
+
+leaving_the_scene_of_an_accident <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Оставление места дорожно-транспортного происшествия</b> — действия участника дорожно-транспортного происшествия, направленные на сокрытие факта такого происшествия или обстоятельств его совершения, повлекшие необходимость проведения сотрудниками Государственной автомобильной инспекции Министерства внутренних дел (далее — ГАИ) мероприятий по установлению (розыску) данного участника и (или) розыску <sc_element sys_idtf="vehicle">транспортного средства</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+leaving_the_scene_of_an_accident <= nrel_strict_inclusion: chapter_1_general_provision;;

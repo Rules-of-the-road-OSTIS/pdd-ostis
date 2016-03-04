@@ -1,0 +1,31 @@
+sc_node_not_relation -> Evacuator;;
+Evacuator => nrel_main_idtf:[Эвакуатор] (* <- lang_ru;; *);;
+Evacuator => nrel_main_idtf:[Evacuator] (* <- lang_en;; *);;
+Evacuator <= nrel_using_constants:
+	{
+	vehicle;
+	driver
+	};;
+Evacuator <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Evacuator.png";;
+                                *);; 
+                *);;
+Evacuator 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> информирует о возможной эвакуации (блокировке колес) транспортного средства при отсутствии <sc_element sys_idtf="driver">водителя</sc_element> в <sc_element sys_idtf="vehicle">транспортном средстве</sc_element> или в непосредственной близости от него.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

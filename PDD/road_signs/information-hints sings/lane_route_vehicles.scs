@@ -1,0 +1,33 @@
+sc_node_not_relation -> lane_route_vehicles;;
+lane_route_vehicles => nrel_main_idtf: 
+	[полоса для маршрутных транспортных средств] (* <- lang_ru;; *);;
+lane_route_vehicles => nrel_main_idtf: 
+	[lane route vehicles] (* <- lang_en;; *);;
+lane_route_vehicles <= nrel_using_constants:
+	{
+	traffic_lane;
+	traffic
+	};;
+lane_route_vehicles <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://lane_route_vehicles.png";;
+                                *);; 
+                *);;
+lane_route_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<sc_element sys_idtf="traffic_lane">Полоса</sc_element>, предназначенная для<sc_element sys_idtf="traffic"> движения</sc_element> только маршрутных транспортных средств.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

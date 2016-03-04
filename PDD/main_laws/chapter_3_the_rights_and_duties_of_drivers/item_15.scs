@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_15;;
+
+item_15 => nrel_main_idtf: [пункт 15] (* <- lang_ru;; *);;
+
+item_15 => nrel_main_idtf: [item 15] (* <- lang_en;; *);;
+item_15 <= nrel_using_constants:
+	{
+	driver;
+	motor_vehicle;
+	tachograph
+	};;
+item_15 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><sc_element sys_idtf="driver">Водитель</sc_element> <sc_element sys_idtf="motor_vehicle">механического транспортного средства</sc_element>, оборудованного <sc_element sys_idtf="tachograph">тахографом</sc_element>, обязан представлять по требованию сотрудников ГАИ, должностных лиц Транспортной инспекции Министерства транспорта и коммуникаций:</p>
+<p>1)при аналоговом тахографе — регистрационные листки (тахограммы);</p>
+<p>2)при цифровом тахографе — карточку водителя, распечатки с тахографа, регистрационные листки (тахограммы), предоставить доступ к тахографу;</p>
+<p>3)свидетельство о поверке (калибровке) тахографа.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_139;;
+
+item_139 => nrel_main_idtf: [пункт 139] (* <- lang_ru;; *);;
+
+item_139 => nrel_main_idtf: [item 139] (* <- lang_en;; *);;
+
+item_139 <= nrel_using_constants:
+	{
+	vehicle
+	};;
+
+item_139 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><sc_element sys_idtf="vehicle">Транспортные средства</sc_element> разрешается ставить на стоянку с соблюдением требований дорожных знаков и горизонтальной дорожной разметки, а при их отсутствии — при условии рационального использования места стоянки, не создавая препятствия для доступа к находящимся на нем другим <sc_element sys_idtf="vehicle">транспортным средствам</sc_element> и их последующего движения.</p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

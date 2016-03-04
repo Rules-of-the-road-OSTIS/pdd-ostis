@@ -1,0 +1,30 @@
+sc_node_not_relation -> the_dark;;
+
+the_dark => nrel_main_idtf: 	[темное время суток] (* <- lang_ru;; *);;
+
+the_dark => nrel_main_idtf: 	[the dark] (* <- lang_en;; *);;
+
+the_dark <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Темное время суток</b> — промежуток времени, который начинается после захода солнца и заканчивается с восходом солнца.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+the_dark <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_dark.jpg";;
+                                *);; 
+                *);;
+the_dark <= nrel_strict_inclusion: chapter_1_general_provision;;

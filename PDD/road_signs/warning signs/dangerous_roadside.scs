@@ -1,0 +1,35 @@
+sc_node_not_relation -> dangerous_roadside;;
+        
+dangerous_roadside => nrel_main_idtf: [опасная обочина] (* <- lang_ru;; *);;
+dangerous_roadside => nrel_main_idtf: [dangerous roadside] (* <- lang_en;; *);;
+
+dangerous_roadside <= nrel_using_constants:
+	{
+	road;
+	shoulder
+	};;
+
+dangerous_roadside<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://dangerous_roadside.png";;
+                                *);; 
+                *);;
+				
+dangerous_roadside <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element> с заниженной или разрушенной <sc_element sys_idtf="shoulder">обочиной</sc_element> либо на котором ведутся работы по ремонту обочин.] 
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

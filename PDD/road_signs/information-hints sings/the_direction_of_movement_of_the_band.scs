@@ -1,0 +1,32 @@
+sc_node_not_relation -> the_direction_of_movement_of_the_band;;
+the_direction_of_movement_of_the_band => nrel_main_idtf: 
+	[направление движения по полосе] (* <- lang_ru;; *);;
+the_direction_of_movement_of_the_band => nrel_main_idtf: 
+	[the direction of movement of the band] (* <- lang_en;; *);;
+the_direction_of_movement_of_the_band <= nrel_using_constants:
+	{
+	traffic
+	};;
+the_direction_of_movement_of_the_band <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_direction_of_movement_of_the_band.png";;
+                                *);; 
+                *);;
+the_direction_of_movement_of_the_band <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Разрешенное направление (направления) <sc_element sys_idtf="traffic"> движения </sc_element> по полосе.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

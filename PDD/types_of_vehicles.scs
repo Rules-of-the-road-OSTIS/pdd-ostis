@@ -1,0 +1,7 @@
+sc_node_not_relation -> types_of_vehicles;;
+       
+types_of_vehicles => nrel_main_idtf: [Виды транспортных средств] (* <- lang_ru;; *);;
+
+types_of_vehicles => nrel_main_idtf: [types of vehicles] (* <- lang_en;; *);;
+		
+

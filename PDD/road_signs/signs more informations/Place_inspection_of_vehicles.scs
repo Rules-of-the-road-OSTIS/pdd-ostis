@@ -1,0 +1,30 @@
+sc_node_not_relation -> Place_inspection_of_vehicles;;
+Place_inspection_of_vehicles => nrel_main_idtf:[Место для осмотра автомобилей] (* <- lang_ru;; *);;
+Place_inspection_of_vehicles => nrel_main_idtf:[Place inspection of vehicles] (* <- lang_en;; *);;
+Limit_of_duration <= nrel_using_constants:
+	{
+	vehicle	
+	};;
+Place_inspection_of_vehicles <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Place_inspection_of_vehicles.png";;
+                                *);; 
+                *);;
+Place_inspection_of_vehicles 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  указывает, что на площадке имеется смотровая канава для осмотра <sc_element sys_idtf="vehicle">транспортных средств</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

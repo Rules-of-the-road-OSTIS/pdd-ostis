@@ -1,0 +1,32 @@
+sc_node_not_relation -> the_end_of_the_borders_of_the_village;;
+the_end_of_the_borders_of_the_village => nrel_main_idtf: 
+	[конец границы населенного пункта] (* <- lang_ru;; *);;
+the_end_of_the_borders_of_the_village => nrel_main_idtf: 
+	[the end of the borders of the village] (* <- lang_en;; *);;
+the_end_of_the_borders_of_the_village <= nrel_using_constants:
+	{
+	locality
+	};;
+the_end_of_the_borders_of_the_village <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_end_of_the_borders_of_the_village.png";;
+                                *);; 
+                *);;
+the_end_of_the_borders_of_the_village <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Конец границы <sc_element sys_idtf="locality"> населенного пункта </sc_element>, обозначенного знаком "Начало границы <sc_element sys_idtf="locality"> населённого пункта </sc_element>".]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

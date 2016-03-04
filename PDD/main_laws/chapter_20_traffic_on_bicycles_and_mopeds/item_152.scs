@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_152;;
+item_152 => nrel_main_idtf: [пункт 152] (* <- lang_ru;; *);;
+
+item_152 => nrel_main_idtf: [item 152] (* <- lang_en;; *);;
+
+item_152 <= nrel_using_constants:
+{
+moped;
+shoulder;
+roadway;
+obstacle_to_traffic
+};;
+
+item_152 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>152. Движение на <sc_element sys_idtf="moped">мопеде</sc_element> должно осуществляться по <sc_element sys_idtf="shoulder">обочине</sc_element> или <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> не далее 1 метра от правого края <sc_element sys_idtf="roadway">проезжей части</sc_element>. При этом выезд далее 1 метра от ее правого края допускается лишь для объезда <sc_element sys_idtf="obstacle_to_traffic">препятствия</sc_element> и в разрешенных случаях для поворота налево или разворота.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

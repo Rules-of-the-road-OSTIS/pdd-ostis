@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_55;;
+
+item_55 => nrel_main_idtf: [пункт 55] (* <- lang_ru;; *);;
+
+item_55 => nrel_main_idtf: [item 55] (* <- lang_en;; *);;
+
+item_55 <= nrel_using_constants:
+	{
+	vehicle;
+	motor_vehicle
+	};;
+
+item_55 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>При отсутствии или неисправности аварийной световой сигнализации на буксируемом <sc_element sys_idtf="motor_vehicle"> механическом транспортном средстве</sc_element> или <sc_element sys_idtf="vehicle"> транспортном средстве</sc_element>, движущемся с технической неисправностью, на его задней части слева должен быть закреплен знак аварийной остановки. </p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

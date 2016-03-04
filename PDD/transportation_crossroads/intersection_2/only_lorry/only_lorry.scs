@@ -1,0 +1,20 @@
+sc_node_not_relation -> only_lorry;;
+
+only_lorry => nrel_main_idtf: [Только грузовому автомобилю] (* <- lang_ru;; *);;
+
+only_lorry => nrel_main_idtf: [only_lorry] (* <- lang_en;; *);;
+only_lorry <= nrel_inclusion: The_direction_of_the_main_road;;
+only_lorry <= nrel_inclusion: give_way;;
+
+only_lorry <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://only_lorry.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+
+only_lorry <= nrel_strict_inclusion: intersection_2;;

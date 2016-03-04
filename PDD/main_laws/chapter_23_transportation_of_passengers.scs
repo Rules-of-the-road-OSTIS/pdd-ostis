@@ -1,0 +1,45 @@
+sc_node_not_relation -> chapter_23_transportation_of_passengers;;
+        
+chapter_23_transportation_of_passengers => nrel_main_idtf: [Глава 23. Перевозка пассажиров] (* <- lang_ru;; *);;
+
+chapter_23_transportation_of_passengers => nrel_main_idtf: [chapter_23_transportation_of_passengers] (* <- lang_en;; *);;
+chapter_23_transportation_of_passengers <= nrel_section_decomposition:
+	{
+        	item_174
+		(*
+		=> nrel_section_base_order: 
+			item_175;;
+		*);
+		item_175
+		(*
+		=> nrel_section_base_order: 
+			item_176;;
+		*);
+		item_176
+		(*
+		=> nrel_section_base_order: 
+			item_177;;
+		*);
+		item_177
+		(*
+		=> nrel_section_base_order: 
+			item_178;;
+		*);
+		item_178
+		(*
+		=> nrel_section_base_order: 
+			item_179;;
+		*);
+		item_179
+		(*
+		=> nrel_section_base_order: 
+			item_180;;
+		*);
+		item_180
+		(*
+		=> nrel_section_base_order: 
+			item_181;;
+		*);
+		item_181
+
+	};;

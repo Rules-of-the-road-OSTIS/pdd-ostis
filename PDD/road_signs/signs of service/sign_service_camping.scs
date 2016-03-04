@@ -1,0 +1,29 @@
+sc_node_not_relation -> sign_service_camping;;
+sign_service_camping => nrel_main_idtf: 
+	[знак сервиса "Кемпинг"] (* <- lang_ru;; *);;
+sign_service_camping => nrel_main_idtf: 
+	[sign service "Camping"] (* <- lang_en;; *);;
+
+sign_service_camping <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_camping.png";;
+                                *);; 
+                *);;
+sign_service_camping <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						 [Дорожный знак сервиса "Кемпинг" информирует о расположении объектов кемпинга.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

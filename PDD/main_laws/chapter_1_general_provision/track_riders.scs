@@ -1,0 +1,26 @@
+sc_node_not_relation -> track_riders;;
+
+track_riders => nrel_main_idtf: 	[дорожка для всадников] (* <- lang_ru;; *);;
+
+track_riders => nrel_main_idtf: 	[track riders] (* <- lang_en;; *);;
+track_riders <= nrel_using_constants:
+	{
+     track_for_horsemen
+	};;
+
+
+track_riders <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Дорожка для всадников</b> — полоса земли, предназначенная для движения в установленном порядке всадников, обозначенная дорожным знаком « <sc_element sys_idtf="track_for_horsemen">Дорожка для всадников</sc_element>».
+Обратите внимание, что дорожка для всадников не является элементом дороги.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+track_riders <= nrel_strict_inclusion: chapter_1_general_provision;;

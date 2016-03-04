@@ -1,0 +1,30 @@
+sc_node_not_relation -> item_73;;
+
+item_73 => nrel_main_idtf: [пункт 73] (* <- lang_ru;; *);;
+
+item_73 => nrel_main_idtf: [item 73] (* <- lang_en;; *);;
+
+item_73 <= nrel_using_constants:
+	{
+	vehicle;
+	road_users;
+	traffic_safety;
+	driver
+	};;
+
+item_73 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  Движение <sc_element sys_idtf="vehicle"> транспортного средства</sc_element> задним ходом разрешается при условии, если эти действия не создадут препятствия для других <sc_element sys_idtf="road_users">участников дорожного движения</sc_element>  и будет обеспечена <sc_element sys_idtf="traffic_safety"> безопасность дорожного движения</sc_element>. При необходимости <sc_element sys_idtf="driver"> водитель</sc_element> должен прибегнуть к помощи других лиц, которые сигнализировали бы о складывающейся ситуации позади <sc_element sys_idtf="vehicle">транспортного средства</sc_element> .<\p>
+				
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

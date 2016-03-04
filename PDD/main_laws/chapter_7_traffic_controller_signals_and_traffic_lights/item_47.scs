@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_47;;
+
+item_47 => nrel_main_idtf: [пункт 47] (* <- lang_ru;; *);;
+
+item_47 => nrel_main_idtf: [item 47] (* <- lang_en;; *);;
+item_47 <= nrel_using_constants:
+	{
+	intersection;
+	crosswalk
+	};;
+
+item_47 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Для обозначения нерегулируемых <sc_element sys_idtf="intersection">перекрестков</sc_element> и <sc_element sys_idtf="crosswalk">пешеходных переходов</sc_element> могут применяться светофоры с одним или двумя мигающими желтыми сигналами.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

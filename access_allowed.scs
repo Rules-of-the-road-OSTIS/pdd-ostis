@@ -1,0 +1,3 @@
+access_allowed => nrel_main_idtf: [Проезд разрешён] (* <- lang_ru;; *);;
+
+access_allowed => nrel_main_idtf: [access is allowed] (* <- lang_en;; *);;

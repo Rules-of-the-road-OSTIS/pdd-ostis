@@ -1,0 +1,17 @@
+sc_node_not_relation -> the_road_crosses_the_railroad_tracks_at_the_same_level;;
+       
+the_road_crosses_the_railroad_tracks_at_the_same_level => nrel_main_idtf: [дорога пересекается с железнодорожными путями на одном уровне] (* <- lang_ru;; *);;
+
+the_road_crosses_the_railroad_tracks_at_the_same_level => nrel_main_idtf: [the_road_crosses_the_railroad_tracks_at_the_same_level] (* <- lang_en;; *);;
+
+the_road_crosses_the_railroad_tracks_at_the_same_level <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://the_road_crosses_the_railroad_tracks_at_the_same_level.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

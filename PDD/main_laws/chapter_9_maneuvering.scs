@@ -1,0 +1,100 @@
+sc_node_not_relation -> chapter_9_maneuvering;;
+        
+chapter_9_maneuvering => nrel_main_idtf: [Глава 9. Маневрирование] (* <- lang_ru;; *);;
+
+chapter_9_maneuvering => nrel_main_idtf: [Chapter 9. Maneuvering] (* <- lang_en;; *);;
+
+chapter_9_maneuvering <= nrel_section_decomposition:
+	{
+        	item_56
+		(*
+		=> nrel_section_base_order: 
+			item_57;;
+		*);
+		item_57
+		(*
+		=> nrel_section_base_order: 
+			item_58;;
+		*);
+		item_58
+		(*
+		=> nrel_section_base_order: 
+			item_59;;
+		*);
+		item_59
+		(*
+		=> nrel_section_base_order: 
+			item_60;;
+		*);
+		item_60
+		(*
+		=> nrel_section_base_order: 
+			item_61;;
+		*);
+		item_61
+		(*
+		=> nrel_section_base_order: 
+			item_62;;
+		*);
+		item_62
+		(*
+		=> nrel_section_base_order: 
+			item_63;;
+		*);
+		item_63
+		(*
+		=> nrel_section_base_order: 
+			item_64;;
+		*);
+		item_64
+		(*
+		=> nrel_section_base_order: 
+			item_65;;
+		*);
+		item_65
+		(*
+		=> nrel_section_base_order: 
+			item_66;;
+		*);
+		item_66
+		(*
+		=> nrel_section_base_order: 
+			item_67;;
+		*);
+		item_67
+		(*
+		=> nrel_section_base_order: 
+			item_68;;
+		*);
+		item_68
+		(*
+		=> nrel_section_base_order: 
+			item_69;;
+		*);
+		item_69
+		(*
+		=> nrel_section_base_order: 
+			item_70;;
+		*);
+		item_70
+		(*
+		=> nrel_section_base_order: 
+			item_71;;
+		*);
+		item_71
+		(*
+		=> nrel_section_base_order: 
+			item_72;;
+		*);
+		item_72
+		(*
+		=> nrel_section_base_order: 
+			item_73;;
+		*);
+		item_73
+		(*
+		=> nrel_section_base_order: 
+			item_74;;
+		*);
+		item_74
+	};;

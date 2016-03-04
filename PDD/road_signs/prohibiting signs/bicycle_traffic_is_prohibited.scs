@@ -1,0 +1,32 @@
+sc_node_not_relation -> bicycle_traffic_is_prohibited;;
+       
+bicycle_traffic_is_prohibited => nrel_main_idtf: [движение велосипедов запрещено] (* <- lang_ru;; *);;
+
+bicycle_traffic_is_prohibited => nrel_main_idtf: [bicycle traffic is prohibited] (* <- lang_en;; *);;
+bicycle_traffic_is_prohibited <= nrel_using_constants:
+{
+bicycle
+};;
+bicycle_traffic_is_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://bicycle_traffic_is_prohibited.png";;
+                                *);; 
+                *);;
+bicycle_traffic_is_prohibited 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение на <sc_element sys_idtf="bicycle">велосипедах</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

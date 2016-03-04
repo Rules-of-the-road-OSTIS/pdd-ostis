@@ -1,0 +1,28 @@
+sc_node_not_relation -> Saturdays_Sundays_and_holidays;;
+Saturdays_Sundays_and_holidays => nrel_main_idtf:[Субботние, воскресные и праздничные дни] (* <- lang_ru;; *);;
+Saturdays_Sundays_and_holidays => nrel_main_idtf:[Saturdays, Sundays and holidays] (* <- lang_en;; *);;
+Saturdays_Sundays_and_holidays => nrel_create:[Дни недели] ;;
+Saturdays_Sundays_and_holidays => nrel_create:[действие] ;;
+Saturdays_Sundays_and_holidays <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Saturdays_Sundays_and_holidays.png";;
+                                *);; 
+                *);;
+Saturdays_Sundays_and_holidays 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  указывает дни недели, в течение которых действует знак.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

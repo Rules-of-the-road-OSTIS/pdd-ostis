@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_174;;
+
+item_174 => nrel_main_idtf: [пункт 174] (* <- lang_ru;; *);;
+
+item_174 => nrel_main_idtf: [item 174] (* <- lang_en;; *);;
+
+item_174 <= nrel_using_constants:
+	{
+	the_technically_permissible_total_weight;
+	passenger;
+	the_actual_mass_of_the_vehicle
+	};;
+
+item_174 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[При перевозке <sc_element sys_idtf="passenger">пассажиров</sc_element> <sc_element sys_idtf="the_actual_mass_of_the_vehicle">фактическая масса транспортного средства</sc_element> не должна превышать <sc_element sys_idtf="the_technically_permissible_total_weight">технически допустимую общую массу</sc_element> транспортного средства, установленную организацией (заводом)-изготовителем.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;	
+

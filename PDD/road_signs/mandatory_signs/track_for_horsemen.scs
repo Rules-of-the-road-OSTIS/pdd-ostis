@@ -1,0 +1,29 @@
+sc_node_not_relation -> track_for_horsemen;;
+
+track_for_horsemen => nrel_main_idtf: [дорожка для всадников] (* <- lang_ru;; *);;
+track_for_horsemen => nrel_main_idtf: [track for horsemen] (* <- lang_en;; *);;
+
+track_for_horsemen <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://track_for_horsemen.png";;
+                                *);; 
+                *);;
+
+track_for_horsemen <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>дорожка для всадников</b> - Разрешается движение только всадникам.]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> adjuster;;
+
+adjuster => nrel_main_idtf: 	[регулировщик] (* <- lang_ru;; *);;
+
+adjuster => nrel_main_idtf: 	[adjuster] (* <- lang_en;; *);;
+adjuster <= nrel_using_constants:
+	{
+	organized_column;
+    vehicle
+	};;
+
+
+adjuster <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Регулировщик</b> — сотрудник ГАИ, осуществляющий регулирование дорожного движения в экипировке (форменной одежде повышенной видимости с элементами из световозвращающего материала, с жезлом и свистком). К регулировщику приравнивается сотрудник Военной автомобильной инспекции Вооруженных Сил Республики Беларусь в экипировке (форменной одежде повышенной видимости с элементами из световозвращающего материала, с диском с красным сигналом (световозвращателем) и свистком) при обеспечении движения <sc_element sys_idtf="organized_column">организованных транспортных колонн</sc_element>, в состав которых входят <sc_element sys_idtf="vehicle">транспортные средства</sc_element>, принадлежащие Министерству обороны, Министерству внутренних дел, Комитету государственной безопасности, Государственному пограничному комитету, другим войскам и воинским формированиям Республики Беларусь.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+adjuster <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://adjuster.jpg";;
+                                *);; 
+                *);;
+adjuster <= nrel_strict_inclusion: chapter_1_general_provision;;

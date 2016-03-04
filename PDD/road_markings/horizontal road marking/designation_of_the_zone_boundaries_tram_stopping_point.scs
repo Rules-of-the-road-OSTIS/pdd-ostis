@@ -1,0 +1,38 @@
+sc_node_not_relation -> designation_of_the_zone_boundaries_tram_stopping_point;;
+
+designation_of_the_zone_boundaries_tram_stopping_point => nrel_main_idtf: 
+	[обозначение границ зоны остановочного пункта трамвая] (* <- lang_ru;; *);;
+
+designation_of_the_zone_boundaries_tram_stopping_point => nrel_main_idtf: 
+	[designation of the zone boundaries tram stopping point] (* <- lang_en;; *);;
+
+designation_of_the_zone_boundaries_tram_stopping_point <= nrel_using_constants:
+	{
+	tram;
+	roadway
+	};;
+
+designation_of_the_zone_boundaries_tram_stopping_point <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение границ зоны остановочного пункта <sc_element sys_idtf="tram">трамвая</sc_element>, расположенного на одном уровне с <sc_element sys_idtf="roadway">проезжей частью дороги</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_the_zone_boundaries_tram_stopping_point <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_the_zone_boundaries_tram_stopping_point.png";;
+                                *);; 
+                *);;

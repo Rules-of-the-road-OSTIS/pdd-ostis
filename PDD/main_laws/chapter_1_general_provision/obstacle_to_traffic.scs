@@ -1,0 +1,35 @@
+sc_node_not_relation -> obstacle_to_traffic;;
+
+obstacle_to_traffic => nrel_main_idtf: 	[препятствие для дорожного движения] (* <- lang_ru;; *);;
+
+obstacle_to_traffic => nrel_main_idtf: 	[obstacle to traffic] (* <- lang_en;; *);;
+
+obstacle_to_traffic <= nrel_using_constants:
+	{
+     road_user
+	};;
+
+obstacle_to_traffic <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Препятствие для дорожного движения</b> — объект, который находится на пути <sc_element sys_idtf="road_user">участника дорожного движения</sc_element> и вынуждает его снизить скорость движения, совершить объезд или остановиться.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+obstacle_to_traffic <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://obstacle_to_traffic.jpg";;
+                                *);; 
+                *);;
+obstacle_to_traffic <= nrel_strict_inclusion: chapter_1_general_provision;;

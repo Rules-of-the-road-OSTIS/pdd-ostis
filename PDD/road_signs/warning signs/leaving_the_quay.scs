@@ -1,0 +1,29 @@
+sc_node_not_relation -> leaving_the_quay;;
+        
+leaving_the_quay => nrel_main_idtf: [выезд на набережную] (* <- lang_ru;; *);;
+leaving_the_quay => nrel_main_idtf: [leaving the quay] (* <- lang_en;; *);;
+
+leaving_the_quay <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://leaving_the_quay.png";;
+                                *);; 
+                *);;
+				
+leaving_the_quay <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предупреждает о скором выезде на набережную.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

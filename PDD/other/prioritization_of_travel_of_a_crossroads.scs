@@ -1,0 +1,17 @@
+sc_node_not_relation -> prioritization_of_travel_of_a_crossroads;;
+       
+prioritization_of_travel_of_a_crossroads => nrel_main_idtf: [определение очередности проезда перекрестка] (* <- lang_ru;; *);;
+
+prioritization_of_travel_of_a_crossroads => nrel_main_idtf: [prioritization_of_travel_of_a_crossroads] (* <- lang_en;; *);;
+
+prioritization_of_travel_of_a_crossroads <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://prioritization_of_travel_of_a_crossroads.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

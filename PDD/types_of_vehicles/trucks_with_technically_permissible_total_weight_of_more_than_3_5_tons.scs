@@ -1,0 +1,8 @@
+sc_node_not_relation -> trucks_with_technically_permissible_total_weight_of_more_than_3_5_tons;;
+
+trucks_with_technically_permissible_total_weight_of_more_than_3_5_tons => nrel_main_idtf: 	[грузовые автомобили с технически допустимой общей массой более 3,5 тонны] (* <- lang_ru;; *);;
+
+trucks_with_technically_permissible_total_weight_of_more_than_3_5_tons => nrel_main_idtf: 	[trucks with technically permissible total weight of more than 3.5 tons] (* <- lang_en;; *);;
+
+trucks_with_technically_permissible_total_weight_of_more_than_3_5_tons <= nrel_strict_inclusion: car;;
+trucks_with_technically_permissible_total_weight_of_more_than_3_5_tons <= nrel_strict_inclusion: types_of_vehicles;;

@@ -1,0 +1,7 @@
+sc_node_norole_relation -> nrel_movement_allowed;;
+
+nrel_movement_allowed => nrel_main_idtf:
+	[движение разрешено*] 
+	(* <- lang_ru;; *);
+	[movement allowed*]
+	(* <- lang_en;;	*);;

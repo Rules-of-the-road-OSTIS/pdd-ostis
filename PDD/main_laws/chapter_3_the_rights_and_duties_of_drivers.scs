@@ -1,0 +1,46 @@
+sc_node_not_relation -> chapter_3_the_rights_and_duties_of_drivers;;
+        
+chapter_3_the_rights_and_duties_of_drivers => nrel_main_idtf: [Глава 3. Права и обязанности водителей] (* <- lang_ru;; *);;
+
+chapter_3_the_rights_and_duties_of_drivers => nrel_main_idtf: [Chapter 3. The rights and duties of drivers] (* <- lang_en;; *);;
+
+chapter_3_the_rights_and_duties_of_drivers <= nrel_section_decomposition:
+	{
+        	item_8
+		(*
+		=> nrel_section_base_order: 
+			item_9;;
+		*);
+		item_9
+		(*
+		=> nrel_section_base_order: 
+			item_10;;
+		*);
+		item_10
+		(*
+		=> nrel_section_base_order: 
+			item_11;;
+		*);
+		item_11
+		(*
+		=> nrel_section_base_order: 
+			item_12;;
+		*);
+		item_12
+		(*
+		=> nrel_section_base_order: 
+			item_13;;
+		*);
+		item_13
+		(*
+		=> nrel_section_base_order: 
+			item_14;;
+		*);
+		item_14
+		(*
+		=> nrel_section_base_order: 
+			item_15;;
+		*);
+		item_15
+
+	};;

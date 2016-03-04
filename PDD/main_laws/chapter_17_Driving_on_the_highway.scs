@@ -1,0 +1,15 @@
+sc_node_not_relation -> chapter_17_Driving_on_the_highway;;
+        
+chapter_17_Driving_on_the_highway => nrel_main_idtf: [Глава 17. Движение по автомагистрали] (* <- lang_ru;; *);;
+
+chapter_17_Driving_on_the_highway => nrel_main_idtf: [Chapter 17. Driving on the highway] (* <- lang_en;; *);;
+chapter_17_Driving_on_the_highway <= nrel_section_decomposition:
+	{
+        	item_131
+		(*
+		=> nrel_section_base_order: 
+			item_132;;
+		*);
+		item_132
+
+	};;

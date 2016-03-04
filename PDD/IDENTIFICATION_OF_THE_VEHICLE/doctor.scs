@@ -1,0 +1,18 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+       
+doctor => nrel_main_idtf: [врач] (* <- lang_ru;; *);;
+
+doctor => nrel_main_idtf: [doctor] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://doctor.png";;
+                                *);; 
+                *);;
+
+doctor <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;

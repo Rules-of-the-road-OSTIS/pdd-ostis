@@ -1,0 +1,35 @@
+sc_node_not_relation -> rough_road_1;;
+        
+rough_road_1 => nrel_main_idtf: [неровная дорога] (* <- lang_ru;; *);;
+rough_road_1 => nrel_main_idtf: [rough road] (* <- lang_en;; *);;
+
+rough_road_1 <= nrel_using_constants:
+	{
+	road
+	};;
+
+rough_road_1 <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://rough_road1.png";;
+                                *);; 
+                *);;
+				
+rough_road_1 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element>, имеющий неплавные сопряжения с покрытием дороги в виде наплыва (бугра).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+
+		*);;

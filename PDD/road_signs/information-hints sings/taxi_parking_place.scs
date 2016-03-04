@@ -1,0 +1,32 @@
+sc_node_not_relation -> taxi_parking_place;;
+taxi_parking_place => nrel_main_idtf: 
+	[место стоянки такси] (* <- lang_ru;; *);;
+taxi_parking_place => nrel_main_idtf: 
+	[taxi parking place] (* <- lang_en;; *);;
+taxi_parking_place <= nrel_using_constants:
+	{
+	road
+	};;
+taxi_parking_place <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://taxi_parking_place.png";;
+                                *);; 
+                *);;
+taxi_parking_place <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак обозначает зону на проезжей части <sc_element sys_idtf="road"> дороги </sc_element> или специальную площадку, предназначенную только для стоянки такси.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

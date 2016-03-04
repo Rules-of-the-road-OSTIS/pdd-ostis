@@ -1,0 +1,39 @@
+sc_node_not_relation -> self_propelled;;
+
+self_propelled => nrel_main_idtf: 	[самоходная машина] (* <- lang_ru;; *);;
+
+self_propelled => nrel_main_idtf: 	[self-propelled] (* <- lang_en;; *);;
+self_propelled <= nrel_using_constants:
+	{
+     traffic;
+     vehicle;
+     road
+	};;
+
+
+self_propelled <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Самоходная машина</b> — самоходная машина — гусеничный трактор, сельскохозяйственная, дорожная, строительная, иная машина, которые без дополнительных мер обеспечения безопасности дорожного движения, предусмотренных организацией (заводом)-изготовителем, не предназначены для участия в <sc_element sys_idtf="traffic">дорожном движении</sc_element>. При участии в дорожном движении самоходные машины приравниваются к <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, а их движение по <sc_element sys_idtf="road">дорогам</sc_element> должно осуществляться в соответствии с требованиями настоящих Правил, предъявляемыми к транспортным средствам, если этими Правилами не установлено иное в отношении самоходных машин.
+<p>Чаще всего на дорогах можно встретить дорожно-строительную или сельскохозяйственную технику, которая изначально предназначалась для участия в дорожном движении.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+self_propelled <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://self_propelled.jpg";;
+                                *);; 
+                *);;
+self_propelled <= nrel_strict_inclusion: chapter_1_general_provision;;
+self_propelled <= nrel_strict_inclusion: types_of_vehicles;;

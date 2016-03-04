@@ -1,0 +1,30 @@
+sc_node_not_relation -> item_124;;
+
+item_124 => nrel_main_idtf: [пункт 124] (* <- lang_ru;; *);;
+
+item_124 => nrel_main_idtf: [item 124] (* <- lang_en;; *);;
+
+item_124 <= nrel_using_constants:
+	{
+	road;
+	tfaffic_lane;
+	vehicle;
+	roadway
+	};;
+
+
+item_124 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> На <sc_element sys_idtf="road">дорогах</sc_element> с <sc_element sys_idtf="tfaffic_lane">полосой движения</sc_element> для маршрутных <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, обозначенных дорожными знаками «Полоса для маршрутных транспортных средств», «Дорога с полосой для маршрутных транспортных средств», запрещаются движение, остановка и стоянка других <sc_element sys_idtf="vehicle">транспортных средств</sc_element> на этой полосе. </p>
+					  <p> Если <sc_element sys_idtf="tfaffic_lane">полосa движения</sc_element>, обозначенная дорожным знаком «Полоса для маршрутных транспортных средств», отделена от остальной <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> прерывистой линией горизонтальной дорожной разметки, то для осуществления поворота водитель обязан перестраиваться на нее. Разрешается также в таких местах заезжать на эту полосу для посадки (высадки) пассажиров у правого края проезжей части, если это не создаст препятствия для движения маршрутных <sc_element sys_idtf="vehicle">транспортных средств</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

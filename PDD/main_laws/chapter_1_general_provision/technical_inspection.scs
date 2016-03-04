@@ -1,0 +1,26 @@
+sc_node_not_relation -> technical_inspection;;
+
+technical_inspection => nrel_main_idtf: 	[государственный технический осмотр] (* <- lang_ru;; *);;
+
+technical_inspection => nrel_main_idtf: 	[technical inspection] (* <- lang_en;; *);;
+technical_inspection <= nrel_using_constants:
+	{
+     vehicle;
+     traffic
+	};;
+
+
+technical_inspection <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Государственный технический осмотр</b> — совокупность организационно-технических мер, направленных на недопущение к участию в <sc_element sys_idtf="traffic">дорожном движении</sc_element> <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, не соответствующих требованиям международных правовых документов, касающихся безопасности колесных транспортных средств, предметов оборудования и частей, которые могут быть установлены и (или) использованы на колесных транспортных средствах, обязательным для соблюдения требованиям технических нормативных правовых актов Республики Беларусь в этой сфере (далее – технические нормативные правовые акты).] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+technical_inspection <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> emergency_and_dangerous_plot;;
+        
+emergency_and_dangerous_plot => nrel_main_idtf: [аварийно-опасный участок] (* <- lang_ru;; *);;
+emergency_and_dangerous_plot => nrel_main_idtf: [emergency and dangerous plot] (* <- lang_en;; *);;
+
+emergency_and_dangerous_plot <= nrel_using_constants:
+	{
+	road;
+	traffic_accident
+	};;
+
+emergency_and_dangerous_plot <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://emergency_and_dangerous_plot.png";;
+                                *);; 
+                *);;
+				
+emergency_and_dangerous_plot <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element>, на котором часто совершаются <sc_element sys_idtf="traffic_accident">дорожно-транспортные происшествия</sc_element>.]
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

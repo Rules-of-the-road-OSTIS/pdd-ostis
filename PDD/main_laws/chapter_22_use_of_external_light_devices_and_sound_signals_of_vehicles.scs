@@ -1,0 +1,65 @@
+sc_node_not_relation -> chapter_22_use_of_external_light_devices_and_sound_signals_of_vehicles;;
+        
+ chapter_22_use_of_external_light_devices_and_sound_signals_of_vehicles => nrel_main_idtf: [Глава 22. Пользование внешними световыми приборами и звуковыми сигналами транспортных средств] (* <- lang_ru;; *);;
+
+ chapter_22_use_of_external_light_devices_and_sound_signals_of_vehicles => nrel_main_idtf: [Chapter 22. Use of external light devices and sound signals of vehicles] (* <- lang_en;; *);;
+chapter_22_use_of_external_light_devices_and_sound_signals_of_vehicles <= nrel_section_decomposition:
+	{
+        	item_162
+		(*
+		=> nrel_section_base_order: 
+			item_163;;
+		*);
+		item_163
+		(*
+		=> nrel_section_base_order: 
+			item_164;;
+		*);
+		item_164
+		(*
+		=> nrel_section_base_order: 
+			item_165;;
+		*);
+		item_165
+		(*
+		=> nrel_section_base_order: 
+			item_166;;
+		*);
+		item_166
+		(*
+		=> nrel_section_base_order: 
+			item_167;;
+		*);
+		item_167
+		(*
+		=> nrel_section_base_order: 
+			item_168;;
+		*);
+		item_168
+		(*
+		=> nrel_section_base_order: 
+			item_169;;
+		*);
+		item_169
+		(*
+		=> nrel_section_base_order: 
+			item_170;;
+		*);
+		item_170
+		(*
+		=> nrel_section_base_order: 
+			item_171;;
+		*);
+		item_171
+		(*
+		=> nrel_section_base_order: 
+			item_172;;
+		*);
+		item_172
+		(*
+		=> nrel_section_base_order: 
+			item_173;;
+		*);
+		item_173
+
+	};;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> chapter_25_motor_vehicle_towing;;
+        
+chapter_25_motor_vehicle_towing => nrel_main_idtf: [Глава 25. Буксировка механических транспортных средств] (* <- lang_ru;; *);;
+
+chapter_25_motor_vehicle_towing => nrel_main_idtf: [chapter_25_motor_vehicle_towing] (* <- lang_en;; *);;
+chapter_25_motor_vehicle_towing <= nrel_section_decomposition:
+	{
+        	item_188
+		(*
+		=> nrel_section_base_order: 
+			item_189;;
+		*);
+		item_189
+		(*
+		=> nrel_section_base_order: 
+			item_190;;
+		*);
+		item_190
+		(*
+		=> nrel_section_base_order: 
+			item_191;;
+		*);
+		item_191
+		(*
+		=> nrel_section_base_order: 
+			item_192;;
+		*);
+		item_192
+		(*
+		=> nrel_section_base_order: 
+			item_193;;
+		*);
+		item_193
+
+	};;

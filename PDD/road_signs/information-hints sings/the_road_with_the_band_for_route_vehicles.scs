@@ -1,0 +1,33 @@
+sc_node_not_relation -> the_road_with_the_band_for_route_vehicles;;
+the_road_with_the_band_for_route_vehicles => nrel_main_idtf: 
+	[дорога с полосой для маршрутных транспортных средств] (* <- lang_ru;; *);;
+the_road_with_the_band_for_route_vehicles => nrel_main_idtf: 
+	[the road with the band for route vehicles] (* <- lang_en;; *);;
+the_road_with_the_band_for_route_vehicles <= nrel_using_constants:
+	{
+	traffic_line;
+	traffic
+	};;
+the_road_with_the_band_for_route_vehicles <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_road_with_the_band_for_route_vehicles.png";;
+                                *);; 
+                *);;
+the_road_with_the_band_for_route_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорога, по которой <sc_element sys_idtf="traffic"> движение </sc_element> маршрутных транспортных средств осуществляется по специально выделенной <sc_element sys_idtf="traffic_line"> полосе </sc_element> навстречу общему потоку транспортных средств.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

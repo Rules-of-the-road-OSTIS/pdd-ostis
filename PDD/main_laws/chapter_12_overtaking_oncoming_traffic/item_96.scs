@@ -1,0 +1,43 @@
+sc_node_not_relation -> item_96;;
+item_96 => nrel_main_idtf: [пункт 96] (* <- lang_ru;; *);;
+
+item_96 => nrel_main_idtf: [item 96] (* <- lang_en;; *);;
+
+item_96 <= nrel_using_constants:
+{
+vehicle;
+roadway;
+overtaking;
+intersection; 
+designated_intersection; 
+crosswalk; 
+visibility_of_the_road; 
+limited_view_of_the_road; 
+obstacle_to_traffic; 
+viaduct; 
+overpass; 
+railroad_crossing;
+car
+};;
+
+item_96 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>96. <sc_element sys_idtf="overtaking"> Обгон </sc_element> запрещается:</p>
+<p>96.1. в зоне действи¤ дорожных знаков "<sc_element sys_idtf="overtaking">Обгон</sc_element> запрещен", "<sc_element sys_idtf="overtaking">Обгон</sc_element> грузовым <sc_element sys_idtf="car"> автомобилям </sc_element> запрещен", на поворотах дороги, обозначенных дорожными знаками "Опасный поворот", "Опасные повороты", на подъемах, обозначенных дорожным знаком "Крутой подъем", а также при наличии дорожной разметки 1.1 (за исключением <sc_element sys_idtf="overtaking"> обгона </sc_element> одиночного <sc_element sys_idtf="vehicle"> транспортного средства </sc_element>, движущегос¤ со скоростью менее 30 км/ч), в конце подъемов и на других участках дорог с <sc_element sys_idtf="limited_view_of_the_road"> ограниченной обзорностью </sc_element> дороги;</p>
+<p>96.2. на <sc_element sys_idtf="designated_intersection"> обозначенных перекрестках </sc_element> и (или) регулируемых <sc_element sys_idtf="intersection"> перекрестках </sc_element>;</p>
+<p>96.3. на <sc_element sys_idtf="crosswalk"> пешеходных переходах </sc_element> и ближе чем за 50 метров от них в обе стороны;</p>
+<p>96.4. <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, производ¤щего <sc_element sys_idtf="overtaking"> обгон </sc_element> или объезд преп¤тстви¤;</p>
+<p>96.5. при недостаточной <sc_element sys_idtf="visibility_of_the_road"> видимости дороги </sc_element>;</p>
+<p>96.6. на мостах, <sc_element sys_idtf="viaduct"> путепроводах </sc_element> , <sc_element sys_idtf="overpass">  эстакадах </sc_element> и под ними;</p>
+<p>96.7. на <sc_element sys_idtf="railroad_crossing"> железнодорожных переездах </sc_element> и ближе чем за 100 метров перед ними.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

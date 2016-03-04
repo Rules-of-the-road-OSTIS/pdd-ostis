@@ -1,0 +1,31 @@
+sc_node_not_relation -> chapter_8_use_of_hazard_warning_lights_warning_triangle_lantern_with_flashing_red_light;;
+        
+chapter_8_use_of_hazard_warning_lights_warning_triangle_lantern_with_flashing_red_light => nrel_main_idtf: [Глава 8. Применение аварийной световой сигнализации, знака аварийной остановки, фонаря с мигающим красным светом] (* <- lang_ru;; *);;
+
+chapter_8_use_of_hazard_warning_lights_warning_triangle_lantern_with_flashing_red_light => nrel_main_idtf: [Chapter 8. Use of hazard warning lights, warning triangle, lantern with flashing red light] (* <- lang_en;; *);;
+
+chapter_8_use_of_hazard_warning_lights_warning_triangle_lantern_with_flashing_red_light <= nrel_section_decomposition:
+	{
+        	item_51
+		(*
+		=> nrel_section_base_order: 
+			item_52;;
+		*);
+		item_52
+		(*
+		=> nrel_section_base_order: 
+			item_53;;
+		*);
+		item_53
+		(*
+		=> nrel_section_base_order: 
+			item_54;;
+		*);
+		item_54
+		(*
+		=> nrel_section_base_order: 
+			item_55;;
+		*);
+		item_55
+
+	};;

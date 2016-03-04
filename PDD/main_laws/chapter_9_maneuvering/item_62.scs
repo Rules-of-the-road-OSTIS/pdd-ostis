@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_62;;
+
+item_62 => nrel_main_idtf: [пункт 62] (* <- lang_ru;; *);;
+
+item_62 => nrel_main_idtf: [item 62] (* <- lang_en;; *);;
+
+item_62 <= nrel_using_constants:
+	{
+road;
+driver;
+vehicle
+	};;
+
+item_62 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  Если на <sc_element sys_idtf="road"> дороге</sc_element>, имеющей две и более полосы движения в одном направлении, из-за препятствия на одной из них образовался затор, <sc_element sys_idtf="driver"> водитель</sc_element> каждого <sc_element sys_idtf="vehicle"> транспортного средства</sc_element>, движущегося по соседней полосе движения, должен дать возможность перестроиться на его полосу одному из стоящих в заторе <sc_element sys_idtf="vehicle"> транспортных средств</sc_element>.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

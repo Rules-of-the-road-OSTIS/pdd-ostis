@@ -1,0 +1,20 @@
+sc_node_not_relation -> the_drivers_of_both_vehicles;;
+
+the_drivers_of_both_vehicles => nrel_main_idtf: [Водителям обоих транспортных средств] (* <- lang_ru;; *);;
+
+the_drivers_of_both_vehicles => nrel_main_idtf: [the_drivers_of_both_vehicles] (* <- lang_en;; *);;
+the_drivers_of_both_vehicles <= nrel_inclusion: sign_main_road;;
+the_drivers_of_both_vehicles <= nrel_inclusion: give_way;;
+
+the_drivers_of_both_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://the_drivers_of_both_vehicles.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+
+the_drivers_of_both_vehicles <= nrel_strict_inclusion: intersection_1;;

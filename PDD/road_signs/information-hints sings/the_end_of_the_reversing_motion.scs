@@ -1,0 +1,32 @@
+sc_node_not_relation -> the_end_of_the_reversing_motion;;
+the_end_of_the_reversing_motion => nrel_main_idtf: 
+	[конец реверсивного движения] (* <- lang_ru;; *);;
+the_end_of_the_reversing_motion => nrel_main_idtf: 
+	[the end of the reversing motion] (* <- lang_en;; *);;
+the_end_of_the_reversing_motion <= nrel_using_constants:
+	{
+	traffic
+	};;
+the_end_of_the_reversing_motion <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_end_of_the_reversing_motion.png";;
+                                *);; 
+                *);;
+the_end_of_the_reversing_motion <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Конец участка дороги, на одной или нескольких полосах которого направление <sc_element sys_idtf="traffic"> движения </sc_element> может изменяться на противоположное.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,80 @@
+sc_node_not_relation -> chapter_26_general_provisions_on_the_admission_of_vehicles_to_participate_in_traffic_their_technical_condition_equipment;;
+        
+chapter_26_general_provisions_on_the_admission_of_vehicles_to_participate_in_traffic_their_technical_condition_equipment => nrel_main_idtf: [Глава 26. Основные положения о допуске транспортных средств к участию в дорожном движении, их техническое состояние, оборудование] (* <- lang_ru;; *);;
+
+chapter_26_general_provisions_on_the_admission_of_vehicles_to_participate_in_traffic_their_technical_condition_equipment => nrel_main_idtf: [chapter_26_general_provisions_on_the_admission_of_vehicles_to_participate_in_traffic_their_technical_condition_equipment] (* <- lang_en;; *);;
+chapter_26_general_provisions_on_the_admission_of_vehicles_to_participate_in_traffic_their_technical_condition_equipment <= nrel_section_decomposition:
+	{
+        	item_194
+		(*
+		=> nrel_section_base_order: 
+			item_195;;
+		*);
+		item_195
+		(*
+		=> nrel_section_base_order: 
+			item_196;;
+		*);
+		item_196
+		(*
+		=> nrel_section_base_order: 
+			item_197;;
+		*);
+		item_197
+		(*
+		=> nrel_section_base_order: 
+			item_198;;
+		*);
+		item_198
+		(*
+		=> nrel_section_base_order: 
+			item_199;;
+		*);
+		item_199
+		(*
+		=> nrel_section_base_order: 
+			item_200;;
+		*);
+		item_200
+		(*
+		=> nrel_section_base_order: 
+			item_201;;
+		*);
+		item_201
+		(*
+		=> nrel_section_base_order: 
+			item_202;;
+		*);
+		item_202
+		(*
+		=> nrel_section_base_order: 
+			item_203;;
+		*);
+		item_203
+		(*
+		=> nrel_section_base_order: 
+			item_204;;
+		*);
+		item_204
+		(*
+		=> nrel_section_base_order: 
+			item_205;;
+		*);
+		item_205
+		(*
+		=> nrel_section_base_order: 
+			item_206;;
+		*);
+		item_206
+		(*
+		=> nrel_section_base_order: 
+			item_207;;
+		*);
+		item_207
+		(*
+		=> nrel_section_base_order: 
+			item_207_1;;
+		*);
+		item_207_1
+
+	};;

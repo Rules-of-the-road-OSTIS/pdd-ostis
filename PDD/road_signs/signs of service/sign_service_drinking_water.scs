@@ -1,0 +1,29 @@
+sc_node_not_relation -> sign_service_drinking_water;;
+sign_service_drinking_water => nrel_main_idtf: 
+	[знак сервиса "Питьевая вода"] (* <- lang_ru;; *);;
+sign_service_drinking_water => nrel_main_idtf: 
+	[sign service "Drinking water"] (* <- lang_en;; *);;
+
+sign_service_drinking_water <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_drinking_water.png";;
+                                *);; 
+                *);;
+sign_service_drinking_water <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Питьевая вода" информирует о возможности пополнить запас питьевой воды.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,8 @@
+sc_node_not_relation -> vehicles_with_a_sloping_white_stripe_on_the_sides;;
+
+vehicles_with_a_sloping_white_stripe_on_the_sides => nrel_main_idtf: 	[автомобили с наклонной белой полосой на бортах] (* <- lang_ru;; *);;
+
+vehicles_with_a_sloping_white_stripe_on_the_sides => nrel_main_idtf: 	[vehicles with a sloping white stripe on the sides] (* <- lang_en;; *);;
+
+vehicles_with_a_sloping_white_stripe_on_the_sides <= nrel_strict_inclusion: car;;
+vehicles_with_a_sloping_white_stripe_on_the_sides <= nrel_strict_inclusion: types_of_vehicles;;

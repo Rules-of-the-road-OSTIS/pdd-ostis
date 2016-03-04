@@ -1,0 +1,27 @@
+sc_node_not_relation -> permit_the_traffic_situation2;;
+
+permit_the_traffic_situation2 => nrel_main_idtf: [разрешение дорожной ситуации2] (* <- lang_ru;; *);;
+
+permit_the_traffic_situation2 => nrel_main_idtf: [permit the traffic situation2] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://permit_the_traffic_situation2.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+permit_the_traffic_situation2 <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://permit_the_traffic_situation2.png";;
+                                *);; 
+                *);;
+permit_the_traffic_situation2 <= nrel_strict_inclusion: intersection_2;;

@@ -1,0 +1,37 @@
+sc_node_not_relation -> designation_strips_allocated_to_block_movement_of_vehicles;;
+
+designation_strips_allocated_to_block_movement_of_vehicles => nrel_main_idtf: 
+	[обозначение полосы, выделенной для движения маршрутных транспортных средств] (* <- lang_ru;; *);;
+
+designation_strips_allocated_to_block_movement_of_vehicles => nrel_main_idtf: 
+	[designation strips allocated to block movement of vehicles] (* <- lang_en;; *);;
+
+designation_strips_allocated_to_block_movement_of_vehicles <= nrel_using_constants:
+	{
+	route_vehicles
+	};;
+
+designation_strips_allocated_to_block_movement_of_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначает специальную полосу для <sc_element sys_idtf="route_vehicles">маршрутных транспортных средств</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_strips_allocated_to_block_movement_of_vehicles <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_strips_allocated_to_block_movement_of_vehicles.png";;
+                                *);; 
+                *);;

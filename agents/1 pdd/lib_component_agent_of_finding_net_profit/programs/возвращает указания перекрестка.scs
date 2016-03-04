@@ -1,0 +1,84 @@
+scp_program -> proc_of_check_cross_acsess (*
+    -> rrel_params: ... (*
+        -> rrel_1: rrel_in: _subject;;
+        -> rrel_2: rrel_out: _acsess;;
+	-> rrel_3: rrel_out: _acsess2;;
+    *);;
+    -> rrel_operators: ... (*
+        ->rrel_init: ..operator39758 (*
+            <- genEl;;
+            -> rrel_1: rrel_node: rrel_scp_var: rrel_assign: _arc;;
+            => nrel_goto: ..operator41673;;
+        *);;
+	->..operator41673 (*
+            <- searchSetStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _subject;;
+            -> rrel_2: rrel_scp_var: rrel_assign: _arc1;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _who;;
+            -> rrel_4: rrel_scp_var: rrel_assign: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: rrel_traffic_regulation;;
+            -> rrel_set_3: rrel_scp_var: rrel_assign: _regulation_set;;
+            => nrel_then: ..operator508;;
+            => nrel_else: ..operator41586;;
+        *);;
+        ->..operator508 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_regulation_acsess;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _regulation_set;;
+                -> rrel_2: rrel_scp_var: rrel_assign: _acsess;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument60214;;
+            => nrel_goto: ..operator766;;
+        *);;
+        ->..operator766 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument60214;;
+            => nrel_goto: ..operator39910;;
+        *);;
+        ->..operator41586 (*
+            <- searchSetStr5;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _subject;;
+            -> rrel_2: rrel_scp_var: rrel_assign: _arc1;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _who;;
+            -> rrel_4: rrel_scp_var: rrel_assign: _arc2;;
+            -> rrel_5: rrel_fixed: rrel_scp_const: rrel_sign_priority;;
+            -> rrel_set_3: rrel_scp_var: rrel_assign: _sign_set;;
+            => nrel_then: ..operator22315;;
+            => nrel_else: ..operator26683;;
+        *);;
+        ->..operator22315 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_not_regulation_acsess;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _sign_set;;
+                -> rrel_2: rrel_scp_var: rrel_assign: _acsess;;
+		-> rrel_3: rrel_scp_var: rrel_assign: _acsess2;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument11563;;
+            => nrel_goto: ..operator17127;;
+        *);;
+        ->..operator17127 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument11563;;
+            => nrel_goto: ..operator39910;;
+        *);;
+        ->..operator26683 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_of_finding_not_chek_acsess;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_scp_var: rrel_assign: _acsess;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument18590;;
+            => nrel_goto: ..operator65364;;
+        *);;
+        ->..operator65364 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument18590;;
+            => nrel_goto: ..operator39910;;
+        *);;
+        ->..operator39910 (*
+            <- return;;
+        *);;
+    *);;
+*);;

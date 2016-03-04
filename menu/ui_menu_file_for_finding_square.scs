@@ -1,0 +1,28 @@
+ui_menu_file_for_finding_fine <- ui_user_command_class_atom; ui_user_command_class_view_kb;;
+
+ui_menu_file_for_finding_fine => nrel_main_idtf: 
+	[Запрос наказания] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_addition_of_two_integers => nrel_main_idtf: 
+	[Request of punishment] 
+	(* <- lang_en;; *);;
+
+ui_menu_file_for_finding_fine => ui_nrel_command_template:
+	[*
+		question_finding_fine _-> ._question_finding_fine_instance
+			(*
+			_-> ui_arg_1;;
+                       
+			*);;
+		._question_finding_fine_instance _<- question;;
+	*];;
+
+ui_menu_file_for_finding_fine => ui_nrel_command_lang_template: 
+	[Запрос площали: $ui_arg_1] 
+	(* <- lang_ru;; *);;
+
+ui_menu_file_for_finding_fine => ui_nrel_command_lang_template: 
+	[Request fine: $ui_arg_1] 
+	(* <- lang_en;; *);;
+

@@ -1,0 +1,36 @@
+sc_node_not_relation -> vehicle;;
+
+vehicle => nrel_main_idtf: 	[транспортное средство] (* <- lang_ru;; *);;
+
+vehicle => nrel_main_idtf: 	[vehicle] (* <- lang_en;; *);;
+
+vehicle <= nrel_using_constants:
+	{
+	passenger;
+	road
+	};;
+
+vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+(*
+					-> rrel_example:
+					 [<b>Транспортное средство</b> — устройство, предназначенное для движения по <sc_element sys_idtf="road">дороге</sc_element> и для перевозки <sc_element sys_idtf="passenger">пассажиров</sc_element>, грузов или установленного на нем оборудования.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+vehicle <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://vehicle.png";;
+                                *);; 
+                *);;
+vehicle <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,18 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+   
+danger_sign => nrel_main_idtf: [знак опасности] (* <- lang_ru;; *);;
+
+danger_sign => nrel_main_idtf: [danger sign] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://danger_sign.png";;
+                                *);; 
+                *);;
+
+danger_sign <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;

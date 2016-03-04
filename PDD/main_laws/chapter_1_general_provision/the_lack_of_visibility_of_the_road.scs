@@ -1,0 +1,37 @@
+sc_node_not_relation -> the_lack_of_visibility_of_the_road;;
+
+the_lack_of_visibility_of_the_road => nrel_main_idtf: 	[недостаточная видимость дороги] (* <- lang_ru;; *);;
+
+the_lack_of_visibility_of_the_road => nrel_main_idtf: 	[the lack of visibility of the road] (* <- lang_en;; *);;
+the_lack_of_visibility_of_the_road <= nrel_using_constants:
+	{
+     visibility_of_the_road
+	};;
+
+
+the_lack_of_visibility_of_the_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><b>Недостаточная видимость дороги</b> — <sc_element sys_idtf="visibility_of_the_road">видимость дороги</sc_element> в направлении движения менее 300 метров, обусловленная погодными (метеорологическими) условиями (дождь, снег и иные атмосферные осадки) и другими факторами, снижающими прозрачность атмосферы (пыль, дым, туман, смог).</p>
+<p>Этот термин имеет достаточно условное значение, нельзя сказать что, если дорога просматривается на 301 метр, то это уже достаточная видимость, необходимо учитывать, что достаточная видимость находится в прямой зависимости от скорости движения и прочих условий.
+Видимость дороги в тоннелях и в <sc_element sys_idtf="the_dark">темное время суток</sc_element> зависит от освещенности проезжей части дороги искусственным освещением и светом фар автомобиля.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+the_lack_of_visibility_of_the_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_lack_of_visibility_of_the_road.jpg";;
+                                *);; 
+                *);;
+the_lack_of_visibility_of_the_road <= nrel_strict_inclusion: chapter_1_general_provision;;

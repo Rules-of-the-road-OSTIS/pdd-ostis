@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_69;;
+
+item_69 => nrel_main_idtf: [пункт 69] (* <- lang_ru;; *);;
+
+item_69 => nrel_main_idtf: [item 69] (* <- lang_en;; *);;
+
+item_69 <= nrel_using_constants:
+	{
+	driver;
+	vehicle
+	};;
+
+item_69 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> В случаях, когда траектории движения <sc_element sys_idtf="vehicle"> транспортных средств</sc_element> пересекаются, а очередность проезда не оговорена настоящими Правилами, дорогу обязан уступить <sc_element sys_idtf="driver">водитель</sc_element> , к которому <sc_element sys_idtf="vehicle"> транспортное средство</sc_element> приближается справа.>\p>
+					 
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

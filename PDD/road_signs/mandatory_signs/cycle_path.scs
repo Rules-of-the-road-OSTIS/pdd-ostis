@@ -1,0 +1,40 @@
+sc_node_not_relation -> cycle_path;;
+
+cycle_path => nrel_main_idtf: [велосипедная дорожка] (* <- lang_ru;; *);;
+cycle_path => nrel_main_idtf: [cycle path] (* <- lang_en;; *);;
+
+cycle_path <= nrel_using_constants:
+	{
+	bicycle;
+	pavement;
+	footpath;
+	pedestrian;
+	obstacle_to_traffic
+	};;
+
+cycle_path <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://cycle_path.png";;
+                                *);; 
+                *);;
+
+cycle_path <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>велосипедная дорожка</b> - Разрешается движение только на <sc_element sys_idtf="bicycle">велосипедах</sc_element>, а при отсутствии <sc_element sys_idtf="pavement">тротуара</sc_element> или <sc_element sys_idtf="footpath">пешеходной дорожки</sc_element> — 
+и движение <sc_element sys_idtf="pedestrian">пешеходов</sc_element>, при этом <sc_element sys_idtf="pedestrian">пешеходы</sc_element> не должны создавать <sc_element sys_idtf="obstacle_to_traffic">препятствий</sc_element> для движения <sc_element sys_idtf="bicycle">велосипедистов</sc_element>. 
+На знак может быть дополнительно нанесен силуэт <sc_element sys_idtf="pedestrian">пешехода</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

@@ -1,0 +1,20 @@
+sc_node_not_relation -> item_74;;
+
+item_74 => nrel_main_idtf: [пункт 74] (* <- lang_ru;; *);;
+
+item_74 => nrel_main_idtf: [item 74] (* <- lang_en;; *);;
+
+item_74 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [Движение задним ходом запрещается на перекрестках (кроме перекрестков, расположенных в жилых зонах) и в местах, где запрещен разворот согласно пункту 72 настоящих Правил.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

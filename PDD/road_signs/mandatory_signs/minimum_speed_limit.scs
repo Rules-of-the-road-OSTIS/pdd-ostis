@@ -1,0 +1,30 @@
+sc_node_not_relation -> minimum_speed_limit;;
+
+minimum_speed_limit => nrel_main_idtf: [ограничение минимальной скорости] (* <- lang_ru;; *);;
+minimum_speed_limit => nrel_main_idtf: [minimum speed limit] (* <- lang_en;; *);;
+
+
+minimum_speed_limit <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://minimum_speed_limit.png";;
+                                *);; 
+                *);;
+
+minimum_speed_limit <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>ограничение минимальной скорости</b> - Разрешается движение только с указанной или с большей скоростью, но не более предусмотренной пунктами Правил]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

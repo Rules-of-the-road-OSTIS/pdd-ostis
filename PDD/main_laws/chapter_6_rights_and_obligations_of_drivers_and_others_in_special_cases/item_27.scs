@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_27;;
+
+item_27 => nrel_main_idtf: [пункт 27] (* <- lang_ru;; *);;
+
+item_27 => nrel_main_idtf: [item 27] (* <- lang_en;; *);;
+item_27 <= nrel_using_constants:
+	{
+	driver;
+	overtaking;
+	advance;
+	vehicle;
+	convoy
+	};;
+item_27 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<sc_element sys_idtf="driver">Водителям</sc_element> запрещается выполнять <sc_element sys_idtf="overtaking">обгон</sc_element> и <sc_element sys_idtf="advance">опережение</sc_element> <sc_element sys_idtf="vehicle">транспортных средств</sc_element> оперативного назначения с включенными маячками синего или синего и красного цветов, двигаться по соседним полосам движения с их скоростью движения, а также занимать место в организованной <sc_element sys_idtf="convoy">транспортной колонне</sc_element> или пересекать ее.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

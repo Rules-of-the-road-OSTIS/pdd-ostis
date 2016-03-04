@@ -1,0 +1,37 @@
+sc_node_not_relation -> extreme_right_left_position_on_the_carriageway;;
+
+extreme_right_left_position_on_the_carriageway => nrel_main_idtf: [крайнее правое (левое) положение на проезжей части дороги] (* <- lang_ru;; *);;
+
+extreme_right_left_position_on_the_carriageway => nrel_main_idtf: [extreme right (left) position on the carriageway] (* <- lang_en;; *);;
+extreme_right_left_position_on_the_carriageway <= nrel_using_constants:
+	{
+	 vehicle;
+     roadway;
+     single_track_vehicle
+	};;
+
+
+extreme_right_left_position_on_the_carriageway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Крайнее правое (левое) положение на проезжей части дороги</b> — положение <sc_element sys_idtf="vehicle">транспортного средства</sc_element> на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>, предназначенной для движения в данном направлении, не дающее возможности движения даже <sc_element sys_idtf="single_track_vehicle">одноколейных транспортных средств</sc_element> соответственно правее (левее) в попутном направлении.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+extreme_right_left_position_on_the_carriageway <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://extreme_right_left_position_on_the_carriageway.jpg";;
+                                *);; 
+                *);;
+extreme_right_left_position_on_the_carriageway <= nrel_strict_inclusion: chapter_1_general_provision;;

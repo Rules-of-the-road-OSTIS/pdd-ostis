@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_133;;
+
+item_133 => nrel_main_idtf: [пункт 133] (* <- lang_ru;; *);;
+
+item_133 => nrel_main_idtf: [item 133] (* <- lang_en;; *);;
+
+item_133 <= nrel_using_constants:
+	{
+	vehicle;
+	pedestrian;
+	road_user;
+	adjacent_territory
+	};;
+
+item_133 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>Движение <sc_element sys_idtf="vehicle">транспортных средств</sc_element> в жилой и пешеходной зонах, на <sc_element sys_idtf="adjacent_territory">прилегающей территории</sc_element> допускается с учетом требований настоящей главы при условии принятия водителями всех мер по обеспечению безопасности <sc_element sys_idtf="pedestrian">пешеходов</sc_element>, велосипедистов, иных <sc_element sys_idtf="road_user">участников дорожного движения</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

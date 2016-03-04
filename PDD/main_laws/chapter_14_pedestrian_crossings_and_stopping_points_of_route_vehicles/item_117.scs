@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_117;;
+item_117 => nrel_main_idtf: [пункт 117] (* <- lang_ru;; *);;
+
+item_117 => nrel_main_idtf: [item 117] (* <- lang_en;; *);;
+
+item_117 <= nrel_using_constants:
+{
+crosswalk;
+vehicle;
+traffic_lane;
+give_way_do_not_have_the_benefits;
+pedestrian
+};;
+
+item_117 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>117. Если перед <sc_element sys_idtf="crosswalk">пешеходным переходом</sc_element> остановилось (стоит) или замедлило движение <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, то водители других <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, движущихся по соседним <sc_element sys_idtf="traffic_lane">полосам движения</sc_element> в попутном направлении, должны снизить скорость движения и при наличии <sc_element sys_idtf="pedestrian">пешеходов</sc_element> <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить им дорогу</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

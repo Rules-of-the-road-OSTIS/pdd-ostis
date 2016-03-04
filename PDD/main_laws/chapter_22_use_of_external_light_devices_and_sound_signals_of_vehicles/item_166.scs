@@ -1,0 +1,41 @@
+sc_node_not_relation -> item_166;;
+item_166 => nrel_main_idtf: [пункт 166] (* <- lang_ru;; *);;
+
+item_166 => nrel_main_idtf: [item 166] (* <- lang_en;; *);;
+
+item_166 <= nrel_using_constants:
+{
+vehicle;
+moped;
+motorcycle;
+convoy;
+traffic_lane;
+children;
+heavy_and_or_large_vehicles;
+motor_vehicle;
+road
+};;
+
+item_166 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>166. В светлое время суток для обозначения движущегося <sc_element sys_idtf="vehicle">транспортного средства</sc_element> должны быть включены ближний свет фар или дневные ходовые огни (при их наличии):</p>
+<p>166.1. на <sc_element sys_idtf="motorcycle">мотоцикле</sc_element> и <sc_element sys_idtf="moped">мопеде</sc_element>;</p>
+<p>166.2. при движении в <sc_element sys_idtf="convoy">транспортной колонне</sc_element>;</p>
+<p>166.3. на маршрутном <sc_element sys_idtf="vehicle">транспортном средстве</sc_element>, движущемся по специально выделенной <sc_element sys_idtf="traffic_lane">полосе</sc_element> навстречу движению;</p>
+<p>166.4. при организованной перевозке группы <sc_element sys_idtf="children">детей</sc_element>;</p>
+<p>166.5. при перевозке опасных грузов, движении <sc_element sys_idtf="heavy_and_or_large_vehicles">тяжеловесных и (или) крупногабаритных транспортных средств</sc_element>;</p>
+<p>166.6. при буксировке (на буксирующем <sc_element sys_idtf="vehicle">транспортном средстве</sc_element>);</p>
+<p>166.7. во время обучения управлению механическим <sc_element sys_idtf="vehicle">транспортным средством</sc_element> на <sc_element sys_idtf="road">дорогах</sc_element>;</p>
+<p>166.8. на <sc_element sys_idtf="motor_vehicle">механических транспортных средствах</sc_element> при организации временного их движения по встречной полосе движения;</p>
+<p>166.9. в период проведения Министерством внутренних дел республиканских специальных комплексных мероприятий по обеспечению безопасности дорожного движения, предусматривающих движение <sc_element sys_idtf="vehicle">транспортных средств</sc_element> в светлое время суток с включенными ближним светом фар или дневными ходовыми огнями (при их наличии).</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

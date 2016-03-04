@@ -1,0 +1,39 @@
+sc_node_not_relation -> designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road;;
+
+designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road => nrel_main_idtf: 
+	[обозначение места где водитель обязан уступить дорогу транспортным средствам движущимся по пересекаемой дороге] (* <- lang_ru;; *);;
+
+designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road => nrel_main_idtf: 
+	[designation of places where the driver must give way to vehicles moving along the crossing road] (* <- lang_en;; *);;
+
+designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road <= nrel_using_constants:
+	{
+	driver;
+	give_way_do_not_have_the_benefits;
+	vehicle
+	};;
+
+designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение места, где <sc_element sys_idtf="driver">водитель</sc_element> обязан <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, движущимся по пересекаемой дороге.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_places_where_the_driver_must_give_way_to_vehicles_moving_along_the_crossing_road.png";;
+                                *);; 
+                *);;

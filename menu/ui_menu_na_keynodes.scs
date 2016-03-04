@@ -1,0 +1,14 @@
+ui_menu_na_keynodes
+<- ui_user_command_class_noatom;
+=> nrel_main_idtf:
+	[Ключевые узлы навигации] (* <- lang_ru;; *);
+	[Keynodes for navigation] (* <- lang_en;; *);
+
+<= nrel_ui_commands_decomposition:
+	{
+	ui_menu_file_for_check_directions_under_the_sign_prohibiting_further_movement;
+	ui_menu_file_for_finding_overtake;
+	ui_menu_file_for_finding_fine;
+	ui_menu_check_move;
+	question
+	};;

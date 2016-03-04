@@ -1,0 +1,30 @@
+sc_node_not_relation -> movement_to_the_left;;
+
+movement_to_the_left => nrel_main_idtf: [движение налево] (* <- lang_ru;; *);;
+movement_to_the_left => nrel_main_idtf: [movement to the left] (* <- lang_en;; *);;
+
+movement_to_the_left <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://movment_to_the_left.png";;
+                                *);; 
+                *);;
+
+movement_to_the_left <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>движение налево</b> - Разрешается движение только налево]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+

@@ -1,0 +1,27 @@
+sc_node_not_relation -> slow_moving_vehicles;;
+
+slow_moving_vehicles => nrel_main_idtf: 	[тихоходное транспортное средство] (* <- lang_ru;; *);;
+
+slow_moving_vehicles => nrel_main_idtf: 	[slow-moving vehicles] (* <- lang_en;; *);;
+slow_moving_vehicles <= nrel_using_constants:
+	{
+     motor_vehicle;
+     signs_slow_moving_vehicles
+	};;
+
+
+slow_moving_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Тихоходное транспортное средство</b> — <sc_element sys_idtf="motor_vehicle">механическое транспортное средство</sc_element>, которое по своей конструкции или по условиям обеспечения безопасности при перевозке груза не может двигаться со скоростью, превышающей 30 км/ч, обозначенное опознавательным знаком «<sc_element sys_idtf="sign_slow_moving_vehicles">Тихоходное транспортное средство</sc_element>».] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+slow_moving_vehicles <= nrel_strict_inclusion: chapter_1_general_provision;;
+slow_moving_vehicles <= nrel_strict_inclusion: types_of_vehicles;;

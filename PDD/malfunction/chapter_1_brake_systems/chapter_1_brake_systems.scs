@@ -1,0 +1,21 @@
+sc_node_not_relation -> chapter_1_brake_systems;;
+       
+chapter_1_brake_systems => nrel_main_idtf: [Глава 1. Тормозные системы] (* <- lang_ru;; *);;
+
+chapter_1_brake_systems => nrel_main_idtf: [chapter_1_brake_systems] (* <- lang_en;; *);;
+chapter_1_brake_systems <= nrel_inclusion: car;;
+chapter_1_brake_systems <= nrel_inclusion: bus;;
+chapter_1_brake_systems <= nrel_inclusion: road_train;;
+
+chapter_1_brake_systems <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://chapter_1_brake_systems.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;	
+		
+chapter_1_brake_systems <= nrel_strict_inclusion: malfunction;;

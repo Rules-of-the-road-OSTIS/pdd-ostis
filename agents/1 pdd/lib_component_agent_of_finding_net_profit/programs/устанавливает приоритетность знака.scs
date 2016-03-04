@@ -1,0 +1,15 @@
+scp_program -> set_priority_sign (*
+    -> rrel_params: ... (*
+        -> rrel_1: rrel_in: _sign;;
+    *);;
+    -> rrel_operators: ... (*
+        ->rrel_init: ..operator55419 (*
+            <- print;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: [set_priority_sign];;
+            => nrel_goto: ..operator59452;;
+        *);;
+        ->..operator59452 (*
+            <- return;;
+        *);;
+    *);;
+*);;

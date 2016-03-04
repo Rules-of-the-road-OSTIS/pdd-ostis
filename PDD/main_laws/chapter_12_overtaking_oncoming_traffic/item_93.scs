@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_93;;
+item_93 => nrel_main_idtf: [пункт 93] (* <- lang_ru;; *);;
+
+item_93 => nrel_main_idtf: [item 93] (* <- lang_en;; *);;
+
+item_93 <= nrel_using_constants:
+{
+overtaking;
+vehicle;
+traffic_lane
+};;
+
+item_93 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>93. Водителю запрещается выполнять  <sc_element sys_idtf="overtaking"> обгон </sc_element>:</p>
+					  <p>93.1. если водитель <sc_element sys_idtf="vehicle"> транспортного средства </sc_element>, движущегося впереди по той же <sc_element sys_idtf="traffic_lane"> полосе движения </sc_element>, подал сигнал левого поворота;</p>
+					  <p>93.2. если следующие за ним водители начали  <sc_element sys_idtf="overtaking"> обгон </sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

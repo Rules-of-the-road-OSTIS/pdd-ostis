@@ -1,0 +1,30 @@
+sc_node_not_relation -> chapter_21_movement_of_animal_drawn_vehicles_riders_and_cattle_driving;;
+        
+ chapter_21_movement_of_animal_drawn_vehicles_riders_and_cattle_driving => nrel_main_idtf: [Глава 21. Движение гужевых транспортных средств, всадников и прогон скота] (* <- lang_ru;; *);;
+
+ chapter_21_movement_of_animal_drawn_vehicles_riders_and_cattle_driving => nrel_main_idtf: [Сhapter 21. Movement of animal-drawn vehicles riders and cattle driving] (* <- lang_en;; *);;
+chapter_21_movement_of_animal_drawn_vehicles_riders_and_cattle_driving <= nrel_section_decomposition:
+	{
+        	item_157
+		(*
+		=> nrel_section_base_order: 
+			item_158;;
+		*);
+		item_158
+		(*
+		=> nrel_section_base_order: 
+			item_159;;
+		*);
+		item_159
+		(*
+		=> nrel_section_base_order: 
+			item_160;;
+		*);
+		item_160
+		(*
+		=> nrel_section_base_order: 
+			item_161;;
+		*);
+		item_161
+
+	};;

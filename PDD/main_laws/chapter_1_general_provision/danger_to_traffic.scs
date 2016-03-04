@@ -1,0 +1,27 @@
+sc_node_not_relation -> danger_to_traffic;;
+
+danger_to_traffic => nrel_main_idtf: 	[опасность для движения] (* <- lang_ru;; *);;
+
+danger_to_traffic => nrel_main_idtf: 	[danger to traffic] (* <- lang_en;; *);;
+danger_to_traffic <= nrel_using_constants:
+	{
+     vehicle;
+     traffic;
+     driver;
+     road_user
+	};;
+
+danger_to_traffic <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Опасность для движения</b> — изменение условий <sc_element sys_idtf="traffic">дорожного движения</sc_element> или технического состояния <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, угрожающее безопасности <sc_element sys_idtf="road_user">участников дорожного движения</sc_element>, вынуждающее <sc_element sys_idtf="driver">водителя</sc_element> снизить скорость движения или остановиться.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+danger_to_traffic <= nrel_strict_inclusion: chapter_1_general_provision;;

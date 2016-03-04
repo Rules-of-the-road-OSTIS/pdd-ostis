@@ -1,0 +1,36 @@
+sc_node_not_relation -> trolleybus;;
+
+trolleybus => nrel_main_idtf: 	[троллейбус] (* <- lang_ru;; *);;
+
+trolleybus => nrel_main_idtf: 	[trolleybus] (* <- lang_en;; *);;
+trolleybus <= nrel_using_constants:
+	{
+     motor_vehicle
+	};;
+
+
+trolleybus <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Троллейбус</b> — <sc_element sys_idtf="motor_vehicle">механическое транспортное средство</sc_element>, приводимое в движение электродвигателем, питание которого обеспечивается по подвесной контактной сети от внешнего источника электрического тока.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+trolleybus <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://trolleybus.jpg";;
+                                *);; 
+                *);;
+trolleybus <= nrel_strict_inclusion: chapter_1_general_provision;;
+trolleybus <= nrel_strict_inclusion: types_of_vehicles;;

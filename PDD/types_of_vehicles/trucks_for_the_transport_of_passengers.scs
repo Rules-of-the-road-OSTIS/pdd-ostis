@@ -1,0 +1,8 @@
+sc_node_not_relation -> trucks_for_the_transport_of_passengers;;
+
+trucks_for_the_transport_of_passengers => nrel_main_idtf: 	[грузовые автомобили, предназначенные для перевозки пассажиров] (* <- lang_ru;; *);;
+
+trucks_for_the_transport_of_passengers => nrel_main_idtf: 	[trucks for the transport of passengers] (* <- lang_en;; *);;
+
+trucks_for_the_transport_of_passengers <= nrel_strict_inclusion: car;;
+trucks_for_the_transport_of_passengers <= nrel_strict_inclusion: types_of_vehicles;;

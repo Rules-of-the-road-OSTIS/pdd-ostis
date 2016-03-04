@@ -1,0 +1,36 @@
+sc_node_not_relation -> improved_coverage;;
+
+improved_coverage => nrel_main_idtf: 	[усовершенствованное покрытие] (* <- lang_ru;; *);;
+
+improved_coverage => nrel_main_idtf: 	[improved coverage] (* <- lang_en;; *);;
+improved_coverage <= nrel_using_constants:
+	{
+     road
+	};;
+
+
+improved_coverage <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Усовершенствованное покрытие</b> — покрытие <sc_element sys_idtf="road">дороги</sc_element> из асфальтобетонных или цементобетонных смесей, из щебеночных, гравийных, шлаковых или других минеральных материалов, обработанных органическими или минеральными вяжущими материалами, а также из штучных материалов: брусчатки, булыжника, клинкера, мозаики и т.п. <p>Проезжая часть дороги с усовершенствованным покрытием — это проезжая часть с твердым покрытием, которое позволяет двигаться с большими скоростями даже в неблагоприятных погодных условиях.</p>
+<p>В зависимости от ширины проезжая часть дороги делится на <sc_element sys_idtf="traffic_lane">полосы движения</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+improved_coverage <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://improved_coverage1.jpg";;
+                                *);; 
+                *);;
+improved_coverage <= nrel_strict_inclusion: chapter_1_general_provision;;

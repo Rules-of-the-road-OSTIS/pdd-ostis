@@ -1,0 +1,43 @@
+sc_node_not_relation -> mandatory_signs;;
+       
+mandatory_signs => nrel_main_idtf: [Предписывающие знаки] (* <- lang_ru;; *);;
+
+mandatory_signs => nrel_main_idtf: [Mandatory signs] (* <- lang_en;; *);;
+
+mandatory_signs <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предписывающие знаки устанавливаются в непосредственной близости от места, где вступает в силу предписание и могут повторяться, если компетентные органы считают это необходимым.]
+
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+mandatory_signs <= nrel_section_decomposition:
+{
+	circular_motion;
+	cycle_path;
+	detour_obstacles_on_the_left;
+	detour_obstacles_on_the_right;
+	detour_obstacles_on_the_right_or_on_the_left;
+	end_of_minimum_speed_limit;
+	go_straight;
+	go_straight_or_left;
+	go_straight_or_right;
+	minimum_speed_limit;
+	movement_of_cars;
+	movement_to_the_right_or_to_the_left;
+	movement_to_the_left;
+	movement_to_the_right;
+	sign_footpath;
+	the_direction_of_movement_of_vehicles_carrying_dangerous_goods;
+	the_end_of_footpath;
+	the_end_of_the_cycle_path;
+	the_end_of_track_for_horsemen;
+	track_for_horsemen
+};; 

@@ -1,0 +1,25 @@
+sc_node_not_relation -> chapter_1_classification_and_causes_of_accidents;;
+
+chapter_1_classification_and_causes_of_accidents => nrel_main_idtf: [пункт 143] (* <- lang_ru;; *);;
+
+chapter_1_classification_and_causes_of_accidents => nrel_main_idtf: [item_143] (* <- lang_en;; *);;
+
+chapter_1_classification_and_causes_of_accidents <= nrel_inclusion: classification_and_causes_of_accidents;;
+chapter_1_classification_and_causes_of_accidents <= nrel_inclusion: motor_vehicle;;
+chapter_1_classification_and_causes_of_accidents <= nrel_inclusion: pedestrian;;
+chapter_1_classification_and_causes_of_accidents <= nrel_inclusion: vehicle;;
+chapter_1_classification_and_causes_of_accidents <= nrel_inclusion: tram;;
+chapter_1_classification_and_causes_of_accidents <= nrel_inclusion: driver;;
+chapter_1_classification_and_causes_of_accidents <= nrel_inclusion: car;;
+
+chapter_1_classification_and_causes_of_accidents <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://chapter_1_classification_and_causes_of_accidents.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+chapter_1_classification_and_causes_of_accidents <= nrel_strict_inclusion: security;;

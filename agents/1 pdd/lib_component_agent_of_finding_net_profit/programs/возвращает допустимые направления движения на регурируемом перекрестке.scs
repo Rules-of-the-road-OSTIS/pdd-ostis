@@ -1,0 +1,70 @@
+scp_program -> proc_of_finding_regulation_acsess (*
+    -> rrel_params: ... (*
+        -> rrel_1: rrel_in: _regulation_set;;
+        -> rrel_2: rrel_out: _acsess;;
+    *);;
+    -> rrel_operators: ... (*
+        ->rrel_init: ..operator2148 (*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: _regulation_set;;
+            -> rrel_2: rrel_scp_var:rrel_pos_const_perm: rrel_assign: _arc999;;
+            -> rrel_3: rrel_scp_var: rrel_assign: _who;;
+            => nrel_then: ..operator12660;;
+            => nrel_else: ..operator29925;;
+        *);;
+        ->..operator12660 (*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: concept_boy;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _who;;
+            => nrel_then: ..operator13404;;
+            => nrel_else: ..operator16979;;
+        *);;
+        ->..operator13404 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_get_acsess_boy;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _who;;
+                -> rrel_2: rrel_scp_var: rrel_assign: _acsess;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument64039;;
+            => nrel_goto: ..operator60506;;
+        *);;
+        ->..operator60506 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument64039;;
+            => nrel_goto: ..operator29925;;
+        *);;
+	->..operator16979 (*
+            <- searchElStr3;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: concept_trafficlight;;
+            -> rrel_2: rrel_scp_var: rrel_assign: rrel_pos_const_perm: _arc;;
+            -> rrel_3: rrel_fixed: rrel_scp_var: _who;;
+            => nrel_then: ..operator16979_1;;
+            => nrel_else: ..operator111;;
+        *);;
+        ->..operator16979_1 (*
+            <- call;;
+            -> rrel_1: rrel_fixed: rrel_scp_const: proc_get_acsess_trafficlight;;
+            -> rrel_2: ... (*
+                -> rrel_1: rrel_fixed: rrel_scp_var: _who;;
+                -> rrel_2: rrel_scp_var: rrel_assign: _acsess;;
+            *);;
+            -> rrel_3: rrel_assign: rrel_scp_var: _argument63792111;;
+            => nrel_goto: ..operator30264;;
+        *);;
+        ->..operator30264 (*
+            <- waitReturn;;
+            -> rrel_1: rrel_fixed: rrel_scp_var: _argument63792111;;
+            => nrel_goto: ..operator111;;
+        *);;
+       ->..operator111 (*
+            <- eraseEl;;
+            -> rrel_1: rrel_fixed: rrel_erase: rrel_scp_var: _arc999;;
+            => nrel_goto: ..operator2148;;
+        *);;
+        ->..operator29925 (*
+            <- return;;
+        *);;
+    *);;
+*);;

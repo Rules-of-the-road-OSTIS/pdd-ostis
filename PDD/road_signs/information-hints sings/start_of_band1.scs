@@ -1,0 +1,32 @@
+sc_node_not_relation -> start_of_band1;;
+start_of_band1 => nrel_main_idtf: 
+	[начало полосы] (* <- lang_ru;; *);;
+start_of_band1 => nrel_main_idtf: 
+	[start of band] (* <- lang_en;; *);;
+start_of_band1 <= nrel_using_constants:
+	{
+	traffic_line
+	};;
+start_of_band1 <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://start_of_band1.png";;
+                                *);; 
+                *);;
+start_of_band1 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Начало дополнительной <sc_element sys_idtf="traffic_line"> полосы движения </sc_element> на подъеме или полосы торможения.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

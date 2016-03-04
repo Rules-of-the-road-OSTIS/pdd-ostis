@@ -1,0 +1,33 @@
+sc_node_not_relation -> beeping_prohibited;;
+        
+beeping_prohibited => nrel_main_idtf: [подача звукового сигнала запрещена] (* <- lang_ru;; *);;
+
+beeping_prohibited => nrel_main_idtf: [beeping prohibited] (* <- lang_en;; *);;
+beeping_prohibited <= nrel_using_constants:
+{
+traffic_accident
+};;
+
+beeping_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://beeping_prohibited.png";;
+                                *);; 
+                *);;
+beeping_prohibited 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается пользоваться звуковым сигналом, кроме случая подачи его для предотвращения <sc_element sys_idtf="traffic_accident">дорожно-транспортного происшествия</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

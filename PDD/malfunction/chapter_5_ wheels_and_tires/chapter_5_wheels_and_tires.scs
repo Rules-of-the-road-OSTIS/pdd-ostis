@@ -1,0 +1,26 @@
+sc_node_not_relation -> chapter_5_wheels_and_tires;;
+       
+chapter_5_wheels_and_tires => nrel_main_idtf: [Глава 5. Колеса и шины] (* <- lang_ru;; *);;
+
+chapter_5_wheels_and_tires => nrel_main_idtf: [chapter_5_ wheels_and_tires] (* <- lang_en;; *);;
+chapter_5_wheels_and_tires <= nrel_inclusion: car;;
+chapter_5_wheels_and_tires <= nrel_inclusion: bus;;
+chapter_5_wheels_and_tires <= nrel_inclusion: moped;;
+chapter_5_wheels_and_tires <= nrel_inclusion: motorcycle;;
+chapter_5_wheels_and_tires <= nrel_inclusion: motor_vehicle;;
+chapter_5_wheels_and_tires <= nrel_inclusion: trailer;;
+chapter_5_wheels_and_tires <= nrel_inclusion: traffic;;
+chapter_5_wheels_and_tires <= nrel_inclusion: vehicle;;
+
+chapter_5_wheels_and_tires <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://chapter_5_wheels_and_tires.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;	
+		
+chapter_5_wheels_and_tires <= nrel_strict_inclusion: malfunction;;

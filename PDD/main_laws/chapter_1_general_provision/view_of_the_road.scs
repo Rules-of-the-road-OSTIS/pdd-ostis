@@ -1,0 +1,26 @@
+sc_node_not_relation -> view_of_the_road;;
+
+view_of_the_road => nrel_main_idtf: 	[обзорность дороги] (* <- lang_ru;; *);;
+
+view_of_the_road => nrel_main_idtf: 	[view of the road] (* <- lang_en;; *);;
+view_of_the_road <= nrel_using_constants:
+	{
+     driver;
+     visibility_of_the_road
+	};;
+
+
+view_of_the_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Обзорность дороги</b> — объективная возможность видеть дорожную обстановку с места <sc_element sys_idtf="driver">водителя</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+view_of_the_road <= nrel_strict_inclusion: chapter_1_general_provision;;

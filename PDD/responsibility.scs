@@ -1,0 +1,7 @@
+sc_node_not_relation -> responsibility;;
+       
+responsibility => nrel_main_idtf: [Ответственность] (* <- lang_ru;; *);;
+
+responsibility => nrel_main_idtf: [responsibility] (* <- lang_en;; *);;
+		
+

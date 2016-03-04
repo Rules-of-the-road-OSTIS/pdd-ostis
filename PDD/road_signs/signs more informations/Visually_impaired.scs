@@ -1,0 +1,30 @@
+sc_node_not_relation -> Visually_impaired;;
+Visually_impaired => nrel_main_idtf:[Инвалиды по зрению] (* <- lang_ru;; *);;
+Visually_impaired => nrel_main_idtf:[Visually impaired] (* <- lang_en;; *);;
+Visually_impaired <= nrel_using_constants:
+	{
+		crosswalk	
+	};;
+Visually_impaired <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Visually_impaired.png";;
+                                *);; 
+                *);;
+Visually_impaired 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>   указывает, что <sc_element sys_idtf="crosswalk">пешеходным переходом</sc_element> часто пользуются инвалиды по зрению.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

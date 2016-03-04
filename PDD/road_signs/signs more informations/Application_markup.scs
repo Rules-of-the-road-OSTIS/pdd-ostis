@@ -1,0 +1,28 @@
+sc_node_not_relation -> Application_markup;;
+Application_markup => nrel_main_idtf: [Нанесение разметки] (* <- lang_ru;; *);;
+Application_markup => nrel_main_idtf:[Application markup] (* <- lang_en;; *);;
+Application_markup <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Application_markup.png"
+												(*<-lang_ru;;*);;
+                                *);; 
+                *);;
+Application_markup 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> информирует о проведении работ по нанесению дорожной разметки.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+Application_markup <= nrel_strict_inclusion: signs_more_informations;;

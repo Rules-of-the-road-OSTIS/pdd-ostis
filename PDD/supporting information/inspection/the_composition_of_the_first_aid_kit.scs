@@ -1,0 +1,17 @@
+sc_node_not_relation -> the_composition_of_the_first_aid_kit;;
+
+the_composition_of_the_first_aid_kit => nrel_main_idtf: [Состав аптечки первой медицинской помощи] (* <- lang_ru;; *);;
+
+the_composition_of_the_first_aid_kit => nrel_main_idtf: [the_composition_of_the_first_aid_kit] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://the_composition_of_the_first_aid_kit.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+the_composition_of_the_first_aid_kit <= nrel_strict_inclusion: inspection;;

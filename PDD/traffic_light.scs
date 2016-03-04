@@ -1,0 +1,43 @@
+sc_node_not_relation -> traffic_light;;
+        
+traffic_light => nrel_main_idtf: [Приложение 1. Дорожные светофоры] (* <- lang_ru;; *);;
+
+traffic_light => nrel_main_idtf: [traffic_light] (* <- lang_en;; *);;
+traffic_light <= nrel_using_constants:
+	{
+	pedestrian;
+	road;
+	vehicle
+	};;
+traffic_light 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Светофор</b> — техническое средство организации дорожного движения, применяется для регулирования очередности пропуска <sc_element sys_idtf="vehicle">транспортных средств</sc_element> и <sc_element sys_idtf="pedestrian">пешеходов</sc_element>, а также для обозначения опасных участков <sc_element sys_idtf="road">дорог</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+traffic_light <= nrel_section_decomposition:
+{
+	applied_to_the_information_plate;
+	applied_to_the_information_section;
+	for_controlling_movement_in_certain_directions;
+	indicating_signs;
+	information_boards;
+	information_section;
+	pedestrian_traffic_lights;
+	reversible;
+	to_refer_to_nonregulated_intersections_and_pedestrian_crossings;
+	to_regulate_the_movement_of_cyclists;
+	to_regulate_the_movement_of_trams_and_other_route_vehicles;
+	traffic_control_organizations_in_the_territories_and_in_areas_of_narrowing_the_carriageway;
+	the_end_of_the_main_road;
+	with_additional_sections;
+	with_horizontal_signals;
+	with_vertical_signals
+};; 

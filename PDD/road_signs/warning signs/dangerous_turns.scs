@@ -1,0 +1,35 @@
+sc_node_not_relation -> dangerous_turns;;
+        
+dangerous_turns => nrel_main_idtf: [опасные повороты] (* <- lang_ru;; *);;
+dangerous_turns => nrel_main_idtf: [dangerous turns] (* <- lang_en;; *);;
+
+dangerous_turns <= nrel_using_constants:
+	{
+	road
+	};;
+	
+dangerous_turns <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://dangerous_turns1.png";
+						"file://dangerous_turns2.png";;
+                                *);; 
+                *);;
+				
+dangerous_turns <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+                                                [Участок <sc_element sys_idtf="road">дороги</sc_element> с двумя и более опасными поворотами, расположенными один за другим.]
+                           (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,26 @@
+sc_node_not_relation -> designated_intersection;;
+
+designated_intersection => nrel_main_idtf: 	[обозначенный перекресток] (* <- lang_ru;; *);;
+
+designated_intersection => nrel_main_idtf: 	[designated intersection] (* <- lang_en;; *);;
+designated_intersection <= nrel_using_constants:
+	{
+     intersection;
+     signs_priority;
+     road
+	};;
+
+designated_intersection <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Обозначенный перекресток</b> — <sc_element sys_idtf="intersection">перекресток</sc_element>, перед которым на данной <sc_element sys_idtf="road">дороге</sc_element> установлен дорожный знак (знаки) <sc_element sys_idtf="signs_priority">приоритета</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+designated_intersection <= nrel_strict_inclusion: chapter_1_general_provision;;

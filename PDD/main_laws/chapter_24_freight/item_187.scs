@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_187;;
+
+item_187 => nrel_main_idtf: [пункт 187] (* <- lang_ru;; *);;
+
+item_187 => nrel_main_idtf: [item 187] (* <- lang_en;; *);;
+item_187 <= nrel_inclusion: transporation_of_dangerous_freights;;
+
+item_187 <= nrel_using_constants:
+	{
+	
+	transportation_of_freight;
+	dangerous
+	};;
+
+item_187 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Перевозка опасных грузов и использованной для их перевозки неочищенной тары производится в соответствии с правилами перевозки опасных грузов автомобильным транспортом, утвержденными Министерством по чрезвычайным ситуациям.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

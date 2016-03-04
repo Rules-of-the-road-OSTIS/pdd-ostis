@@ -1,0 +1,29 @@
+sc_node_not_relation -> the_end_of_track_for_horsemen;;
+
+the_end_of_track_for_horsemen => nrel_main_idtf: [конец дорожки для всадников] (* <- lang_ru;; *);;
+the_end_of_track_for_horsemen => nrel_main_idtf: [the end of track for horsemen] (* <- lang_en;; *);;
+
+the_end_of_track_for_horsemen <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_end_of_track_for_horsemen.png";;
+                                *);; 
+                *);;
+
+the_end_of_track_for_horsemen <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>конец дорожки для всадников</b> - Конец зоны действия знака "Дорожка для всядников".]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

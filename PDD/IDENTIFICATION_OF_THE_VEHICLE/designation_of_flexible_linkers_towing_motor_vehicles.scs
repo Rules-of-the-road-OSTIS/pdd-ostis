@@ -1,0 +1,18 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+        
+designation_of_flexible_linkers_towing_motor_vehicles => nrel_main_idtf: [обозначение гибких связующих звеньев при буксировке механических транспортных средств] (* <- lang_ru;; *);;
+
+designation_of_flexible_linkers_towing_motor_vehicles => nrel_main_idtf: [designation of flexible linkers towing motor vehicles] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_flexible_linkers_towing_motor_vehicles.png";;
+                                *);; 
+                *);;
+
+designation_of_flexible_linkers_towing_motor_vehicles <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;

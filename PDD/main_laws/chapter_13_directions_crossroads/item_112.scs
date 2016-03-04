@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_112;;
+item_112 => nrel_main_idtf: [пункт 112] (* <- lang_ru;; *);;
+
+item_112 => nrel_main_idtf: [item 112] (* <- lang_en;; *);;
+
+item_112 <= nrel_using_constants:
+{
+intersection;
+roadway;
+road
+};;
+
+item_112 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>112. Если водитель не может определить последовательность проезда <sc_element sys_idtf="intersection">перекрестка</sc_element> (из-за невозможности распознать наличие покрытия на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> (темное время суток, грязь, снег и прочее) либо отсутствует дорожный знак приоритета в направлении движения), он должен действовать так, как если находится на второстепенной <sc_element sys_idtf="road">дороге</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

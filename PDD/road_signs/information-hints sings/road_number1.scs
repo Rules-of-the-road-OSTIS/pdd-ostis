@@ -1,0 +1,33 @@
+sc_node_not_relation -> road_number1;;
+road_number1 => nrel_main_idtf: 
+	[номер дороги] (* <- lang_ru;; *);;
+road_number1 => nrel_main_idtf: 
+	[road number] (* <- lang_en;; *);;
+road_number1 <= nrel_using_constants:
+	{
+	road;
+	traffic
+	};;
+road_number1 <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://road_number1.png";;
+                                *);; 
+                *);;
+road_number1 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Номер <sc_element sys_idtf="traffic_line"> дороги </sc_element>, в направлении к которой осуществляется <sc_element sys_idtf="traffic_line"> движение </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

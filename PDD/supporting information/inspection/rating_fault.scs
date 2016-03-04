@@ -1,0 +1,17 @@
+sc_node_not_relation -> rating_fault;;
+
+rating_fault => nrel_main_idtf: [Рейтинг неисправностей] (* <- lang_ru;; *);;
+
+rating_fault => nrel_main_idtf: [rating_fault] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://rating_fault.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+rating_fault <= nrel_strict_inclusion: inspection;;

@@ -1,0 +1,19 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+        
+transportation_of_children => nrel_main_idtf: [перевозка детей] (* <- lang_ru;; *);;
+
+transportation_of_children => nrel_main_idtf: [transportation of children] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://transportation_of_children.png";;
+                                *);; 
+                *);;
+
+transportation_of_children <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;
+

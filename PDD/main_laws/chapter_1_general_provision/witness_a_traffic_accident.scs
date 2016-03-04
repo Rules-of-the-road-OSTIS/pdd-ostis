@@ -1,0 +1,25 @@
+sc_node_not_relation -> witness_a_traffic_accident;;
+
+witness_a_traffic_accident => nrel_main_idtf: 	[очевидец дорожно-транспортного происшествия] (* <- lang_ru;; *);;
+
+witness_a_traffic_accident => nrel_main_idtf: 	[witness a traffic accident] (* <- lang_en;; *);;
+witness_a_traffic_accident <= nrel_using_constants:
+	{
+     traffic_accident
+	};;
+
+
+witness_a_traffic_accident <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Очевидец дорожно-транспортного происшествия</b> — физическое лицо, непосредственно наблюдавшее <sc_element sys_idtf="traffic_accident">дорожно-транспортное происшествие</sc_element>, которое располагает соответствующей информацией и может ее предоставить.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+witness_a_traffic_accident <= nrel_strict_inclusion: chapter_1_general_provision;;

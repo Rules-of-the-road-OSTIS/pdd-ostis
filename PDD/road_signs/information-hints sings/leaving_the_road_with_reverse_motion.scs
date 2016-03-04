@@ -1,0 +1,33 @@
+sc_node_not_relation -> leaving_the_road_with_reverse_motion;;
+leaving_the_road_with_reverse_motion => nrel_main_idtf: 
+	[выезд на дорогу с реверсивным движением] (* <- lang_ru;; *);;
+leaving_the_road_with_reverse_motion => nrel_main_idtf: 
+	[leaving the road with reverse motion] (* <- lang_en;; *);;
+leaving_the_road_with_reverse_motion <= nrel_using_constants:
+	{
+	road;
+	traffic
+	};;
+leaving_the_road_with_reverse_motion <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://leaving_the_road_with_reverse_motion.png";;
+                                *);; 
+                *);;
+leaving_the_road_with_reverse_motion <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Выезд на <sc_element sys_idtf="road"> дорогу </sc_element>, на одной или нескольких полосах которой направление <sc_element sys_idtf="traffic"> движения </sc_element> может изменяться на противоположное.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

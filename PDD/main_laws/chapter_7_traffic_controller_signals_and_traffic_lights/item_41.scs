@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_41;;
+
+item_41 => nrel_main_idtf: [пункт 41] (* <- lang_ru;; *);;
+
+item_41 => nrel_main_idtf: [item 41] (* <- lang_en;; *);;
+item_41 <= nrel_using_constants:
+	{
+	driver
+	};;
+
+
+item_41 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [Если на основной зеленый сигнал светофора нанесена черная контурная стрелка (стрелки), то она информирует <sc_element sys_idtf="driver">водителей</sc_element> о наличии дополнительной секции светофора и указывает иные, чем сигнал дополнительной секции, разрешенные направления движения.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

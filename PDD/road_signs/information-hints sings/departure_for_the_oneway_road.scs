@@ -1,0 +1,35 @@
+sc_node_not_relation -> departure_for_the_oneway_road;;
+departure_for_the_oneway_road => nrel_main_idtf: 
+	[выезд на дорогу с односторонним движением.] (* <- lang_ru;; *);;
+departure_for_the_oneway_road => nrel_main_idtf: 
+	[departure for the one-wayroad] (* <- lang_en;; *);;
+departure_for_the_oneway_road <= nrel_using_constants:
+	{
+	road;
+	traffic
+	};;
+departure_for_the_oneway_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://departure_for_the_oneway_road1.png";
+						"file://departure_for_the_oneway_road2.png";;
+                                *);; 
+                *);;
+departure_for_the_oneway_road 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[ Выезд на <sc_element sys_idtf="road"> дорогу </sc_element>, по которой <sc_element sys_idtf="traffic"> движение </sc_element> транспортных средств разрешено только в направлении , указанном на знаке.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

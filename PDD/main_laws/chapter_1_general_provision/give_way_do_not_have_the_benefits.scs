@@ -1,0 +1,30 @@
+sc_node_not_relation -> give_way_do_not_have_the_benefits;;
+
+give_way_do_not_have_the_benefits => nrel_main_idtf: 	[уступить дорогу (не иметь преимущества)] (* <- lang_ru;; *);;
+
+give_way_do_not_have_the_benefits => nrel_main_idtf: 	[give way (do not have the benefits)] (* <- lang_en;; *);;
+give_way_do_not_have_the_benefits <= nrel_using_constants:
+	{
+     vehicle;
+     maneuver_maneuver;
+     adjuster;
+     traffic_lane;
+     driver;
+     road_user
+
+	};;
+
+give_way_do_not_have_the_benefits <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Уступить дорогу (не иметь преимущества)</b> — требование, означающее не возобновлять движение, снизить скорость движения вплоть до остановки <sc_element sys_idtf="vehicle">транспортного средства</sc_element> или не осуществлять какой-либо <sc_element sys_idtf="maneuver_maneuver">маневр</sc_element> (за исключением требования освободить занимаемую <sc_element sys_idtf="traffic_lane">полосу движения</sc_element>, подаваемого <sc_element sys_idtf="adjuster">регулировщиком</sc_element> или <sc_element sys_idtf="driver">водителем</sc_element> транспортного средства оперативного назначения), если это может вынудить другого <sc_element sys_idtf="road_user">участника (других участников) дорожного движения</sc_element> изменить направление и (или) скорость движения.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+give_way_do_not_have_the_benefits <= nrel_strict_inclusion: chapter_1_general_provision;;

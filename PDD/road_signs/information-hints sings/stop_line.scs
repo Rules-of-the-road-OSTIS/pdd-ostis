@@ -1,0 +1,33 @@
+sc_node_not_relation -> stop_line;;
+stop_line => nrel_main_idtf: 
+	[стоп-линия] (* <- lang_ru;; *);;
+stop_line => nrel_main_idtf: 
+	[stop line] (* <- lang_en;; *);;
+stop_line <= nrel_using_constants:
+	{
+	stop_the_vehicle;
+	adjuster
+	};;
+stop_line <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://stop_line.png";;
+                                *);; 
+                *);;
+stop_line <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Место <sc_element sys_idtf="stop_the_vehicle"> остановки транспортных средств </sc_element> при запрещающем сигнале <sc_element sys_idtf="adjuster"> регулировщика </sc_element>, светофора.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

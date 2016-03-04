@@ -1,0 +1,35 @@
+sc_node_not_relation -> humps;;
+        
+humps => nrel_main_idtf: [искусственная неровность] (* <- lang_ru;; *);;
+humps => nrel_main_idtf: [humps] (* <- lang_en;; *);;
+
+humps <= nrel_using_constants:
+	{
+	road;
+	roadway
+	};;
+
+humps <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://humps.png";;
+                                *);; 
+                *);;
+				
+humps <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element> с установленной искусственной неровностью (искусственными неровностями) на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>.]
+				(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

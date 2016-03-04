@@ -1,0 +1,31 @@
+sc_node_not_relation -> The_direction_of_the_main_road;;
+The_direction_of_the_main_road => nrel_main_idtf:[Направление главной дороги] (* <- lang_ru;; *);;
+The_direction_of_the_main_road => nrel_main_idtf:[The direction of the main road] (* <- lang_en;; *);;
+The_direction_of_the_main_road <= nrel_using_constants:
+	{
+		intersection;
+	main_road	
+	};;
+The_direction_of_the_main_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://The_direction_of_the_main_road.png";;
+                                *);; 
+                *);;
+The_direction_of_the_main_road 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  указывает направление <sc_element sys_idtf="main_road">главной дороги</sc_element> на <sc_element sys_idtf="intersection">перекрестке</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

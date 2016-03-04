@@ -1,0 +1,19 @@
+sc_node_not_relation -> only_tram;;
+
+only_tram => nrel_main_idtf: [Только трамваю] (* <- lang_ru;; *);;
+
+only_tram => nrel_main_idtf: [only_tram] (* <- lang_en;; *);;
+only_tram <= nrel_inclusion: driver;;
+
+only_tram <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://only_tram.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+
+only_tram <= nrel_strict_inclusion: intersection_2;;

@@ -1,0 +1,35 @@
+sc_node_not_relation -> sign_children;;
+
+sign_children => nrel_main_idtf: [знак дети] (* <- lang_ru;; *);;
+sign_children => nrel_main_idtf: [sign children] (* <- lang_en;; *);;
+
+sign_children <= nrel_using_constants:
+	{
+	road;
+	children
+	};;
+
+sign_children <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_children.png";;
+                                *);; 
+                *);;
+				
+sign_children <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element>, на котором возможно появление <sc_element sys_idtf="children">детей</sc_element> с территории детского или иного учреждения (школы, оздоровительного лагеря, больницы и т.п.), прилегающего непосредственно к дороге.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+*);;

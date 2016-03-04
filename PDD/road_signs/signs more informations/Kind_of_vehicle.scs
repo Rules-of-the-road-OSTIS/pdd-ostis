@@ -1,0 +1,37 @@
+sc_node_not_relation -> Kind_of_vehicle;;
+Kind_of_vehicle => nrel_main_idtf:[Вид транспортного средства] (* <- lang_ru;; *);;
+Kind_of_vehicle => nrel_main_idtf:[Kind of vehicle] (* <- lang_en;; *);;
+Kind_of_vehicle <= nrel_using_constants:
+	{
+	vehicle
+	};;
+Kind_of_vehicle <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Kind_of_vehicle1.png";
+                                                "file://Kind_of_vehicle2.png";
+                                                "file://Kind_of_vehicle3.png";
+                                                "file://Kind_of_vehicle4.png";
+                                                "file://Kind_of_vehicle5.png";
+                                                "file://Kind_of_vehicle6.png";
+                                                "file://Kind_of_vehicle7.png";
+                                                "file://Kind_of_vehicle8.png";;
+                                *);; 
+                *);;
+Kind_of_vehicle	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Таблички</b> указывают вид <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, на который распространяется действие знака.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

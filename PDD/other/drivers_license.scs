@@ -1,0 +1,17 @@
+sc_node_not_relation -> drivers_license;;
+       
+drivers_license => nrel_main_idtf: [водительское удостоверение] (* <- lang_ru;; *);;
+
+drivers_license => nrel_main_idtf: [drivers_license] (* <- lang_en;; *);;
+
+drivers_license <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://drivers_license.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

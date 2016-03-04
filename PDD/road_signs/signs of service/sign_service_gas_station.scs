@@ -1,0 +1,30 @@
+sc_node_not_relation -> sign_service_gas_station;;
+sign_service_gas_station => nrel_main_idtf: 
+	[знак сервиса "Автозаправочная станция"] (* <- lang_ru;; *);;
+sign_service_gas_station => nrel_main_idtf: 
+	[sign service "Gas station and Filling station"] (* <- lang_en;; *);;
+sign_service_gas_station <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_gas_station1.png";
+                                                "file://sign_service_gas_station2.png";
+                                                "file://sign_service_gas_station3.png";;
+                                *);; 
+                *);;
+sign_service_gas_station <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Автозаправочная станция" информирует о расположении автозаправок — АЗС.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

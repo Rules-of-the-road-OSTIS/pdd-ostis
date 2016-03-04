@@ -1,0 +1,57 @@
+sc_node_not_relation -> chapter_6_rights_and_obligations_of_drivers_and_others_in_special_cases;;
+        
+chapter_6_rights_and_obligations_of_drivers_and_others_in_special_cases => nrel_main_idtf: [Глава 6. Права и обязанности водителей и других в особых случаях] (* <- lang_ru;; *);;
+
+chapter_6_rights_and_obligations_of_drivers_and_others_in_special_cases => nrel_main_idtf: [Chapter 6. Rights and obligations of drivers and others in special cases] (* <- lang_en;; *);;
+
+chapter_6_rights_and_obligations_of_drivers_and_others_in_special_cases <= nrel_section_decomposition:
+	{
+        	item_25
+		(*
+		=> nrel_section_base_order: 
+			item_26;;
+		*);
+		item_26
+		(*
+		=> nrel_section_base_order: 
+			item_27;;
+		*);
+		item_27
+		(*
+		=> nrel_section_base_order: 
+			item_28;;
+		*);
+		item_28
+		(*
+		=> nrel_section_base_order: 
+			item_29;;
+		*);
+		item_29
+		(*
+		=> nrel_section_base_order: 
+			item_30;;
+		*);
+		item_30
+		(*
+		=> nrel_section_base_order: 
+			item_31;;
+		*);
+		item_31
+		(*
+		=> nrel_section_base_order: 
+			item_32;;
+		*);
+		item_32
+		(*
+		=> nrel_section_base_order: 
+			item_33;;
+		*);
+		item_33
+		(*
+		=> nrel_section_base_order: 
+			item_34;;
+		*);
+		item_34
+
+	};;
+

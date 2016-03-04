@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_103;;
+item_103 => nrel_main_idtf: [пункт 103] (* <- lang_ru;; *);;
+
+item_103 => nrel_main_idtf: [item 103] (* <- lang_en;; *);;
+
+item_103 <= nrel_using_constants:
+{
+tram;
+vehicle;
+give_way_do_not_have_the_benefits
+};;
+
+item_103 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>103. При повороте налево или развороте по зеленому сигналу светофора водитель <sc_element sys_idtf="vehicle"> транспортного средства </sc_element> , за исключением <sc_element sys_idtf="tram"> трамвая </sc_element> , обязан <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> встречным <sc_element sys_idtf="vehicle"> транспортным средствам </sc_element>, движущимся прямо или направо, и попутному <sc_element sys_idtf="tram"> трамваю </sc_element>. Таким же правилом должны руководствоватьс¤ между собой водители <sc_element sys_idtf="tram"> трамваев </sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

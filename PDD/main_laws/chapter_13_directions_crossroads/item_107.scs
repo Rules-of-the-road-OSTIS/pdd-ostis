@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_107;;
+item_107 => nrel_main_idtf: [пункт 107] (* <- lang_ru;; *);;
+
+item_107 => nrel_main_idtf: [item 107] (* <- lang_en;; *);;
+
+item_107 <= nrel_using_constants:
+{
+intersection;
+vehicle;
+give_way_do_not_have_the_benefits;
+pedestrian;
+roadway
+};;
+
+item_107 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>107. При включении разрешающего сигнала светофора водитель должен <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, завершающим движение через <sc_element sys_idtf="intersection">перекресток</sc_element>, и <sc_element sys_idtf="pedestrian">пешеходам</sc_element>, не закончившим переход <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

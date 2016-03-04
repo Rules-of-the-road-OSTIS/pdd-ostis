@@ -1,0 +1,38 @@
+sc_node_not_relation -> railway_vehicle;;
+
+railway_vehicle => nrel_main_idtf: 	[железнодорожное транспортное средство] (* <- lang_ru;; *);;
+
+railway_vehicle => nrel_main_idtf: 	[railway vehicle] (* <- lang_en;; *);;
+
+
+railway_vehicle <= nrel_using_constants:
+	{
+	vehicle;
+	passenger
+	};;
+
+railway_vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Железнодорожное транспортное средство</b> — локомотив, электропоезд, дизель-поезд, автомотриса, иное <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, предназначенное для перевозки <sc_element sys_idtf="passenger">пассажиров</sc_element> и грузов по железнодорожному пути.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+railway_vehicle <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://railway_vehicle.jpg";;
+                                *);; 
+                *);;
+railway_vehicle <= nrel_strict_inclusion: chapter_1_general_provision;;
+railway_vehicle <= nrel_strict_inclusion: types_of_vehicles;;

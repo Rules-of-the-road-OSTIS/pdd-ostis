@@ -1,0 +1,18 @@
+sc_node_not_relation -> mass_of_the_vehicle_in_running_order;;
+       
+mass_of_the_vehicle_in_running_order => nrel_main_idtf: [масса транспортного средства в снаряженном состоянии
+] (* <- lang_ru;; *);;
+
+mass_of_the_vehicle_in_running_order => nrel_main_idtf: [mass_of_the_vehicle_in_running_order] (* <- lang_en;; *);;
+
+mass_of_the_vehicle_in_running_order <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://mass_of_the_vehicle_in_running_order.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

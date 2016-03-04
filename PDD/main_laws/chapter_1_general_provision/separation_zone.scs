@@ -1,0 +1,41 @@
+sc_node_not_relation -> separation_zone;;
+
+separation_zone => nrel_main_idtf: 	[разделительная зона] (* <- lang_ru;; *);;
+
+separation_zone => nrel_main_idtf: 	[separation zone] (* <- lang_en;; *);;
+separation_zone <= nrel_using_constants:
+	{
+     horizontal_road_marking;
+     elements_of_the_road;
+     roadway;
+     pedestrian;
+     vehicle;
+     dividing_line
+
+	};;
+
+separation_zone <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Разделительная зона</b> — выделенный <sc_element sys_idtf="horizontal_road_marking">горизонтальной дорожной разметкой</sc_element> <sc_element sys_idtf="elements_of_the_road">элемент дороги</sc_element>, разделяющий смежные <sc_element sys_idtf="roadway">проезжие части</sc_element> и не предназначенный для движения или остановки <sc_element sys_idtf="vehicle">транспортных средств</sc_element> и <sc_element sys_idtf="pedestrian">пешеходов</sc_element> вне специально обозначенных мест. <b>Чем же принципиально различаются разделительная зона и <sc_element sys_idtf="dividing_line">разделительная полоса</sc_element>?</b>
+Разделительная полоса выделена конструктивно, т.е. отличается от проезжей части дороги по высоте или по покрытию, а разделительная зона выделена только сплошными линиями горизонтальной дорожной разметки. На разделительной полосе часто оборудуется газон.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+separation_zone <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://separation_zone.jpg";;
+                                *);; 
+                *);;
+separation_zone <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,38 @@
+sc_node_not_relation -> separation_of_traffic_for_free_or_opposite_directions;;
+
+separation_of_traffic_for_free_or_opposite_directions => nrel_main_idtf: 
+	[разделение транспортных потоков противоположных или попутных направлений] (* <- lang_ru;; *);;
+
+separation_of_traffic_for_free_or_opposite_directions => nrel_main_idtf: 
+	[separation of traffic for free or opposite directions] (* <- lang_en;; *);;
+
+separation_of_traffic_for_free_or_opposite_directions <= nrel_using_constants:
+	{
+	road
+	};;
+	
+separation_of_traffic_for_free_or_opposite_directions <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Разделение транспортных потоков противоположных или попутных направлений на участках <sc_element sys_idtf="road">дорог</sc_element>дорог, на которых перестроение разрешено только со стороны прерывистой линии (может иметь желтый цвет).
+Обозначение мест, предназначенных для разворота, въезда или выезда со стояночных площадок, автозаправочных станций и прочих объектов.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+separation_of_traffic_for_free_or_opposite_directions <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://separation_of_traffic_for_free_or_opposite_directions.png";;
+                                *);; 
+                *);;

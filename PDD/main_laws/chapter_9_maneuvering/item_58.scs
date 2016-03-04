@@ -1,0 +1,31 @@
+sc_node_not_relation -> item_58;;
+
+item_58 => nrel_main_idtf: [пункт 58] (* <- lang_ru;; *);;
+
+item_58 => nrel_main_idtf: [item 58] (* <- lang_en;; *);;
+
+item_58 <= nrel_using_constants:
+	{
+	roadway;
+	parking_of_a_vehicle;
+	pedestrian;
+	driver;
+	vehicle;
+	bicycle
+	};;
+
+item_58 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> После <sc_element sys_idtf="stop_the_vehicle"> остановки</sc_element> или <sc_element sys_idtf="parking_of_a_vehicle"> стоянки</sc_element> <sc_element sys_idtf="driver"> водитель</sc_element> <sc_element sys_idtf="vehicle"> транспортного средства</sc_element>, начинающего движение, обязан уступить дорогу движущимся <sc_element sys_idtf="vehicle"> транспортным средствам</sc_element>, кроме случая, предусмотренного пунктом 125 настоящих Правил.<\p>
+<p>При съезде с <sc_element sys_idtf="roadway"> проезжей части дороги</sc_element> <sc_element sys_idtf="driver"> водитель</sc_element> обязан уступить дорогу <sc_element sys_idtf="pedestrian"> пешеходам</sc_element>, всадникам и <sc_element sys_idtf="bicycle"> велосипедистам</sc_element>, путь движения которых он пересекает.<\p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

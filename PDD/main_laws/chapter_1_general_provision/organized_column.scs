@@ -1,0 +1,27 @@
+sc_node_not_relation -> organized_column;;
+
+organized_column => nrel_main_idtf: 	[организованная транспортная колонна] (* <- lang_ru;; *);;
+
+organized_column => nrel_main_idtf: 	[organized column] (* <- lang_en;; *);;
+organized_column <= nrel_using_constants:
+	{
+     vehicle;
+     convoy
+	};;
+
+
+
+organized_column <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Организованная транспортная колонна</b> — <sc_element sys_idtf="vehicle">транспортное средство</sc_element> или <sc_element sys_idtf="convoy">транспортная колонна</sc_element>, движущиеся с постоянно включенным ближним светом фар в сопровождении транспортного средства (транспортных средств) оперативного назначения с включенными проблесковыми сигналами (маячками) (далее — маячки) синего или синего и красного цветов.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+organized_column <= nrel_strict_inclusion: chapter_1_general_provision;;

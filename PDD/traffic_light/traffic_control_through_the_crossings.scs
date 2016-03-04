@@ -1,0 +1,19 @@
+sc_node_not_relation -> traffic_control_through_the_crossings;;
+traffic_control_through_the_crossings => nrel_main_idtf: 
+	[для регулирования движения через железнодорожные переезды] (* <- lang_ru;; *);;
+traffic_control_through_the_crossings => nrel_main_idtf: 
+	[traffic control through the crossings] (* <- lang_en;; *);;
+the_end_of_the_main_road <= nrel_using_constants:
+	{
+	railroad_crossing
+	};;
+traffic_control_through_the_crossings <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://traffic_control_through_the_crossings.png";;
+                                *);; 
+                *);;

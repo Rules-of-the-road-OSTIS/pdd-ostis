@@ -1,0 +1,27 @@
+sc_node_not_relation -> road_user;;
+
+road_user => nrel_main_idtf: 	[участник дорожного движения] (* <- lang_ru;; *);;
+
+road_user => nrel_main_idtf: 	[road user] (* <- lang_en;; *);;
+road_train <= nrel_using_constants:
+	{
+     road;
+     vehicle;
+     adjuster
+
+	};;
+
+road_user <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Участник дорожного движения</b> — физическое лицо, находящееся в пределах <sc_element sys_idtf="road">дороги</sc_element> в (на) <sc_element sys_idtf="vehicle">транспортном средстве</sc_element> или вне его, за исключением <sc_element sys_idtf="adjuster">регулировщика</sc_element> и работника, выполняющего в установленном порядке на дороге ремонтные и другие работы.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+road_user <= nrel_strict_inclusion: chapter_1_general_provision;;

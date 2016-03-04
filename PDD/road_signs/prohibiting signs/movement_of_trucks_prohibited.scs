@@ -1,0 +1,35 @@
+sc_node_not_relation -> movement_of_trucks_prohibited;;
+       
+movement_of_trucks_prohibited => nrel_main_idtf: [движение грузовых автомобилей запрещено] (* <- lang_ru;; *);;
+
+movement_of_trucks_prohibited => nrel_main_idtf: [movement of trucks prohibited] (* <- lang_en;; *);;
+movement_of_trucks_prohibited <= nrel_using_constants:
+{
+road_train;
+wheeled_tractor;
+self_propelled
+};;
+movement_of_trucks_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://movement_of_trucks_prohibited.png";;
+                                *);; 
+                *);;
+movement_of_trucks_prohibited <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение грузовых автомобилей (<sc_element sys_idtf="road_train">автопоездов</sc_element>) с технически допустимой общей массой более 3,5 тонны (если на знаке не указана масса) или с фактической массой, превышающей указанную на знаке, а также <sc_element sys_idtf="wheeled_tractor">колесных тракторов</sc_element> и <sc_element sys_idtf="self_propelled">самоходных машин</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

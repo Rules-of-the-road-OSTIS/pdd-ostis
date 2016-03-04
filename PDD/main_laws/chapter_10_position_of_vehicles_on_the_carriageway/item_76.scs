@@ -1,0 +1,22 @@
+sc_node_not_relation -> item_76;;
+
+item_76 => nrel_main_idtf: [пункт 76] (* <- lang_ru;; *);;
+
+item_76 => nrel_main_idtf: [item 76] (* <- lang_en;; *);;
+
+item_76 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  На дороге с двусторонним движением при наличии в направлении движения двух и более полос движения запрещается выезжать на встречную полосу движения.<\p>
+				
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

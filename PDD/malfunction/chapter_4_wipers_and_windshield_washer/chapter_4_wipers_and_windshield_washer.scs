@@ -1,0 +1,20 @@
+sc_node_not_relation -> chapter_4_wipers_and_windshield_washer;;
+       
+chapter_4_wipers_and_windshield_washer => nrel_main_idtf: [Глава 4. Стеклоочистители и стеклоомыватели ветрового стекла] (* <- lang_ru;; *);;
+
+chapter_4_wipers_and_windshield_washer => nrel_main_idtf: [chapter_4_wipers_and_windshield_washer] (* <- lang_en;; *);;
+chapter_4_wipers_and_windshield_washer <= nrel_inclusion: vehicle;;
+chapter_4_wipers_and_windshield_washer <= nrel_inclusion: driver;;
+
+chapter_4_wipers_and_windshield_washer <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://chapter_4_wipers_and_windshield_washer.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;	
+		
+chapter_4_wipers_and_windshield_washer <= nrel_strict_inclusion: malfunction;;

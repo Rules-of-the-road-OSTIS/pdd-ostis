@@ -1,0 +1,32 @@
+sc_node_not_relation -> stopping_point_express_route;;
+stopping_point_express_route => nrel_main_idtf: 
+	[остановочный пункт экспресс-маршрута] (* <- lang_ru;; *);;
+stopping_point_express_route => nrel_main_idtf: 
+	[stopping point express route] (* <- lang_en;; *);;
+stopping_point_express_route <= nrel_using_constants:
+	{
+	stop_the_vehicle
+	};;
+stopping_point_express_route <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://stopping_point_express_route.png";;
+                                *);; 
+                *);;
+stopping_point_express_route <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак обозначает начало посадочной площадки <sc_element sys_idtf="stop_the_vehicle"> остановочного пункта транспортного средства </sc_element>, осуществляющего движение в регулярном экспрессном сообщении.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

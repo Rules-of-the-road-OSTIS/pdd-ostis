@@ -1,0 +1,32 @@
+sc_node_not_relation -> reverse_motion;;
+reverse_motion => nrel_main_idtf: 
+	[реверсивное движение] (* <- lang_ru;; *);;
+reverse_motion => nrel_main_idtf: 
+	[reverse motion] (* <- lang_en;; *);;
+reverse_motion <= nrel_using_constants:
+	{
+	traffic
+	};;
+reverse_motion <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://reverse_motion.png";;
+                                *);; 
+                *);;
+reverse_motion <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Начало участка дороги, на одной или нескольких полосах которого направление <sc_element sys_idtf="traffic"> движения </sc_element> может изменяться на противоположное.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

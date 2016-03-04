@@ -1,0 +1,39 @@
+sc_node_not_relation -> designation_tracks;;
+
+designation_tracks => nrel_main_idtf: 
+	[обозначение дорожек] (* <- lang_ru;; *);;
+
+designation_tracks => nrel_main_idtf: 
+	[designation tracks] (* <- lang_en;; *);;
+
+designation_tracks <= nrel_using_constants:
+	{
+	pedestrian;
+	bike_lane;
+	footpath
+	};;
+
+designation_tracks <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Применяется для обозначения дорожек, предназначенных для совместного движения <sc_element sys_idtf="pedestrian">пешеходов</sc_element> и велосипедистов и обозначенных знаками <sc_element sys_idtf="bike_lane">"Велосипедная дорожка"</sc_element> или <sc_element sys_idtf="footpath">"Пешеходная дорожка"</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_tracks <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_tracks.png";;
+                                *);; 
+                *);;

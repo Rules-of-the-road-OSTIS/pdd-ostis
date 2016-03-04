@@ -1,0 +1,18 @@
+sc_node_not_relation -> temporary_signs;;
+       
+temporary_signs => nrel_main_idtf: [временные дорожные знаки] (* <- lang_ru;; *);;
+
+temporary_signs => nrel_main_idtf: [temporary_signs] (* <- lang_en;; *);;
+
+temporary_signs <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://temporary_signs.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+temporary_signs <= nrel_strict_inclusion: road_signs;;
+

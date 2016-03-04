@@ -1,0 +1,7 @@
+sc_node_not_relation -> transportation_crossroads;;
+       
+transportation_crossroads => nrel_main_idtf: [Проезд перекрёстков] (* <- lang_ru;; *);;
+
+transportation_crossroads => nrel_main_idtf: [transportation_crossroads] (* <- lang_en;; *);;
+		
+

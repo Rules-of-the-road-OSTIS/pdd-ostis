@@ -1,0 +1,25 @@
+sc_node_not_relation -> children;;
+
+children => nrel_main_idtf: 	[дети] (* <- lang_ru;; *);;
+
+children => nrel_main_idtf: 	[children] (* <- lang_en;; *);;
+children <= nrel_using_constants:
+	{
+     road_user
+	};;
+
+children <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><b>Дети</b> — несовершеннолетние <sc_element sys_idtf="road_user">участники дорожного движения</sc_element>, возраст которых известен либо очевиден по внешним признакам другим участникам дорожного движения.</p>
+<p>В силу объективных причин дети, являясь участниками дорожного движения, подвергаются наибольшей опасности, и Правила обязывают водителей принимать меры, обеспечивающие безопасные условия для них на дороге.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+children <= nrel_strict_inclusion: chapter_1_general_provision;;

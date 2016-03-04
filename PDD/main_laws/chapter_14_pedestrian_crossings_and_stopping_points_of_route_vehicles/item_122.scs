@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_122;;
+item_122 => nrel_main_idtf: [пункт 122] (* <- lang_ru;; *);;
+
+item_122 => nrel_main_idtf: [item 122] (* <- lang_en;; *);;
+
+item_122 <= nrel_using_constants:
+{
+vehicle;
+stop_the_vehicle;
+give_way_do_not_have_the_benefits;
+pedestrian
+};;
+
+item_122 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>122. Приближаясь к стоящему <sc_element sys_idtf="vehicle">транспортному средству</sc_element> с включенной аварийной световой сигнализацией и имеющему опознавательный знак «Перевозка детей», водитель должен снизить скорость движения, при необходимости <sc_element sys_idtf="stop_the_vehicle">остановиться</sc_element> и <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="pedestrian">пешеходам</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

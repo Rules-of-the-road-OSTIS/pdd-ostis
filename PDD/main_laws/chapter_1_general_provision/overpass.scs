@@ -1,0 +1,25 @@
+sc_node_not_relation -> overpass;;
+
+overpass => nrel_main_idtf: 	[эстакада] (* <- lang_ru;; *);;
+
+overpass => nrel_main_idtf: 	[overpass] (* <- lang_en;; *);;
+overpass <= nrel_using_constants:
+	{
+     road
+
+	};;
+
+overpass <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Эстакада</b> — инженерное сооружение для поднятия одной <sc_element sys_idtf="road">дороги</sc_element> над другой в месте их пересечения, а также для размещения на определенной высоте дороги, которая не имеет съездов на другую дорогу.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+overpass <= nrel_strict_inclusion: chapter_1_general_provision;;

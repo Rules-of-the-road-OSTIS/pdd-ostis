@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_110;;
+item_110 => nrel_main_idtf: [пункт 110] (* <- lang_ru;; *);;
+
+item_110 => nrel_main_idtf: [item 110] (* <- lang_en;; *);;
+
+item_110 <= nrel_using_constants:
+{
+intersection;
+vehicle;
+give_way_do_not_have_the_benefits;
+road;
+tram
+};;
+
+item_110 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>110. На <sc_element sys_idtf="intersection">перекрестке</sc_element> равнозначных <sc_element sys_idtf="road">дорог</sc_element> водитель <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, кроме <sc_element sys_idtf="tram">трамвая</sc_element>, обязан <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="vehicle">транспортным средствам</sc_element>, приближающимся справа. Этим же правилом должны руководствоваться между собой водители <sc_element sys_idtf="tram">трамваев</sc_element>. На таких <sc_element sys_idtf="intersection">перекрестках</sc_element> водитель <sc_element sys_idtf="tram">трамвая</sc_element> имеет преимущество перед другими <sc_element sys_idtf="vehicle">транспортными средствами</sc_element> (кроме <sc_element sys_idtf="tram">трамваев</sc_elemet>) независимо от направления его движения.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

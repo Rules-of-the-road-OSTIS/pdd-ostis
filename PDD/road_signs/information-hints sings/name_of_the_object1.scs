@@ -1,0 +1,33 @@
+sc_node_not_relation -> name_of_the_object1;;
+name_of_the_object1 => nrel_main_idtf: 
+	[наименование объекта] (* <- lang_ru;; *);;
+name_of_the_object1 => nrel_main_idtf: 
+	[name of the object] (* <- lang_en;; *);;
+end_of_the_strip_to_route_vehicles <= nrel_using_constants:
+	{
+    locality
+	};;
+name_of_the_object1 <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://name_of_the_object1.png";;
+                                *);; 
+                *);;
+name_of_the_object1 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Наименование объекта в <sc_element sys_idtf="locality"> населенном пункте </sc_element> (название улицы, театра, музея и т.п.).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

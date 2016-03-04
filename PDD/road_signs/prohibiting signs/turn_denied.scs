@@ -1,0 +1,31 @@
+sc_node_not_relation -> turn_denied;;
+        
+turn_denied => nrel_main_idtf: [разворот запрещён] (* <- lang_ru;; *);;
+
+turn_denied => nrel_main_idtf: [turn denied] (* <- lang_en;; *);;
+
+
+turn_denied <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://turn_denied.png";;
+                                *);; 
+                *);;
+turn_denied 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается разворот, при этом поворот налево разрешается.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

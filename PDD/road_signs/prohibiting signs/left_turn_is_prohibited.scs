@@ -1,0 +1,29 @@
+sc_node_not_relation -> left_turn_is_prohibited;;
+
+left_turn_is_prohibited => nrel_main_idtf: [пповорот налево запрещён] (* <- lang_ru;; *);;
+
+left_turn_is_prohibited => nrel_main_idtf: [left turn is prohibited] (* <- lang_en;; *);;
+
+left_turn_is_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://left_turn_is_prohibited.png";;
+                                *);; 
+                *);;
+left_turn_is_prohibited 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается поворот налево, при этом разворот разрешается.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

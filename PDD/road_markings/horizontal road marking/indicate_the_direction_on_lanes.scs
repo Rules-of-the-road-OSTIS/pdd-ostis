@@ -1,0 +1,61 @@
+sc_node_not_relation -> indicate_the_direction_on_lanes;;
+
+indicate_the_direction_on_lanes => nrel_main_idtf: 
+	[обозначение направлений движения по полосам движения] (* <- lang_ru;; *);;
+
+indicate_the_direction_on_lanes => nrel_main_idtf: 
+	[indicate the direction on lanes] (* <- lang_en;; *);;
+
+indicate_the_direction_on_lanes <= nrel_using_constants:
+	{
+	traffic_lane;
+	roadway
+	};;
+
+indicate_the_direction_on_lanes <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение направлений движения по <sc_element sys_idtf="traffic_lane">полосам движения</sc_element>:
+<p>1)только прямо;</p>
+<p>2)только направо;</p>
+<p>3)налево, а также на разворот в случае нанесения разметки в крайней левой полосе движения в данном направлении;</p>
+<p>4)прямо и направо;</p>
+<p>5)прямо и налево, а также на разворот в случае нанесения разметки в крайней левой полосе движения в данном направлении;</p>
+<p>6)направо и налево, а также на разворот из крайней левой полосы в данном направлении;</p>
+<p>7)на ближайшую <sc_element sys_idtf="roadway">проезжую часть дороги</sc_element> поворот направо запрещен, на следующем пересечении – прямо и направо;</p>
+<p>8)на ближайшую <sc_element sys_idtf="roadway">проезжую часть дороги</sc_element> поворот налево запрещен, на следующем пересечении — прямо и налево, а также на разворот в случае нанесения разметки в крайней левой полосе движения в данном направлении;</p>
+<p>9)на ближайшую <sc_element sys_idtf="roadway">проезжую часть дороги</sc_element> поворот направо запрещен, на следующем пересечении — направо;</p>
+<p>10)на ближайшую <sc_element sys_idtf="roadway">проезжую часть дороги</sc_element> поворот налево запрещен, на следующем пересечении — налево, а также на разворот в случае нанесения разметки в крайней левой полосе движения в данном направлении;</p>
+<p>11)на разворот;</p>
+<p>12)прямо и на разворот.</p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+indicate_the_direction_on_lanes <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://indicate_the_direction_on_lanes1.png";
+                                                "file://indicate_the_direction_on_lanes2.png";
+                                                "file://indicate_the_direction_on_lanes3.png";
+                                                "file://indicate_the_direction_on_lanes4.png";
+                                                "file://indicate_the_direction_on_lanes5.png";
+                                                "file://indicate_the_direction_on_lanes6.png";
+                                                "file://indicate_the_direction_on_lanes7.png";
+                                                "file://indicate_the_direction_on_lanes8.png";
+                                                "file://indicate_the_direction_on_lanes9.png";
+                                                "file://indicate_the_direction_on_lanes10.png";
+                                                "file://indicate_the_direction_on_lanes11.png";
+                                                "file://indicate_the_direction_on_lanes12.png";;
+                                *);; 
+                *);;

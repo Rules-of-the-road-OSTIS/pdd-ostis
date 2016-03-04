@@ -1,0 +1,35 @@
+sc_node_not_relation -> sign_crosswalk;;
+      
+sign_crosswalk => nrel_main_idtf: [знак пешеходный переход] (* <- lang_ru;; *);;
+
+sign_crosswalk => nrel_main_idtf: [sign crosswalk] (* <- lang_en;; *);;
+sign_crosswalk <= nrel_using_constants:
+	{
+	roadway;
+	pedestrian
+	};;
+
+sign_crosswalk <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_crosswalk1.png";
+						"file://sign_crosswalk2.png";;
+                                *);; 
+                *);;
+sign_crosswalk <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знаки обозначают зону для перехода <sc_element sys_idtf="pedestrian">пешеходами</sc_element> <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

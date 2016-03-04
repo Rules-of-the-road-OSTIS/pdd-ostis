@@ -1,0 +1,37 @@
+sc_node_not_relation -> vehicle_operational_use;;
+
+vehicle_operational_use => nrel_main_idtf: 	[транспортное средство оперативного назначения] (* <- lang_ru;; *);;
+
+vehicle_operational_use => nrel_main_idtf: 	[vehicle operational use] (* <- lang_en;; *);;
+vehicle_operational_use <= nrel_using_constants:
+	{
+     vehicle
+	};;
+
+
+vehicle_operational_use <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Транспортное средство оперативного назначения</b> — <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, имеющее специальную цветографическую окраску и (или) световую и звуковую сигнализацию.
+<p>На транспортных средствах оперативного назначения используются маячки синего или синего и красного цветов. Также для привлечения внимания участников дорожного движения может подаваться специальный звуковой сигнал.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+vehicle_operational_use <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://vehicle_operational_use.jpg";;
+                                *);; 
+                *);;
+vehicle_operational_use <= nrel_strict_inclusion: chapter_1_general_provision;;
+vehicle_operational_use <= nrel_strict_inclusion: types_of_vehicles;;

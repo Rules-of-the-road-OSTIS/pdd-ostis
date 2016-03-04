@@ -1,0 +1,24 @@
+sc_node_not_relation -> heavy_and_or_large_vehicles;;
+
+heavy_and_or_large_vehicles => nrel_main_idtf: 	[тяжеловесное и (или) крупногабаритное транспортное средство] (* <- lang_ru;; *);;
+
+heavy_and_or_large_vehicles => nrel_main_idtf: 	[Heavy and (or) large vehicles] (* <- lang_en;; *);;
+heavy_and_or_large_vehicles <= nrel_using_constants:
+	{
+    vehicle
+	};;
+
+heavy_and_or_large_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Тяжеловесное и (или) крупногабаритное транспортное средство</b> — <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, максимальные весовые и (или) габаритные размеры которого превышают допустимые параметры, установленные для проезда по автомобильным дорогам общего пользования.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+heavy_and_or_large_vehicles <= nrel_strict_inclusion: chapter_1_general_provision;;

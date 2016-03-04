@@ -1,0 +1,26 @@
+sc_node_not_relation -> Invalid;;
+Invalid => nrel_main_idtf:[Инвалиды] (* <- lang_ru;; *);;
+Invalid => nrel_main_idtf:[Invalid] (* <- lang_en;; *);;
+Invalid <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Invalid.png";;
+                                *);; 
+                *);;
+Invalid	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> информирует, что стояночная площадка или ее часть отведена для стоянки транспортных средств с опознавательным знаком «Инвалид».] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

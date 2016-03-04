@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_59;;
+
+item_59 => nrel_main_idtf: [пункт 59] (* <- lang_ru;; *);;
+
+item_59 => nrel_main_idtf: [item 59] (* <- lang_en;; *);;
+
+item_59 <= nrel_using_constants:
+	{
+driver;
+vehicle
+	};;
+
+item_59 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> При перестроении, выезде на трамвайные пути, съезде с них <sc_element sys_idtf="driver"> водитель</sc_element> должен уступить дорогу <sc_element sys_idtf="vehicle"> транспортным средствам</sc_element>, движущимся попутно, без изменения их направления движения.
+При одновременном перестроении <sc_element sys_idtf="vehicle"> транспортных средств</sc_element>, движущихся попутно, <sc_element sys_idtf="driver"> водитель</sc_element> должен уступить дорогу <sc_element sys_idtf="vehicle"> транспортному средству</sc_element>, находящемуся справа. Этим правилом должен руководствоваться <sc_element sys_idtf="driver"> водитель</sc_element>, <sc_element sys_idtf="vehicle"> транспортное средство</sc_element> которого съезжает с трамвайных путей.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

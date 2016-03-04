@@ -1,0 +1,37 @@
+sc_node_not_relation -> crosswalk;;
+
+crosswalk => nrel_main_idtf: 	[пешеходный переход] (* <- lang_ru;; *);;
+
+crosswalk => nrel_main_idtf: 	[crosswalk] (* <- lang_en;; *);;
+
+crosswalk <= nrel_using_constants:
+	{
+	roadway;
+	pedesterian;
+	crosswalk
+	};;
+
+crosswalk <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Пешеходный переход</b> — участок <sc_element sys_idtf="roadway">проезжей части</sc_element>, предназначенный для движения <sc_element sys_idtf="pedestrian">пешеходов</sc_element> через проезжую часть дороги и обозначенный дорожными знаками «<sc_element sys_idtf="crosswalk">Пешеходный переход</sc_element>» и (или) горизонтальной дорожной разметкой.В качестве защитного элемента для пешеходов на пешеходных переходах могут быть оборудованы <sc_element sys_idtf="traffic_island">островки безопасности</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+crosswalk <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://crosswalk.jpg";;
+                                *);; 
+                *);;
+crosswalk <= nrel_strict_inclusion: chapter_1_general_provision;;

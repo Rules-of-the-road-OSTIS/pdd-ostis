@@ -1,0 +1,35 @@
+sc_node_not_relation -> 2.2_markup;;
+
+2.2_markup => nrel_main_idtf: [разметка 2.2] (* <- lang_ru;; *);;
+2.2_markup => nrel_main_idtf: [2.2 markup] (* <- lang_en;; *);;
+
+2.2_markup <= nrel_using_constants:
+	{
+	viaduct;
+	overpass
+	};;
+
+2.2_markup <- rrel_key_sc_element:...
+		(*	
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Обозначает нижний край пролетного строения мостов, <sc_element sys_idtf="viaduct">путепроводов</sc_element> и <sc_element sys_idtf="overpass">эстакад</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+
+2.2_markup <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://2.2_markup.png";;
+                                *);; 
+                *);;

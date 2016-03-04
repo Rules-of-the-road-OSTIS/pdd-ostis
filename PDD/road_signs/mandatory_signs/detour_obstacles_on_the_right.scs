@@ -1,0 +1,38 @@
+sc_node_not_relation -> detour_obstacles_on_the_right;;
+
+detour_obstacles_on_the_right => nrel_main_idtf: [объезд препятствия справа] (* <- lang_ru;; *);;
+detour_obstacles_on_the_right => nrel_main_idtf: [detour obstacles on the right] (* <- lang_en;; *);;
+
+detour_obstacles_on_the_right <= nrel_using_constants:
+	{
+	traffic_island;
+	obstacle_to_traffic;
+	roadway
+	};;
+
+detour_obstacles_on_the_right <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://detour_obstacles_on_the_right.png";;
+                                *);; 
+                *);;
+
+
+detour_obstacles_on_the_right <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>объезд препятствия справа</b> - Объезд <sc_element sys_idtf="traffic_island">островков безопасности</sc_element> и различного рода <sc_element sys_idtf="obstacle_to_traffic">препятствий для дорожного движения</sc_element>,
+ находящихся на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>, разрешается только со стороны, указанной стрелкой.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

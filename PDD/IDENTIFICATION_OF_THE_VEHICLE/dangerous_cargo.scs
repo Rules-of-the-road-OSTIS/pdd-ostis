@@ -1,0 +1,19 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+       
+dangerous_cargo => nrel_main_idtf: [опасный груз] (* <- lang_ru;; *);;
+
+dangerous_cargo => nrel_main_idtf: [dangerous cargo] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://dangerous_cargo.png";;
+                                *);; 
+                *);;
+
+dangerous_cargo <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;
+

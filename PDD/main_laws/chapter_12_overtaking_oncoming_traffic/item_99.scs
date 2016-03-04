@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_99;;
+item_99 => nrel_main_idtf: [пункт 99] (* <- lang_ru;; *);;
+
+item_99 => nrel_main_idtf: [item 99] (* <- lang_en;; *);;
+
+item_99 <= nrel_using_constants:
+{
+vehicle;
+obstacle_to_traffic;
+give_way_do_not_have_the_benefits
+};;
+
+item_99 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>99. На уклонах, обозначенных дорожными знаками «Крутой спуск», «Крутой подъем», при наличии <sc_element sys_idtf="obstacle_to_traffic"> препятствия для дорожного движения </sc_element> <sc_element sys_idtf="give_way_do_not_have_the_benefits"> уступить дорогу </sc_element> обязан водитель <sc_element sys_idtf="vehicle"> транспортного средства </sc_element>, движущегося на спуск.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

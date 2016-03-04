@@ -1,0 +1,36 @@
+sc_node_not_relation -> emission_of_rubble;;
+        
+emission_of_rubble => nrel_main_idtf: [выброс щебня] (* <- lang_ru;; *);;
+emission_of_rubble => nrel_main_idtf: [emission of rubble] (* <- lang_en;; *);;
+
+emission_of_rubble <= nrel_using_constants:
+	{
+	road;
+	improved_coverage;
+	vehicle
+	};;
+
+emission_of_rubble <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://emission_of_rubble.png";;
+                                *);; 
+                *);;
+				
+emission_of_rubble <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Участок <sc_element sys_idtf="road">дороги</sc_element> с <sc_element sys_idtf="improved_coverage">усовершенствованным покрытием</sc_element>, на котором возможен выброс щебня из-под колес <sc_element sys_idtf="vehicle">транспортных средств</sc_element>.]
+                         (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

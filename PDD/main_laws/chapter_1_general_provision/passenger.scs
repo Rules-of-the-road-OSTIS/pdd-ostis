@@ -1,0 +1,25 @@
+sc_node_not_relation -> passenger;;
+
+passenger => nrel_main_idtf: 	[пассажир] (* <- lang_ru;; *);;
+
+passenger => nrel_main_idtf: 	[passenger] (* <- lang_en;; *);;
+
+passenger <= nrel_using_constants:
+	{
+	vehicle
+	};;
+
+passenger <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Пассажир</b> — епричастное к управлению <sc_element sys_idtf="vehicle">транспортным средством</sc_element> физическое лицо, находящееся в (на) транспортном средстве, а также входящее (садящееся) в (на) транспортное средство или сходящее (высаживающееся) с транспортного средства.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+passenger <= nrel_strict_inclusion: chapter_1_general_provision;;

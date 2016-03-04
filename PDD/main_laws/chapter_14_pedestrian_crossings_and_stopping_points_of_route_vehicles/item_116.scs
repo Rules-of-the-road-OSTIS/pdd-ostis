@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_116;;
+item_116 => nrel_main_idtf: [пункт 116] (* <- lang_ru;; *);;
+
+item_116 => nrel_main_idtf: [item 116] (* <- lang_en;; *);;
+
+item_116 <= nrel_using_constants:
+{
+crosswalk;
+give_way_do_not_have_the_benefits;
+pedestrian
+};;
+
+item_116 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>116. При подъезде к нерегулируемому <sc_element sys_idtf="crosswalk">пешеходному переходу</sc_element> водитель должен двигаться со скоростью, которая позволит при необходимости <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="pedestrian">пешеходам</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,42 @@
+sc_node_not_relation -> item_17;;
+
+item_17 => nrel_main_idtf: [пункт 17] (* <- lang_ru;; *);;
+
+item_17 => nrel_main_idtf: [item 17] (* <- lang_en;; *);;
+item_17 <= nrel_using_constants:
+	{
+	pedestrian;
+	pavement;
+	footpath;
+	bike_lane;
+	shoulder;
+	road;
+	roadway;
+	vehicle;
+	the_dark;
+	intersection;
+	obstacle_to_traffic;
+	pedestrian_must
+	};;
+
+item_17 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><sc_element sys_idtf="pedestrian">Пешеход</sc_element> обязан:</p>
+<p>1)двигаться по <sc_element sys_idtf="pavement">тротуару</sc_element>, <sc_element sys_idtf="footpath">пешеходной</sc_element> или <sc_element sys_idtf="bike_lane">велосипедной дорожке</sc_element>, а при их отсутствии — по <sc_element sys_idtf="shoulder">обочине</sc_element>.</p>
+<p>В случае отсутствия указанных элементов <sc_element sys_idtf="road">дороги</sc_element> или невозможности движения пешеходов по ним допускается движение пешехода по краю ее <sc_element sys_idtf="roadway">проезжей части</sc_element> навстречу движению <sc_element sys_idtf="vehicle">транспортных средств</sc_element>.</p>
+<p>При движении по краю проезжей части дороги в <sc_element sys_idtf="the_dark">темное время суток</sc_element> пешеход должен обозначить себя световозвращающим элементом (элементами). Световозвращающие характеристики данных элементов устанавливаются техническими нормативными правовыми актами;</p>
+<p>2)переходить (пересекать) проезжую часть дороги по подземному, надземному пешеходным переходам, а при их отсутствии, убедившись, что выход на проезжую часть дороги безопасен, — по наземному пешеходному переходу (при отсутствии наземного пешеходного перехода — на <sc_element sys_idtf="intersection">перекрестке</sc_element> по линии тротуаров или обочин);</p>
+<p>3)при отсутствии в пределах видимости пешехода подземного, надземного, наземного пешеходных переходов и перекрестка переходить (пересекать) проезжую часть дороги по кратчайшей траектории на участке, где дорога хорошо просматривается в обе стороны, убедившись, что выход на проезжую часть дороги безопасен и своими действиями пешеход не создаст <sc_element sys_idtf="obstacle_to_traffic">препятствия для движения</sc_element> транспортных средств.</p>
+<p>При пересечении проезжей части дороги вне подземного, надземного, наземного пешеходных переходов и перекрестка в темное время суток пешеходу рекомендуется обозначить себя световозвращающим элементом (элементами).</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+item_17 <= nrel_strict_inclusion: chapter_4_rights_and_responsibilities_of_pedestrians;;

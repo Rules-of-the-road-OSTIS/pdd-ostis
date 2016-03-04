@@ -1,0 +1,34 @@
+sc_node_not_relation -> main_road;;
+
+main_road => nrel_main_idtf: 	[главная дорога] (* <- lang_ru;; *);;
+
+main_road => nrel_main_idtf: 	[main road] (* <- lang_en;; *);;
+main_road <= nrel_using_constants:
+	{
+     road;
+     sign_main_road;
+     intersection_with_secondary_road;
+     abutting_a_secondary_road;
+     highway;
+     road_car;
+     improved_coverage;
+     adjacent_territory;
+     floor_area;
+     intersection
+	};;
+
+
+main_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Главная дорога</b> — <sc_element sys_idtf="road">дорога</sc_element> , обозначенная дорожными знаками «<sc_element sys_idtf="sign_main_road">Главная дорога</sc_element>», «<sc_element sys_idtf="intersection_with_secondary_road">Пересечение со второстепенной дорогой</sc_element>», «<sc_element sys_idtf="abutting_a_secondary_road">Примыкание второстепенной дороги</sc_element>», «<sc_element sys_idtf="highway">Автомагистраль</sc_element>» или «<sc_element sys_idtf="road_car">Дорога для автомобилей</sc_element>», по отношению к пересекаемой (примыкающей), дорога с <sc_element sys_idtf="improved_coverage">усовершенствованным покрытием</sc_element> по отношению к дороге без такого покрытия, дорога с гравийным покрытием по отношению к грунтовой, любая дорога по отношению к выездам с <sc_element sys_idtf="adjacent_territory">прилегающих территорий</sc_element> или <sc_element sys_idtf="floor_area">жилых зон</sc_element>. Наличие на второстепенной дороге непосредственно перед <sc_element sys_idtf="intersection">перекрестком</sc_element> участка с покрытием (усовершенствованным или гравийным) не делает ее равной по значению с пересекаемой.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+main_road <= nrel_strict_inclusion: chapter_1_general_provision;;

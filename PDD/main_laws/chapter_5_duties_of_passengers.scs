@@ -1,0 +1,18 @@
+sc_node_not_relation -> chapter_5_duties_of_passengers;;
+        
+chapter_5_duties_of_passengers => nrel_main_idtf: [Глава 5. Обязанности пассажиров] (* <- lang_ru;; *);;
+
+chapter_5_duties_of_passengers => nrel_main_idtf: [Chapter 5. Duties of passengers] (* <- lang_en;; *);;
+
+chapter_5_duties_of_passengers <= nrel_section_decomposition:
+	{
+        	item_23
+		(*
+		=> nrel_section_base_order: 
+			item_24;;
+		*);
+		item_24
+
+	};;
+
+

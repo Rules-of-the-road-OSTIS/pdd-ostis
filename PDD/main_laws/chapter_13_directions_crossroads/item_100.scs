@@ -1,0 +1,32 @@
+sc_node_not_relation -> item_100;;
+item_100 => nrel_main_idtf: [пункт 100] (* <- lang_ru;; *);;
+
+item_100 => nrel_main_idtf: [item 100] (* <- lang_en;; *);;
+
+item_100 <= nrel_using_constants:
+{
+pedestrian;
+roadway;
+crosswalk;
+pavement;
+shoulder;
+bicycle;
+track_riders;
+bike_lane;
+give_way_do_not_have_the_benefits
+};;
+
+item_100 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>100. При повороте налево или направо водитель обязан <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="pedestrian"> пешеходам </sc_element> , переходящим (пересекающим) <sc_element sys_idtf="roadway"> проезжую часть дороги </sc_element> (по <sc_element sys_idtf="crosswalk"> пешеходному переходу </sc_element> , а при его отсутствии по линии <sc_element sys_idtf="pavement"> тротуаров </sc_element> или <sc_element sys_idtf="shoulder"> обочин </sc_element>), на которую он поворачивает, а также <sc_element sys_idtf="bicycle"> велосипедистам </sc_element> и всадникам, пересекающим ее соответственно по <sc_element sys_idtf="bike_lane"> велосипедной дорожке </sc_element> и <sc_element sys_idtf="track_riders"> дорожке для всадников </sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

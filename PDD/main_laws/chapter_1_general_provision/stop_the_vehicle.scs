@@ -1,0 +1,36 @@
+sc_node_not_relation -> stop_the_vehicle;;
+
+stop_the_vehicle => nrel_main_idtf: [остановка транспортного средства] (* <- lang_ru;; *);;
+
+stop_the_vehicle => nrel_main_idtf: [stop the vehicle] (* <- lang_en;; *);;
+
+stop_the_vehicle <= nrel_using_constants:
+	{
+	vehicle;
+	passenger
+	};;
+
+stop_the_vehicle <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+			(*
+					-> rrel_example:
+					 [<b>Остановка транспортного средства</b> — преднамеренное прекращение движения <sc_element sys_idtf="vehicle">транспортного средства</sc_element> на время до 5 минут, а также более чем на 5 минут, если это необходимо для посадки (высадки) <sc_element sys_idtf="passenger">пассажиров</sc_element>либо загрузки (разгрузки) транспортного средства.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+stop_the_vehicle <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://stop_the_vehicle.png";;
+                                *);; 
+                *);;
+stop_the_vehicle <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,49 @@
+sc_node_not_relation -> signs_more_informations;;
+      
+signs_more_informations => nrel_main_idtf: [Знаки дополнительной информации (таблички)] (* <- lang_ru;; *);;
+
+signs_more_informations => nrel_main_idtf: [Signs more information] (* <- lang_en;; *);;
+
+signs_more_informations <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Знаки дополнительной информации (таблички) уточняют или ограничивают действие знаков, с которыми они применены.]
+
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+signs_more_informations <= nrel_section_decomposition:
+{
+	Application_markup;
+	Besides_the_invalids;
+	Classes_of_dangerous_goods;
+	Coverage;
+	Days_of_the_week;
+	Direction_of_action;
+	Duration;
+	Emergency_assistance;
+	Evacuator;
+	Hazard;
+	Invalid;
+	Kind_of_vehicle;
+	Limit_of_duration;
+	Number_of_dangerous_turns;
+	Paid_services;
+	Place_inspection_of_vehicles;
+	Saturdays_Sundays_and_holidays;
+	slippery_strip_rolling;
+	The_direction_of_the_main_road;
+	The_distance_to_the_object;
+	The_method_of_setting_the_vehicle;
+	Traffic_line;
+	Visually_impaired;
+	Weight_limit;
+	Wet_grounds;
+	Working_days
+};; 

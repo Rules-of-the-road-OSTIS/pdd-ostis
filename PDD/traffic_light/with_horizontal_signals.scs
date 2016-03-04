@@ -1,0 +1,15 @@
+sc_node_not_relation -> with_horizontal_signals;;
+with_horizontal_signals => nrel_main_idtf: 
+	[с горизонтальным расположением сигналов] (* <- lang_ru;; *);;
+with_horizontal_signals => nrel_main_idtf: 
+	[with horizontal signals] (* <- lang_en;; *);;
+with_horizontal_signals <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://with_horizontal_signals.png";;
+                                *);; 
+                *);;

@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_159;;
+item_159=> nrel_main_idtf: [пункт 159] (* <- lang_ru;; *);;
+
+item_159 => nrel_main_idtf: [item 159] (* <- lang_en;; *);;
+
+item_159 <= nrel_using_constants:
+{
+road;
+the_dark;
+the_lack_of_visibility_of_the_road;
+horse_drawn_vehicle
+};;
+
+item_159 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>159. При движении по <sc_element sys_idtf="road">дороге</sc_element> в <sc_element sys_idtf="the_dark">темное время суток</sc_element> и (или) при ее <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости</sc_element> на <sc_element sys_idtf="horse_drawn_vehicle">гужевом транспортном средстве</sc_element> спереди должен быть включен фонарь, излучающий белый свет, сзади — фонарь, излучающий красный свет.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_119;;
+item_119 => nrel_main_idtf: [пункт 119] (* <- lang_ru;; *);;
+
+item_119 => nrel_main_idtf: [item 119] (* <- lang_en;; *);;
+
+item_119 <= nrel_using_constants:
+{
+crosswalk;
+give_way_do_not_have_the_benefits;
+pedestrian;
+stop_the_vehicle;
+road_user
+};;
+
+item_119 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>119. Везде, в том числе и вне <sc_element sys_idtf="crosswalk">пешеходных переходов</sc_element>, водитель должен <sc_element sys_idtf="give_way_do_not_have_the_benefits">уступить дорогу</sc_element> <sc_element sys_idtf="pedestrian">пешеходу</sc_element> - инвалиду по зрению, подающему сигнал тростью белого цвета либо тростью с покрытием повышенной видимости, в том числе со световозвращающим элементом (элементами). Водитель должен быть готов снизить скорость движения или <sc_element sys_idtf="stop_the_vehicle">остановиться</sc_element>, чтобы исключить вероятность наезда на таких <sc_element sys_idtf="road_user">участников дорожного движения</sc_element>, а также детей и <sc_element sys_idtf="pedestrian">пешеходов</sc_element> с видимыми нарушениями опорно-двигательного аппарата.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,29 @@
+sc_node_not_relation -> traffic_lane;;
+
+traffic_lane => nrel_main_idtf: 	[полоса движения] (* <- lang_ru;; *);;
+
+traffic_lane => nrel_main_idtf: 	[traffic lane] (* <- lang_en;; *);;
+traffic_lane <= nrel_using_constants:
+	{
+     roadway;
+     single_track_vehicle;
+     horizontal_road_marking
+	};;
+
+
+traffic_lane <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Полоса движения</b> — любая из продольных полос <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>, обозначенная или не обозначенная <sc_element sys_idtf="horizontal_road_marking">горизонтальной дорожной разметкой</sc_element> и имеющая ширину, достаточную для движения <sc_element sys_idtf="vehicle">транспортных средств</sc_element> (за исключением <sc_element sys_idtf="single_track_vehicle">одноколейных</sc_element>) в один ряд.
+Количество полос движения определяется <sc_element sys_idtf="road_signs">дорожными знаками</sc_element>, <sc_element sys_idtf="road_markings">дорожной разметкой</sc_element>, а при их отсутствии — <sc_element sys_idtf="driver">самими водителями</sc_element> с учетом ширины <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>, габаритов транспортных средств (кроме одноколейных) и необходимых боковых интервалов между ними. Полосы движения попутного направления нумеруются справа налево, исключая вспомогательные полосы (полосы разгона и торможения).
+Дорога может включать в себя несколько проезжих частей, которые в таком случае разделяются такими элементами как <sc_element sys_idtf="separation_zone">разделительные зоны</sc_element> и <sc_element sys_idtf="dividing_line">разделительные полосы</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+traffic_lane <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,38 @@
+sc_node_not_relation -> sign_footpath;;
+
+sign_footpath => nrel_main_idtf: [знак пешеходная дорожка] (* <- lang_ru;; *);;
+
+sign_footpath => nrel_main_idtf: [sign footpath] (* <- lang_en;; *);;
+
+sign_footpath <= nrel_using_constants:
+	{
+	pedestrian;
+	bike_lane;
+	bicycle;
+	obstacle_to_traffic
+	};
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_footpath.png";;
+                                *);; 
+                *);;
+
+sign_footpath <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>знак пешеходная дорожка</b> —  Разрешается движение только <sc_element sys_idtf="pedestrian">пешеходам</sc_element>, а при отсутствии <sc_element sys_idtf="bike_lane">велосипедной дорожки</sc_element> — и на <sc_element sys_idtf="bicycle">велосипедах</sc_element>, при этом <sc_element sys_idtf="bicycle">велосипедисты</sc_element> не должны создавать <sc_element sys_idtf="obstacle_to_traffic">препятствий для движения</sc_element> <sc_element sys_idtf="pedestrian">пешеходов</sc_element>. В нижней части знака может быть дополнительно нанесен силуэт <sc_element sys_idtf="bicycle">велосипеда</sc_element>.] 
+                        (*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;

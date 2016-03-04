@@ -1,0 +1,7 @@
+sc_node_norole_relation -> nrel_access;;
+
+nrel_access => nrel_main_idtf:
+	[доступ*] 
+	(* <- lang_ru;; *);
+	[access*]
+	(* <- lang_en;;	*);;

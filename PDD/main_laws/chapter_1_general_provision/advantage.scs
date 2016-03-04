@@ -1,0 +1,25 @@
+sc_node_not_relation -> advantage;;
+
+advantage => nrel_main_idtf: 	[преимущество] (* <- lang_ru;; *);;
+
+advantage => nrel_main_idtf: 	[advantage] (* <- lang_en;; *);;
+advantage <= nrel_using_constants:
+	{
+     road_user
+	};;
+
+
+advantage <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Преимущество</b> — право на первоочередное движение в намеченном направлении по отношению к другим <sc_element sys_idtf="road_user">участникам дорожного движения</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+advantage <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,8 @@
+sc_node_not_relation -> vehicles_for_collection_and_transportation_of_cash_proceeds_of_values_provided_that_the_failure_to_comply_with_this_sign_does_not_create_congestion;;
+
+vehicles_for_collection_and_transportation_of_cash_proceeds_of_values_provided_that_the_failure_to_comply_with_this_sign_does_not_create_congestion => nrel_main_idtf: 	[автомобили для инкассации денежной выручки и перевозки ценностей при условии, что невыполнение требований этого знака не создаст затора] (* <- lang_ru;; *);;
+
+vehicles_for_collection_and_transportation_of_cash_proceeds_of_values_provided_that_the_failure_to_comply_with_this_sign_does_not_create_congestion => nrel_main_idtf: 	[vehicles for collection and transportation of cash proceeds of values provided that the failure to comply with this sign does not create congestion] (* <- lang_en;; *);;
+
+vehicles_for_collection_and_transportation_of_cash_proceeds_of_values_provided_that_the_failure_to_comply_with_this_sign_does_not_create_congestion <= nrel_strict_inclusion: car;;
+vehicles_for_collection_and_transportation_of_cash_proceeds_of_values_provided_that_the_failure_to_comply_with_this_sign_does_not_create_congestion <= nrel_strict_inclusion: types_of_vehicles;;

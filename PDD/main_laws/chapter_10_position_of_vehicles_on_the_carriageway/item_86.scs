@@ -1,0 +1,33 @@
+sc_node_not_relation -> item_86;;
+
+item_86 => nrel_main_idtf: [пункт 86] (* <- lang_ru;; *);;
+
+item_86 => nrel_main_idtf: [item 86] (* <- lang_en;; *);;
+
+item_86 <= nrel_using_constants:
+	{
+road;
+organized_pedestrian_column;
+overtaking;
+driver;
+locality;
+vehicle
+
+	};;
+
+item_86 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  На <sc_element sys_idtf="road"> дороге</sc_element> вне <sc_element sys_idtf=" locality"> населенного пункта</sc_element> <sc_element sys_idtf="driver"> водитель</sc_element> <sc_element sys_idtf="vehicle"> транспортного средства</sc_element> длиной более 10 метров или скорость движения которого не должна превышать 40 км/ч, либо которое по техническим причинам не может развивать более высокую скорость движения по сравнению с указанной, обязан поддерживать между управляемым им транспортным средством и движущимся впереди транспортным средством дистанцию, позволяющую обгоняющим их транспортным средствам беспрепятственно перестроиться на ранее занимаемую полосу движения.<\p>
+<p>Это правило не действует в случаях, когда водители указанных транспортных средств совершают <sc_element sys_idtf="overtaking"> обгон</sc_element> или готовятся к нему, а также при движении в колонне из трех и более <sc_element sys_idtf="vehicle"> транспортных средств</sc_element>, обозначенных опознавательными знаками «Колонна», и в <sc_element sys_idtf="organized_pedestrian_column"> организованной транспортной колонне</sc_element>.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_207_1;;
+
+item_207_1 => nrel_main_idtf: [пункт 207_1] (* <- lang_ru;; *);;
+
+item_207_1 => nrel_main_idtf: [item_207_1] (* <- lang_en;; *);;
+
+item_207_1 <= nrel_using_constants:
+	{
+	bus;
+	car;
+	malfunction;
+	chapter_5_wheels_and_tires
+	};;
+
+item_207_1 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[При участии в дорожном движении с 1 декабря по 1 марта автомобили с технически допустимой общей массой до 3,5 тонны включительно, легковые и грузопассажирские автомобили с технически допустимой общей массой свыше 3,5 тонны, а также автобусы с технически допустимой общей массой до 5 тонн должны быть оборудованы зимними шинами. Зимние шины устанавливаются на всех колесах транспортного средства и должны соответствовать требованиям части второй пункта <sc_element sys_idtf="chapter_5_wheels_and_tires">25</sc_element> <sc_element sys_idtf="malfunction">приложения 4</sc_element> к настоящим Правилам.
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

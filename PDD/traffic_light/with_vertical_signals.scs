@@ -1,0 +1,15 @@
+sc_node_not_relation -> with_vertical_signals;;
+with_vertical_signals => nrel_main_idtf: 
+	[с вертикальным расположением сигналов] (* <- lang_ru;; *);;
+with_vertical_signals => nrel_main_idtf: 
+	[with vertical signals] (* <- lang_en;; *);;
+with_vertical_signals <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://with_vertical_signals.png";;
+                                *);; 
+                *);;

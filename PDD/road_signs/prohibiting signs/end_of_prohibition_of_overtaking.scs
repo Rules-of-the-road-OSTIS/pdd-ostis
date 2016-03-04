@@ -1,0 +1,30 @@
+sc_node_not_relation -> end_of_prohibition_of_overtaking;;
+       
+end_of_prohibition_of_overtaking => nrel_main_idtf: [конец зоны запрещения обгона] (* <- lang_ru;; *);;
+
+end_of_prohibition_of_overtaking => nrel_main_idtf: [end of prohibition of overtaking] (* <- lang_en;; *);;
+
+end_of_prohibition_of_overtaking <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://end_of_prohibition_of_overtaking.png";
+                                                "file://end_of_prohibition_of_overtaking2.png";;
+                                *);; 
+                *);;
+end_of_prohibition_of_overtaking 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Отменяет действие знаков "обгон запрещён".] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

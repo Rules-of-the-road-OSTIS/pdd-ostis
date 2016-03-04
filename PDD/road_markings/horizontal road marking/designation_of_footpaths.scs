@@ -1,0 +1,39 @@
+sc_node_not_relation -> designation_of_footpaths;;
+
+designation_of_footpaths => nrel_main_idtf: 
+	[обозначение пешеходных дорожек] (* <- lang_ru;; *);;
+
+designation_of_footpaths => nrel_main_idtf: 
+	[designation of footpaths] (* <- lang_en;; *);;
+
+designation_of_footpaths <= nrel_using_constants:
+	{
+	footpath;
+	traffic_lane;
+	pedestrian
+	};;
+
+designation_of_footpaths <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Применяется для обозначения <sc_element sys_idtf="footpath">пешеходных дорожек</sc_element> и располагается по оси <sc_element sys_idtf="traffic_lane">полосы движения</sc_element> <sc_element sys_idtf="pedestrian">пешеходов</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_footpaths <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_footpaths.png";;
+                                *);; 
+                *);;

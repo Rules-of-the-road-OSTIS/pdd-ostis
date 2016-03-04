@@ -1,0 +1,31 @@
+sc_node_not_relation -> route_vehicles;;
+
+route_vehicles => nrel_main_idtf: 	[маршрутное транспортное средство] (* <- lang_ru;; *);;
+
+route_vehicles => nrel_main_idtf: 	[route vehicles] (* <- lang_en;; *);;
+route_vehicles <= nrel_using_constants:
+	{
+     motor_vehicle;
+     bus;
+     trolleybus;
+     tram;
+     vehicle
+	};;
+
+
+route_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Маршрутное транспортное средство</b> — <sc_element sys_idtf="motor_vehicle">механическое транспортное средство</sc_element> (<sc_element sys_idtf="bus">автобус</sc_element>, <sc_element sys_idtf="trolleybus">троллейбус</sc_element>, <sc_element sys_idtf="tram">трамвай</sc_element>, иное <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, осуществляющее движение в регулярном обычном, скоростном сообщении, в том числе экспрессном), движущееся по установленному маршруту с обозначенными остановочными пунктами.
+<p>К маршрутным транспортным средствам не относятся экскурсионные, туристические, служебные автобусы.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+route_vehicles <= nrel_strict_inclusion: chapter_1_general_provision;;
+route_vehicles <= nrel_strict_inclusion: types_of_vehicles;;

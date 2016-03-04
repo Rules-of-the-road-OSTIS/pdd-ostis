@@ -1,0 +1,18 @@
+sc_node_not_relation -> IDENTIFICATION_OF_THE_VEHICLE;;
+      
+sign_column => nrel_main_idtf: [знак колонна] (* <- lang_ru;; *);;
+
+sign_column => nrel_main_idtf: [sign_column] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_column.png";;
+                                *);; 
+                *);;
+
+sign_column <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;

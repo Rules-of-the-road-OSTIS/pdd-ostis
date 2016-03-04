@@ -1,0 +1,32 @@
+sc_node_not_relation -> item_30;;
+
+item_30 => nrel_main_idtf: [пункт 30] (* <- lang_ru;; *);;
+
+item_30 => nrel_main_idtf: [item 30] (* <- lang_en;; *);;
+item_30 <= nrel_using_constants:
+	{
+	driver;
+	vehicle;
+	road;
+	traffic_safety;
+	road_user;
+	self_propelled;
+	advantage
+	};;
+
+item_30 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><sc_element sys_idtf="driver">Водители</sc_element> <sc_element sys_idtf="vehicle">транспортных средств</sc_element> дорожно-эксплуатационной службы, оборудованных маячком оранжевого цвета, при его включении в ходе выполнения работ на <sc_element sys_idtf="road">дороге</sc_element> могут отступать от требований дорожных знаков и дорожной разметки, а также подпункта 9.8 пункта 9, пунктов 78–80, 82 и подпунктов 131.1–131.5 пункта 131 настоящих Правил при условии обеспечения <sc_element sys_idtf="traffic_safety">безопасности дорожного движения</sc_element>. <sc_element sys_idtf="road_user">Участники дорожного движения</sc_element> не должны препятствовать их работе.</p>
+<p>Маячок оранжевого цвета, установленный на других транспортных средствах и <sc_element sys_idtf="self_propelled">самоходных машинах</sc_element>, не дает <sc_element sys_idtf="advantage">преимущества</sc_element> в движении и служит для привлечения внимания и предупреждения участников дорожного движения о возможной опасности.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

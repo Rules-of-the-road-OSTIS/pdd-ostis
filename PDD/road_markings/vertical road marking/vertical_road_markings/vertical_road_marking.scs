@@ -1,0 +1,48 @@
+sc_node_not_relation -> vertical_road_marking;;
+
+vertical_road_marking => nrel_main_idtf: [Вертикальная дорожная разметка] (* <- lang_ru;; *);;
+vertical_road_marking => nrel_main_idtf: [Vertical road marking] (* <- lang_en;; *);;
+
+vertical_road_marking <= nrel_using_constants:
+	{
+	road
+	};;
+
+vertical_road_marking <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://2.1.1_2.1.3_markup.png";
+						                        "file://2.2_markup.png";	
+						                        "file://2.3_markup.png";
+						                        "file://2.4_markup.png";
+						                        "file://2.6(1)_markup.png";;
+                                *);; 
+                *);;
+vertical_road_marking <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[<b>Вертикальная дорожная разметка</b> — обозначает элементы дорожных сооружений, оборудования <sc_element sys_idtf="road">дорог</sc_element> и служит средством зрительного ориентирования на дорогах.]
+				 (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+vertical_road_marking <= nrel_section_decomposition:
+{
+	2.1.1_2.1.3_markup;
+	2.2_markup;
+	2.3_markup;
+	2.4.1_markup;
+	2.4.2_markup;
+	2.4.3_markup;
+	2.5_markup;
+	2.6_markup
+};; 

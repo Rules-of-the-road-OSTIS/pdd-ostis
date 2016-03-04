@@ -1,0 +1,36 @@
+sc_node_not_relation -> traffic_signalization;;
+       
+traffic_signalization => nrel_main_idtf: [светофорное регулирование] (* <- lang_ru;; *);;
+traffic_signalization => nrel_main_idtf: [traffic signalization] (* <- lang_en;; *);;
+
+traffic_signalization <= nrel_using_constants:
+	{
+	intersection;
+	crosswalk;
+	road
+	};;
+
+traffic_signalization <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+ 						"file://traffic_signalization.png";;
+                                *);; 
+                *);;
+				
+traffic_signalization <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предупреждает о приближении к <sc_element sys_idtf="intersection">перекрестку</sc_element>, <sc_element sys_idtf="crosswalk">пешеходному переходу</sc_element> или участку <sc_element sys_idtf="road">дороги</sc_element>, движение на которых регулируется светофором.]
+                         (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

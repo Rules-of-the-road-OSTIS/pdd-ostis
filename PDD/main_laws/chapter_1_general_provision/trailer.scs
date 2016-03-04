@@ -1,0 +1,40 @@
+sc_node_not_relation -> trailer;;
+
+trailer => nrel_main_idtf: 	[прицеп] (* <- lang_ru;; *);;
+
+trailer => nrel_main_idtf: 	[trailer] (* <- lang_en;; *);;
+trailer <= nrel_using_constants:
+	{
+     vehicle;
+     motor_vehicle
+	};;
+
+
+trailer <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p><b>Прицеп</b> — <sc_element sys_idtf="vehicle">транспортное средство</sc_element>, предназначенное для движения в составе с <sc_element sys_idtf="motor_vehicle">механическим транспортным средством</sc_element>.</p>
+<p>К прицепам относятся также полуприцепы и прицепы-роспуски.</p>
+<p>К прицепам не относятся буксируемые (в т. ч. неисправные) механические транспортные средства.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+trailer <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://trailer1.jpg";
+						"file://trailer2.jpg";;
+                                *);; 
+                *);;
+trailer <= nrel_strict_inclusion: chapter_1_general_provision;;
+trailer <= nrel_strict_inclusion: types_of_vehicles;;

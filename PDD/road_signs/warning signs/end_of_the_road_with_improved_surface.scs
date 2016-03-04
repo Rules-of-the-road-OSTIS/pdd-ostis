@@ -1,0 +1,35 @@
+sc_node_not_relation -> end_of_the_road_with_improved_surface;;
+      
+end_of_the_road_with_improved_surface => nrel_main_idtf: [конец дороги с усовершенствованным покрытием] (* <- lang_ru;; *);;
+end_of_the_road_with_improved_surface => nrel_main_idtf: [end of the road with improved surface] (* <- lang_en;; *);;
+
+end_of_the_road_with_improved_surface <= nrel_using_constants:
+	{
+	road;
+	improved_coverage
+	};;
+
+end_of_the_road_with_improved_surface <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://end_of_the_road_with_improved_surface.png";;
+                                *);; 
+                *);;
+				
+end_of_the_road_with_improved_surface <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Предупреждает о переходе <sc_element sys_idtf="road">дороги</sc_element> с <sc_element sys_idtf="improved_coverage">усовершенствованным покрытием</sc_element> в гравийную или грунтовую дорогу.]
+                        (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

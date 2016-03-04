@@ -1,0 +1,33 @@
+sc_node_not_relation -> sign_movement_is_prohibited;;
+    
+sign_movement_is_prohibited => nrel_main_idtf: [знак движение запрещено] (* <- lang_ru;; *);;
+
+sign_movement_is_prohibited => nrel_main_idtf: [sign movement is prohibited] (* <- lang_en;; *);;
+sign_movement_is_prohibited <= nrel_using_constants:
+{
+vehicle
+};;
+sign_movement_is_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_movement_is_prohibited.png";;
+                                *);; 
+                *);;
+sign_movement_is_prohibited <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение <sc_element sys_idtf="vehicle">транспортных средств</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

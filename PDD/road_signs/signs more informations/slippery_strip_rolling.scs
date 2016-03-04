@@ -1,0 +1,30 @@
+sc_node_not_relation -> slippery_strip_rolling;;
+slippery_strip_rolling => nrel_main_idtf:[Скользкая полоса наката] (* <- lang_ru;; *);;
+slippery_strip_rolling => nrel_main_idtf:[Slippery strip rolling] (* <- lang_en;; *);;
+slippery_strip_rolling <= nrel_using_constants:
+	{
+	roadway	
+	};;
+slippery_strip_rolling <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://slippery_strip_rolling.png";;
+                                *);; 
+                *);;
+slippery_strip_rolling 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  устанавливается со знаком "дорожные работы" и информирует о возможном изменении коэффициента сцепления по ширине <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>проезжей части дороги.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

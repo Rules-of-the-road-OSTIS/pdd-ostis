@@ -1,0 +1,24 @@
+sc_node_not_relation -> item_121;;
+item_121 => nrel_main_idtf: [пункт 121] (* <- lang_ru;; *);;
+
+item_121 => nrel_main_idtf: [item 121] (* <- lang_en;; *);;
+
+item_121 <= nrel_using_constants:
+{
+tram
+};;
+
+item_121 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>121. Запрещается опережать движущийся <sc_element sys_idtf="tram">трамвай</sc_element>, у которого включена аварийная световая сигнализация (световой указатель правого поворота), в зоне остановочного пункта <sc_element sys_idtf="tram">трамвая</sc_element>, обозначенной дорожным знаком «Остановочный пункт <sc_element sys_idtf="tram">трамвая</sc_element>» и (или) горизонтальной дорожной разметкой 1.17.2.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

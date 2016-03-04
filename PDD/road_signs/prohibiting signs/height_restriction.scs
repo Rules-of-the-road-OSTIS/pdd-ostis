@@ -1,0 +1,33 @@
+sc_node_not_relation -> height_restriction;;
+
+height_restriction => nrel_main_idtf: [ограничение высоты] (* <- lang_ru;; *);;
+
+height_restriction => nrel_main_idtf: [height restriction] (* <- lang_en;; *);;
+height_restriction <= nrel_using_constants:
+{
+vehicle
+};;
+height_restriction <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://height_restriction.png";;
+                                *);; 
+                *);;
+height_restriction  	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, габаритная высота которых (с грузом или без груза) больше указанной на знаке.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

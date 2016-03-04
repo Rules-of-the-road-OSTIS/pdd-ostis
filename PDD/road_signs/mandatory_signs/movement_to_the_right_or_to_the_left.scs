@@ -1,0 +1,30 @@
+sc_node_not_relation -> movement_to_the_right_or_to_the_left;;
+
+movement_to_the_right_or_to_the_left => nrel_main_idtf: [движение направо или налево] (* <- lang_ru;; *);;
+movement_to_the_right_or_to_the_left => nrel_main_idtf: [movement to the right or to the left] (* <- lang_en;; *);;
+
+movement_to_the_right_or_to_the_left <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://movement_to_the_right_or_to_the_left.png";;
+                                *);; 
+                *);;
+
+movement_to_the_right_or_to_the_left <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>движение направо или налево</b> - Разрешается движение только направо и налево]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+

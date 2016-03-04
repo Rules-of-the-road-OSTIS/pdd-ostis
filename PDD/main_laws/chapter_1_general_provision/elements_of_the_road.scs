@@ -1,0 +1,45 @@
+sc_node_not_relation -> elements_of_the_road;;
+
+elements_of_the_road => nrel_main_idtf: 	[элементы дороги] (* <- lang_ru;; *);;
+
+elements_of_the_road => nrel_main_idtf: 	[elements of the road] (* <- lang_en;; *);;
+
+elements_of_the_road <= nrel_using_constants:
+	{
+	roadway;
+	pavement;
+	footpath;
+	bike_lane;
+	road;
+	passenger;
+	route_vehicles;
+	traffic_island;
+	separation_zone;
+	dividing_line
+	};;
+
+elements_of_the_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Элементы дороги</b> — одна или несколько <sc_element sys_idtf="roadway">проезжих частей дороги</sc_element>, трамвайные пути, <sc_element sys_idtf="pavement">тротуары</sc_element>, <sc_element sys_idtf="footpath">пешеходные</sc_element> и <sc_element sys_idtf="bike_lane">велосипедные дорожки</sc_element> (за исключением велосипедных дорожек, расположенных обособленно от <sc_element sys_idtf="road">дороги</sc_element>), посадочные площадки, расположенные на проезжей части дороги и предназначенные для посадки (высадки) <sc_element sys_idtf="passenger">пассажиров</sc_element> в <sc_element sys_idtf="route_vehicles">маршрутное транспортное средство</sc_element>, <sc_element sys_idtf="traffic_island">островки безопасности</sc_element>, выделенные конструктивно или линиями горизонтальной дорожной разметки, <sc_element sys_idtf="separation_zone">разделительные зоны</sc_element>, <sc_element sys_idtf="dividing_line">разделительные полосы</sc_element>, настилы железнодорожных переездов и обочины. Основой, вокруг которой формируется дорога, является <sc_element sys_idtf="roadway">проезжая часть дороги</sc_element>. Если нет проезжей части дороги, то нет и самой дороги.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+elements_of_the_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://elements_of_the_road1.jpg";
+						"file://elements_of_the_road2.jpg";;
+                                *);; 
+                *);;
+elements_of_the_road <= nrel_strict_inclusion: chapter_1_general_provision;;

@@ -1,0 +1,38 @@
+sc_node_not_relation -> tram;;
+
+tram => nrel_main_idtf: 	[трамвай] (* <- lang_ru;; *);;
+
+tram => nrel_main_idtf: 	[tram] (* <- lang_en;; *);;
+tram <= nrel_using_constants:
+	{
+      motor_vehicle;
+      traffic;
+      railway_vehicle
+	};;
+
+
+tram <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Трамвай</b> — <sc_element sys_idtf="motor_vehicle">механическое транспортное средство</sc_element>, предназначенное для движения по рельсам, участвующее в <sc_element sys_idtf="traffic">дорожном движении</sc_element> и не являющееся <sc_element sys_idtf="railway_vehicle">железнодорожным транспортным средством</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+tram <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://tram.jpg";;
+                                *);; 
+                *);;
+tram <= nrel_strict_inclusion: chapter_1_general_provision;;
+tram <= nrel_strict_inclusion: types_of_vehicles;;

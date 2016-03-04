@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_141;;
+
+item_141 => nrel_main_idtf: [пункт 141] (* <- lang_ru;; *);;
+
+item_141 => nrel_main_idtf: [item 141] (* <- lang_en;; *);;
+
+item_141 <= nrel_using_constants:
+	{
+	vehicle;
+	roadway;
+	driver
+	};;
+
+item_141 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>При вынужденной остановке <sc_element sys_idtf="vehicle">транспортного средства</sc_element> на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> и в местах, где остановка запрещена, <sc_element sys_idtf="driver">водитель</sc_element> должен принять все возможные меры для выведения его за пределы <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>. </p>
+					 <p>Устранять возникшие технические неисправности <sc_element sys_idtf="vehicle">транспортного средства</sc_element> по возможности необходимо вне <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>. В случае устранения технических неисправностей <sc_element sys_idtf="vehicle">транспортного средства</sc_element> на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> лицам, выполняющим такие действия, рекомендуется находиться в одежде повышенной видимости со световозвращающими элементами.</p>]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

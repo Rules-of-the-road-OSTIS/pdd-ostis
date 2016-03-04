@@ -1,0 +1,3 @@
+access_forbidden => nrel_main_idtf: [Проезд запрещён] (* <- lang_ru;; *);;
+
+access_forbidden => nrel_main_idtf: [access forbidden] (* <- lang_en;; *);;

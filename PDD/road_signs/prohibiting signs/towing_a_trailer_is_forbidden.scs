@@ -1,0 +1,36 @@
+sc_node_not_relation -> towing_a_trailer_is_forbidden;;
+
+towing_a_trailer_is_forbidden => nrel_main_idtf: [движение с прицепом запрещено] (* <- lang_ru;; *);;
+
+towing_a_trailer_is_forbidden => nrel_main_idtf: [towing a trailer is forbidden] (* <- lang_en;; *);;
+towing_a_trailer_is_forbidden <= nrel_using_constants:
+{
+wheeled_tractor;
+self_propelled;
+trailer;
+motor_vehicle
+};;
+towing_a_trailer_is_forbidden <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://towing_a_trailer_is_forbidden.png";;
+                                *);; 
+                *);;
+towing_a_trailer_is_forbidden <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещаются движение грузовых автомобилей, <sc_element sys_idtf="wheeled_tractor">колесных тракторов</sc_element> и <sc_element sys_idtf="self_propelled">самоходных машин</sc_element> с <sc_element sys_idtf="trailer">прицепами</sc_element>, а также буксировка <sc_element sys_idtf="motor_vehicle">механических транспортных средств</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

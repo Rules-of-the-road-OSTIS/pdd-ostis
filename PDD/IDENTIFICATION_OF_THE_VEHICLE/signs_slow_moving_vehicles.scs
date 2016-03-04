@@ -1,0 +1,19 @@
+sc_node_not_relation -> signs_slow_moving_vehicles;;
+       
+signs_slow_moving_vehicles => nrel_main_idtf: [знак тихоходное транспортное средство] (* <- lang_ru;; *);;
+
+signs_slow_moving_vehicles => nrel_main_idtf: [signs_slow_moving_vehicles] (* <- lang_en;; *);
+
+<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://signs_slow_moving_vehicles.png";;
+                                *);; 
+                *);;
+
+signs_slow_moving_vehicles <= nrel_inclusion: IDENTIFICATION_OF_THE_VEHICLE;;
+

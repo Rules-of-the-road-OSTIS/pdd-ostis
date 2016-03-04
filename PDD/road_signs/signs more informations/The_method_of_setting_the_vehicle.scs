@@ -1,0 +1,60 @@
+sc_node_not_relation -> The_method_of_setting_the_vehicle;;
+The_method_of_setting_the_vehicle => nrel_main_idtf:[Способ постановки транспортного средства на стоянку] (* <- lang_ru;; *);;
+The_method_of_setting_the_vehicle => nrel_main_idtf:[The method of setting the vehicle] (* <- lang_en;; *);;
+The_method_of_setting_the_vehicle <= nrel_using_constants:
+	{
+	vehicle;
+parking_of_a_vehicle;
+	roadway;
+	pavement;
+	car;
+	motorcycle;
+	stop_the_vehicle		
+	};;
+The_method_of_setting_the_vehicle <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://The_method_of_setting_the_vehicle1.png";
+                                                "file://The_method_of_setting_the_vehicle2.png";
+                                                "file://The_method_of_setting_the_vehicle3.png";
+                                                "file://The_method_of_setting_the_vehicle4.png";
+                                                "file://The_method_of_setting_the_vehicle5.png";
+                                                "file://The_method_of_setting_the_vehicle6.png";
+                                                "file://The_method_of_setting_the_vehicle7.png";
+                                                "file://The_method_of_setting_the_vehicle8.png";
+                                                "file://The_method_of_setting_the_vehicle9.png";
+                                                "file://The_method_of_setting_the_vehicle10.png";
+                                                "file://The_method_of_setting_the_vehicle11.png";
+                                                "file://The_method_of_setting_the_vehicle12.png";
+                                                "file://The_method_of_setting_the_vehicle13.png";
+                                                "file://The_method_of_setting_the_vehicle14.png";
+                                                "file://The_method_of_setting_the_vehicle15.png";
+                                                "file://The_method_of_setting_the_vehicle16.png";
+                                                "file://The_method_of_setting_the_vehicle17.png";
+                                                "file://The_method_of_setting_the_vehicle18.png";;
+                                *);; 
+                *);;
+The_method_of_setting_the_vehicle 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Таблички</b>  указывают, что все <sc_element sys_idtf="vehicle">транспортные средства</sc_element> 
+						должны быть поставлены на <sc_element sys_idtf="parking_of_a_vehicle">стоянку</sc_element>
+						на <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>проезжей части дороги вдоль
+						<sc_element sys_idtf="pavement">тротуара</sc_element> соответственно слева или справа от него. Либо указывают способы 
+						постановки <sc_element sys_idtf="car">легковых автомобилей</sc_element>
+						и <sc_element sys_idtf="motorcycle">мотоциклов</sc_element> на <sc_element sys_idtf="parking_of_a_vehicle">стоянку</sc_element>
+						.Либо <sc_element sys_idtf="stop_the_vehicle">остановка</sc_element> 
+						и <sc_element sys_idtf="parking_of_a_vehicle">стоянка</sc_element> других <sc_element sys_idtf="vehicle">транспортных средств</sc_element>  запрещаются.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,17 @@
+sc_node_not_relation -> stages_of_the_TRP;;
+
+stages_of_the_TRP => nrel_main_idtf: [Этапы проведения ГТО] (* <- lang_ru;; *);;
+
+stages_of_the_TRP => nrel_main_idtf: [stages_of_the_TRP] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://stages_of_the_TRP.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+stages_of_the_TRP <= nrel_strict_inclusion: inspection;;

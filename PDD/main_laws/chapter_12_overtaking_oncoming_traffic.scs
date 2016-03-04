@@ -1,0 +1,45 @@
+sc_node_not_relation -> chapter_12_overtaking_oncoming_traffic;;
+        
+ chapter_12_overtaking_oncoming_traffic => nrel_main_idtf: [Глава 12. Обгон, встречный разъезд] (* <- lang_ru;; *);;
+
+ chapter_12_overtaking_oncoming_traffic => nrel_main_idtf: [Chapter 12. Overtaking, oncoming traffic] (* <- lang_en;; *);;
+chapter_12_overtaking_oncoming_traffic <= nrel_section_decomposition:
+	{
+        	item_92
+		(*
+		=> nrel_section_base_order: 
+			item_93;;
+		*);
+		item_93
+		(*
+		=> nrel_section_base_order: 
+			item_94;;
+		*);
+		item_94
+		(*
+		=> nrel_section_base_order: 
+			item_95;;
+		*);
+		item_95
+		(*
+		=> nrel_section_base_order: 
+			item_96;;
+		*);
+		item_96
+		(*
+		=> nrel_section_base_order: 
+			item_97;;
+		*);
+		item_97
+		(*
+		=> nrel_section_base_order: 
+			item_98;;
+		*);
+		item_98
+		(*
+		=> nrel_section_base_order: 
+			item_99;;
+		*);
+		item_99
+
+	};;

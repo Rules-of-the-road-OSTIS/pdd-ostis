@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_114;;
+item_114 => nrel_main_idtf: [пункт 114] (* <- lang_ru;; *);;
+
+item_114 => nrel_main_idtf: [item 114] (* <- lang_en;; *);;
+
+item_114 <= nrel_using_constants:
+{
+crosswalk;
+traffic;
+intersection;
+roadway;
+pavement
+};;
+
+item_114 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>114. <sc_element sys_idtf="crosswalk">Пешеходный переход</sc_element> обозначается дорожными знаками «<sc_element sys_idtf="crosswalk">Пешеходный переход</sc_element>» и (или) горизонтальной дорожной разметкой 1.14.1–1.14.3. Дополнительно на <sc_element sys_idtf="crosswalk">пешеходном переходе</sc_element> могут быть установлены иные технические средства организации <sc_element sys_idtf="traffic">дорожного движения</sc_element>.</p>
+					 <p>При отсутствии горизонтальной дорожной разметки 1.14.1–1.14.3 ширина <sc_element sys_idtf="crosswalk">пешеходного перехода</sc_element> определяется расстоянием между дорожными знаками «<sc_element sys_idtf="crosswalk">Пешеходный переход</sc_element>», а при установке дорожных знаков только с внешней по отношению к центру <sc_element sys_idtf="intersection">перекрестка</sc_element> границы <sc_element sys_idtf="crosswalk">пешеходного перехода</sc_element> — расстоянием между створом установки дорожных знаков и условной линией, соединяющей начала закруглений кромок прилегающей к <sc_element sys_idtf="pavement">тротуару</sc_element> <sc_element sys_idtf="roadway">проезжей части дороги</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,17 @@
+sc_node_not_relation -> during_the_operation_of_vehicle_without_inspection;;
+
+during_the_operation_of_vehicle_without_inspection => nrel_main_idtf: [За эксплуатацию ТС без техосмотра] (* <- lang_ru;; *);;
+
+during_the_operation_of_vehicle_without_inspection => nrel_main_idtf: [during_the_operation_of_vehicle_without_inspection] (* <- lang_en;; *);
+
+<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://during_the_operation_of_vehicle_without_inspection.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+during_the_operation_of_vehicle_without_inspection <= nrel_strict_inclusion: inspection;;

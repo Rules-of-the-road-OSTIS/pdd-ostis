@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_125;;
+
+item_125 => nrel_main_idtf: [пункт 125] (* <- lang_ru;; *);;
+
+item_125 => nrel_main_idtf: [item 125] (* <- lang_en;; *);;
+
+item_125 <= nrel_using_constants:
+	{
+	vehicle;
+	traffic_lane
+	};;
+
+
+item_125 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> В населенном пункте водитель <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, движущегося по крайней правой полосе, должен уступить дорогу маршрутному <sc_element sys_idtf="vehicle">транспортному средству</sc_element>, начинающему движение от обозначенного остановочного пункта, при его перестроении на крайнюю правую <sc_element sys_idtf="traffic_lane">полосу движения</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

@@ -1,0 +1,30 @@
+sc_node_not_relation -> go_straight_or_left;;
+
+go_straight_or_left => nrel_main_idtf: [движение прямо или налево] (* <- lang_ru;; *);;
+go_straight_or_left => nrel_main_idtf: [go straight or left] (* <- lang_en;; *);;
+
+go_straight_or_left <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://go_straight_or_left.png";;
+                                *);; 
+                *);;
+
+go_straight_or_left <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>движение прямо или налево</b> - Разрешается движение только прямо и налево]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+

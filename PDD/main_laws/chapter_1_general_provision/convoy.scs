@@ -1,0 +1,26 @@
+sc_node_not_relation -> convoy;;
+
+convoy => nrel_main_idtf: 	[транспортная колонна] (* <- lang_ru;; *);;
+
+convoy => nrel_main_idtf: 	[convoy] (* <- lang_en;; *);;
+convoy <= nrel_using_constants:
+	{
+     motor_vehicle;
+     traffic_lane;
+     column
+	};;
+
+convoy <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<b>Транспортная колонна</b> — группа из двух и более <sc_element sys_idtf="motor_vehicle">механических транспортных средств</sc_element>, следующих друг за другом по одной <sc_element sys_idtf="traffic_lane">полосе движения</sc_element> с постоянно включенным ближним светом фар, обозначенная опознавательными знаками «<sc_element sys_idtf="sign_column">Колонна</sc_element>», если иное не определено подпунктом 201.7 пункта 201 настоящих Правил.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+convoy <= nrel_strict_inclusion: chapter_1_general_provision;;

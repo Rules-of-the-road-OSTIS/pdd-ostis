@@ -1,0 +1,24 @@
+sc_node_not_relation -> item_156;;
+item_156 => nrel_main_idtf: [пункт 156] (* <- lang_ru;; *);;
+
+item_156 => nrel_main_idtf: [item 156] (* <- lang_en;; *);;
+
+item_156 <= nrel_using_constants:
+{
+bicycle
+};;
+
+item_156 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>156. Запрещается буксировка <sc_element sys_idtf="bicycle">велосипеда</sc_element> и <sc_element sys_idtf="bicycle">велосипедом</sc_element>, за исключением велосипедного прицепа промышленного производства.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

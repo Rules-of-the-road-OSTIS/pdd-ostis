@@ -1,0 +1,38 @@
+sc_node_not_relation -> designation_of_bike_lanes;;
+
+designation_of_bike_lanes => nrel_main_idtf: 
+	[обозначение велосипедных дорожек] (* <- lang_ru;; *);;
+
+designation_of_bike_lanes => nrel_main_idtf: 
+	[designation of bike lanes] (* <- lang_en;; *);;
+
+designation_of_bike_lanes <= nrel_using_constants:
+	{
+	bike_lane;
+	traffic_lane
+	};;
+
+designation_of_bike_lanes <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Применяется для обозначения <sc_element sys_idtf="bike_lane">велосипедных дорожек</sc_element> и располагается по оси <sc_element sys_idtf="traffic_lane">полос движения</sc_element> велосипедистов.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_bike_lanes <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_bike_lanes.png";;
+                                *);; 
+                *);;

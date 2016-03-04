@@ -1,0 +1,39 @@
+sc_node_not_relation -> signs_of_service;;
+     
+signs_of_service => nrel_main_idtf: [Знаки сервиса] (* <- lang_ru;; *);;
+
+signs_of_service => nrel_main_idtf: [Signs of service] (* <- lang_en;; *);;
+
+signs_of_service <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знаки сервиса информируют о расположении соответствующих объектов.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+signs_of_service <= nrel_section_decomposition:
+{
+	sign_service_camping;
+	sign_service_car_wash;
+	sign_service_checkpoint_road_transport;
+	sign_service_drinking_water;
+	sign_service_first_aid_station;
+	sign_service_food_item;
+	sign_service_GAI;
+	sign_service_gas_station;
+	sign_service_hospital;
+	sign_service_hotel_or_motel;
+	sign_service_militia;
+	sign_service_phone;
+	sign_service_resting_place;
+	sign_service_showplace;
+	sign_footpath;
+	sign_service_vehicle_maintenance;
+	sign_service_wc
+};; 

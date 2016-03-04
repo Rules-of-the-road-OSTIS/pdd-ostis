@@ -1,0 +1,24 @@
+sc_node_not_relation -> item_188;;
+
+item_188 => nrel_main_idtf: [пункт 188] (* <- lang_ru;; *);;
+
+item_188 => nrel_main_idtf: [item_188] (* <- lang_en;; *);;
+
+item_188 <= nrel_using_constants:
+	{
+	motor_vehicle
+	};;
+
+item_188 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Буксировка механического <sc_element sys_idtf="vihicle">транспортного средства</sc_element> производится при помощи сцепки (гибкой или жесткой) либо путем его частичной погрузки на буксирующее транспортное средство.
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

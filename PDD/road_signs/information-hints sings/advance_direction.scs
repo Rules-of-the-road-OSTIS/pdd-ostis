@@ -1,0 +1,33 @@
+sc_node_not_relation -> advance_direction;;
+
+advance_direction => nrel_main_idtf:  [предварительный указатель направлений] (* <- lang_ru;; *);;
+advance_direction => nrel_main_idtf:  [advance direction] (* <- lang_en;; *);;
+advance_direction <= nrel_using_constants:
+{
+  traffic;
+  locality
+};;
+advance_direction <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://advance_direction1.png";
+						                        "file://advance_direction2.png";;
+                                *);; 
+                *);;
+advance_direction <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Направления <sc_element sys_idtf="traffic"> движения </sc_element> к <sc_element sys_idtf="locality"> населенным пунктам </sc_element> или другим объектам.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

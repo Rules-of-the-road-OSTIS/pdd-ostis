@@ -1,0 +1,33 @@
+sc_node_not_relation -> the_end_of_the_toll_road;;
+the_end_of_the_toll_road => nrel_main_idtf: 
+	[конец платной автомобильной дороги] (* <- lang_ru;; *);;
+the_end_of_the_toll_road => nrel_main_idtf: 
+	[the end of the toll road] (* <- lang_en;; *);;
+the_end_of_the_toll_road <= nrel_using_constants:
+	{
+	vehicle;
+	traffic
+	};;
+the_end_of_the_toll_road <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://the_end_of_the_toll_road.png";;
+                                *);; 
+                *);;
+the_end_of_the_toll_road <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак информирует о конце участка дороги, на котором используется система электронного сбора платы в режиме свободного многополосного <sc_element sys_idtf="traffic"> движения </sc_element> за проезд <sc_element sys_idtf="vehicle"> транспортных средств </sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

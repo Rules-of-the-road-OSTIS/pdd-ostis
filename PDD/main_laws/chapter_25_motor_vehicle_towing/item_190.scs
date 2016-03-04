@@ -1,0 +1,32 @@
+sc_node_not_relation -> item_190;;
+
+item_190 => nrel_main_idtf: [пункт 190] (* <- lang_ru;; *);;
+
+item_190 => nrel_main_idtf: [item_190] (* <- lang_en;; *);;
+
+item_190 <= nrel_using_constants:
+	{
+	bus;
+	tram;
+	self_propelled;
+	trolleybus;
+	wheeled_tractor;
+	vehicle;
+	passenger;
+	towing
+	};;
+
+item_190 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>При буксировке <sc_element sys_idtf="bus">автобуса</sc_element>, <sc_element sys_idtf="trolleybus">троллейбуса</sc_element>, <sc_element sys_idtf="tram">трамвая</sc_element>, грузового автомобиля, <sc_element sys_idtf="wheeled_tractor">колесного трактора</sc_element>, <sc_element sys_idtf="self_propelled">самоходной машины</sc_element> при помощи сцепки запрещается перевозка в них пассажиров.</p>
+<p>При буксировке путем частичной погрузки запрещается нахождение людей в буксируемом транспортном средстве, а также в кузове буксирующего транспортного средства.</p>
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

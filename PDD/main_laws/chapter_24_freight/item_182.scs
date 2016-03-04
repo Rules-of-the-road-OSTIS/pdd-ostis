@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_182;;
+
+item_182 => nrel_main_idtf: [пункт 182] (* <- lang_ru;; *);;
+
+item_182 => nrel_main_idtf: [item 182] (* <- lang_en;; *);;
+item_182 <= nrel_using_constants:
+	{
+	vehicle;
+	freight
+	};;
+item_182 => nrel_idtf:[масса груза](*<-lang_ru;;*);;
+
+item_182 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Масса перевозимого груза и распределение нагрузки по осям не должны превышать величин, установленных организацией (заводом)-изготовителем для данного <sc_element sys_idtf="vehicle">транспортного средства</sc_element>.
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

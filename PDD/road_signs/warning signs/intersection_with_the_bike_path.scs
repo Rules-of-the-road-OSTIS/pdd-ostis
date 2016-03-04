@@ -1,0 +1,36 @@
+sc_node_not_relation -> intersection_with_the_bike_path;;
+       
+intersection_with_the_bike_path => nrel_main_idtf: [пересечение с велосипедной дорожкой] (* <- lang_ru;; *);;
+intersection_with_the_bike_path => nrel_main_idtf: [intersection with the bike path] (* <- lang_en;; *);;
+
+intersection_with_the_bike_path <= nrel_using_constants:
+	{
+	bike_lane;
+	road;
+	intersection
+	};;
+
+intersection_with_the_bike_path <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://intersection_with_the_bike_path.png";;
+                                *);; 
+                *);;
+				
+intersection_with_the_bike_path <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Место пересечения <sc_element sys_idtf="bike_lane">велосипедной дорожки</sc_element> с <sc_element sys_idtf="road">дорогой</sc_element> вне <sc_element sys_idtf="intersection">перекрестка</sc_element>.]
+                         (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

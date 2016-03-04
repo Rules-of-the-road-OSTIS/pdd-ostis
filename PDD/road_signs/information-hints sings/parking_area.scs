@@ -1,0 +1,32 @@
+sc_node_not_relation -> parking_area;;
+parking_area => nrel_main_idtf: 
+	[место стоянки.] (* <- lang_ru;; *);;
+parking_area => nrel_main_idtf: 
+	[parking area] (* <- lang_en;; *);;
+end_of_the_strip_to_route_vehicles <= nrel_using_constants:
+	{
+	parking_of_a_vehicle
+	};;
+parking_area <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://parking_area.png";;
+                                *);; 
+                *);;
+parking_area <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак обозначает специальную площадку, зону на проезжей части дороги или на тротуаре, которые отведены для <sc_element sys_idtf="traffic_line"> стоянки </sc_element> транспортных средств.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

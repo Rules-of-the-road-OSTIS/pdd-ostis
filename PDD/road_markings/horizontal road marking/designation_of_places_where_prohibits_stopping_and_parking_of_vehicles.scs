@@ -1,0 +1,38 @@
+sc_node_not_relation -> designation_of_places_where_prohibits_stopping_and_parking_of_vehicles;;
+
+designation_of_places_where_prohibits_stopping_and_parking_of_vehicles => nrel_main_idtf: 	[обозначение мест где запрещены остановка и стоянка транспортных средств] (* <- lang_ru;; *);;
+
+designation_of_places_where_prohibits_stopping_and_parking_of_vehicles => nrel_main_idtf: 	[designation of places where prohibits stopping and parking of vehicles] (* <- lang_en;; *);;
+
+designation_of_places_where_prohibits_stopping_and_parking_of_vehicles <= nrel_using_constants:
+	{
+	stop_the_vehicle;
+	parking_of_a_vehicle;
+	route_vehicles;
+	roadway
+	};;
+
+designation_of_places_where_prohibits_stopping_and_parking_of_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение мест, где запрещены <sc_element sys_idtf="stop_the_vehicle">остановка</sc_element> и <sc_element sys_idtf="parking_of_a_vehicle">стоянка транспортных средств</sc_element>, кроме <sc_element sys_idtf="route_vehicles">маршрутных транспортных средств</sc_element> (наносится у края <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> или по верху бордюра).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_of_places_where_prohibits_stopping_and_parking_of_vehicles <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_of_places_where_prohibits_stopping_and_parking_of_vehicles.png";;
+                                *);; 
+                *);;

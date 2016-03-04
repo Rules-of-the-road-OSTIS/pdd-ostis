@@ -1,0 +1,23 @@
+sc_node_not_relation -> to_regulate_the_movement_of_trams_and_other_route_vehicles;;
+to_regulate_the_movement_of_trams_and_other_route_vehicles => nrel_main_idtf: 
+	[для регулирования движения трамваев и других маршрутных транспортных средств] (* <- lang_ru;; *);;
+to_regulate_the_movement_of_trams_and_other_route_vehicles => nrel_main_idtf: 
+	[to regulate the movement of trams and other route vehicles] (* <- lang_en;; *);;
+
+advantage_of_oncoming_traffic <= nrel_using_constants:
+	{
+	traffic;
+	tram;
+	route_vehicles
+	};;
+
+to_regulate_the_movement_of_trams_and_other_route_vehicles <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://to_regulate_the_movement_of_trams_and_other_route_vehicles.png";;
+                                *);; 
+                *);;

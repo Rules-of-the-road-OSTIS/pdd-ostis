@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_164;;
+item_164 => nrel_main_idtf: [пункт 164] (* <- lang_ru;; *);;
+
+item_164 => nrel_main_idtf: [item 164] (* <- lang_en;; *);;
+
+item_164 <= nrel_using_constants:
+{
+stop_the_vehicle;
+the_dark;
+parking_of_a_vehicle;
+vehicle;
+driver;
+the_lack_of_visibility_of_the_road
+};;
+
+item_164 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>164. При <sc_element sys_idtf="stop_the_vehicle">остановке</sc_element>, <sc_element sys_idtf="parking_of_a_vehicle">стоянке</sc_element> в <sc_element sys_idtf="the_dark">темное время суток</sc_element> на неосвещенных участках дороги и (или) при ее <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости</sc_element> (кроме жилых зон) на <sc_element sys_idtf="vehicle">транспортном средстве</sc_element> должны быть включены габаритные или стояночные огни.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

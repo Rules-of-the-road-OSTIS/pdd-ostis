@@ -1,0 +1,33 @@
+sc_node_not_relation -> denied_entry;;
+     
+denied_entry => nrel_main_idtf: [въезд запрещён] (* <- lang_ru;; *);;
+
+denied_entry => nrel_main_idtf: [denied entry] (* <- lang_en;; *);;
+
+denied_entry <= nrel_using_constants:
+{
+vehicle
+};;
+denied_entry <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://denied_entry.png";;
+                                *);; 
+                *);;
+denied_entry 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается въезд <sc_element sys_idtf="vehicle">транспортных средств</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

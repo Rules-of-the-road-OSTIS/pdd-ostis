@@ -1,0 +1,32 @@
+sc_node_not_relation -> sign_service_vehicle_maintenance;;
+sign_service_vehicle_maintenance => nrel_main_idtf: 
+	[знак сервиса "Техническое обслуживание автомобилей"] (* <- lang_ru;; *);;
+sign_service_vehicle_maintenance => nrel_main_idtf: 
+	[sign service "Vehicle maintenance"] (* <- lang_en;; *);;
+sign_service_vehicle_maintenance <= nrel_using_constants:
+	{
+	car
+	};;
+sign_service_vehicle_maintenance <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_vehicle_maintenance.png";;
+                                *);; 
+                *);;
+sign_service_vehicle_maintenance <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Техническое обслуживание автомобилей" информирует о расположении пунктов технического обслуживания <sc_element sys_idtf="car"> автомобилей </sc_element> — СТО.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> signs_priority;;
+      
+signs_priority => nrel_main_idtf: [Знаки приоритета] (* <- lang_ru;; *);;
+signs_priority => nrel_main_idtf: [Signs priority] (* <- lang_en;; *);;
+traffic_light <= nrel_using_constants:
+	{
+	vehicle;
+	intersection;
+	road;
+	railroad_crossing
+	};;
+signs_priority 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знаки приоритета устанавливают очередность проезда <sc_element sys_idtf="intersection">перекрестков</sc_element>, пересечений отдельных <sc_element sys_idtf="roadway">проезжих частей дорог</sc_element>, узких участков дорог, а также порядок проезда <sc_element sys_idtf="railroad_crossing">железнодорожных переездов</sc_element> и иных отдельных участков <sc_element sys_idtf="road">дорог</sc_element>, движение на которых не регулируется сигналами регулировщика или светофора.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+signs_priority <= nrel_section_decomposition:
+{
+	abutting_a_secondary_road;
+	advantage_of_oncoming_traffic;
+	advantage_over_oncoming_traffic;
+	equivalent_intersection_of_roads;
+	give_way;
+	intersection_with_secondary_road;
+	motion_without_stopping_is_prohibited;
+	sign_main_road;
+	the_end_of_the_main_road
+};; 

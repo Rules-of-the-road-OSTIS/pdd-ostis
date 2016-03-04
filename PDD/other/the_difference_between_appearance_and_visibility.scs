@@ -1,0 +1,19 @@
+sc_node_not_relation -> the_difference_between_appearance_and_visibility;;
+       
+the_difference_between_appearance_and_visibility => nrel_main_idtf: [различие между видимостью и обзорностью] (* <- lang_ru;; *);;
+
+the_difference_between_appearance_and_visibility => nrel_main_idtf: [the_difference_between_appearance_and_visibility] (* <- lang_en;; *);;
+the_difference_between_appearance_and_visibility <= nrel_inclusion: visibility_of_the_road;;
+the_difference_between_appearance_and_visibility <= nrel_inclusion: view_of_the_road;;
+
+the_difference_between_appearance_and_visibility <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://the_difference_between_appearance_and_visibility.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+

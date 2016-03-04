@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_60;;
+
+item_60 => nrel_main_idtf: [пункт 60] (* <- lang_ru;; *);;
+
+item_60 => nrel_main_idtf: [item 60] (* <- lang_en;; *);;
+
+item_60 <= nrel_using_constants:
+	{
+vehicle
+	};;
+
+item_60 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>  Перестроение <sc_element sys_idtf="vehicle">транспортных средств</sc_element> на перекрестке запрещается, кроме перекрестка, на котором организовано круговое движение.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

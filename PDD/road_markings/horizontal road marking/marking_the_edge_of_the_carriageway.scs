@@ -1,0 +1,37 @@
+sc_node_not_relation -> marking_the_edge_of_the_carriageway;;
+
+marking_the_edge_of_the_carriageway => nrel_main_idtf: 
+	[обозначение края проезжей части дороги] (* <- lang_ru;; *);;
+
+marking_the_edge_of_the_carriageway => nrel_main_idtf: 
+	[marking the edge of the carriageway] (* <- lang_en;; *);;
+
+marking_the_edge_of_the_carriageway <= nrel_using_constants:
+	{
+	roadway
+	};;
+	
+marking_the_edge_of_the_carriageway <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение края <sc_element sys_idtf="roadway">проезжей части дороги</sc_element> (может иметь желтый цвет).]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+marking_the_edge_of_the_carriageway <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://marking_the_edge_of_the_carriageway.png";;
+                                *);; 
+                *);;

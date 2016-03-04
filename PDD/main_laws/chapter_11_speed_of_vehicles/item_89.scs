@@ -1,0 +1,40 @@
+sc_node_not_relation -> item_89;;
+
+item_89 => nrel_main_idtf: [пункт 89] (* <- lang_ru;; *);;
+
+item_89 => nrel_main_idtf: [item 89] (* <- lang_en;; *);;
+
+item_89 <= nrel_using_constants:
+	{
+road;
+trailer;
+locality;
+car;
+vehicle;
+bus;
+motor_vehicle;
+motorcycle
+	};;
+
+item_89 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> Вне <sc_element sys_idtf="locality"> населенных пунктов</sc_element> разрешается движение со скоростью:<\p>
+					 <p>1)<sc_element sys_idtf="сar"> легковым автомобилям</sc_element> и грузовым автомобилям с технически допустимой общей массой не более 3,5 тонны на автомагистралях — не более 110 км/ч, на остальных <sc_element sys_idtf="road"> дорогах</sc_element> — не более 90 км/ч; </p>
+					 <p>2) <sc_element sys_idtf="bus">автобусам</sc_element> и <sc_element sys_idtf="motorcycle"> мотоциклам</sc_element> — не более 90 км/ч; </p>
+					 <p>3)автобусам<,<sc_element sys_idtf="car"> легковым</sc_element> и грузовым автомобилям при их движении с <sc_element sys_idtf="trailer"> прицепом</sc_element>, грузовым автомобилям с технически допустимой общей массой более 3,5 тонны на автомагистралях — не более 90 км/ч, на остальных дорогах — не более 70 км/ч; </p>
+					 <p>4) <sc_element sys_idtf="motor_vehicle"> механическим транспортным средствам</sc_element>, управляемым водителями с водительским стажем до двух лет, а также при обучении управлению <sc_element sys_idtf="motor_vehicle"> механическим транспортным средством</sc_element>, когда транспортным средством управляет обучаемый управлению, — не более 70 км/ч; </p>
+					 <p>5)грузовым автомобилям, перевозящим пассажиров в кузове, — не более 60 км/ч; </p>
+					 <p>6)<sc_element sys_idtf="vehicle"> транспортным средствам</sc_element>, буксирующим <sc_element sys_idtf="motor_vehicle"> механические транспортные средства</sc_element>, — не более 50 км/ч; </p>
+					 <p>7)<sc_element sys_idtf="vehicle"> транспортным средствам</sc_element>, перевозящим опасные грузы, тяжеловесным и (или) крупногабаритным транспортным средствам — со скоростью, не превышающей скорость движения, установленную при согласовании условий перевозки. </p>
+					 ]
+					 (*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

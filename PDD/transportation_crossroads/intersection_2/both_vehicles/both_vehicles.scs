@@ -1,0 +1,20 @@
+sc_node_not_relation -> both_vehicles;;
+
+both_vehicles => nrel_main_idtf: [Обоим транспортным средствам] (* <- lang_ru;; *);;
+
+both_vehicles => nrel_main_idtf: [both_vehicles] (* <- lang_en;; *);;
+both_vehicles <= nrel_inclusion: give_way;;
+both_vehicles <= nrel_inclusion: The_direction_of_the_main_road;;
+
+both_vehicles <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						"file://both_vehicles.html" 
+						(*<-lang_ru;;*);;
+				*);;
+		*);;
+
+both_vehicles <= nrel_strict_inclusion: intersection_2;;

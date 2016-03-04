@@ -1,0 +1,32 @@
+sc_node_not_relation -> designation_approach_to_school;;
+
+designation_approach_to_school => nrel_main_idtf: 
+	[обозначение приближения к школе] (* <- lang_ru;; *);;
+
+designation_approach_to_school => nrel_main_idtf: 
+	[designation approach to school] (* <- lang_en;; *);;
+
+designation_approach_to_school <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение приближения к школе.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_approach_to_school <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_approach_to_school.png";;
+                                *);; 
+                *);;

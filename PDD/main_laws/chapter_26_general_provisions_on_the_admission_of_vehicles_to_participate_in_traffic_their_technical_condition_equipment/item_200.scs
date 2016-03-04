@@ -1,0 +1,27 @@
+sc_node_not_relation -> item_200;;
+
+item_200 => nrel_main_idtf: [пункт 200] (* <- lang_ru;; *);;
+
+item_200 => nrel_main_idtf: [item_200] (* <- lang_en;; *);;
+
+item_200 <= nrel_using_constants:
+	{
+	motor_vehicle;
+	bike;
+	horse_drawn_vehicle
+	};;
+
+item_200 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p><sc_element sys_idtf="motor_vehicle">Велосипед</sc_element> должен иметь исправные тормозную систему, рулевое управление и звуковой сигнал, быть оборудован зеркалом заднего вида, спереди световозвращателем белого цвета, сзади — световозвращателем (световозвращателями) красного цвета, а с каждой боковой стороны — световозвращателями оранжевого цвета.</p>
+<p><sc_element sys_idtf="horse_drawn_vehicle">Гужевое транспортное средство</sc_element> должно быть оборудовано спереди световозвращателями белого цвета, сзади — красного, иметь предусмотренные конструкцией исправное стояночное тормозное устройство и противооткатные упоры.</p>
+]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

@@ -1,0 +1,26 @@
+sc_node_not_relation -> Number_of_dangerous_turns;;
+Number_of_dangerous_turns => nrel_main_idtf:[Количество опасных поворотов] (* <- lang_ru;; *);;
+Number_of_dangerous_turns => nrel_main_idtf:[Number of dangerous turns] (* <- lang_en;; *);;
+Number_of_dangerous_turns <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Number_of_dangerous_turns.png";;
+                                *);; 
+                *);;
+Number_of_dangerous_turns 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b>  информирует о количестве опасных поворотов, расположенных один за другим.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

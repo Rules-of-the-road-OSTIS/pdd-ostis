@@ -1,0 +1,29 @@
+sc_node_not_relation -> Hazard;;
+Hazard => nrel_main_idtf:[Вид опасности] (* <- lang_ru;; *);;
+Hazard => nrel_main_idtf:[Hazard] (* <- lang_en;; *);;
+Hazard <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://Hazard1.png";
+                                                "file://Hazard2.png";
+                                                "file://Hazard3.png";
+                                                "file://Hazard4.png";;
+                                *);; 
+                *);;
+Hazard 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>Табличка</b> информирует о возможном виде <sc_element sys_idtf="traffic_accident">дорожно-транспортного происшествия</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

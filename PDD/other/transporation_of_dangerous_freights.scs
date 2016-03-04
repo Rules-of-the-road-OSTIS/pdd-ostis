@@ -1,0 +1,6 @@
+sc_node_not_relation -> transporation_of_dangerous_freights;;
+       
+transporation_of_dangerous_freights => nrel_main_idtf: [перевозка опасных грузов] (* <- lang_ru;; *);;
+
+transporation_of_dangerous_freights => nrel_main_idtf: [transporation_of_dangerous_freights] (* <- lang_en;; *);;
+

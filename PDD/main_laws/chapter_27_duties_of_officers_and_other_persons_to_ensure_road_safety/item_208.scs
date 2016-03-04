@@ -1,0 +1,25 @@
+sc_node_not_relation -> item_208;;
+
+item_208 => nrel_main_idtf: [пункт 208] (* <- lang_ru;; *);;
+
+item_208 => nrel_main_idtf: [item_208] (* <- lang_en;; *);;
+
+item_208 <= nrel_using_constants:
+	{
+	traffic;
+	driver
+	};;
+
+item_208 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>Должностным и иным лицам транспортных и других организаций, ответственным за техническое состояние и эксплуатацию транспортных средств, запрещается допускать их к участию в <sc_element sys_idtf="traffic">дорожном движении</sc_element> и допускать <sc_element sys_idtf="driver">водителей</sc_element> к управлению транспортными средствами с нарушением требований, установленных настоящими Правилами и иными актами законодательства.</p>
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

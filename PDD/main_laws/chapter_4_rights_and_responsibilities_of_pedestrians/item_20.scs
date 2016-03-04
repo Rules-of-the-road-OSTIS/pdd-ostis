@@ -1,0 +1,26 @@
+sc_node_not_relation -> item_20;;
+
+item_20 => nrel_main_idtf: [пункт 20] (* <- lang_ru;; *);;
+
+item_20 => nrel_main_idtf: [item 20] (* <- lang_en;; *);;
+item_20 <= nrel_using_constants:
+	{
+	vehicle;
+	roadway;
+	pedestrian
+	};;
+
+item_20 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>При приближении <sc_element sys_idtf="vehicle">транспортного средства</sc_element> с включенными маячками синего или синего и красного цветов пешеходу запрещается переходить (пересекать) <sc_element sys_idtf="roadway">проезжую часть дороги</sc_element>, а <sc_element sys_idtf="pedestrian">пешеход</sc_element>, находящийся на проезжей части дороги, должен покинуть ее, соблюдая меры предосторожности.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+item_20 <= nrel_strict_inclusion: chapter_4_rights_and_responsibilities_of_pedestrians;;

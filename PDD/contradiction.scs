@@ -1,0 +1,7 @@
+sc_node_not_relation -> contradiction;;
+       
+contradiction => nrel_main_idtf: [Противоречия] (* <- lang_ru;; *);;
+
+contradiction => nrel_main_idtf: [contradiction] (* <- lang_en;; *);;
+		
+

@@ -1,0 +1,37 @@
+sc_node_not_relation -> designation_approaching_the_hump;;
+
+designation_approaching_the_hump => nrel_main_idtf: 
+	[обозначение приближения к искусственной неровности] (* <- lang_ru;; *);;
+
+designation_approaching_the_hump => nrel_main_idtf: 
+	[designation approaching the hump] (* <- lang_en;; *);;
+
+designation_approaching_the_hump <= nrel_using_constants:
+	{
+	roadway
+	};;
+
+designation_approaching_the_hump <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Обозначение приближения к искусственной неровности на <sc_element sys_idtf="roadway">проезжей части</sc_element>.] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+designation_approaching_the_hump <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://designation_approaching_the_hump.png";;
+                                *);; 
+                *);;

@@ -1,0 +1,33 @@
+sc_node_not_relation -> the_movement_of_vehicles_carrying_dangerous_goods_prohibited;;
+       
+the_movement_of_vehicles_carrying_dangerous_goods_prohibited => nrel_main_idtf: [движение транспортных средств с опасными грузами запрещено] (* <- lang_ru;; *);;
+
+the_movement_of_vehicles_carrying_dangerous_goods_prohibited => nrel_main_idtf: [the movement of vehicles carrying dangerous goods prohibited] (* <- lang_en;; *);;
+the_movement_of_vehicles_carrying_dangerous_goods_prohibited <= nrel_using_constants:
+{
+vehicle
+};;
+the_movement_of_vehicles_carrying_dangerous_goods_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://the_movement_of_vehicles_carrying_dangerous_goods_prohibited.png";;
+                                *);; 
+                *);;
+the_movement_of_vehicles_carrying_dangerous_goods_prohibited <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение <sc_element sys_idtf="vehicle">транспортных средств</sc_element>, оборудованных опознавательными знаками «Опасный груз».
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

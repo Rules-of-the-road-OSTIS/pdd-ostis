@@ -1,0 +1,29 @@
+sc_node_not_relation -> item_83;;
+
+item_83 => nrel_main_idtf: [пункт 83] (* <- lang_ru;; *);;
+
+item_83 => nrel_main_idtf: [item 83] (* <- lang_en;; *);;
+
+item_83 <= nrel_using_constants:
+	{
+road;
+roadway;
+vehicle;
+driver
+	};;
+
+item_83 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p> При повороте на <sc_element sys_idtf="road"> дорогу</sc_element> с реверсивным движением <sc_element sys_idtf="driver"> водитель</sc_element> должен управлять <sc_element sys_idtf="vehicle"> транспортным средством</sc_element> таким образом, чтобы при выезде с пересечения проезжих частей дорог <sc_element sys_idtf="vehicle"> транспортное средство</sc_element> заняло крайнюю правую полосу движения. Перестроение можно производить только после того, как <sc_element sys_idtf="driver"> водитель</sc_element> убедится, что движение в данном направлении разрешается и по другим полосам движения.<\p>
+					 ]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

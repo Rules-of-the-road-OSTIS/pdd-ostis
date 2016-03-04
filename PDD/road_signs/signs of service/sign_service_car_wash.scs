@@ -1,0 +1,29 @@
+sc_node_not_relation -> sign_service_car_wash;;
+sign_service_car_wash => nrel_main_idtf: 
+	[знак сервиса "Мойка автомобилей"] (* <- lang_ru;; *);;
+sign_service_car_wash => nrel_main_idtf: 
+	[sign service "Car wash"] (* <- lang_en;; *);;
+
+sign_service_car_wash <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://sign_service_car_wash.png";;
+                                *);; 
+                *);;
+sign_service_car_wash <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Дорожный знак сервиса "Мойка автомобилей" информирует о расположении автомойки.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

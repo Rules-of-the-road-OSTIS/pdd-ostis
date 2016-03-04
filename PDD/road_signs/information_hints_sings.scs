@@ -1,0 +1,92 @@
+sc_node_not_relation -> information_hints_sings;;
+       
+information_hints_sings => nrel_main_idtf: [Информационно-указательные знаки] (* <- lang_ru;; *);;
+
+information_hints_sings => nrel_main_idtf: [Information hints sings] (* <- lang_en;; *);;
+information_hints_sings <= nrel_using_constants:
+   {
+    road_user;
+    locality
+   };;
+
+information_hints_sings 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Знаки дополнительной информации (таблички) уточняют или ограничивают действие знаков, с которыми они применены.]
+
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+
+information_hints_sings <= nrel_section_decomposition:
+{
+	advance_direction;
+	check_out_on_the_road_with_the_band_for_route_vehicles;
+	deadlock;
+	departure_for_the_oneway_road;
+	direction_detour;
+	direction_indicator;
+	direction_of_the_current_lane;
+	direction_sign;
+	elevated_pedestrian_crossings;
+	end_of_the_living_area;
+	end_of_the_oneway_road;
+	end_of_the_road_for_cars;
+	end_of_the_road_with_the_band_for_route_vehicles;
+	end_of_the_strip;
+	end_of_the_strip1;
+	end_of_the_strip_to_route_vehicles;
+	end_of_the_village;
+	highway;
+	kilometer_mark;
+	lane;
+	lane_route_vehicles;
+	leaving_the_road_with_reverse_motion;
+	name_of_the_object;
+	name_of_the_object1;
+	parking_area;
+	place_for_reversal;
+	place_tram;
+	pointer_distances;
+	preliminary_index_rebuild_on_another_roadway;
+	recommended_speed;
+	reverse_motion;
+	road_car;
+	road_number;
+	road_number1;
+	scheme_detour;
+	sign_crosswalk;
+	sign_floor_area;
+	sign_pedestrian_zone;
+	start_of_band;
+	start_of_band1;
+	stop_line;
+	stopping_point_express_route;
+	stopping_point_of_the_bus_and_the_trolley;
+	stopping_point_tram;
+	taxi_parking_place;
+	the_beginning_of_the_border_of_the_village;
+	the_beginning_of_the_village;
+	the_bus_station_and_the_trolley;
+	the_direction_of_movement_of_the_band;
+	the_direction_of_movement_of_the_bands;
+	the_direction_of_movement_of_trucks;
+	the_end_of_the_borders_of_the_village;
+	the_end_of_the_motorway;
+	the_end_of_the_pedestrian_zone;
+	the_end_of_the_reversing_motion;
+	the_end_of_the_sign_recommended_speed;
+	the_end_of_the_toll_road;
+	the_number_and_direction_of_the_road;
+	the_road_with_the_band_for_route_vehicles;
+	toll_roads;
+	traffic_pattern;
+	underpass;
+	zone_for_turning
+};; 

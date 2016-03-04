@@ -1,0 +1,15 @@
+sc_node_not_relation -> reversible;;
+reversible => nrel_main_idtf: 
+	[реверсивный] (* <- lang_ru;; *);;
+reversible => nrel_main_idtf: 
+	[reversible] (* <- lang_en;; *);;
+reversible <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://reversible.png";;
+                                *);; 
+                *);;

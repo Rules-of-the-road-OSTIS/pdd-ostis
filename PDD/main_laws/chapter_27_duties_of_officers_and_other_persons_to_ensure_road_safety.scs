@@ -1,0 +1,30 @@
+sc_node_not_relation -> chapter_27_duties_of_officers_and_other_persons_to_ensure_road_safety;;
+        
+chapter_27_duties_of_officers_and_other_persons_to_ensure_road_safety => nrel_main_idtf: [Глава 27. Обязанности должностных и иных лиц по обеспечению безопасности дорожного движения] (* <- lang_ru;; *);;
+
+chapter_27_duties_of_officers_and_other_persons_to_ensure_road_safety => nrel_main_idtf: [chapter_27_duties_of_officers_and_other_persons_to_ensure_road_safety] (* <- lang_en;; *);;
+chapter_27_duties_of_officers_and_other_persons_to_ensure_road_safety <= nrel_section_decomposition:
+	{
+        	item_208
+		(*
+		=> nrel_section_base_order: 
+			item_209;;
+		*);
+		item_209
+		(*
+		=> nrel_section_base_order: 
+			item_210;;
+		*);
+		item_210
+		(*
+		=> nrel_section_base_order: 
+			item_211;;
+		*);
+		item_211
+		(*
+		=> nrel_section_base_order: 
+			item_212;;
+		*);
+		item_212
+
+	};;

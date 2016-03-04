@@ -1,0 +1,33 @@
+sc_node_not_relation -> end_of_the_living_area;;
+end_of_the_living_area => nrel_main_idtf: 
+	[конец жилой зоны] (* <- lang_ru;; *);;
+end_of_the_living_area => nrel_main_idtf: 
+	[end of the living area] (* <- lang_en;; *);;
+end_of_the_living_area <= nrel_using_constants:
+	{
+	traffic;
+	floor_area
+	};;
+end_of_the_living_area <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+						"file://end_of_the_living_area.png";;
+                                *);; 
+                *);;
+end_of_the_living_area <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					[Знак информирует о конце территории, на которой действуют специальные требования Правил, устанавливающие порядок <sc_element sys_idtf="traffic"> дорожного движения </sc_element> в <sc_element sys_idtf="floor_area"> жилых зонах </sc_element>.).]	 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

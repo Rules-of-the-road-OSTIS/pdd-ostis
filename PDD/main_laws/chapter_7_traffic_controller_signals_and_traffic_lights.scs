@@ -1,0 +1,87 @@
+sc_node_not_relation -> chapter_7_traffic_controller_signals_and_traffic_lights;;
+        
+chapter_7_traffic_controller_signals_and_traffic_lights => nrel_main_idtf: [Глава 7. Сигналы регулировщика и светофора] (* <- lang_ru;; *);;
+
+chapter_7_traffic_controller_signals_and_traffic_lights => nrel_main_idtf: [Chapter 7. Traffic controller signals and traffic lights] (* <- lang_en;; *);;
+
+chapter_7_traffic_controller_signals_and_traffic_lights <= nrel_section_decomposition:
+	{
+        	item_35
+		(*
+		=> nrel_section_base_order: 
+			item_36;;
+		*);
+		item_36
+		(*
+		=> nrel_section_base_order: 
+			item_37;;
+		*);
+		item_37
+		(*
+		=> nrel_section_base_order: 
+			item_38;;
+		*);
+		item_38
+		(*
+		=> nrel_section_base_order: 
+			item_39;;
+		*);
+		item_39
+		(*
+		=> nrel_section_base_order: 
+			item_40;;
+		*);
+		item_40
+		(*
+		=> nrel_section_base_order: 
+			item_41;;
+		*);
+		item_41
+		(*
+		=> nrel_section_base_order: 
+			item_42;;
+		*);
+		item_42
+		(*
+		=> nrel_section_base_order: 
+			item_43;;
+		*);
+		item_43
+		(*
+		=> nrel_section_base_order: 
+			item_44;;
+		*);
+		item_44
+		(*
+		=> nrel_section_base_order: 
+			item_45;;
+		*);
+		item_45
+		(*
+		=> nrel_section_base_order: 
+			item_46;;
+		*);
+		item_46
+		(*
+		=> nrel_section_base_order: 
+			item_47;;
+		*);
+		item_47
+		(*
+		=> nrel_section_base_order: 
+			item_48;;
+		*);
+		item_48
+		(*
+		=> nrel_section_base_order: 
+			item_49;;
+		*);
+		item_49
+		(*
+		=> nrel_section_base_order: 
+			item_50;;
+		*);
+		item_50
+
+	};;
+

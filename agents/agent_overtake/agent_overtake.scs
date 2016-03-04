@@ -1,0 +1,202 @@
+agent_overtake
+ // Множество идентификаторов
+ => nrel_main_idtf:
+       [агентная scp-программа поиска иллюстраций для заданного объекта] (* <- lang_ru;;
+ *);
+       [agent_overtake scp-program of finding illustrations for given object] (* <- lang_en;; *);
+       <- agent_scp_program;;
+ // Указываем, что операция поиска агента является scp-программой
+ scp_program -> agent_overtake
+       (*
+ // Множество параметров агентной операции
+       -> rrel_params: .agent_overtake_params
+               (*
+               -> rrel_1: rrel_in: _event;;
+               -> rrel_2: rrel_in: _input_arc;;
+               *);;
+ // Множество операторов агентной операции
+       -> rrel_operators: .agent_overtake_operator_set
+               (*
+ // Первый исполняемый оператор операции
+               -> rrel_init: .agent_overtake_operator1A
+                       (*
+                       <- searchElStr3;;
+                       -> rrel_1: rrel_assign: rrel_scp_var: _temp;;
+                       -> rrel_2: rrel_fixed: rrel_scp_var: _input_arc;;
+                       -> rrel_3: rrel_assign: rrel_scp_var: _question;;
+
+                     => nrel_goto: .agent_overtake_operator1B;;
+                     *);;
+                                                                                  
+// Агент будет просыпаться, когда обнаружит наш вопрос.
+            -> .agent_overtake_operator1B
+                   (*
+                   <- searchElStr3;;
+                   -> rrel_1: rrel_fixed: rrel_scp_const: question_finding_overtake;;
+                   -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+                   -> rrel_3: rrel_fixed: rrel_scp_var: _question;;
+
+                   => nrel_then: .agent_overtake_operator1C;;
+                   => nrel_else: .agent_overtake_operator_return;;
+                   *);;
+
+// Найдём параметры операции – их подал на вход сам пользователь
+            -> .agent_overtake_operator1C
+                   (*
+                   <- searchElStr3;;
+                   -> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+                   -> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+                   -> rrel_3: rrel_assign: rrel_scp_var: _param;;
+
+                   => nrel_then: .agent_overtake_operator1D;;
+                   => nrel_else: .agent_overtake_operator_return;;
+                   *);;
+// Сгенерировать узел, в который мы поместим конструкцию ответа
+         -> .agent_overtake_operator1D
+                   (*
+                   <- genEl;;
+                   -> rrel_1: rrel_assign: rrel_const: rrel_node: rrel_scp_var: _answer;;
+
+                    => nrel_goto: .agent_overtake_operator1E;;
+                    *);;
+ -> .agent_overtake_operator1E
+                    (*
+                    <- searchElStr5;;
+                    -> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+                    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var:  _arc1;;
+                    -> rrel_3: rrel_assign: rrel_scp_var: _line1;;
+            	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+                    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_position;;
+
+            => nrel_then: .agent_overtake_operator1F;;
+                    => nrel_else: .agent_overtake_operator_return;;
+            *);;
+
+
+
+-> .agent_overtake_operator1F
+                    (*
+                    <- searchElStr5;;
+                    -> rrel_1: rrel_fixed: rrel_scp_var: _line1;;
+                    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var:  _arc3;;
+                    -> rrel_3: rrel_assign: rrel_scp_var: single_line;;
+            	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+                    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_left_marking;;
+
+            => nrel_then: .agent_overtake_operator2B;;
+                    => nrel_else: .agent_overtake_operator1G;;
+            *);;
+-> .agent_overtake_operator1G
+                    (*
+                    <- searchElStr5;;
+                    -> rrel_1: rrel_fixed: rrel_scp_var: _line1;;
+                    -> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var:  _arc3;;
+                    -> rrel_3: rrel_assign: rrel_scp_var: double_line;;
+            	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc4;;
+                    -> rrel_5: rrel_fixed: rrel_scp_const: nrel_left_marking;;
+
+            => nrel_then: .agent_overtake_operator2B;;
+                    => nrel_else: .agent_overtake_operator3B;;
+            *);;
+
+ 
+ -> .agent_overtake_operator2B
+(*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arcperm;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: no;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcperm2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_permission;;
+=> nrel_goto: .agent_overtake_operator2C;;
+*);;
+
+-> .agent_overtake_operator2C
+(*
+<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: no;;
+=> nrel_goto: .agent_overtake_operator_answer;;
+*);;
+
+
+-> .agent_overtake_operator3B
+(*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _param;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arcperm;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_const: yes;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arcperm2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_permission;;
+=> nrel_goto: .agent_overtake_operator3C;;
+*);;
+
+-> .agent_overtake_operator3C
+(*
+<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: yes;;
+=> nrel_goto: .agent_overtake_operator_answer;;
+*);;
+ 
+
+
+
+-> .agent_overtake_operator_answer
+(*
+			<- genElStr5;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _question;;
+			-> rrel_2: rrel_assign: rrel_const: rrel_common: rrel_scp_var: _arc;;
+		  	-> rrel_3: rrel_fixed: rrel_scp_var: _answer;;
+		  	-> rrel_4: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc2;;
+		  	-> rrel_5: rrel_fixed: rrel_scp_const: nrel_answer;;
+=> nrel_goto: .agent_overtake_operator_answer3;;
+*);;
+-> .agent_overtake_operator_answer3
+(*
+<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _param;;
+=> nrel_goto: .agent_overtake_operator_answer4;;
+*);;
+
+
+-> .agent_overtake_operator_answer4
+(*
+<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_const: nrel_permission;;
+
+=> nrel_goto: .agent_overtake_operator_answer5;;
+*);;
+-> .agent_overtake_operator_answer5
+(*
+<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arcperm2;;
+=> nrel_goto: .agent_overtake_operator_answer6;;
+*);;
+
+-> .agent_overtake_operator_answer6
+(*
+<- genElStr3;;
+			-> rrel_1: rrel_fixed: rrel_scp_var: _answer;;
+			-> rrel_2: rrel_assign: rrel_pos_const_perm: rrel_scp_var: _arc;;
+			-> rrel_3: rrel_fixed: rrel_scp_var: _arcperm;;
+=> nrel_goto: .agent_overtake_operator_return;;
+*);;
+
+
+
+-> .agent_overtake_operator_return
+                    (*
+                    <- return;;
+                    *);;
+
+*);;
+*);;

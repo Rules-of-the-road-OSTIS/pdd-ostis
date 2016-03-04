@@ -1,0 +1,23 @@
+sc_node_not_relation -> item_211;;
+
+item_211 => nrel_main_idtf: [пункт 211] (* <- lang_ru;; *);;
+
+item_211 => nrel_main_idtf: [item_211] (* <- lang_en;; *);;
+
+item_211 <= nrel_using_constants:
+	{
+	road
+	};;
+
+item_211 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<p>Работники дорожных, строительных и других организаций, а также граждане при проведении на дороге ремонтных и других работ должны находиться в одежде повышенной видимости, описание которой определяется Министерством транспорта и коммуникаций.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;*);;
+				*);;
+		*);;

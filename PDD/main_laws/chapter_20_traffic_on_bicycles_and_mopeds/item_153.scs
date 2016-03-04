@@ -1,0 +1,37 @@
+sc_node_not_relation -> item_153;;
+item_153 => nrel_main_idtf: [пункт 153] (* <- lang_ru;; *);;
+
+item_153 => nrel_main_idtf: [item 153] (* <- lang_en;; *);;
+
+item_153 <= nrel_using_constants:
+{
+driver;
+moped;
+bicycle;
+road;
+traffic_lane;
+passenger;
+children;
+vehicle
+};;
+
+item_153 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>153. Велосипедисту и <sc_element sys_idtf="driver">водителю</sc_element> <sc_element sys_idtf="moped">мопеда</sc_element> запрещается:</p>
+<p>153.1. использовать технически неисправные <sc_element sys_idtf="bicycle">велосипеды</sc_element> и <sc_element sys_idtf="moped">мопеды</sc_element>, а также оборудованные с нарушением требований технических нормативных правовых актов;</p>
+<p>153.2. двигаться, не держась за руль и (или) не держа ноги на педалях (подножках);</p>
+<p>153.3. поворачивать налево или разворачиваться на <sc_element sys_idtf="road">дороге</sc_element>, имеющей трамвайный путь, и на <sc_element sys_idtf="road">дороге</sc_element>, имеющей более одной <sc_element sys_idtf="traffic_lane">полосы для движения</sc_element> в данном направлении;</p>
+<p>153.4. двигаться по <sc_element sys_idtf="road">дороге</sc_element> в условиях снегопада и (или) гололедицы;</p>
+<p>153.5. перевозить <sc_element sys_idtf="passenger">пассажиров</sc_element>, за исключением случаев перевозки на <sc_element sys_idtf="bicycle">велосипеде</sc_element> <sc_element sys_idtf="children">детей</sc_element> в возрасте до семи лет на дополнительном специально оборудованном сиденье или когда перевозка <sc_element sys_idtf="passenger">пассажиров</sc_element> предусмотрена конструкцией <sc_element sys_idtf="moped">мопеда</sc_element>;</p>
+<p>153.6. перевозить грузы, которые выступают более чем на 0,5 метра по длине или ширине за габариты <sc_element sys_idtf="vehicle">транспортного средства</sc_element>, а также грузы, мешающие управлению этим <sc_element sys_idtf="vehicle">транспортным средством</sc_element>.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

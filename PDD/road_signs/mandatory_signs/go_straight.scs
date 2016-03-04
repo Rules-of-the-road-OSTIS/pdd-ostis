@@ -1,0 +1,31 @@
+sc_node_not_relation -> go_straight;;
+
+go_straight => nrel_main_idtf: [движение прямо] (* <- lang_ru;; *);;
+go_straight => nrel_main_idtf: [go straight] (* <- lang_en;; *);;
+
+
+go_straight <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://go_straight.png";;
+                                *);; 
+                *);;
+
+go_straight <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[<b>движение прямо</b> - Разрешается движение только прямо]
+						(*
+						<-lang_ru;;
+						=> nrel_format: format_html;;
+						*);;
+				*);;
+		*);;
+

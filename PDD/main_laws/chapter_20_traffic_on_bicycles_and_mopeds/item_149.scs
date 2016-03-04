@@ -1,0 +1,28 @@
+sc_node_not_relation -> item_149;;
+item_149 => nrel_main_idtf: [пункт 149] (* <- lang_ru;; *);;
+
+item_149 => nrel_main_idtf: [item 149] (* <- lang_en;; *);;
+
+item_149 <= nrel_using_constants:
+{
+road;
+the_dark;
+the_lack_of_visibility_of_the_road;
+moped;
+bicycle
+};;
+
+item_149 <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+					 [<p>149. При движении по <sc_element sys_idtf="road">дороге</sc_element> в <sc_element sys_idtf="the_dark">темное время суток</sc_element> и (или) при ее <sc_element sys_idtf="the_lack_of_visibility_of_the_road">недостаточной видимости</sc_element> на <sc_element sys_idtf="bicycle">велосипеде</sc_element> или <sc_element sys_idtf="moped">мопеде</sc_element> должны быть включены: спереди — фара (фонарь), излучающая белый свет, сзади — фонарь, излучающий красный свет.</p>] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
+

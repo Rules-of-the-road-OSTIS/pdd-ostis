@@ -1,0 +1,33 @@
+sc_node_not_relation -> pedestrians_prohibited;;
+        
+pedestrians_prohibited => nrel_main_idtf: [движение пешеходов запрещено] (* <- lang_ru;; *);;
+
+pedestrians_prohibited => nrel_main_idtf: [pedestrians prohibited] (* <- lang_en;; *);;
+pedestrians_prohibited <= nrel_using_constants:
+{
+pedestrian
+};;
+pedestrians_prohibited <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://pedestrians_prohibited.png";;
+                                *);; 
+                *);;
+pedestrians_prohibited <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещается движение <sc_element sys_idtf="pedestrian">пешеходов</sc_element>.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,36 @@
+sc_node_not_relation -> dangerous_turn;;
+        
+dangerous_turn => nrel_main_idtf: [опасный поворот] (* <- lang_ru;; *);;
+dangerous_turn => nrel_main_idtf: [dangerous turn] (* <- lang_en;; *);;
+
+dangerous_turn <= nrel_using_constants:
+	{
+	road;
+	limited_view_of_the_road
+	};;
+
+dangerous_turn <- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://dangerous_turn1.png";
+						"file://dangerous_turn2.png";;
+                                *);; 
+                *);;
+				
+dangerous_turn <- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Закругление <sc_element sys_idtf="road">дороги</sc_element> малого радиуса или с <sc_element sys_idtf="limited_view_of_the_road">ограниченной обзорностью</sc_element>.]
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;

@@ -1,0 +1,33 @@
+sc_node_not_relation -> movement_of_animal_drawn_vehicles_prohibited;;
+      
+movement_of_animal_drawn_vehicles_prohibited => nrel_main_idtf: [движение гужевых транспортных средств запрещено] (* <- lang_ru;; *);;
+
+movement_of_animal_drawn_vehicles_prohibited => nrel_main_idtf: [movement of animal-drawn vehicles prohibited] (* <- lang_en;; *);;
+movement_of_animal_drawn_vehicles_prohibited <=nrel_using_constants:
+{
+horse_drawn_vehicle
+};;
+movement_of_animal_drawn_vehicles_prohibited<- rrel_key_sc_element: ...
+                (*
+                        <- sc_illustration;; 
+                        <= nrel_sc_text_translation: 
+                        ...
+                                (*
+                                        -> rrel_example: 
+                                                "file://movement_of_animal_drawn_vehicles_prohibited.png";;
+                                *);; 
+                *);;
+movement_of_animal_drawn_vehicles_prohibited 	<- rrel_key_sc_element:...
+		(*
+			<- sc_definition;;
+			<= nrel_sc_text_translation:...
+				(*
+					-> rrel_example:
+						[Запрещаются движение <sc_element sys_idtf="horse_drawn_vehicle">гужевых транспортных средств</sc_element>, животных под седлом или вьюком, а также прогон скота.
+] 
+						(*
+							<-lang_ru;;
+							=> nrel_format: format_html;;
+						*);;
+					*);;
+		*);;
